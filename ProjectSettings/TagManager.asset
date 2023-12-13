@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Enemy
+  - Exit
+  - HealthPotion
+  - SpeedPotion
+  - GameManager
+  - ScoreText
+  - LevelText
+  - LevelImage
+  - OptionsMenu
+  - SoundManager
+  - Wall
+  - Soda
+  - Food
+  - ScoreTextUpdate
+  - HealthTextUpdate
+  - UpgradePanel
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - PlayerLayer
+  - 
+  - BlockingLayer
+  - EnemyLayer
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Floor
+    uniqueID: 160567841
+    locked: 0
+  - name: Items
+    uniqueID: 26486809
+    locked: 0
+  - name: Units
+    uniqueID: 312860243
+    locked: 0
+  - name: Overlay
+    uniqueID: 938235283
+    locked: 0

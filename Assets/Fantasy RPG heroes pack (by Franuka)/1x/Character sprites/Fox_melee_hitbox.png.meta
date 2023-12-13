@@ -1,0 +1,536 @@
+fileFormatVersion: 2
+guid: 5773ceea3f59a244bab0c82bc682a341
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6396172974598190933
+    second: Fox_melee_hitbox_0
+  - first:
+      213: -8596083086814535624
+    second: Fox_melee_hitbox_1
+  - first:
+      213: -7684128482503473565
+    second: Fox_melee_hitbox_2
+  - first:
+      213: -8358733760252232698
+    second: Fox_melee_hitbox_3
+  - first:
+      213: 7257869047918696557
+    second: Fox_melee_hitbox_4
+  - first:
+      213: 570136494621336059
+    second: Fox_melee_hitbox_5
+  - first:
+      213: 3654649034529999249
+    second: Fox_melee_hitbox_6
+  - first:
+      213: -3876548712148867459
+    second: Fox_melee_hitbox_7
+  - first:
+      213: 6780841872651829712
+    second: Fox_melee_hitbox_8
+  - first:
+      213: -6159319877687515704
+    second: Fox_melee_hitbox_9
+  - first:
+      213: 3182505710734956152
+    second: Fox_melee_hitbox_10
+  - first:
+      213: 8242139751322525029
+    second: Fox_melee_hitbox_11
+  - first:
+      213: 5788403472269250453
+    second: Fox_melee_hitbox_12
+  - first:
+      213: 6692328797629298957
+    second: Fox_melee_hitbox_13
+  - first:
+      213: -2827313857881175545
+    second: Fox_melee_hitbox_14
+  - first:
+      213: 7096669126281441304
+    second: Fox_melee_hitbox_15
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Fox_melee_hitbox_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 110
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 557f0e89e65c3c850800000000000000
+      internalID: 6396172974598190933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_melee_hitbox_1
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 143
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8302daef9f394b880800000000000000
+      internalID: -8596083086814535624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_melee_hitbox_2
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 107
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3664bef7bdd7c5590800000000000000
+      internalID: -7684128482503473565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_melee_hitbox_3
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 143
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60cb9187eefcffb80800000000000000
+      internalID: -8358733760252232698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_melee_hitbox_4
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 112
+        width: 19
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d681f7bf17129b460800000000000000
+      internalID: 7257869047918696557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_melee_hitbox_5
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 107
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf124630f1889e700800000000000000
+      internalID: 570136494621336059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_melee_hitbox_6
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 143
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19982e90febe7b230800000000000000
+      internalID: 3654649034529999249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_melee_hitbox_7
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 107
+        width: 63
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d766ed13c7bb33ac0800000000000000
+      internalID: -3876548712148867459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_melee_hitbox_8
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 25
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d1c189b1c36a1e50800000000000000
+      internalID: 6780841872651829712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_melee_hitbox_9
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 62
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c5ee686433b58aa0800000000000000
+      internalID: -6159319877687515704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_melee_hitbox_10
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 35
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 876520015188a2c20800000000000000
+      internalID: 3182505710734956152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_melee_hitbox_11
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 59
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56d94b26f66f16270800000000000000
+      internalID: 8242139751322525029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_melee_hitbox_12
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 38
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59f0f3d2a4a845050800000000000000
+      internalID: 5788403472269250453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_melee_hitbox_13
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 38
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d09bfce759defdc50800000000000000
+      internalID: 6692328797629298957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_melee_hitbox_14
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 35
+        width: 60
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70a0478a60d53c8d0800000000000000
+      internalID: -2827313857881175545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_melee_hitbox_15
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 59
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 810bc7878fe6c7260800000000000000
+      internalID: 7096669126281441304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Fox_melee_hitbox_0: 6396172974598190933
+      Fox_melee_hitbox_1: -8596083086814535624
+      Fox_melee_hitbox_10: 3182505710734956152
+      Fox_melee_hitbox_11: 8242139751322525029
+      Fox_melee_hitbox_12: 5788403472269250453
+      Fox_melee_hitbox_13: 6692328797629298957
+      Fox_melee_hitbox_14: -2827313857881175545
+      Fox_melee_hitbox_15: 7096669126281441304
+      Fox_melee_hitbox_2: -7684128482503473565
+      Fox_melee_hitbox_3: -8358733760252232698
+      Fox_melee_hitbox_4: 7257869047918696557
+      Fox_melee_hitbox_5: 570136494621336059
+      Fox_melee_hitbox_6: 3654649034529999249
+      Fox_melee_hitbox_7: -3876548712148867459
+      Fox_melee_hitbox_8: 6780841872651829712
+      Fox_melee_hitbox_9: -6159319877687515704
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,612 @@
+fileFormatVersion: 2
+guid: 1537a1ed6c0f0cb45b3d890ec49030ee
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8865501571703698353
+    second: Beastmaster_roll_0
+  - first:
+      213: -1685366880923504537
+    second: Beastmaster_roll_1
+  - first:
+      213: -1345812170449697371
+    second: Beastmaster_roll_2
+  - first:
+      213: -2294714253390441865
+    second: Beastmaster_roll_3
+  - first:
+      213: -1437136209343954030
+    second: Beastmaster_roll_4
+  - first:
+      213: 7475249447216323510
+    second: Beastmaster_roll_5
+  - first:
+      213: -8309553408770311486
+    second: Beastmaster_roll_6
+  - first:
+      213: 1744227636247596489
+    second: Beastmaster_roll_7
+  - first:
+      213: 9006126508620653084
+    second: Beastmaster_roll_8
+  - first:
+      213: 4236178601575501621
+    second: Beastmaster_roll_9
+  - first:
+      213: 8333420264486245892
+    second: Beastmaster_roll_10
+  - first:
+      213: 2578496247050523698
+    second: Beastmaster_roll_11
+  - first:
+      213: -6185789368266582222
+    second: Beastmaster_roll_12
+  - first:
+      213: -6138103513265390918
+    second: Beastmaster_roll_13
+  - first:
+      213: -6626131789768987091
+    second: Beastmaster_roll_14
+  - first:
+      213: -3063388302177802837
+    second: Beastmaster_roll_15
+  - first:
+      213: 3073487582859326746
+    second: Beastmaster_roll_16
+  - first:
+      213: -1627639392056889061
+    second: Beastmaster_roll_17
+  - first:
+      213: -1349481184665838739
+    second: Beastmaster_roll_18
+  - first:
+      213: -924179519393509831
+    second: Beastmaster_roll_19
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Beastmaster_roll_0
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 321
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4c0feeba4967f480800000000000000
+      internalID: -8865501571703698353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beastmaster_roll_1
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 321
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 760b85250cf5c98e0800000000000000
+      internalID: -1685366880923504537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beastmaster_roll_2
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 319
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a5c2fd16f6b25de0800000000000000
+      internalID: -1345812170449697371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beastmaster_roll_3
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 317
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77213a16b898720e0800000000000000
+      internalID: -2294714253390441865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beastmaster_roll_4
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 317
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 293c33c5b344e0ce0800000000000000
+      internalID: -1437136209343954030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beastmaster_roll_5
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 225
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bb93c444cb6db760800000000000000
+      internalID: 7475249447216323510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beastmaster_roll_6
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 225
+        width: 34
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cafb1c53398eac80800000000000000
+      internalID: -8309553408770311486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beastmaster_roll_7
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 223
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cd05f93bcdb43810800000000000000
+      internalID: 1744227636247596489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beastmaster_roll_8
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 223
+        width: 34
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c122094d7503cfc70800000000000000
+      internalID: 9006126508620653084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beastmaster_roll_9
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 223
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53fc4007efde9ca30800000000000000
+      internalID: 4236178601575501621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beastmaster_roll_10
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 129
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4069eb4049146a370800000000000000
+      internalID: 8333420264486245892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beastmaster_roll_11
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 129
+        width: 34
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 234df1cdca8a8c320800000000000000
+      internalID: 2578496247050523698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beastmaster_roll_12
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 127
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2371511e759a72aa0800000000000000
+      internalID: -6185789368266582222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beastmaster_roll_13
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 127
+        width: 34
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aba3d31306311daa0800000000000000
+      internalID: -6138103513265390918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beastmaster_roll_14
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 127
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2e65e37e304b04a0800000000000000
+      internalID: -6626131789768987091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beastmaster_roll_15
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 33
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba5ea97d198ac75d0800000000000000
+      internalID: -3063388302177802837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beastmaster_roll_16
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 37
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1577ed2ca837aa20800000000000000
+      internalID: 3073487582859326746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beastmaster_roll_17
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 33
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b113406b8967969e0800000000000000
+      internalID: -1627639392056889061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beastmaster_roll_18
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 31
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6b5bec230ea54de0800000000000000
+      internalID: -1349481184665838739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beastmaster_roll_19
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 29
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93ecbd5af97ac23f0800000000000000
+      internalID: -924179519393509831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Beastmaster_roll_0: -8865501571703698353
+      Beastmaster_roll_1: -1685366880923504537
+      Beastmaster_roll_10: 8333420264486245892
+      Beastmaster_roll_11: 2578496247050523698
+      Beastmaster_roll_12: -6185789368266582222
+      Beastmaster_roll_13: -6138103513265390918
+      Beastmaster_roll_14: -6626131789768987091
+      Beastmaster_roll_15: -3063388302177802837
+      Beastmaster_roll_16: 3073487582859326746
+      Beastmaster_roll_17: -1627639392056889061
+      Beastmaster_roll_18: -1349481184665838739
+      Beastmaster_roll_19: -924179519393509831
+      Beastmaster_roll_2: -1345812170449697371
+      Beastmaster_roll_3: -2294714253390441865
+      Beastmaster_roll_4: -1437136209343954030
+      Beastmaster_roll_5: 7475249447216323510
+      Beastmaster_roll_6: -8309553408770311486
+      Beastmaster_roll_7: 1744227636247596489
+      Beastmaster_roll_8: 9006126508620653084
+      Beastmaster_roll_9: 4236178601575501621
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

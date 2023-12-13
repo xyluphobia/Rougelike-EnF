@@ -1,0 +1,612 @@
+fileFormatVersion: 2
+guid: 137cd856a314bc54cba45beaf4996234
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3029747527567667082
+    second: Swashbuckler_woodcutting_0
+  - first:
+      213: 8928025174310513031
+    second: Swashbuckler_woodcutting_1
+  - first:
+      213: 6467057398936925106
+    second: Swashbuckler_woodcutting_2
+  - first:
+      213: 3825457755914593391
+    second: Swashbuckler_woodcutting_3
+  - first:
+      213: 8857384598328833249
+    second: Swashbuckler_woodcutting_4
+  - first:
+      213: 360530567176890632
+    second: Swashbuckler_woodcutting_5
+  - first:
+      213: -2124986378166716086
+    second: Swashbuckler_woodcutting_6
+  - first:
+      213: -9189288986949025509
+    second: Swashbuckler_woodcutting_7
+  - first:
+      213: 8105875299312565028
+    second: Swashbuckler_woodcutting_8
+  - first:
+      213: 4135355284493108208
+    second: Swashbuckler_woodcutting_9
+  - first:
+      213: -3677261954128344916
+    second: Swashbuckler_woodcutting_10
+  - first:
+      213: -3235460551782986395
+    second: Swashbuckler_woodcutting_11
+  - first:
+      213: -8773870950515934943
+    second: Swashbuckler_woodcutting_12
+  - first:
+      213: -6482925475189377405
+    second: Swashbuckler_woodcutting_13
+  - first:
+      213: 2186319092857030035
+    second: Swashbuckler_woodcutting_14
+  - first:
+      213: -205404745045767656
+    second: Swashbuckler_woodcutting_15
+  - first:
+      213: -5100792392288297385
+    second: Swashbuckler_woodcutting_16
+  - first:
+      213: -4100244633052944847
+    second: Swashbuckler_woodcutting_17
+  - first:
+      213: 2919584887570326400
+    second: Swashbuckler_woodcutting_18
+  - first:
+      213: 8419801974466238857
+    second: Swashbuckler_woodcutting_19
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Swashbuckler_woodcutting_0
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 319
+        width: 30
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 670163c0dac24f5d0800000000000000
+      internalID: -3029747527567667082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swashbuckler_woodcutting_1
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 317
+        width: 34
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 789e584e797b6eb70800000000000000
+      internalID: 8928025174310513031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swashbuckler_woodcutting_2
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 299
+        width: 30
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b372bdb07a9fb950800000000000000
+      internalID: 6467057398936925106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swashbuckler_woodcutting_3
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 297
+        width: 30
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f646d849f81c61530800000000000000
+      internalID: 3825457755914593391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swashbuckler_woodcutting_4
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 297
+        width: 30
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e4f76e1d50cbea70800000000000000
+      internalID: 8857384598328833249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swashbuckler_woodcutting_5
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 223
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 809af3304acd00500800000000000000
+      internalID: 360530567176890632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swashbuckler_woodcutting_6
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 223
+        width: 40
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4934d0d5288282e0800000000000000
+      internalID: -2124986378166716086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swashbuckler_woodcutting_7
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 219
+        width: 58
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b118e727a56197080800000000000000
+      internalID: -9189288986949025509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swashbuckler_woodcutting_8
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 217
+        width: 54
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42b732153aadd7070800000000000000
+      internalID: 8105875299312565028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swashbuckler_woodcutting_9
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 217
+        width: 54
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f30f30a8bbb36930800000000000000
+      internalID: 4135355284493108208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swashbuckler_woodcutting_10
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 127
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca80f165cbdb7fcc0800000000000000
+      internalID: -3677261954128344916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swashbuckler_woodcutting_11
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 127
+        width: 40
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56d8f2635c55913d0800000000000000
+      internalID: -3235460551782986395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swashbuckler_woodcutting_12
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 123
+        width: 58
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 129f0614bd2fc3680800000000000000
+      internalID: -8773870950515934943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swashbuckler_woodcutting_13
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 121
+        width: 54
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 386b10ad0a50806a0800000000000000
+      internalID: -6482925475189377405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swashbuckler_woodcutting_14
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 121
+        width: 54
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 395c56f91ad575e10800000000000000
+      internalID: 2186319092857030035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swashbuckler_woodcutting_15
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 31
+        width: 30
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81a0e500971462df0800000000000000
+      internalID: -205404745045767656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swashbuckler_woodcutting_16
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 29
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75e14a828585639b0800000000000000
+      internalID: -5100792392288297385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swashbuckler_woodcutting_17
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 31
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1366da2fa310917c0800000000000000
+      internalID: -4100244633052944847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swashbuckler_woodcutting_18
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 31
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0836a339cf2748820800000000000000
+      internalID: 2919584887570326400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swashbuckler_woodcutting_19
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 31
+        width: 30
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9895137294529d470800000000000000
+      internalID: 8419801974466238857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Swashbuckler_woodcutting_0: -3029747527567667082
+      Swashbuckler_woodcutting_1: 8928025174310513031
+      Swashbuckler_woodcutting_10: -3677261954128344916
+      Swashbuckler_woodcutting_11: -3235460551782986395
+      Swashbuckler_woodcutting_12: -8773870950515934943
+      Swashbuckler_woodcutting_13: -6482925475189377405
+      Swashbuckler_woodcutting_14: 2186319092857030035
+      Swashbuckler_woodcutting_15: -205404745045767656
+      Swashbuckler_woodcutting_16: -5100792392288297385
+      Swashbuckler_woodcutting_17: -4100244633052944847
+      Swashbuckler_woodcutting_18: 2919584887570326400
+      Swashbuckler_woodcutting_19: 8419801974466238857
+      Swashbuckler_woodcutting_2: 6467057398936925106
+      Swashbuckler_woodcutting_3: 3825457755914593391
+      Swashbuckler_woodcutting_4: 8857384598328833249
+      Swashbuckler_woodcutting_5: 360530567176890632
+      Swashbuckler_woodcutting_6: -2124986378166716086
+      Swashbuckler_woodcutting_7: -9189288986949025509
+      Swashbuckler_woodcutting_8: 8105875299312565028
+      Swashbuckler_woodcutting_9: 4135355284493108208
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

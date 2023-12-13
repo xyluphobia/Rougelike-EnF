@@ -1,0 +1,46 @@
+FANTASY RPG - Monster pack (by Franuka) v1.3
+-------------------------
+Thank you for getting this character pack!
+Make sure to check my other Fantasy RPG assets to complement this one (https://franuka.itch.io/)
+
+TERMS OF USE:
+------------
+* You may use this pack on both commercial AND non-commercial projects, just remember to add a link to my itch page and/or Twitter/Instagram, it helps a lot :) (Links below)
+* You can edit this pack, but you can not redistribute it as is or resell it elsewhere. Feel free to send me a message regarding specific cases. Thanks!
+---
+Included are the spritesheets for each character in three sizes (100%, 200% and 300%), .png format, transparent background.
+
+Frame size depends on the file, but they all fit a 16x16 grid. To know the exact frame size of a character, you need to divide file size by the number of columns (for width) or rows (for height). For example, Owlbear_attack.png's file size is 320x256px, and it has 5 columns and 4 rows. 320/5 = 64 , and 256/4 = 64. Thus, frame size is 64x64px.
+  
+---
+All assets were created from scratch by me.
+* Contact: franukai@gmail.com
+* Instagram: https://www.instagram.com/franuka.art/
+* Twitter: https://twitter.com/franuka_art
+* Other projects and games on Itch.io: https://franuka.itch.io/
+
+If you like what I do, consider supporting me by buying my packs, sharing, or sending your feedback.
+Have a good time making your games, and send me a link if you make something cool, I'd love to check your projects! :)
+
+
+CHANGELOG
+----------
+v1.1: Added 10 extra ranged characters (1 per faction) and projectiles:
+-Medusa + arrow
+-Djinn + energy ball
+-Faerie dragon + faerie ball
+-Dryad + dryad spear
+-Bheur hag + frostbolt
+-Gog + fireball
+-Wizard + magic missile
+-Blemmyae + small rock
+-Lich + death coil
+-Cyclops + big rock
+
+Projectiles have a main sprite, and an "impact" animation (3 frames). Some of them also have an "initial" sprite meant to be used at the beginning, transitioning into the main sprite.
+
+v1.2: Added 10 character portraits (1 for each boss monster), each in 3 versions (framed, with and without outlines).
+You can find them inside the 'EXTRAS' folder.
+
+
+v1.3: New faction, the Yōkai, a japanese folk inspired bunch of creatures. 5 new sprites (Ronin, Kappa, Samurai, Oni and Tengu), 1 new boss portrait, 1 new big fireball projectile. Also added a 3x version of each file in the pack.

@@ -1,0 +1,937 @@
+fileFormatVersion: 2
+guid: 2908d6704242d3b4b8e76eb0b651a33c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3928489340870477433
+    second: Grass_breaking_0
+  - first:
+      213: 1346103923806886087
+    second: Grass_breaking_1
+  - first:
+      213: 5829814474066724716
+    second: Grass_breaking_2
+  - first:
+      213: 322662252443784637
+    second: Grass_breaking_3
+  - first:
+      213: -2788141428088104972
+    second: Grass_breaking_4
+  - first:
+      213: 4797052663328909084
+    second: Grass_breaking_5
+  - first:
+      213: 5337983044689717108
+    second: Grass_breaking_6
+  - first:
+      213: 2926574305739893549
+    second: Grass_breaking_7
+  - first:
+      213: 5761027297595805041
+    second: Grass_breaking_8
+  - first:
+      213: -2049058141383799229
+    second: Grass_breaking_9
+  - first:
+      213: -2049986951436999976
+    second: Grass_breaking_10
+  - first:
+      213: -6417898653741883428
+    second: Grass_breaking_11
+  - first:
+      213: 3433075786351265800
+    second: Grass_breaking_12
+  - first:
+      213: -2385384086823811945
+    second: Grass_breaking_13
+  - first:
+      213: -6781836890297926725
+    second: Grass_breaking_14
+  - first:
+      213: 597999497506827050
+    second: Grass_breaking_15
+  - first:
+      213: -3467627102665723341
+    second: Grass_breaking_16
+  - first:
+      213: 2202639854409491451
+    second: Grass_breaking_17
+  - first:
+      213: -2916520399005451709
+    second: Grass_breaking_18
+  - first:
+      213: 5149741658256006900
+    second: Grass_breaking_19
+  - first:
+      213: -1178496928847651036
+    second: Grass_breaking_20
+  - first:
+      213: 4038393218102928667
+    second: Grass_breaking_21
+  - first:
+      213: 6251441470607354408
+    second: Grass_breaking_22
+  - first:
+      213: -6452355784700129191
+    second: Grass_breaking_23
+  - first:
+      213: 3514290180950298126
+    second: Grass_breaking_24
+  - first:
+      213: 1452482980717755046
+    second: Grass_breaking_25
+  - first:
+      213: -2562620585093384261
+    second: Grass_breaking_26
+  - first:
+      213: -4002109221477941902
+    second: Grass_breaking_27
+  - first:
+      213: 1606676284514740414
+    second: Grass_breaking_28
+  - first:
+      213: -1172181631108988542
+    second: Grass_breaking_29
+  - first:
+      213: 8302705374039562337
+    second: Grass_breaking_30
+  - first:
+      213: -8027241472366027737
+    second: Grass_breaking_31
+  - first:
+      213: 5642845391672465958
+    second: Grass_breaking_32
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Grass_breaking_0
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 33
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 789b18d22c33b79c0800000000000000
+      internalID: -3928489340870477433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_breaking_1
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 43
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c8d44103625ea210800000000000000
+      internalID: 1346103923806886087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_breaking_2
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 61
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c678d216069a7e050800000000000000
+      internalID: 5829814474066724716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_breaking_3
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 61
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db5d65beb935a7400800000000000000
+      internalID: 322662252443784637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_breaking_4
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 57
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f71243b4288e49d0800000000000000
+      internalID: -2788141428088104972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_breaking_5
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 65
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c17af8e3bfd829240800000000000000
+      internalID: 4797052663328909084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_breaking_6
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 65
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 477e9cb1c43541a40800000000000000
+      internalID: 5337983044689717108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_breaking_7
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 31
+        width: 34
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2b696e43d74d9820800000000000000
+      internalID: 2926574305739893549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_breaking_8
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 53
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17dc68ecdc743ff40800000000000000
+      internalID: 5761027297595805041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_breaking_9
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 49
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34e42be0a784093e0800000000000000
+      internalID: -2049058141383799229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_breaking_10
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 43
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d2696d9abbfc83e0800000000000000
+      internalID: -2049986951436999976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_breaking_11
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 49
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdfd14b8d2b0fe6a0800000000000000
+      internalID: -6417898653741883428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_breaking_12
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 49
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 808467c0d3cb4af20800000000000000
+      internalID: 3433075786351265800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_breaking_13
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 43
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7944ff3bfc965eed0800000000000000
+      internalID: -2385384086823811945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_breaking_14
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 53
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbbf62da74312e1a0800000000000000
+      internalID: -6781836890297926725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_breaking_15
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 49
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2ba1c8ef558c4800800000000000000
+      internalID: 597999497506827050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_breaking_16
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 43
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 332b71cb58380efc0800000000000000
+      internalID: -3467627102665723341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_breaking_17
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 29
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf3223a0749519e10800000000000000
+      internalID: 2202639854409491451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_breaking_18
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 33
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34a791546207687d0800000000000000
+      internalID: -2916520399005451709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_breaking_19
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 25
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fe5161f0ce877740800000000000000
+      internalID: 5149741658256006900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_breaking_20
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 37
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42f9523894325afe0800000000000000
+      internalID: -1178496928847651036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_breaking_21
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 43
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b152f5c4c314b0830800000000000000
+      internalID: 4038393218102928667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_breaking_22
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 33
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82a62bd55e491c650800000000000000
+      internalID: 6251441470607354408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_breaking_23
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 33
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95013809990a476a0800000000000000
+      internalID: -6452355784700129191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_breaking_24
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 43
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0e8f21dc4445c030800000000000000
+      internalID: 3514290180950298126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_breaking_25
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 33
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6aa7bfb4391482410800000000000000
+      internalID: 1452482980717755046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_breaking_26
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 33
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb7b76bb72ebf6cd0800000000000000
+      internalID: -2562620585093384261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_breaking_27
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 33
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27dfd7dfdd6a578c0800000000000000
+      internalID: -4002109221477941902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_breaking_28
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 23
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb8ab87719f0c4610800000000000000
+      internalID: 1606676284514740414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_breaking_29
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 33
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 281c28954039bbfe0800000000000000
+      internalID: -1172181631108988542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_breaking_30
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 25
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 168da5e4c82293370800000000000000
+      internalID: 8302705374039562337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_breaking_31
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 33
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72cd6593962899090800000000000000
+      internalID: -8027241472366027737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_breaking_32
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 21
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62a56159cf96f4e40800000000000000
+      internalID: 5642845391672465958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Grass_breaking_0: -3928489340870477433
+      Grass_breaking_1: 1346103923806886087
+      Grass_breaking_10: -2049986951436999976
+      Grass_breaking_11: -6417898653741883428
+      Grass_breaking_12: 3433075786351265800
+      Grass_breaking_13: -2385384086823811945
+      Grass_breaking_14: -6781836890297926725
+      Grass_breaking_15: 597999497506827050
+      Grass_breaking_16: -3467627102665723341
+      Grass_breaking_17: 2202639854409491451
+      Grass_breaking_18: -2916520399005451709
+      Grass_breaking_19: 5149741658256006900
+      Grass_breaking_2: 5829814474066724716
+      Grass_breaking_20: -1178496928847651036
+      Grass_breaking_21: 4038393218102928667
+      Grass_breaking_22: 6251441470607354408
+      Grass_breaking_23: -6452355784700129191
+      Grass_breaking_24: 3514290180950298126
+      Grass_breaking_25: 1452482980717755046
+      Grass_breaking_26: -2562620585093384261
+      Grass_breaking_27: -4002109221477941902
+      Grass_breaking_28: 1606676284514740414
+      Grass_breaking_29: -1172181631108988542
+      Grass_breaking_3: 322662252443784637
+      Grass_breaking_30: 8302705374039562337
+      Grass_breaking_31: -8027241472366027737
+      Grass_breaking_32: 5642845391672465958
+      Grass_breaking_4: -2788141428088104972
+      Grass_breaking_5: 4797052663328909084
+      Grass_breaking_6: 5337983044689717108
+      Grass_breaking_7: 2926574305739893549
+      Grass_breaking_8: 5761027297595805041
+      Grass_breaking_9: -2049058141383799229
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

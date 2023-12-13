@@ -1,0 +1,612 @@
+fileFormatVersion: 2
+guid: a6b2430a93cf6e945b9166bbbffc2213
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6894586194653806984
+    second: Beastmaster_mining_0
+  - first:
+      213: -6374835112581879111
+    second: Beastmaster_mining_1
+  - first:
+      213: -3900600545744494247
+    second: Beastmaster_mining_2
+  - first:
+      213: -6694434976402241085
+    second: Beastmaster_mining_3
+  - first:
+      213: 1950694521714433310
+    second: Beastmaster_mining_4
+  - first:
+      213: 6746366515492386633
+    second: Beastmaster_mining_5
+  - first:
+      213: -7223710069313585501
+    second: Beastmaster_mining_6
+  - first:
+      213: -7317546524057665190
+    second: Beastmaster_mining_7
+  - first:
+      213: -261376925682609047
+    second: Beastmaster_mining_8
+  - first:
+      213: 8869908003407395345
+    second: Beastmaster_mining_9
+  - first:
+      213: 3604450959862955859
+    second: Beastmaster_mining_10
+  - first:
+      213: -3858565667649036318
+    second: Beastmaster_mining_11
+  - first:
+      213: -6907231575460746842
+    second: Beastmaster_mining_12
+  - first:
+      213: -3321368882830436006
+    second: Beastmaster_mining_13
+  - first:
+      213: -5063500312117060381
+    second: Beastmaster_mining_14
+  - first:
+      213: 2742143940192925383
+    second: Beastmaster_mining_15
+  - first:
+      213: 6211690798674560581
+    second: Beastmaster_mining_16
+  - first:
+      213: 1824099635156748975
+    second: Beastmaster_mining_17
+  - first:
+      213: -5248228423114777044
+    second: Beastmaster_mining_18
+  - first:
+      213: 1416797900329044868
+    second: Beastmaster_mining_19
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Beastmaster_mining_0
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 319
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87ef85292628150a0800000000000000
+      internalID: -6894586194653806984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beastmaster_mining_1
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 317
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9baaedc8d390887a0800000000000000
+      internalID: -6374835112581879111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beastmaster_mining_2
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 297
+        width: 30
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 951643c48784ed9c0800000000000000
+      internalID: -3900600545744494247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beastmaster_mining_3
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 295
+        width: 30
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c9089b8bd69813a0800000000000000
+      internalID: -6694434976402241085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beastmaster_mining_4
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 295
+        width: 30
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1dd6101552421b10800000000000000
+      internalID: 1950694521714433310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beastmaster_mining_5
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 223
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94773802a98ef9d50800000000000000
+      internalID: 6746366515492386633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beastmaster_mining_6
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 223
+        width: 40
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3aeb62ef6f930cb90800000000000000
+      internalID: -7223710069313585501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beastmaster_mining_7
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 217
+        width: 58
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a510626d43ad27a90800000000000000
+      internalID: -7317546524057665190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beastmaster_mining_8
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 215
+        width: 56
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 964543822176f5cf0800000000000000
+      internalID: -261376925682609047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beastmaster_mining_9
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 215
+        width: 56
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11afd75955e381b70800000000000000
+      internalID: 8869908003407395345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beastmaster_mining_10
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 127
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35f72f00d05950230800000000000000
+      internalID: 3604450959862955859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beastmaster_mining_11
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 127
+        width: 40
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2efd24508fe937ac0800000000000000
+      internalID: -3858565667649036318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beastmaster_mining_12
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 121
+        width: 58
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a9ec4b6a759420a0800000000000000
+      internalID: -6907231575460746842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beastmaster_mining_13
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 119
+        width: 56
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a591bd2399028e1d0800000000000000
+      internalID: -3321368882830436006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beastmaster_mining_14
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 119
+        width: 56
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ecde203b45dab9b0800000000000000
+      internalID: -5063500312117060381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beastmaster_mining_15
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 31
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c67036926d0e0620800000000000000
+      internalID: 2742143940192925383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beastmaster_mining_16
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 29
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5464f85dedb543650800000000000000
+      internalID: 6211690798674560581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beastmaster_mining_17
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 31
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faa007424f0805910800000000000000
+      internalID: 1824099635156748975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beastmaster_mining_18
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 31
+        width: 26
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2e92243e0c8a27b0800000000000000
+      internalID: -5248228423114777044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beastmaster_mining_19
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 31
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48bc1af0f2a79a310800000000000000
+      internalID: 1416797900329044868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Beastmaster_mining_0: -6894586194653806984
+      Beastmaster_mining_1: -6374835112581879111
+      Beastmaster_mining_10: 3604450959862955859
+      Beastmaster_mining_11: -3858565667649036318
+      Beastmaster_mining_12: -6907231575460746842
+      Beastmaster_mining_13: -3321368882830436006
+      Beastmaster_mining_14: -5063500312117060381
+      Beastmaster_mining_15: 2742143940192925383
+      Beastmaster_mining_16: 6211690798674560581
+      Beastmaster_mining_17: 1824099635156748975
+      Beastmaster_mining_18: -5248228423114777044
+      Beastmaster_mining_19: 1416797900329044868
+      Beastmaster_mining_2: -3900600545744494247
+      Beastmaster_mining_3: -6694434976402241085
+      Beastmaster_mining_4: 1950694521714433310
+      Beastmaster_mining_5: 6746366515492386633
+      Beastmaster_mining_6: -7223710069313585501
+      Beastmaster_mining_7: -7317546524057665190
+      Beastmaster_mining_8: -261376925682609047
+      Beastmaster_mining_9: 8869908003407395345
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

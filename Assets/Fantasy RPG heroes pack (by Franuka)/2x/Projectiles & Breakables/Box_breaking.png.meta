@@ -1,0 +1,512 @@
+fileFormatVersion: 2
+guid: f5dbc298e79331f4c9336b7b4f903bdf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8830335751948456767
+    second: Box_breaking_0
+  - first:
+      213: -7006822920811102689
+    second: Box_breaking_1
+  - first:
+      213: -1952010686239646023
+    second: Box_breaking_2
+  - first:
+      213: 627582793533721379
+    second: Box_breaking_3
+  - first:
+      213: 8848656478234572770
+    second: Box_breaking_4
+  - first:
+      213: 219784700592344602
+    second: Box_breaking_5
+  - first:
+      213: 2655110291721304073
+    second: Box_breaking_6
+  - first:
+      213: -7133354420041534432
+    second: Box_breaking_7
+  - first:
+      213: -5660990936475299023
+    second: Box_breaking_8
+  - first:
+      213: 4324917466376101378
+    second: Box_breaking_9
+  - first:
+      213: -8409898906901031931
+    second: Box_breaking_10
+  - first:
+      213: 3586620489483314677
+    second: Box_breaking_11
+  - first:
+      213: 6503262133863490376
+    second: Box_breaking_12
+  - first:
+      213: -3953047100379114674
+    second: Box_breaking_13
+  - first:
+      213: -7893574818441612804
+    second: Box_breaking_14
+  - first:
+      213: -430531972767631360
+    second: Box_breaking_15
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Box_breaking_0
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 63
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cc2ea13b68547580800000000000000
+      internalID: -8830335751948456767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Box_breaking_1
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 61
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1e3df06da3c2ce90800000000000000
+      internalID: -7006822920811102689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Box_breaking_2
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 69
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9be5be08f9019e4e0800000000000000
+      internalID: -1952010686239646023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Box_breaking_3
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 67
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32b89b3c93f95b800800000000000000
+      internalID: 627582793533721379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Box_breaking_4
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 31
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e771ac4f2ebcca70800000000000000
+      internalID: 8848656478234572770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Box_breaking_5
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 31
+        width: 40
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1e4fdd4505dc0300800000000000000
+      internalID: 219784700592344602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Box_breaking_6
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 29
+        width: 54
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90838813eb8d8d420800000000000000
+      internalID: 2655110291721304073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Box_breaking_7
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 29
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0243678f2fb310d90800000000000000
+      internalID: -7133354420041534432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Box_breaking_8
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 47
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1331faa8cbe1071b0800000000000000
+      internalID: -5660990936475299023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Box_breaking_9
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 29
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20eda327581350c30800000000000000
+      internalID: 4324917466376101378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Box_breaking_10
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 29
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 504d73170890a4b80800000000000000
+      internalID: -8409898906901031931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Box_breaking_11
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 47
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f56acb155c36c130800000000000000
+      internalID: 3586620489483314677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Box_breaking_12
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 41
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 843ae2a747a304a50800000000000000
+      internalID: 6503262133863490376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Box_breaking_13
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 29
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e43d3893b94f329c0800000000000000
+      internalID: -3953047100379114674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Box_breaking_14
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 35
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf1b1da4683647290800000000000000
+      internalID: -7893574818441612804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Box_breaking_15
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 35
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 008bcbaa371760af0800000000000000
+      internalID: -430531972767631360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Box_breaking_0: -8830335751948456767
+      Box_breaking_1: -7006822920811102689
+      Box_breaking_10: -8409898906901031931
+      Box_breaking_11: 3586620489483314677
+      Box_breaking_12: 6503262133863490376
+      Box_breaking_13: -3953047100379114674
+      Box_breaking_14: -7893574818441612804
+      Box_breaking_15: -430531972767631360
+      Box_breaking_2: -1952010686239646023
+      Box_breaking_3: 627582793533721379
+      Box_breaking_4: 8848656478234572770
+      Box_breaking_5: 219784700592344602
+      Box_breaking_6: 2655110291721304073
+      Box_breaking_7: -7133354420041534432
+      Box_breaking_8: -5660990936475299023
+      Box_breaking_9: 4324917466376101378
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,1012 @@
+fileFormatVersion: 2
+guid: ca9ff46ca2ef2ec4981d7acf089de4d2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8662681066524875758
+    second: Fox_melee_0
+  - first:
+      213: 9100893427476776862
+    second: Fox_melee_1
+  - first:
+      213: 5397928559362031493
+    second: Fox_melee_2
+  - first:
+      213: 4581175636519872994
+    second: Fox_melee_3
+  - first:
+      213: -7546842983156288113
+    second: Fox_melee_4
+  - first:
+      213: -5167580455447011704
+    second: Fox_melee_5
+  - first:
+      213: -4280459343117400328
+    second: Fox_melee_6
+  - first:
+      213: 1414282947495609357
+    second: Fox_melee_7
+  - first:
+      213: 5940276875568993697
+    second: Fox_melee_8
+  - first:
+      213: 8346382239991130311
+    second: Fox_melee_9
+  - first:
+      213: 6069181805655513644
+    second: Fox_melee_10
+  - first:
+      213: -8499103155024176756
+    second: Fox_melee_11
+  - first:
+      213: 5012472789758090164
+    second: Fox_melee_12
+  - first:
+      213: -4417840393123387958
+    second: Fox_melee_13
+  - first:
+      213: 1739390309878384716
+    second: Fox_melee_14
+  - first:
+      213: -5829254388290739316
+    second: Fox_melee_15
+  - first:
+      213: 204168361881424997
+    second: Fox_melee_16
+  - first:
+      213: -2528568368256860230
+    second: Fox_melee_17
+  - first:
+      213: -7132406311932496835
+    second: Fox_melee_18
+  - first:
+      213: -4861209141504406396
+    second: Fox_melee_19
+  - first:
+      213: 4411259837729535760
+    second: Fox_melee_20
+  - first:
+      213: -1803482252805355498
+    second: Fox_melee_21
+  - first:
+      213: -385088064387346040
+    second: Fox_melee_22
+  - first:
+      213: 6069005778147056006
+    second: Fox_melee_23
+  - first:
+      213: -1921598180487172080
+    second: Fox_melee_24
+  - first:
+      213: -6933079162050258581
+    second: Fox_melee_25
+  - first:
+      213: -8428443699174801747
+    second: Fox_melee_26
+  - first:
+      213: -5169696867919304416
+    second: Fox_melee_27
+  - first:
+      213: 7841038508782522841
+    second: Fox_melee_28
+  - first:
+      213: 4111931239539563144
+    second: Fox_melee_29
+  - first:
+      213: -5656128670863874842
+    second: Fox_melee_30
+  - first:
+      213: 8457734004162197253
+    second: Fox_melee_31
+  - first:
+      213: 2726197352983280450
+    second: Fox_melee_32
+  - first:
+      213: -7456949663614221016
+    second: Fox_melee_33
+  - first:
+      213: 3940712901753823602
+    second: Fox_melee_34
+  - first:
+      213: 7893813461259970782
+    second: Fox_melee_35
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Fox_melee_0
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 287
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21468438779f7c780800000000000000
+      internalID: -8662681066524875758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_melee_1
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 323
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e97c07b8a5edc4e70800000000000000
+      internalID: 9100893427476776862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_melee_2
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 321
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58fb5bfdc6b49ea40800000000000000
+      internalID: 5397928559362031493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_melee_3
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 319
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e9e07428fa939f30800000000000000
+      internalID: 4581175636519872994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_melee_4
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 319
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f85f15daa4a344790800000000000000
+      internalID: -7546842983156288113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_melee_5
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 287
+        width: 50
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88e54dc64f01948b0800000000000000
+      internalID: -5167580455447011704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_melee_6
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 287
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f64cf108e0c894c0800000000000000
+      internalID: -4280459343117400328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_melee_7
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 287
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d044e59f8da80a310800000000000000
+      internalID: 1414282947495609357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_melee_8
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 299
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a5d1cb685a107250800000000000000
+      internalID: 5940276875568993697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_melee_9
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 299
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c8ec4e1d6e44d370800000000000000
+      internalID: 8346382239991130311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_melee_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 221
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2a5c5342b01a3450800000000000000
+      internalID: 6069181805655513644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_melee_11
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 225
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c89d16fe5be1d0a80800000000000000
+      internalID: -8499103155024176756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_melee_12
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 215
+        width: 34
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bb97dfe171ef8540800000000000000
+      internalID: 5012472789758090164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_melee_13
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 225
+        width: 34
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac52285b19da0b2c0800000000000000
+      internalID: -4417840393123387958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_melee_14
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 223
+        width: 60
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c48ce0a654e832810800000000000000
+      internalID: 1739390309878384716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_melee_15
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 215
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c832b80c4045a1fa0800000000000000
+      internalID: -5829254388290739316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_melee_16
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 223
+        width: 40
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 564d05c1b0a55d200800000000000000
+      internalID: 204168361881424997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_melee_17
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 215
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abfb2cb4778b8ecd0800000000000000
+      internalID: -2528568368256860230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_melee_18
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 129
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3472879f3a940d90800000000000000
+      internalID: -7132406311932496835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_melee_19
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 125
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48c8fb5aa04898cb0800000000000000
+      internalID: -4861209141504406396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_melee_20
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 129
+        width: 34
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 017f0d75371f73d30800000000000000
+      internalID: 4411259837729535760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_melee_21
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 119
+        width: 34
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 618c0d2427eb8f6e0800000000000000
+      internalID: -1803482252805355498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_melee_22
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 127
+        width: 60
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88113fa1274e7aaf0800000000000000
+      internalID: -385088064387346040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_melee_23
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 119
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6899f3aa990793450800000000000000
+      internalID: 6069005778147056006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_melee_24
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 127
+        width: 40
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 010760bc2ac1555e0800000000000000
+      internalID: -1921598180487172080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_melee_25
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 119
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b69d4523c31c8cf90800000000000000
+      internalID: -6933079162050258581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_melee_26
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 51
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dae7e458c17280b80800000000000000
+      internalID: -8428443699174801747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_melee_27
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 71
+        width: 50
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 029683fb61c8148b0800000000000000
+      internalID: -5169696867919304416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_melee_28
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 77
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d1142aeaf6f0dc60800000000000000
+      internalID: 7841038508782522841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_melee_29
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 77
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88a56992da3801930800000000000000
+      internalID: 4111931239539563144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_melee_30
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 71
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e4a149f0f46181b0800000000000000
+      internalID: -5656128670863874842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_melee_31
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 71
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50774da0448ef5570800000000000000
+      internalID: 8457734004162197253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_melee_32
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 33
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24bbd2c6c0665d520800000000000000
+      internalID: 2726197352983280450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_melee_33
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 35
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8254e402ac7938890800000000000000
+      internalID: -7456949663614221016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_melee_34
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 33
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 271e5de518930b630800000000000000
+      internalID: 3940712901753823602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fox_melee_35
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 27
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed8e89115857c8d60800000000000000
+      internalID: 7893813461259970782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Fox_melee_0: -8662681066524875758
+      Fox_melee_1: 9100893427476776862
+      Fox_melee_10: 6069181805655513644
+      Fox_melee_11: -8499103155024176756
+      Fox_melee_12: 5012472789758090164
+      Fox_melee_13: -4417840393123387958
+      Fox_melee_14: 1739390309878384716
+      Fox_melee_15: -5829254388290739316
+      Fox_melee_16: 204168361881424997
+      Fox_melee_17: -2528568368256860230
+      Fox_melee_18: -7132406311932496835
+      Fox_melee_19: -4861209141504406396
+      Fox_melee_2: 5397928559362031493
+      Fox_melee_20: 4411259837729535760
+      Fox_melee_21: -1803482252805355498
+      Fox_melee_22: -385088064387346040
+      Fox_melee_23: 6069005778147056006
+      Fox_melee_24: -1921598180487172080
+      Fox_melee_25: -6933079162050258581
+      Fox_melee_26: -8428443699174801747
+      Fox_melee_27: -5169696867919304416
+      Fox_melee_28: 7841038508782522841
+      Fox_melee_29: 4111931239539563144
+      Fox_melee_3: 4581175636519872994
+      Fox_melee_30: -5656128670863874842
+      Fox_melee_31: 8457734004162197253
+      Fox_melee_32: 2726197352983280450
+      Fox_melee_33: -7456949663614221016
+      Fox_melee_34: 3940712901753823602
+      Fox_melee_35: 7893813461259970782
+      Fox_melee_4: -7546842983156288113
+      Fox_melee_5: -5167580455447011704
+      Fox_melee_6: -4280459343117400328
+      Fox_melee_7: 1414282947495609357
+      Fox_melee_8: 5940276875568993697
+      Fox_melee_9: 8346382239991130311
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
