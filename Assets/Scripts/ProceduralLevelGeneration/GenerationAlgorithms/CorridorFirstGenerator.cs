@@ -39,7 +39,7 @@ public class CorridorFirstGenerator : SimpleRandomWalkGenerator
         WallGenerator.CreateWalls(floorPositions, tilemapVisualizer);
     }
 
-    private List<Vector2Int> IncreaseCorridorSizeByOne(List<Vector2Int> corridor)
+    public List<Vector2Int> IncreaseCorridorSizeByOne(List<Vector2Int> corridor)
     {
         List<Vector2Int> newCorridor = new();
         Vector2Int previousDirection = Vector2Int.zero;

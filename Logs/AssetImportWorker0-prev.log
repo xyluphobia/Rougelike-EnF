@@ -1,0 +1,554 @@
+Using pre-set license
+Built from '2023.1/staging' branch; Version is '2023.1.20f1 (35a524b12060) revision 3515684'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'en' Physical Memory: 32592 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2023.1.20f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/Matthew/Desktop/Rougelike Simple
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+54593
+Successfully changed project path to: C:/Users/Matthew/Desktop/Rougelike Simple
+C:/Users/Matthew/Desktop/Rougelike Simple
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [15868] Host "[IP] 192.168.1.32 [Port] 0 [Flags] 2 [Guid] 3438051619 [EditorId] 3438051619 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-ED5AA6K) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [15868] Host "[IP] 192.168.1.32 [Port] 0 [Flags] 2 [Guid] 3438051619 [EditorId] 3438051619 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-ED5AA6K) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 19 workers.
+Library Redirect Path: Library/Refreshing native plugins compatible for Editor in 3.66 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2023.1.20f1 (35a524b12060)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2023.1.20f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Matthew/Desktop/Rougelike Simple/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 4070 (ID=0x2786)
+    Vendor:   NVIDIA
+    VRAM:     12026 MB
+    Driver:   31.0.15.4629
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2023.1.20f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2023.1.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2023.1.20f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56996
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.1.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002862 seconds.
+- Loaded All Assemblies, in  0.387 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+- Finished resetting the current domain, in  0.303 seconds
+Domain Reload Profiling: 689ms
+	BeginReloadAssembly (126ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (52ms)
+	LoadAllAssembliesAndSetupDomain (160ms)
+		LoadAssemblies (124ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (156ms)
+			TypeCache.Refresh (154ms)
+				TypeCache.ScanAssembly (143ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (303ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (252ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (8ms)
+			ProcessInitializeOnLoadAttributes (172ms)
+			ProcessInitializeOnLoadMethodAttributes (56ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+- Loaded All Assemblies, in  0.724 seconds
+Refreshing native plugins compatible for Editor in 1.07 ms, found 0 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.451 seconds
+Domain Reload Profiling: 1173ms
+	BeginReloadAssembly (305ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (23ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (40ms)
+	LoadAllAssembliesAndSetupDomain (329ms)
+		LoadAssemblies (241ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (190ms)
+			TypeCache.Refresh (178ms)
+				TypeCache.ScanAssembly (170ms)
+			ScanForSourceGeneratedMonoScriptInfo (9ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (452ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (248ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (62ms)
+			ProcessInitializeOnLoadAttributes (137ms)
+			ProcessInitializeOnLoadMethodAttributes (34ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 0.49 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1400 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 29 unused Assets / (48.5 KB). Loaded Objects now: 1953.
+Memory consumption went from 98.8 MB to 98.7 MB.
+Total: 2.178300 ms (FindLiveObjects: 0.066200 ms CreateObjectMapping: 0.019600 ms MarkObjects: 2.036600 ms  DeleteObjects: 0.055200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 31216.595869 seconds.
+  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables
+  artifactKey: Guid(4e0eb565d5ea4f84cab1eea678bac8be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables using Guid(4e0eb565d5ea4f84cab1eea678bac8be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc955df0d242b7c8051e90709e2ba082') in 0.002574 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+- Loaded All Assemblies, in  0.557 seconds
+Refreshing native plugins compatible for Editor in 1.10 ms, found 0 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.502 seconds
+Domain Reload Profiling: 1057ms
+	BeginReloadAssembly (162ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (28ms)
+	RebuildCommonClasses (35ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (26ms)
+	LoadAllAssembliesAndSetupDomain (319ms)
+		LoadAssemblies (222ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (181ms)
+			TypeCache.Refresh (178ms)
+				TypeCache.ScanAssembly (169ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (503ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (232ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (54ms)
+			ProcessInitializeOnLoadAttributes (136ms)
+			ProcessInitializeOnLoadMethodAttributes (29ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
+Refreshing native plugins compatible for Editor in 0.98 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1379 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 13 unused Assets / (26.3 KB). Loaded Objects now: 1954.
+Memory consumption went from 95.8 MB to 95.8 MB.
+Total: 3.093400 ms (FindLiveObjects: 0.138100 ms CreateObjectMapping: 0.033700 ms MarkObjects: 2.892300 ms  DeleteObjects: 0.028000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 45.231309 seconds.
+  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Arrow.png
+  artifactKey: Guid(4e1b1a75977f4ab43be7459996f5ced1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Arrow.png using Guid(4e1b1a75977f4ab43be7459996f5ced1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3087b4384aefa5b77c19c33d497bceeb') in 0.086145 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Fireball.png
+  artifactKey: Guid(01530d202b50451438e2d1d5617d79b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Fireball.png using Guid(01530d202b50451438e2d1d5617d79b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2992992800929aa85d1a8964185f7c3') in 0.016048 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/MagicMissile_initial.png
+  artifactKey: Guid(cffb931302fb77841be42c51ca5a2099) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/MagicMissile_initial.png using Guid(cffb931302fb77841be42c51ca5a2099) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a52cbce48d1302d5f9f19f258c7c40b') in 0.026662 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Boomerang_impact.png
+  artifactKey: Guid(cb9ffacc544bf5643874bc0e6407b45a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Boomerang_impact.png using Guid(cb9ffacc544bf5643874bc0e6407b45a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da44e66fb90e542269f0583a0305191d') in 0.020920 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Spear.png
+  artifactKey: Guid(927e0ff3e9f412b4bb1c5073c3731359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Spear.png using Guid(927e0ff3e9f412b4bb1c5073c3731359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66df2107d651b8b6ccf5ac9ea4d19e06') in 0.015446 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/LightningBolt_impact.png
+  artifactKey: Guid(da6ad741e797bd44b9923c5e86e54c37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/LightningBolt_impact.png using Guid(da6ad741e797bd44b9923c5e86e54c37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f0d38e1e4fb1dbb1c0ed3529a626dc0') in 0.022679 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Bomb_impact.png
+  artifactKey: Guid(01641799880362e4aa08c2ba34db43bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Bomb_impact.png using Guid(01641799880362e4aa08c2ba34db43bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '331ee79517b2ce22280c779edd5a842b') in 0.025019 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Bomb.png
+  artifactKey: Guid(ce55293309406624887c81070c3681e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Bomb.png using Guid(ce55293309406624887c81070c3681e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4508510fcbe8d72094fe10635239de4f') in 0.014402 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/LightningBolt_initial.png
+  artifactKey: Guid(280959287f0068744b68da93a6043607) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/LightningBolt_initial.png using Guid(280959287f0068744b68da93a6043607) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9f98e1d0586ea4bda95a09ba8f5ef12') in 0.016792 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Fireball_impact.png
+  artifactKey: Guid(4bcc30524f3fcac40be7492b801ddb63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Fireball_impact.png using Guid(4bcc30524f3fcac40be7492b801ddb63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a1cedf03c167711059564b30f49f444') in 0.016137 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Bomb_tilting.png
+  artifactKey: Guid(1f9d5b62cb57d5c499b117e165d13376) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Bomb_tilting.png using Guid(1f9d5b62cb57d5c499b117e165d13376) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0aaa92b4826c371f85cda2814abff4e2') in 0.029899 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Box_breaking.png
+  artifactKey: Guid(8198bfcc54fa90349bf90684ccb42380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Box_breaking.png using Guid(8198bfcc54fa90349bf90684ccb42380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4189eb4bd8dd22f36b1a0b14273e3730') in 0.052789 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/IceShard_initial.png
+  artifactKey: Guid(ae68c9a39860c0a4d98c0322f4c0af30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/IceShard_initial.png using Guid(ae68c9a39860c0a4d98c0322f4c0af30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db008ed2294c6a495f7a74637da55937') in 0.011471 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/LightningBolt.png
+  artifactKey: Guid(1c1739031a37ab145a641f6045ff4e2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/LightningBolt.png using Guid(1c1739031a37ab145a641f6045ff4e2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a66ab544073eeedd136ee717ba8dc251') in 0.012952 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Pot.png
+  artifactKey: Guid(c375d064f2a0a684c9d5afe2ca43ed4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Pot.png using Guid(c375d064f2a0a684c9d5afe2ca43ed4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1220d9dd2d1da8071c15c14b82e40da7') in 0.012196 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Arrow_impact.png
+  artifactKey: Guid(3deb922b470414c419272c3f0e2405c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Arrow_impact.png using Guid(3deb922b470414c419272c3f0e2405c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16a072e24eec77a34bf8f5f4a8832fdd') in 0.014724 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Fireball_initial.png
+  artifactKey: Guid(ece0f0f18d6657941a12b00c97f2110a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Fireball_initial.png using Guid(ece0f0f18d6657941a12b00c97f2110a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bafbb76ecb180487f246bdc60aa1e59e') in 0.011505 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Bomb_red.png
+  artifactKey: Guid(06ca6067bfaa2c64291a52f15b63b01f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Bomb_red.png using Guid(06ca6067bfaa2c64291a52f15b63b01f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '696fd33dcded9b3bb3b6f636471ce31f') in 0.011341 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/IceShard.png
+  artifactKey: Guid(1021ba774b840574cb9c388e6c365775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/IceShard.png using Guid(1021ba774b840574cb9c388e6c365775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '299f9ba93cadb5e14239a7ca3c7d5e30') in 0.014180 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Boomerang.png
+  artifactKey: Guid(8cf8a9f44290c6f4f9aae642943fc25e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Boomerang.png using Guid(8cf8a9f44290c6f4f9aae642943fc25e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42fec6984f0137f74f54e43d2100b96c') in 0.013562 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Dagger_impact.png
+  artifactKey: Guid(a501aa357db22d74485906980fb3a1ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Dagger_impact.png using Guid(a501aa357db22d74485906980fb3a1ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9c2953821617045fd69364834f8b62d') in 0.013320 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Box_broken.png
+  artifactKey: Guid(6217f5dff831ed843bee5f726ed9fbdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Box_broken.png using Guid(6217f5dff831ed843bee5f726ed9fbdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcf1643a5eeeebe4ce237ad05bee0bb7') in 0.017771 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Box.png
+  artifactKey: Guid(faf4f9545e979e24dab6dc6c1ee73d2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Box.png using Guid(faf4f9545e979e24dab6dc6c1ee73d2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b527480865e29ef433b8a60e31a9f4e8') in 0.011641 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Grass_breaking.png
+  artifactKey: Guid(0ad661c301084d643ba6744f375c4100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Grass_breaking.png using Guid(0ad661c301084d643ba6744f375c4100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5e46a9e834e375add7766d2eddae770') in 0.049401 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 28
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/MagicMissile_impact.png
+  artifactKey: Guid(083aaf010a76a8d4a9c28bfac8521224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/MagicMissile_impact.png using Guid(083aaf010a76a8d4a9c28bfac8521224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b8621402bbfe5f35536e4541f5c1f55') in 0.011372 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Spear_impact.png
+  artifactKey: Guid(d6f919f76716dcb4c947159ebd83cd23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Spear_impact.png using Guid(d6f919f76716dcb4c947159ebd83cd23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da7d7a7265047bf1b523501b27a16fbe') in 0.015759 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/IceShard_impact.png
+  artifactKey: Guid(5cecc3013dc797c41b4a0c253f797d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/IceShard_impact.png using Guid(5cecc3013dc797c41b4a0c253f797d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd0616494dc781b3fd06028ce8a5b0f2') in 0.011460 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Dagger.png
+  artifactKey: Guid(7b028bfe3c2e5294f8bec7ebb8d7cc0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Dagger.png using Guid(7b028bfe3c2e5294f8bec7ebb8d7cc0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b0336c61a62117e98a35c27965de309') in 0.012018 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Grass_broken.png
+  artifactKey: Guid(a5fef83ed57f5b04786868e5ae224519) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Grass_broken.png using Guid(a5fef83ed57f5b04786868e5ae224519) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9be71e13ef8abfb956f67afb96afa084') in 0.016211 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Pot_breaking.png
+  artifactKey: Guid(50df9bfa11af95446811be9a63ce2000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Pot_breaking.png using Guid(50df9bfa11af95446811be9a63ce2000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10e64e0d761b3f61a7adfa077d905195') in 0.024479 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Grass.png
+  artifactKey: Guid(3b27d71a17053da408743d461bcde885) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Grass.png using Guid(3b27d71a17053da408743d461bcde885) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c2257662466e15e1b49e9c28ee6dec9') in 0.011976 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Pot_broken.png
+  artifactKey: Guid(ec264d88a01b20241b45008308c0ffa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Pot_broken.png using Guid(ec264d88a01b20241b45008308c0ffa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a489d1c35d633a3b5e2dda5f6594cc4') in 0.013955 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/MagicMissile.png
+  artifactKey: Guid(e62e609f89560f04bb67aef743604534) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/MagicMissile.png using Guid(e62e609f89560f04bb67aef743604534) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3dd452b747fdb011bb2ef19ebc788b3') in 0.013615 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 22.658496 seconds.
+  path: Assets/Scenes/proceduralRoomFirst.unity
+  artifactKey: Guid(a53665cefe90dd942a1f798dc0bfd792) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/proceduralRoomFirst.unity using Guid(a53665cefe90dd942a1f798dc0bfd792) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '389897ce4b3e842ce3da32157b510e0a') in 0.000557 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0

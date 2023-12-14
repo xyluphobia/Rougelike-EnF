@@ -5,10 +5,46 @@ using UnityEngine;
 
 public static class WallGenerator
 {
-    public static void CreateWalls(HashSet<Vector2Int> floorPositions, TilemapVisualizer tilemapVisualizer) {
+    public static void CreateWalls(HashSet<Vector2Int> floorPositions, TilemapVisualizer tilemapVisualizer)
+    {
         var basicWallPositions = FindWallsInDirections(floorPositions, Direction2D.cardinalDirectionsList);
-        foreach (var position in basicWallPositions) {
-            tilemapVisualizer.PaintSingleBasicWall(position);
+        var cornerWallPositions = FindWallsInDirections(floorPositions, Direction2D.diagonalDirectionsList);
+        
+        CreateBasicWalls(tilemapVisualizer, basicWallPositions, floorPositions);
+        CreateCornerWalls(tilemapVisualizer, cornerWallPositions, floorPositions);
+    }
+
+    private static void CreateBasicWalls(TilemapVisualizer tilemapVisualizer, HashSet<Vector2Int> basicWallPositions, HashSet<Vector2Int> floorPositions)
+    {
+        foreach (var position in basicWallPositions)
+        {
+            string neighborsBinaryValue = "";
+            foreach (var direction in Direction2D.cardinalDirectionsList) {
+                var neighborPosition = position + direction;
+                if (floorPositions.Contains(neighborPosition))
+                    neighborsBinaryValue += "1";
+                else
+                    neighborsBinaryValue += "0";
+            }
+
+            tilemapVisualizer.PaintSingleBasicWall(position, neighborsBinaryValue);
+        }
+    }
+
+    private static void CreateCornerWalls(TilemapVisualizer tilemapVisualizer, HashSet<Vector2Int> cornerWallPositions, HashSet<Vector2Int> floorPositions)
+    {
+        foreach (var position in cornerWallPositions)
+        {
+            string neighborsBinaryValue = "";
+            foreach (var direction in Direction2D.eightDirectionsList) {
+                var neighborPosition = position + direction;
+                if (floorPositions.Contains(neighborPosition))
+                    neighborsBinaryValue += "1";
+                else
+                    neighborsBinaryValue += "0";
+            }
+
+            tilemapVisualizer.PaintSingleCornerWall(position, neighborsBinaryValue);
         }
     }
 

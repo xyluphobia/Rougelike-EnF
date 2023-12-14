@@ -95,6 +95,7 @@
     <Compile Include="Assets\Scripts\PotsAndAbility\HealthPotion.cs" />
     <Compile Include="Assets\Scripts\SoundManager.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\ProceduralLevelGeneration\WallTypesHelper.cs" />
     <Compile Include="Assets\Scripts\PotsAndAbility\PotionsAndAbilities.cs" />
     <Compile Include="Assets\Scripts\GameAssets.cs" />
     <Compile Include="Assets\Prefabs\Popups\DestroyTextInSeconds.cs" />
@@ -1048,10 +1049,6 @@
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Extras.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Tilemap.Extras.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.PlasticSCM.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Extras">
