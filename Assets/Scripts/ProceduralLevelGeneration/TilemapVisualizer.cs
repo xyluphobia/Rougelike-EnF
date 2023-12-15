@@ -25,6 +25,10 @@ public class TilemapVisualizer : MonoBehaviour
 
         if (WallTypesHelper.wallTop.Contains(typeAsInt))
             tile = envTS_data.wallTop;
+        else if (WallTypesHelper.wallTopOuterLeft.Contains(typeAsInt))
+            tile = envTS_data.wallTopOuterLeft;
+        else if (WallTypesHelper.wallTopOuterRight.Contains(typeAsInt))
+            tile = envTS_data.wallTopOuterRight;
         else if (WallTypesHelper.wallSideRight.Contains(typeAsInt))
             tile = envTS_data.wallRight;
         else if (WallTypesHelper.wallSideLeft.Contains(typeAsInt))
@@ -33,7 +37,10 @@ public class TilemapVisualizer : MonoBehaviour
             tile = envTS_data.wallBottom;
         else if (WallTypesHelper.wallFull.Contains(typeAsInt))
             tile = envTS_data.wallFull;
-
+        else if (WallTypesHelper.wallFullTop.Contains(typeAsInt)) 
+            tile = envTS_data.wallFullTop;
+        else if (WallTypesHelper.wallFullBottom.Contains(typeAsInt)) 
+            tile = envTS_data.wallFullBottom;
 
 
         if (tile)
@@ -59,9 +66,14 @@ public class TilemapVisualizer : MonoBehaviour
             tile = envTS_data.wallTopRight;
         else if (WallTypesHelper.wallFullEightDirections.Contains(typeAsInt))
             tile = envTS_data.wallFull;
-        else if (WallTypesHelper.wallBottmEightDirections.Contains(typeAsInt))
-            tile = envTS_data.wallBottom;
-
+        else if (WallTypesHelper.wallBottomFull.Contains(typeAsInt))
+            tile = envTS_data.wallBottomFull;
+        else if (WallTypesHelper.wallSideRightTLCorner.Contains(typeAsInt))
+            tile = envTS_data.wallSideRightTLCorner;
+        else if (WallTypesHelper.wallSideLeftTRCorner.Contains(typeAsInt))
+            tile = envTS_data.wallSideLeftTRCorner;
+        else if (WallTypesHelper.wallTopFull.Contains(typeAsInt))
+            tile = envTS_data.wallTopFull;
         if (tile)
             PaintSingleTile(wallTilemap, tile, position);
     }
