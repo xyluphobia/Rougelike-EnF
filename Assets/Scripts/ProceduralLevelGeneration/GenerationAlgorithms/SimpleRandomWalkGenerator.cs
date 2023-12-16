@@ -16,6 +16,9 @@ public class SimpleRandomWalkGenerator : AbstractDungeonGenerator
 
         tilemapVisualizer.PaintFloorTiles(floorPositions);
         WallGenerator.CreateWalls(floorPositions, tilemapVisualizer);
+
+        // use floor positions to create objects in rooms. try to reference wall types helper to see if were near a wall or not
+        tilemapVisualizer.GenerateFloorPositionsBinary(floorPositions);
     }
 
     protected HashSet<Vector2Int> RunRandomWalk(SimpleRandomWalkData parameters, Vector2Int position) {

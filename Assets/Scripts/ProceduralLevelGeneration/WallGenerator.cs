@@ -54,9 +54,9 @@ public static class WallGenerator
         foreach (var position in floorPositions_Find) {
             foreach (var direction in directionList) {
 
-                var neighbourPosition = position + direction;
-                if (!floorPositions_Find.Contains(neighbourPosition))
-                    wallPositions.Add(neighbourPosition);
+                var neighborPosition = position + direction;
+                if (!floorPositions_Find.Contains(neighborPosition))
+                    wallPositions.Add(neighborPosition);
 
             }
         }

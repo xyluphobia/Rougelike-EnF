@@ -16,6 +16,8 @@ public class GameAssets : MonoBehaviour
             return _instance; 
         } 
     }
+    [Header("Player")]
+    public GameObject player;
 
     [Header("Popup Texts")]
     public GameObject damageText;

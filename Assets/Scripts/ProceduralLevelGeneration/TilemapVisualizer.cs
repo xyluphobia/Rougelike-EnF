@@ -1,8 +1,13 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.Security.Cryptography;
+using AYellowpaper.SerializedCollections;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using Random = UnityEngine.Random;
+using Debug = UnityEngine.Debug;
 
 public class TilemapVisualizer : MonoBehaviour
 {
@@ -11,11 +16,104 @@ public class TilemapVisualizer : MonoBehaviour
     [SerializeField]
     private EnvironmentTilesetData envTS_data;
 
+    private bool playerSpawned = false;
+
     public void PaintFloorTiles(IEnumerable<Vector2Int> floorPositions) {
         floorTilemap.ClearAllTiles(); // Clear all current floor tiles. Remove this for it to iterate on the original instead of replace.
         wallTilemap.ClearAllTiles();
         
         PaintTiles(floorPositions, floorTilemap, envTS_data.floorTile);
+    }
+
+
+    public void GenerateFloorPositionsBinary(HashSet<Vector2Int> floorPositions)
+    /* 
+        Makes a matrix of 8 positions in a clockwise direction around the each position in the floorPositions list.
+    */
+    {
+        HashSet<Vector2Int> usedPositions = new();
+
+        foreach (var position in floorPositions)
+        {
+            string neighborsBinaryValue = "";
+            foreach (var direction in Direction2D.eightDirectionsList) {
+                var neighborPosition = position + direction;
+                if (floorPositions.Contains(neighborPosition))
+                    neighborsBinaryValue += "1";
+                else
+                    neighborsBinaryValue += "0";
+            }
+
+            int typeAsInt = Convert.ToInt32(neighborsBinaryValue, 2);
+            usedPositions = GenerateProps(position, typeAsInt, usedPositions);
+        }
+        
+        foreach (var position in floorPositions)
+        {
+            if (!usedPositions.Contains(position)) {
+                string neighborsBinaryValue = "";
+                foreach (var direction in Direction2D.eightDirectionsList) {
+                    var neighborPosition = position + direction;
+                    if (floorPositions.Contains(neighborPosition))
+                        neighborsBinaryValue += "1";
+                    else
+                        neighborsBinaryValue += "0";
+                }
+
+                int typeAsInt = Convert.ToInt32(neighborsBinaryValue, 2);
+                usedPositions = GenerateEnemies(position, typeAsInt, usedPositions);
+            }
+        }
+        
+    }
+
+    private HashSet<Vector2Int> GenerateProps(Vector2Int position, int typeAsInt, HashSet<Vector2Int> usedPositions)   
+    // REMOVE POSITIONS PROPS ARE PLACED ON FROM FLOOR POSITIONS LIST AS RETURN
+    {
+        if (typeAsInt > 10 && !playerSpawned) {
+            Instantiate(GameAssets.i.player, (Vector3Int)position, Quaternion.identity);
+            playerSpawned = true;
+        }
+
+        if (typeAsInt.ToString().Contains("1")) {
+            PickAndInstantiateProp(position);
+            usedPositions.Add(position);
+        }
+        else if (Random.value > 0.9f) {
+            PickAndInstantiateProp(position);
+            usedPositions.Add(position);
+        }
+
+        return usedPositions;
+    }
+
+    private void PickAndInstantiateProp(Vector2Int position) {
+        float ranVal = Random.value;
+
+        if (ranVal < 0.1)
+            Instantiate(envTS_data.decorations["skull"], (Vector3Int)position, Quaternion.identity);
+        else if (ranVal < 0.3)
+            Instantiate(envTS_data.decorations["oneBone"], (Vector3Int)position, Quaternion.identity);
+        else if (ranVal < 0.7)
+            Instantiate(envTS_data.decorations["twoBone"], (Vector3Int)position, Quaternion.identity);
+    }
+
+    private HashSet<Vector2Int> GenerateEnemies(Vector2Int position, int typeAsInt, HashSet<Vector2Int> usedPositions)    {
+        if (Random.value > 0.95f) {
+            PickAndInstantiateEnemy(position);
+            usedPositions.Add(position);
+        }
+
+        return usedPositions;
+    }
+
+    private void PickAndInstantiateEnemy(Vector2Int position) {
+        float ranVal = Random.value;
+
+        if (ranVal < 0.65)
+            Instantiate(envTS_data.enemies["slime"], (Vector3Int)position, Quaternion.identity);
+        else if (ranVal < 1.0)
+            Instantiate(envTS_data.enemies["serpent"], (Vector3Int)position, Quaternion.identity);
     }
 
     public void PaintSingleBasicWall(Vector2Int position, string binaryType) 
@@ -25,6 +123,10 @@ public class TilemapVisualizer : MonoBehaviour
 
         if (WallTypesHelper.wallTop.Contains(typeAsInt))
             tile = envTS_data.wallTop;
+        else if (WallTypesHelper.wallTopLeftTurnUp.Contains(typeAsInt))
+            tile = envTS_data.wallTopLeftTurnUp;
+        else if (WallTypesHelper.wallTopRightTurnUp.Contains(typeAsInt))
+            tile = envTS_data.wallTopRightTurnUp;
         else if (WallTypesHelper.wallTopOuterLeft.Contains(typeAsInt))
             tile = envTS_data.wallTopOuterLeft;
         else if (WallTypesHelper.wallTopOuterRight.Contains(typeAsInt))
@@ -33,7 +135,7 @@ public class TilemapVisualizer : MonoBehaviour
             tile = envTS_data.wallRight;
         else if (WallTypesHelper.wallSideLeft.Contains(typeAsInt))
             tile = envTS_data.wallLeft;
-        else if (WallTypesHelper.wallBottm.Contains(typeAsInt))
+        else if (WallTypesHelper.wallBottom.Contains(typeAsInt))
             tile = envTS_data.wallBottom;
         else if (WallTypesHelper.wallFull.Contains(typeAsInt))
             tile = envTS_data.wallFull;
@@ -66,14 +168,24 @@ public class TilemapVisualizer : MonoBehaviour
             tile = envTS_data.wallTopRight;
         else if (WallTypesHelper.wallFullEightDirections.Contains(typeAsInt))
             tile = envTS_data.wallFull;
-        else if (WallTypesHelper.wallBottomFull.Contains(typeAsInt))
-            tile = envTS_data.wallBottomFull;
+        else if (WallTypesHelper.wallBottomLeftAndRight.Contains(typeAsInt))
+            tile = envTS_data.wallBottomLeftAndRight;
         else if (WallTypesHelper.wallSideRightTLCorner.Contains(typeAsInt))
             tile = envTS_data.wallSideRightTLCorner;
         else if (WallTypesHelper.wallSideLeftTRCorner.Contains(typeAsInt))
             tile = envTS_data.wallSideLeftTRCorner;
-        else if (WallTypesHelper.wallTopFull.Contains(typeAsInt))
-            tile = envTS_data.wallTopFull;
+        else if (WallTypesHelper.wallTopLeftAndRight.Contains(typeAsInt))
+            tile = envTS_data.wallTopLeftAndRight;
+        else if (WallTypesHelper.wallLeftRightTurn.Contains(typeAsInt))
+            tile = envTS_data.wallLeftRightTurn;
+        else if (WallTypesHelper.wallRightLeftTurn.Contains(typeAsInt))
+            tile = envTS_data.wallRightLeftTurn;
+        else if (WallTypesHelper.wallInnerCornerDownLeftTIntersection.Contains(typeAsInt))
+            tile = envTS_data.wallInnerCornerDownLeftTIntersection;
+        else if (WallTypesHelper.wallInnerCornerDownRightTIntersection.Contains(typeAsInt))
+            tile = envTS_data.wallInnerCornerDownRightTIntersection;
+
+
         if (tile)
             PaintSingleTile(wallTilemap, tile, position);
     }

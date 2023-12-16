@@ -44,6 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef7ea4058c4c3a845866d9cb8d08e984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 2215174607414617992, guid: 7d7ae7955cdbd264eb905f2384d88ccf, type: 3}
   damageText: {fileID: 1627277218652921935, guid: 5032713ea382dfd4ca33d29877a4b584, type: 3}
   scoreText: {fileID: 4785445402732521747, guid: 51cf5722b4b6a71428f4d8cfc2519295, type: 3}
   healthChangeText: {fileID: 1707854643523481211, guid: 31940d9db343a7b4d9a1532b907d9961, type: 3}

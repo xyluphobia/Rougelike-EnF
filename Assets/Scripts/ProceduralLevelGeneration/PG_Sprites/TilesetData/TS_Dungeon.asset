@@ -12,23 +12,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f180d7d3c7abdfc4ab01d8c6c75ebe28, type: 3}
   m_Name: TS_Dungeon
   m_EditorClassIdentifier: 
-  floorTile: {fileID: 11400000, guid: e44d56602500b0249a22b220759f6b08, type: 2}
-  wallTop: {fileID: 11400000, guid: c59c2dd7206006d429d035950735e103, type: 2}
-  wallTopLeft: {fileID: 11400000, guid: 6220f1f1219149d4a80b3c062c64cf9f, type: 2}
-  wallTopRight: {fileID: 11400000, guid: c72cd08d0eac9d74aa090281b283d1d2, type: 2}
-  wallTopOuterLeft: {fileID: 11400000, guid: 66539833735d1a140920cc94c8fd1b59, type: 2}
-  wallTopOuterRight: {fileID: 11400000, guid: 597654edda5a887419c993a4fa74e3fe, type: 2}
-  wallTopFull: {fileID: 11400000, guid: ab13be4b06323074397653d011c9ba1f, type: 2}
-  wallLeft: {fileID: 11400000, guid: 25432e7a2bbc8444ca4902588253d5a7, type: 2}
-  wallRight: {fileID: 11400000, guid: 67ddcdc26a0de9e4eb855c80a47d4c60, type: 2}
-  wallSideRightTLCorner: {fileID: 11400000, guid: 10b821c7f99ea704dba6b0bce88572fa, type: 2}
-  wallSideLeftTRCorner: {fileID: 11400000, guid: 0d026c173f5095447aa667372ed6828f, type: 2}
-  wallBottom: {fileID: 11400000, guid: 1c57fa40d0f61f84cb7a44fb983bfc39, type: 2}
-  wallBottomLeft: {fileID: 11400000, guid: 0aa5e5a07de8e3a45a3e8005a825ef72, type: 2}
-  wallBottomRight: {fileID: 11400000, guid: 2a1f3e2d0f515224bad35819a8197256, type: 2}
-  wallBottomFull: {fileID: 11400000, guid: d2f513df8e50f0d4c991633c19736f92, type: 2}
-  wallFull: {fileID: 11400000, guid: 62af03d151a57c74283f34b3ec04c87b, type: 2}
-  wallFullTop: {fileID: 11400000, guid: a1a8fc144ef600c4ca04ea8a920e1fed, type: 2}
-  wallFullBottom: {fileID: 11400000, guid: b11fbda5a53ba4e42bcab7ca6b737273, type: 2}
-  wallInnerCornerDownLeft: {fileID: 11400000, guid: 2733426da4f7bee478ef06c401c82a29, type: 2}
-  wallInnerCornerDownRight: {fileID: 11400000, guid: 5f4669b8653a48a48b44ce661b1c7b0c, type: 2}
+  floorTile: {fileID: 11400000, guid: ee28894f5fe00c642b6597b4dca626e5, type: 2}
+  wallTop: {fileID: 11400000, guid: 6449b091e1915e4448d661eef41c16a2, type: 2}
+  wallTopLeft: {fileID: 11400000, guid: 0b20afbe0f4767748b67190737f525f1, type: 2}
+  wallTopRight: {fileID: 11400000, guid: c724f8fcb9532324bad399e75fb11b9e, type: 2}
+  wallTopLeftAndRight: {fileID: 11400000, guid: 421c5fc4a3501854c93083696111d1a5, type: 2}
+  wallTopLeftTurnUp: {fileID: 11400000, guid: c2b09507584e23d4ea66b5b92d0c528b, type: 2}
+  wallTopRightTurnUp: {fileID: 11400000, guid: 9eed20f4233d18642926ab2f70ff4a1c, type: 2}
+  wallTopOuterLeft: {fileID: 11400000, guid: fcbdfbad3f7cebe4aad7c9e239d39705, type: 2}
+  wallTopOuterRight: {fileID: 11400000, guid: 35e0d6c85ec849946b9f415cb9cfd7f4, type: 2}
+  wallLeft: {fileID: 11400000, guid: 3d41a01325760a041bf9e7fde53a90a5, type: 2}
+  wallSideLeftTRCorner: {fileID: 11400000, guid: af3274a205e59504b92430460c0c15db, type: 2}
+  wallLeftRightTurn: {fileID: 11400000, guid: b85922bf0f2c06f44a86ab1fa8ede47b, type: 2}
+  wallRight: {fileID: 11400000, guid: 93155a3c093e7754ab04e6645ff8b1a9, type: 2}
+  wallSideRightTLCorner: {fileID: 11400000, guid: 10f8bdfd97340dd4d9aa7d9716d0e7f1, type: 2}
+  wallRightLeftTurn: {fileID: 11400000, guid: 109fb08e86ced8a48bc69023ed7a34dd, type: 2}
+  wallBottom: {fileID: 11400000, guid: 52474f5af5ffb1e499a645e4f92aaa77, type: 2}
+  wallBottomLeft: {fileID: 11400000, guid: 72a314821ff757b418e30bbcf82c8239, type: 2}
+  wallBottomRight: {fileID: 11400000, guid: 84beccd14e386884e9ad835bb3ee280b, type: 2}
+  wallBottomLeftAndRight: {fileID: 11400000, guid: 7809ad72bca937b469cf12acff6772de, type: 2}
+  wallFull: {fileID: 11400000, guid: 429c6a4863ec25b4cbff5bff42a961e3, type: 2}
+  wallFullTop: {fileID: 11400000, guid: 80d0bbf6d6243bd4fa59a658d1397802, type: 2}
+  wallFullBottom: {fileID: 11400000, guid: d34cb0e234d0a5b40af14f3fda64b16e, type: 2}
+  wallInnerCornerDownLeft: {fileID: 11400000, guid: 07e5e378b5ed8954780fdb3a121a956a, type: 2}
+  wallInnerCornerDownLeftTIntersection: {fileID: 11400000, guid: 76d72e9fbf0202e418a149a7426e3e6a, type: 2}
+  wallInnerCornerDownRight: {fileID: 11400000, guid: 22408732ede784f4bb1048038007ff77, type: 2}
+  wallInnerCornerDownRightTIntersection: {fileID: 11400000, guid: 39d1ad41172a57d40ac989fdf31fd5ef, type: 2}
+  decorations:
+    _serializedList:
+    - Key: skull
+      Value: {fileID: 5362393851159513214, guid: 6bf5ebb74eb0abe47b8e42fa25cf4d13, type: 3}
+    - Key: oneBone
+      Value: {fileID: 3663006050197218062, guid: c92f3142ed94ce94c87de9528a8d2ab5, type: 3}
+    - Key: twoBone
+      Value: {fileID: 3726403319779044386, guid: 1f19ee9193eeca84ca304788a91024e8, type: 3}
+  enemies:
+    _serializedList:
+    - Key: slime
+      Value: {fileID: 220793210487700221, guid: ff620fef5ee8b4a489eb345244826da5, type: 3}
+    - Key: serpent
+      Value: {fileID: 2988081667011078456, guid: 11732fdce010b834296bd67e9c4e7d8e, type: 3}

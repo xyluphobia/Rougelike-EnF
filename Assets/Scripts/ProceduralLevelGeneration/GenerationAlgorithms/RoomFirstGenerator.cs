@@ -40,6 +40,8 @@ public class RoomFirstGenerator : SimpleRandomWalkGenerator
 
         tilemapVisualizer.PaintFloorTiles(floor);
         WallGenerator.CreateWalls(floor, tilemapVisualizer);
+
+        tilemapVisualizer.GenerateFloorPositionsBinary(floor);
     }
 
     private HashSet<Vector2Int> CreateRoomsRandomWalk(List<BoundsInt> roomsList)

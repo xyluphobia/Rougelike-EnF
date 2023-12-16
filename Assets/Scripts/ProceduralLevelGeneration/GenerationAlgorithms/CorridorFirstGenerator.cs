@@ -37,6 +37,8 @@ public class CorridorFirstGenerator : SimpleRandomWalkGenerator
 
         tilemapVisualizer.PaintFloorTiles(floorPositions);
         WallGenerator.CreateWalls(floorPositions, tilemapVisualizer);
+
+        tilemapVisualizer.GenerateFloorPositionsBinary(floorPositions);
     }
 
     public List<Vector2Int> IncreaseCorridorSizeByOne(List<Vector2Int> corridor)
