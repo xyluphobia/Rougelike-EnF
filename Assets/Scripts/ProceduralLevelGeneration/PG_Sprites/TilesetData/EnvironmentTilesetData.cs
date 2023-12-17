@@ -52,8 +52,12 @@ public class EnvironmentTilesetData : ScriptableObject
 
     [Header(">>Prefabs to Spawn<<")]
     [SerializedDictionary("Key", "GameObject")]
-    public SerializedDictionary<string, GameObject> decorations;
+    public SerializedDictionary<string, GameObject> potions;
     [SerializedDictionary("Key", "GameObject")]
     public SerializedDictionary<string, GameObject> enemies;
+    [SerializedDictionary("Key", "GameObject")]
+    public SerializedDictionary<string, GameObject> collectibles;
+    [SerializedDictionary("Key", "GameObject")]
+    public SerializedDictionary<string, GameObject> decorations;
 }
 }

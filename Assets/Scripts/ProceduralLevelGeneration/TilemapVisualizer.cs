@@ -17,6 +17,7 @@ public class TilemapVisualizer : MonoBehaviour
     private EnvironmentTilesetData envTS_data;
 
     private bool playerSpawned = false;
+    private bool exitSpawned = false;
 
     public void PaintFloorTiles(IEnumerable<Vector2Int> floorPositions) {
         floorTilemap.ClearAllTiles(); // Clear all current floor tiles. Remove this for it to iterate on the original instead of replace.
@@ -32,6 +33,8 @@ public class TilemapVisualizer : MonoBehaviour
     */
     {
         HashSet<Vector2Int> usedPositions = new();
+        float iterations = 0f;
+        float floorPositionsCount = floorPositions.Count;
 
         foreach (var position in floorPositions)
         {
@@ -44,8 +47,31 @@ public class TilemapVisualizer : MonoBehaviour
                     neighborsBinaryValue += "0";
             }
 
-            int typeAsInt = Convert.ToInt32(neighborsBinaryValue, 2);
-            usedPositions = GenerateProps(position, typeAsInt, usedPositions);
+            if (!playerSpawned && iterations >= floorPositionsCount * 0.1f) {
+                Instantiate(GameAssets.i.player, (Vector3Int)position, Quaternion.identity);
+                playerSpawned = true;
+                usedPositions.Add(position);
+            }
+            else if (!exitSpawned && iterations >= floorPositionsCount * 0.9f) {
+                exitSpawned = true;
+                Instantiate(GameAssets.i.exit, (Vector3Int)position, Quaternion.identity);
+                usedPositions.Add(position);
+            }
+            else {
+                float randomValue = Random.value;
+                if (randomValue < 0.85f) {
+                    int typeAsInt = Convert.ToInt32(neighborsBinaryValue, 2);
+                    usedPositions = GenerateProps(position, typeAsInt, usedPositions);
+                }
+                else if (randomValue < 0.98) {
+                    usedPositions = GenerateCollectables(position, usedPositions);
+                }
+                else
+                    usedPositions = GeneratePotions(position, usedPositions);
+            }
+
+            
+            iterations += 1f;
         }
         
         foreach (var position in floorPositions)
@@ -69,11 +95,11 @@ public class TilemapVisualizer : MonoBehaviour
 
     private HashSet<Vector2Int> GenerateProps(Vector2Int position, int typeAsInt, HashSet<Vector2Int> usedPositions)   
     // REMOVE POSITIONS PROPS ARE PLACED ON FROM FLOOR POSITIONS LIST AS RETURN
-    {
+    {/*
         if (typeAsInt > 10 && !playerSpawned) {
             Instantiate(GameAssets.i.player, (Vector3Int)position, Quaternion.identity);
             playerSpawned = true;
-        }
+        }*/
 
         if (typeAsInt.ToString().Contains("1")) {
             PickAndInstantiateProp(position);
@@ -98,8 +124,52 @@ public class TilemapVisualizer : MonoBehaviour
             Instantiate(envTS_data.decorations["twoBone"], (Vector3Int)position, Quaternion.identity);
     }
 
+    private HashSet<Vector2Int> GenerateCollectables(Vector2Int position, HashSet<Vector2Int> usedPositions)   
+    {
+        if (Random.value < 0.2f) {
+            PickAndInstantiateCollectable(position);
+            usedPositions.Add(position);
+        }
+
+        return usedPositions;
+    }
+
+    private void PickAndInstantiateCollectable(Vector2Int position) {
+        float ranVal = Random.value;
+
+        if (ranVal < 0.4)
+            Instantiate(envTS_data.collectibles["bronzeCoin"], (Vector3Int)position, Quaternion.identity);
+        else if (ranVal < 0.65)
+            Instantiate(envTS_data.collectibles["silverCoin"], (Vector3Int)position, Quaternion.identity);
+        else if (ranVal < 0.75)
+            Instantiate(envTS_data.collectibles["goldCoin"], (Vector3Int)position, Quaternion.identity);
+        else if (ranVal < 0.80)
+            Instantiate(envTS_data.collectibles["woodenChest"], (Vector3Int)position, Quaternion.identity);
+        else if (ranVal > 0.98)
+            Instantiate(envTS_data.collectibles["royalChest"], (Vector3Int)position, Quaternion.identity);
+    }
+
+    private HashSet<Vector2Int> GeneratePotions(Vector2Int position, HashSet<Vector2Int> usedPositions)   
+    {
+        if (Random.value > 0.6f) {
+            PickAndInstantiatePotion(position);
+            usedPositions.Add(position);
+        }
+
+        return usedPositions;
+    }
+
+    private void PickAndInstantiatePotion(Vector2Int position) {
+        float ranVal = Random.value;
+
+        if (ranVal < 0.55)
+            Instantiate(envTS_data.potions["health"], (Vector3Int)position, Quaternion.identity);
+        else
+            Instantiate(envTS_data.potions["speed"], (Vector3Int)position, Quaternion.identity);
+    }
+
     private HashSet<Vector2Int> GenerateEnemies(Vector2Int position, int typeAsInt, HashSet<Vector2Int> usedPositions)    {
-        if (Random.value > 0.95f) {
+        if (Random.value > 0.97f) {
             PickAndInstantiateEnemy(position);
             usedPositions.Add(position);
         }

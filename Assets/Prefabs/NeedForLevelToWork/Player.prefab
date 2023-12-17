@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 5760760847156915241}
   - component: {fileID: 794018409623324870}
   - component: {fileID: 4592739285140141745}
-  - component: {fileID: 5203505865476955899}
+  - component: {fileID: 7101389352014998957}
   - component: {fileID: 3498337405227505675}
   - component: {fileID: 902272084060168147}
   - component: {fileID: 7698485254044852837}
@@ -149,8 +149,8 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!61 &5203505865476955899
-BoxCollider2D:
+--- !u!58 &7101389352014998957
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -183,18 +183,8 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.02}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 0.14, y: 0.2}
-    newSize: {x: 0.14, y: 0.2}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 0.1, y: 0.04}
-  m_EdgeRadius: 0
+  m_Offset: {x: 0, y: 0.06}
+  m_Radius: 0.055
 --- !u!50 &3498337405227505675
 Rigidbody2D:
   serializedVersion: 4

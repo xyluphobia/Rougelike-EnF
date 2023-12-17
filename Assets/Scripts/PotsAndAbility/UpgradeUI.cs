@@ -18,6 +18,8 @@ public class UpgradeUI : MonoBehaviour
     private void resumeAfterSelect() {
         Time.timeScale = 1f;
         gameObject.SetActive(false);
+
+        StopWatch.stopwatchActive = true;
     }
 
     public void callSpeed() {

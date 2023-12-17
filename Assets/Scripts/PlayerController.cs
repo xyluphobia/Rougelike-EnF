@@ -123,6 +123,7 @@ public class PlayerController : MonoBehaviour
     {
         if (other.CompareTag("Exit"))
         {
+            StopWatch.stopwatchActive = false;
             GameManager.instance.ShowText(GameAssets.i.scoreText, 500, gameObject);
 
             rb.velocity = Vector2.zero;
@@ -166,7 +167,7 @@ public class PlayerController : MonoBehaviour
         if (disableInput)
             return;
 
-        CameraShaker.Presets.ShortShake2D(0.1f, 0.2f, 30, 6);
+        CameraShaker.Presets.ShortShake2D(0.06f, 0.12f, 30, 6);
 
         GameManager.instance.ShowText(GameAssets.i.damageText, damage, gameObject);
         SoundManager.instance.RandomizeSfx(takeDamageClips);

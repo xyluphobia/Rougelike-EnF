@@ -29,6 +29,8 @@ public class GameManager : MonoBehaviour
 
     public int playerHealth = 100;
 
+    public float saveStopwatch = -1f;
+
     void Awake()
     {
         if (instance == null) 
@@ -85,11 +87,7 @@ public class GameManager : MonoBehaviour
         healthUpdateText = GameObject.FindGameObjectWithTag("HealthTextUpdate").GetComponent<TextMeshProUGUI>();
 
 
-        if (level % 4 == 0)
-        {
-            UpgradePanelObject = GameObject.FindGameObjectWithTag("UpgradePanel");
-            StartCoroutine(ShowUpgradePanelAfterLevelImageHidden());
-        }
+        // logic dealing with when to show upgrades can be found in IEnumerator HideLevelImage().
     }
 
     IEnumerator HideLevelImage()
@@ -97,6 +95,14 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1f;
         yield return new WaitForSeconds(levelStartDelay);
         levelImage.SetActive(false);
+
+
+        if (level % 4 == 0) {
+            UpgradePanelObject = GameObject.FindGameObjectWithTag("UpgradePanel");
+            StartCoroutine(ShowUpgradePanelAfterLevelImageHidden());
+        }
+        else
+            StopWatch.stopwatchActive = true;
     }
 
     IEnumerator ShowUpgradePanelAfterLevelImageHidden() {
@@ -107,6 +113,8 @@ public class GameManager : MonoBehaviour
     }
 
     public void GameOver() {
+        StopWatch.stopwatchActive = false;
+
         Time.timeScale = 0f;
         SoundManager.instance.PauseGameplaySfx();
 

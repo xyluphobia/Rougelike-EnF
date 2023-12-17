@@ -99,7 +99,9 @@
     <Compile Include="Assets\Scripts\PotsAndAbility\PotionsAndAbilities.cs" />
     <Compile Include="Assets\Scripts\GameAssets.cs" />
     <Compile Include="Assets\Prefabs\Popups\DestroyTextInSeconds.cs" />
+    <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\MovingObject.cs" />
+    <Compile Include="Assets\Scripts\StopWatch.cs" />
     <Compile Include="Assets\Scripts\BoardManager.cs" />
   </ItemGroup>
   <ItemGroup>

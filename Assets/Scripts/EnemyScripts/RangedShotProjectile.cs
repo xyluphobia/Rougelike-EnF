@@ -26,7 +26,7 @@ public class RangedShotProjectile : MonoBehaviour
 
         tracking = true;
 
-        StartCoroutine(DestroyAfterTime(3f));
+        StartCoroutine(DestroyAfterTime(2f));
         StartCoroutine(ProjectileTrackingTimer(trackingTime));
     }
 
@@ -43,7 +43,7 @@ public class RangedShotProjectile : MonoBehaviour
         {
             direction = target.position - transform.position;     
 
-            float angle = (Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg) * 0.01f;
+            //float angle = (Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg) * 0.01f;
 
             Vector2 lookDir = direction;
             transform.up = lookDir;

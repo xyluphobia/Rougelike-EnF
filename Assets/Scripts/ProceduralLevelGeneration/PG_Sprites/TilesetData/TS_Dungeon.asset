@@ -38,6 +38,30 @@ MonoBehaviour:
   wallInnerCornerDownLeftTIntersection: {fileID: 11400000, guid: 76d72e9fbf0202e418a149a7426e3e6a, type: 2}
   wallInnerCornerDownRight: {fileID: 11400000, guid: 22408732ede784f4bb1048038007ff77, type: 2}
   wallInnerCornerDownRightTIntersection: {fileID: 11400000, guid: 39d1ad41172a57d40ac989fdf31fd5ef, type: 2}
+  potions:
+    _serializedList:
+    - Key: health
+      Value: {fileID: 6769569128524334235, guid: 46e6fea0777b37e4b8962af6b17dfa1d, type: 3}
+    - Key: speed
+      Value: {fileID: 2868880353803996590, guid: a4b6b30b7eb30d3418c376f1eccbbbff, type: 3}
+  enemies:
+    _serializedList:
+    - Key: slime
+      Value: {fileID: 220793210487700221, guid: ff620fef5ee8b4a489eb345244826da5, type: 3}
+    - Key: serpent
+      Value: {fileID: 2988081667011078456, guid: 11732fdce010b834296bd67e9c4e7d8e, type: 3}
+  collectibles:
+    _serializedList:
+    - Key: bronzeCoin
+      Value: {fileID: 312905065163277652, guid: 89a5f854b947af64c801233916bc487a, type: 3}
+    - Key: silverCoin
+      Value: {fileID: 2403942345939234056, guid: 3888a19de3e48c142b7704ecadb35328, type: 3}
+    - Key: goldCoin
+      Value: {fileID: 1235162638002214857, guid: f93aa07780fa5f041bf2d282b956dc65, type: 3}
+    - Key: woodenChest
+      Value: {fileID: 1511031129252231340, guid: a0330e3563e2c9045921de20bd563e04, type: 3}
+    - Key: royalChest
+      Value: {fileID: 386597214321539719, guid: 0d4c16241573cee48a092928555d054f, type: 3}
   decorations:
     _serializedList:
     - Key: skull
@@ -46,9 +70,3 @@ MonoBehaviour:
       Value: {fileID: 3663006050197218062, guid: c92f3142ed94ce94c87de9528a8d2ab5, type: 3}
     - Key: twoBone
       Value: {fileID: 3726403319779044386, guid: 1f19ee9193eeca84ca304788a91024e8, type: 3}
-  enemies:
-    _serializedList:
-    - Key: slime
-      Value: {fileID: 220793210487700221, guid: ff620fef5ee8b4a489eb345244826da5, type: 3}
-    - Key: serpent
-      Value: {fileID: 2988081667011078456, guid: 11732fdce010b834296bd67e9c4e7d8e, type: 3}

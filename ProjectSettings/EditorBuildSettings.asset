@@ -8,8 +8,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 82bfa91d1dc5116438da194bb97f935d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/DungeonOne.unity
     guid: 67af3601944d78247a3269e749c7aa45
+  - enabled: 1
+    path: Assets/Scenes/TESTWORLD.unity
+    guid: ac31dd447ff2b014bbe9e08b99245587
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
