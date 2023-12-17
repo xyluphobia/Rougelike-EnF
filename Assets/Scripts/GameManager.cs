@@ -8,7 +8,7 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance = null;
-    public BoardManager boardScript;
+    public CorridorFirstGenerator boardScript;
 
     public float levelStartDelay = 1.4f;
     public int level = 0;
@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
 
         DontDestroyOnLoad(gameObject);
 
-        boardScript = GetComponent<BoardManager>();
+        boardScript = GetComponent<CorridorFirstGenerator>();
     }
 
     private void OnLevelFinishedLoading (Scene scene, LoadSceneMode mode)
@@ -75,7 +75,8 @@ public class GameManager : MonoBehaviour
 
         StartCoroutine(HideLevelImage());
         
-        boardScript.SetupScene(level);
+        boardScript.tilemapVisualizer = GameObject.FindGameObjectWithTag("TilemapVisualizer").GetComponent<TilemapVisualizer>();
+        boardScript.RunProceduralGeneration(/*level*/);
         
         scoreText = GameObject.FindGameObjectWithTag("ScoreText").GetComponent<TextMeshProUGUI>();
         UpdateScore(500);

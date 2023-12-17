@@ -11,7 +11,7 @@ public class SimpleRandomWalkGenerator : AbstractDungeonGenerator
     protected SimpleRandomWalkData randomWalkParameters;  // Implements values set in scriptable object to allow for multiple parameters to be saved and swapped between.
 
 
-    protected override void RunProceduralGeneration() {
+    public override void RunProceduralGeneration() {
         HashSet<Vector2Int> floorPositions  = RunRandomWalk(randomWalkParameters, startPosition);
 
         tilemapVisualizer.PaintFloorTiles(floorPositions);

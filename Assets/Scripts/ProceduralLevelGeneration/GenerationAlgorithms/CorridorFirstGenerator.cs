@@ -12,7 +12,7 @@ public class CorridorFirstGenerator : SimpleRandomWalkGenerator
     [Range(0.1f, 1f)]
     private float roomPercent = 0.8f;
 
-    protected override void RunProceduralGeneration() {
+    public override void RunProceduralGeneration() {
         CorridorFirstGeneration();
     }
 

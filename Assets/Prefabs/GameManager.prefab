@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6163819663793140548}
   - component: {fileID: 2844489481739531323}
   - component: {fileID: 7038133860684863766}
+  - component: {fileID: 3379612642913003377}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: GameManager
@@ -58,7 +59,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 275118339369010003}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e30e3cd9366cdca4fbfeab901f596652, type: 3}
   m_Name: 
@@ -91,3 +92,21 @@ MonoBehaviour:
   wallBottom: {fileID: 6509111082349352072, guid: f57474be53bf8324389e8d2d06aec7e5, type: 3}
   wallBottomLeft: {fileID: 7661594777433706584, guid: ee8e5180c4781644499aa906ad3d4e50, type: 3}
   wallBottomRight: {fileID: 6421906084273240071, guid: a62066f2faa456447a347eb6e54ed145, type: 3}
+--- !u!114 &3379612642913003377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 275118339369010003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd626334531d3974d8585e526f5885bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tilemapVisualizer: {fileID: 0}
+  startPosition: {x: 0, y: 0}
+  randomWalkParameters: {fileID: 11400000, guid: 55c0673e15a4f194c99b69573f82921e, type: 2}
+  corridorLength: 20
+  corridorCount: 7
+  roomPercent: 1

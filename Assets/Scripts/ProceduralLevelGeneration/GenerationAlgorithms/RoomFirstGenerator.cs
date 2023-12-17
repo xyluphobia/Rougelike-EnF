@@ -12,7 +12,7 @@ public class RoomFirstGenerator : SimpleRandomWalkGenerator
     [SerializeField] [Range(0,10)] private int offset = 1;
     [SerializeField] private bool randomWalkRooms = false;
 
-    protected override void RunProceduralGeneration()
+    public override void RunProceduralGeneration()
     {
         CreateRooms();
     }
