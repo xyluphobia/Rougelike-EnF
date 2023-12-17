@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class ChestScript : MonoBehaviour
 {
@@ -42,5 +43,7 @@ public class ChestScript : MonoBehaviour
         Instantiate(item1, loc1.transform.position, Quaternion.identity);
         Instantiate(item2, loc2.transform.position, Quaternion.identity);
         Instantiate(item3, loc3.transform.position, Quaternion.identity);
+
+        GetComponentInChildren<Light2D>().enabled = false;
     }
 }

@@ -137,12 +137,12 @@ public class PlayerController : MonoBehaviour
         else if (other.CompareTag("HealthPotion"))
         {
             potionsAndAbilities.healthPotion.useHealthPotion(0.25f);
-            other.gameObject.SetActive(false);
+            other.gameObject.transform.parent.gameObject.SetActive(false);
         }
         else if (other.CompareTag("SpeedPotion"))
         {
             potionsAndAbilities.speedPotion.useSpeedPotion();
-            other.gameObject.SetActive(false);
+            other.gameObject.transform.parent.gameObject.SetActive(false);
         } 
     }
 

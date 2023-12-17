@@ -80,6 +80,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6549229502709774521, guid: 8e5c92d53ce90fa4baef26f4d1408ac2, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
     - target: {fileID: 7528874917345177845, guid: 8e5c92d53ce90fa4baef26f4d1408ac2, type: 3}
       propertyPath: m_Name
       value: Stairs(exit)
