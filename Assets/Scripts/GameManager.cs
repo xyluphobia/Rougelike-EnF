@@ -74,7 +74,7 @@ public class GameManager : MonoBehaviour
         levelText.text = "Level " + level;
         levelImage.SetActive(true);
 
-
+        UpgradePanelObject = GameObject.FindGameObjectWithTag("UpgradePanel");
         StartCoroutine(HideLevelImage());
         
         boardScript.tilemapVisualizer = GameObject.FindGameObjectWithTag("TilemapVisualizer").GetComponent<TilemapVisualizer>();
@@ -98,17 +98,15 @@ public class GameManager : MonoBehaviour
 
 
         if (level % 4 == 0) {
-            UpgradePanelObject = GameObject.FindGameObjectWithTag("UpgradePanel");
-            StartCoroutine(ShowUpgradePanelAfterLevelImageHidden());
+            ShowUpgradePanelAfterLevelImageHidden();
         }
         else
             StopWatch.stopwatchActive = true;
     }
 
-    IEnumerator ShowUpgradePanelAfterLevelImageHidden() {
-        yield return new WaitForSeconds(levelStartDelay);
+    private void ShowUpgradePanelAfterLevelImageHidden() {
+        //yield return new WaitForSeconds(levelStartDelay);
         Time.timeScale = 0f;
-
         UpgradePanelObject.SetActive(true);
     }
 
