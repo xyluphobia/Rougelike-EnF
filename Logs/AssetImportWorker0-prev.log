@@ -1,0 +1,2010 @@
+Using pre-set license
+Built from '2023.1/staging' branch; Version is '2023.1.20f1 (35a524b12060) revision 3515684'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'en' Physical Memory: 32592 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2023.1.20f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/Matthew/Desktop/Rougelike Simple
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+50595
+Successfully changed project path to: C:/Users/Matthew/Desktop/Rougelike Simple
+C:/Users/Matthew/Desktop/Rougelike Simple
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [4532] Host "[IP] 192.168.1.32 [Port] 0 [Flags] 2 [Guid] 3548893584 [EditorId] 3548893584 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-ED5AA6K) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [4532] Host "[IP] 192.168.1.32 [Port] 0 [Flags] 2 [Guid] 3548893584 [EditorId] 3548893584 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-ED5AA6K) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 19 workers.
+Library Redirect Path: Library/Refreshing native plugins compatible for Editor in 3.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2023.1.20f1 (35a524b12060)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2023.1.20f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Matthew/Desktop/Rougelike Simple/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 4070 (ID=0x2786)
+    Vendor:   NVIDIA
+    VRAM:     12026 MB
+    Driver:   31.0.15.4633
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2023.1.20f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2023.1.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2023.1.20f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56136
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.1.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002844 seconds.
+- Loaded All Assemblies, in  0.376 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+- Finished resetting the current domain, in  0.285 seconds
+Domain Reload Profiling: 660ms
+	BeginReloadAssembly (122ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (35ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (51ms)
+	LoadAllAssembliesAndSetupDomain (154ms)
+		LoadAssemblies (120ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (150ms)
+			TypeCache.Refresh (149ms)
+				TypeCache.ScanAssembly (138ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (285ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (238ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (8ms)
+			ProcessInitializeOnLoadAttributes (163ms)
+			ProcessInitializeOnLoadMethodAttributes (54ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+- Loaded All Assemblies, in  0.782 seconds
+Refreshing native plugins compatible for Editor in 1.11 ms, found 0 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.576 seconds
+Domain Reload Profiling: 1356ms
+	BeginReloadAssembly (289ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (23ms)
+	RebuildCommonClasses (35ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (39ms)
+	LoadAllAssembliesAndSetupDomain (403ms)
+		LoadAssemblies (254ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (239ms)
+			TypeCache.Refresh (212ms)
+				TypeCache.ScanAssembly (202ms)
+			ScanForSourceGeneratedMonoScriptInfo (16ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (577ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (297ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (59ms)
+			ProcessInitializeOnLoadAttributes (185ms)
+			ProcessInitializeOnLoadMethodAttributes (39ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 0.92 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3140 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 54 unused Assets / (1.5 MB). Loaded Objects now: 3692.
+Memory consumption went from 181.3 MB to 179.9 MB.
+Total: 3.643700 ms (FindLiveObjects: 0.259000 ms CreateObjectMapping: 0.087900 ms MarkObjects: 3.078000 ms  DeleteObjects: 0.217400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 3855.334490 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset.png
+  artifactKey: Guid(cc3f7294d48c03843a9165cac3d805b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset.png using Guid(cc3f7294d48c03843a9165cac3d805b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5624a083a23b010a20acd2cb21368fb') in 0.067524 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 16.419692 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset.png
+  artifactKey: Guid(cc3f7294d48c03843a9165cac3d805b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset.png using Guid(cc3f7294d48c03843a9165cac3d805b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '795a9a15a1bfb3b7b97d25fcda23e0e7') in 0.013723 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 18.136284 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset.png
+  artifactKey: Guid(cc3f7294d48c03843a9165cac3d805b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset.png using Guid(cc3f7294d48c03843a9165cac3d805b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7c97bacde9d7faa4cf532e4044b4a61') in 0.171355 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 119
+========================================================================
+Received Import Request.
+  Time since last request: 16.826864 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/Rectangular Palette.prefab
+  artifactKey: Guid(61fbfc82c6e590f46929fde4f8fa2bf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/Rectangular Palette.prefab using Guid(61fbfc82c6e590f46929fde4f8fa2bf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2edc35cf8f7669e37aabeab2d3e1eb2') in 0.305321 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 247
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_24.asset
+  artifactKey: Guid(cb83830a9d40fa4429161e969d97ff94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_24.asset using Guid(cb83830a9d40fa4429161e969d97ff94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eae8cf6964d43001bd1144ce09d6cb40') in 0.013282 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_39.asset
+  artifactKey: Guid(7b9badf5db417254789d8c19618c4caa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_39.asset using Guid(7b9badf5db417254789d8c19618c4caa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c88e16264f50ca884dc483c3732c7d4') in 0.008800 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_51.asset
+  artifactKey: Guid(3b0a7d5b078aab34fb13508e012cc432) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_51.asset using Guid(3b0a7d5b078aab34fb13508e012cc432) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1be74dfb407d92b5cbc08e6af079d72f') in 0.007952 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_33.asset
+  artifactKey: Guid(23a8916e5e4180f43a922b181981ebe4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_33.asset using Guid(23a8916e5e4180f43a922b181981ebe4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80adb62ce22d82d7e8960748557c850d') in 0.008041 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_5.asset
+  artifactKey: Guid(37b109c9e7d6116409748b2502494596) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_5.asset using Guid(37b109c9e7d6116409748b2502494596) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0340c9827685eab3bf7d2f384c21fa54') in 0.008804 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_30.asset
+  artifactKey: Guid(47333b709f6ab884bb2449f03ab29c79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_30.asset using Guid(47333b709f6ab884bb2449f03ab29c79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f4805a6243310720c69ebae66a91ce1') in 0.008757 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_56.asset
+  artifactKey: Guid(d96a7ff22376bf64abd5be59240008ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_56.asset using Guid(d96a7ff22376bf64abd5be59240008ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccdf5ddc23a4fd67d8951fcec9156fdb') in 0.008971 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_53.asset
+  artifactKey: Guid(749adc6fc39cad64983f4752f9f66be6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_53.asset using Guid(749adc6fc39cad64983f4752f9f66be6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a71376119797f98d6918b4314d12621') in 0.008265 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_32.asset
+  artifactKey: Guid(fffe9069f52efe04db0a712cccf26c29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_32.asset using Guid(fffe9069f52efe04db0a712cccf26c29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38ac763fade9f0a634c6c60fac5a243e') in 0.008689 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_10.asset
+  artifactKey: Guid(2cf38ceb87f9d62418aa2724bb8b5d64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_10.asset using Guid(2cf38ceb87f9d62418aa2724bb8b5d64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78b2f50c84fc78a5fc728f2bc09c885e') in 0.008447 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_31.asset
+  artifactKey: Guid(94a1c3319e8f3c94e838df932e7467f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_31.asset using Guid(94a1c3319e8f3c94e838df932e7467f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '507172af5a705afd094bc8b2bbcfaaa1') in 0.008416 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_37.asset
+  artifactKey: Guid(0af5fc2e90af73a41982795da715d4b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_37.asset using Guid(0af5fc2e90af73a41982795da715d4b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8bdabf2eb975b6b974d3ac42d10ee33') in 0.008655 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_38.asset
+  artifactKey: Guid(0942d4f6d3132ef4aa572a6201b04632) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_38.asset using Guid(0942d4f6d3132ef4aa572a6201b04632) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38962029713a701b54c769b42b244ba7') in 0.004125 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_4.asset
+  artifactKey: Guid(d452f5431a0f04540a8cfae2487c7e98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_4.asset using Guid(d452f5431a0f04540a8cfae2487c7e98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6c9f75bc4db21564fecaabcf0e61e08') in 0.008610 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_14.asset
+  artifactKey: Guid(9457a31255d93a7459be26bb53c3adc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_14.asset using Guid(9457a31255d93a7459be26bb53c3adc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4fdba426691b3e8f46421de8bf825af') in 0.008722 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_48.asset
+  artifactKey: Guid(b8f0c139369d2de49b8568f39623d48e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_48.asset using Guid(b8f0c139369d2de49b8568f39623d48e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3c442b700e8c8a20ec826557200cbfb') in 0.008744 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_40.asset
+  artifactKey: Guid(061d5981e18e92946b1925fbb601a934) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_40.asset using Guid(061d5981e18e92946b1925fbb601a934) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9810edd804dfa9a9d7fae2305ed7b89') in 0.008432 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_22.asset
+  artifactKey: Guid(2b428759c437618448084f1bda8a25e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_22.asset using Guid(2b428759c437618448084f1bda8a25e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5eded1cc9ab463856f6f3dc6ce994213') in 0.008851 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_27.asset
+  artifactKey: Guid(476bb13df2d071142a9fef796b2cc2fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_27.asset using Guid(476bb13df2d071142a9fef796b2cc2fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7650c704e8d9a43986fac96bcc4ecba') in 0.004461 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_34.asset
+  artifactKey: Guid(4d9e4d61a738e2f4fa13e41b828ebdd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_34.asset using Guid(4d9e4d61a738e2f4fa13e41b828ebdd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61354548599cbd200975e296056a0f5a') in 0.008279 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_23.asset
+  artifactKey: Guid(4b60488fb683b6047a89b5579cf986c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_23.asset using Guid(4b60488fb683b6047a89b5579cf986c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a26a4bae5019185f5cbe0071daf1bd6a') in 0.008625 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_57.asset
+  artifactKey: Guid(f34b0ed1a52bdfd4f860e0fa798b72aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_57.asset using Guid(f34b0ed1a52bdfd4f860e0fa798b72aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b93c51072aa197426c6353059c1da10d') in 0.008991 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_41.asset
+  artifactKey: Guid(e6f40cd2191e2754eb2e2b1da765463f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_41.asset using Guid(e6f40cd2191e2754eb2e2b1da765463f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51d535b327db5a48c84509057bdf9a9d') in 0.008771 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_44.asset
+  artifactKey: Guid(2ca1f7a1a06712640b64480d8d82fa27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_44.asset using Guid(2ca1f7a1a06712640b64480d8d82fa27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46b4fb13cb247d62e0e64e76e5871a8f') in 0.008111 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_45.asset
+  artifactKey: Guid(f84700aa3fe9909479be8db1743b2f75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_45.asset using Guid(f84700aa3fe9909479be8db1743b2f75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '243c6efedc7c25e98f099e989bd209b7') in 0.004353 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_50.asset
+  artifactKey: Guid(8b40966da6509fa48968adb637ad7b8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_50.asset using Guid(8b40966da6509fa48968adb637ad7b8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f5fb1bee286f3d2a091430acefe089b') in 0.008281 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_29.asset
+  artifactKey: Guid(3a89280036e049e4b842b59ad9e5cff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_29.asset using Guid(3a89280036e049e4b842b59ad9e5cff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '552d81b304f233bd7617413111b8c683') in 0.008596 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_12.asset
+  artifactKey: Guid(d06740172a7531a498fe09196c67c274) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_12.asset using Guid(d06740172a7531a498fe09196c67c274) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd04e0bdbb2b4d51cf7cc1e6ffb1611ae') in 0.007804 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_9.asset
+  artifactKey: Guid(bb12c5f1eeb60c24b973f91c9f7f6e93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_9.asset using Guid(bb12c5f1eeb60c24b973f91c9f7f6e93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f34a6b44161653bfcebae2f0ea373775') in 0.003933 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_58.asset
+  artifactKey: Guid(d250790a2dd163547a775a2b20947bbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_58.asset using Guid(d250790a2dd163547a775a2b20947bbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c4ea61ea4a754457b64c73a60c1e671') in 0.008843 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_55.asset
+  artifactKey: Guid(c94fd255a4f1f564297e253e0d9a8c3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_55.asset using Guid(c94fd255a4f1f564297e253e0d9a8c3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '065f42bd3ccb739985e7c17d3fa3d00d') in 0.008751 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_21.asset
+  artifactKey: Guid(561dd4f7440cc8e4ba7e768be5d99530) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_21.asset using Guid(561dd4f7440cc8e4ba7e768be5d99530) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b292469deadb34110133a6010ebe46b') in 0.009951 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_42.asset
+  artifactKey: Guid(646aad302507a8c448b3f7e4d75c396b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_42.asset using Guid(646aad302507a8c448b3f7e4d75c396b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5df883c62931e40ae40cfc54dca38702') in 0.007931 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_15.asset
+  artifactKey: Guid(c32c2cafdd8323843966fc814a079eb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_15.asset using Guid(c32c2cafdd8323843966fc814a079eb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c1a2760946d0091b35f3b990980f025') in 0.008369 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_7.asset
+  artifactKey: Guid(7d17cb736d3ce754584f5f0c9d8fcf20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_7.asset using Guid(7d17cb736d3ce754584f5f0c9d8fcf20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6a95f09ced51d3b6fe5c68d001caf87') in 0.008714 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_54.asset
+  artifactKey: Guid(e6b8e772e7e7a334a8c40f2cf56d6e6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_54.asset using Guid(e6b8e772e7e7a334a8c40f2cf56d6e6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3fec485a5a4d8d639a338a1b256aa0e') in 0.008625 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_46.asset
+  artifactKey: Guid(13efdf789ffea234ba1fe175a1d518ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_46.asset using Guid(13efdf789ffea234ba1fe175a1d518ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '919be793f998e801495faf7508ef200f') in 0.008391 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_49.asset
+  artifactKey: Guid(3a98369a91b04524abaf2cb7c074eec2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_49.asset using Guid(3a98369a91b04524abaf2cb7c074eec2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f327491f10cd097686f468d52241fb00') in 0.008917 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_11.asset
+  artifactKey: Guid(8d953dfd8d678124da80089d13adc294) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_11.asset using Guid(8d953dfd8d678124da80089d13adc294) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bef5fe5573bb5bc0b9af27357fb3910e') in 0.004001 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_19.asset
+  artifactKey: Guid(b12b9e8e4f4195847be0af10c5c404eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_19.asset using Guid(b12b9e8e4f4195847be0af10c5c404eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86369888e8ebd6c003f28dcac3a18ab1') in 0.008650 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_28.asset
+  artifactKey: Guid(5699910646374d343bbf187dcbd6e3d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_28.asset using Guid(5699910646374d343bbf187dcbd6e3d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6684e0b6cf887175346aa6da9321f968') in 0.008355 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_20.asset
+  artifactKey: Guid(f01dd7040cec1d64291920f7921d1aad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_20.asset using Guid(f01dd7040cec1d64291920f7921d1aad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6afc20642c2f05843beba1adadcac45') in 0.008654 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_13.asset
+  artifactKey: Guid(cd2b948b6955a734b83f68b063ebc6d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_13.asset using Guid(cd2b948b6955a734b83f68b063ebc6d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '157f8ebca657050cc2ec2593b6c0861f') in 0.008107 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_0.asset
+  artifactKey: Guid(7f1e5d9f539441541a0171e8e1ec08d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_0.asset using Guid(7f1e5d9f539441541a0171e8e1ec08d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4dbd4aa5d6fc363c9c75d811265ed0c') in 0.008185 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_1.asset
+  artifactKey: Guid(5299e2535456e05459469cf582a6c79d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_1.asset using Guid(5299e2535456e05459469cf582a6c79d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0da655e8cae3a0c0360d1270715f24ad') in 0.004624 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_18.asset
+  artifactKey: Guid(75fc2f16b2070d74980b97ebd51208c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_18.asset using Guid(75fc2f16b2070d74980b97ebd51208c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd981773532a9a582bd6061ef49e6e803') in 0.008234 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_3.asset
+  artifactKey: Guid(aaa1b5043ed2c864ab6ccd16e7d21e31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_3.asset using Guid(aaa1b5043ed2c864ab6ccd16e7d21e31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f31cb870e8435ce8396dde4ea48af8e7') in 0.008393 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_35.asset
+  artifactKey: Guid(030c10051bba6ad4d8fc7ec3c13dac46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_35.asset using Guid(030c10051bba6ad4d8fc7ec3c13dac46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '130d3e1f26d1222ad9b7673d570c3240') in 0.008452 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_52.asset
+  artifactKey: Guid(c072245039861a74b810a28d18f09e2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_52.asset using Guid(c072245039861a74b810a28d18f09e2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5a773c4740e9bc843a44b5d8f592b5d') in 0.008361 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_2.asset
+  artifactKey: Guid(ce5763c566d470846a5cffc5341e6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_2.asset using Guid(ce5763c566d470846a5cffc5341e6439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b83ba04a89b7c2757587237d6d475a45') in 0.009069 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_16.asset
+  artifactKey: Guid(99b8183a24a0d9a42a1fe09b095801f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_16.asset using Guid(99b8183a24a0d9a42a1fe09b095801f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2b2b22ab79eba9c75d46e2f4750d449') in 0.008304 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_43.asset
+  artifactKey: Guid(12249fe316c350e45b14c9fa6280f7bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_43.asset using Guid(12249fe316c350e45b14c9fa6280f7bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e94c653ffd55ed3f9619bbcca1f7b696') in 0.008947 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_17.asset
+  artifactKey: Guid(9ec0e54d2d3aab74291c251e5c4690e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_17.asset using Guid(9ec0e54d2d3aab74291c251e5c4690e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8a0e07f0f514df043894bc3e664f841') in 0.004418 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_36.asset
+  artifactKey: Guid(e0a1e48660b721341a2dde372c13c72e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_36.asset using Guid(e0a1e48660b721341a2dde372c13c72e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '163628d66fe283513e25e688fee2ef45') in 0.004168 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_6.asset
+  artifactKey: Guid(3036ee5c32ee2e949a307a512f82a84a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_6.asset using Guid(3036ee5c32ee2e949a307a512f82a84a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ac80f94193d1eb77013646b51ace013') in 0.008723 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_25.asset
+  artifactKey: Guid(d881d0da9a3567d48ae61d9e81f56266) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_25.asset using Guid(d881d0da9a3567d48ae61d9e81f56266) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b0f4fe8661cd54d1873707a004b5868') in 0.008280 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_8.asset
+  artifactKey: Guid(b87bb9f3c67057041a2a25ef876b8c44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_8.asset using Guid(b87bb9f3c67057041a2a25ef876b8c44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b7926744779d83c02c2060cb96fae2f') in 0.003969 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_47.asset
+  artifactKey: Guid(61062e627d52c824aab50f292dbbda35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_47.asset using Guid(61062e627d52c824aab50f292dbbda35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91e000de606a55f93f47fd25d7037d65') in 0.008414 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_26.asset
+  artifactKey: Guid(e6412cb12268ffa469a2e9e997f4648b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_26.asset using Guid(e6412cb12268ffa469a2e9e997f4648b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65a34e8323980db0b5d151c80f2d31c0') in 0.009112 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 10.306899 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/TilesetData/TS_Frostlands.asset
+  artifactKey: Guid(7d0668d64ee78e44fb06e8f4ada97170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/TilesetData/TS_Frostlands.asset using Guid(7d0668d64ee78e44fb06e8f4ada97170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd756eea77ebc57b52d1a5a79987d968e') in 0.041509 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 264
+========================================================================
+Received Import Request.
+  Time since last request: 9.181755 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_59.asset
+  artifactKey: Guid(fbcc1ae2fcea99349a7f7cdc2634b185) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_59.asset using Guid(fbcc1ae2fcea99349a7f7cdc2634b185) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec1c34ba103638741989e36b4fcd8473') in 0.010033 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_68.asset
+  artifactKey: Guid(30a26ae59cf1a9d42b3dbc0c947a7a6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_68.asset using Guid(30a26ae59cf1a9d42b3dbc0c947a7a6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1909ae06a758725dd22c5d8723d0e2d') in 0.005218 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_101.asset
+  artifactKey: Guid(af12ee33d27acd746b34a0000ee2c16c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_101.asset using Guid(af12ee33d27acd746b34a0000ee2c16c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fee9843bb78369db50f411ebd4948cfd') in 0.009822 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_92.asset
+  artifactKey: Guid(3a202b48b3c2ec942a5c1fdf655425e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_92.asset using Guid(3a202b48b3c2ec942a5c1fdf655425e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '967e2c6925944b0ff556e76825a01ef4') in 0.004223 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_110.asset
+  artifactKey: Guid(ebcf328ba76a802419dfac1d6a476089) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_110.asset using Guid(ebcf328ba76a802419dfac1d6a476089) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e91d69e9415f9246b7b63da0f8b214f2') in 0.003964 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_76.asset
+  artifactKey: Guid(b378de0af845fcd4894e9479f745c241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_76.asset using Guid(b378de0af845fcd4894e9479f745c241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ae6b9f2b251ea939d2d3b2dd1d53449') in 0.003995 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_114.asset
+  artifactKey: Guid(c9d554df10d7fee48ad49d55023a25b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_114.asset using Guid(c9d554df10d7fee48ad49d55023a25b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1f449fb02d19582e0396b588427d8ba') in 0.009481 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_60.asset
+  artifactKey: Guid(bd65d750748cce045b93775d5af7ccae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_60.asset using Guid(bd65d750748cce045b93775d5af7ccae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '007502d3db4924b85bac2327ead660b0') in 0.007956 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_72.asset
+  artifactKey: Guid(aea81de90e8284a47b0196ed5ddbefa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_72.asset using Guid(aea81de90e8284a47b0196ed5ddbefa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f1214bafc7a11f5f2622beff19da2b2') in 0.007837 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_102.asset
+  artifactKey: Guid(aacf229f85d7e294899cad960b2cdd4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_102.asset using Guid(aacf229f85d7e294899cad960b2cdd4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2296980020a218a75fb4cf67252dd9b') in 0.007889 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_94.asset
+  artifactKey: Guid(1ecb3cb161b1e8048b7e46677a58db0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_94.asset using Guid(1ecb3cb161b1e8048b7e46677a58db0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc8237f25926c0c0abb5fc4593a31660') in 0.009117 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_86.asset
+  artifactKey: Guid(6b9fd8b01f849734988af6e913464b49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_86.asset using Guid(6b9fd8b01f849734988af6e913464b49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b92f834b066edd2c28ef0a6b36e0ea81') in 0.004396 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_104.asset
+  artifactKey: Guid(e63a5af12853175488ad984d16a3e98e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_104.asset using Guid(e63a5af12853175488ad984d16a3e98e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c7a2ff04f3003424caeef22639596e8') in 0.008040 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_61.asset
+  artifactKey: Guid(a9be83b65b4ceac4e8b6b0f7b66da7aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_61.asset using Guid(a9be83b65b4ceac4e8b6b0f7b66da7aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b9fcbd5c5ebce260d5003a4b48fefca') in 0.008054 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_80.asset
+  artifactKey: Guid(d0fe6e81ccf6ea34e9ca6f0db024ce2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_80.asset using Guid(d0fe6e81ccf6ea34e9ca6f0db024ce2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63a59f494e0ca020a170f9e81c1f402b') in 0.007916 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_105.asset
+  artifactKey: Guid(7f02fe3c7434db04892c3c1f8b810a4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_105.asset using Guid(7f02fe3c7434db04892c3c1f8b810a4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd115c4ced3728c4978bae06380cbab95') in 0.007982 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_109.asset
+  artifactKey: Guid(48a71ee42eb15084e8850eeef35a41fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_109.asset using Guid(48a71ee42eb15084e8850eeef35a41fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bfb1b25284c5d67ab72e9105998202a') in 0.008492 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_66.asset
+  artifactKey: Guid(cb060be709d1ff5459a3408fe2bbee20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_66.asset using Guid(cb060be709d1ff5459a3408fe2bbee20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e3d73fb09a8f1e3b4aa54db8eb719da') in 0.008258 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_96.asset
+  artifactKey: Guid(0d0dfa5a18a3a0e4b8f09aecd3a80db0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_96.asset using Guid(0d0dfa5a18a3a0e4b8f09aecd3a80db0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab11f5b26539365e2b5610b83fcdbb83') in 0.008310 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_75.asset
+  artifactKey: Guid(dd6fade536f47ed4fae04a9fb6aeb287) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_75.asset using Guid(dd6fade536f47ed4fae04a9fb6aeb287) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c602dbac7187a47c90a18ad3c4a29a3d') in 0.003992 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_112.asset
+  artifactKey: Guid(b41254a282691704688f0da519c20587) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_112.asset using Guid(b41254a282691704688f0da519c20587) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ac6a793bd602d1d5cd24ae510c1d2a2') in 0.008337 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_116.asset
+  artifactKey: Guid(eee128c7a55275f45b5e8bcf27e1ad32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_116.asset using Guid(eee128c7a55275f45b5e8bcf27e1ad32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed0621bc889729b1108411460021318c') in 0.008523 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_74.asset
+  artifactKey: Guid(ec92554a9e53ea64d913ec2c9d8ef225) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_74.asset using Guid(ec92554a9e53ea64d913ec2c9d8ef225) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da68f0d56f47782301ba9535caa0f4b6') in 0.008031 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_64.asset
+  artifactKey: Guid(60d297821981c294bab1632dd09ea1a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_64.asset using Guid(60d297821981c294bab1632dd09ea1a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba796960af1cec2d0555528f02ce21d7') in 0.007913 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_97.asset
+  artifactKey: Guid(13e32b828e72e054cb5948e9929b9fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_97.asset using Guid(13e32b828e72e054cb5948e9929b9fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a92245e0792e7fd500019889f0b93b4') in 0.008130 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_113.asset
+  artifactKey: Guid(1e27d0b10b26b6f47bc8cbb49eab8c78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_113.asset using Guid(1e27d0b10b26b6f47bc8cbb49eab8c78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ea2d92589e377eada054cb1de33a086') in 0.008380 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_78.asset
+  artifactKey: Guid(2325319c89cdae74199a38263c02b931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_78.asset using Guid(2325319c89cdae74199a38263c02b931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41d591a8de27018358ac456ecf417422') in 0.008029 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_115.asset
+  artifactKey: Guid(993f3199dc5646e47b8308e4191cf02d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_115.asset using Guid(993f3199dc5646e47b8308e4191cf02d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1da84f498a997658ce85a9f460bb7a94') in 0.008493 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_106.asset
+  artifactKey: Guid(45bdea0f3e8b35f43a0037c364f61237) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_106.asset using Guid(45bdea0f3e8b35f43a0037c364f61237) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7ffc0956ce5321b6fccc38b84ac048e') in 0.008453 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_88.asset
+  artifactKey: Guid(1412518d2f83b164da17c1b62878ff7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_88.asset using Guid(1412518d2f83b164da17c1b62878ff7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '485230d82eac441591687af6801ec8ed') in 0.004035 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_89.asset
+  artifactKey: Guid(ebb53167d9d97d7489957f087a45af0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_89.asset using Guid(ebb53167d9d97d7489957f087a45af0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6811bd4d72df6695793cdba655d69996') in 0.008354 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_90.asset
+  artifactKey: Guid(b9760f6b1b7b4f9459439e7b6120cea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_90.asset using Guid(b9760f6b1b7b4f9459439e7b6120cea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32b3f013d9223ac788ecc8c14fce3fa4') in 0.008123 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_98.asset
+  artifactKey: Guid(ab89ced4f8642304c8c276281b7139f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_98.asset using Guid(ab89ced4f8642304c8c276281b7139f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f44dbef38e4987fd09b8a6b4171be23a') in 0.008270 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_79.asset
+  artifactKey: Guid(6fade31abd6ced34783e6f475bb9aa56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_79.asset using Guid(6fade31abd6ced34783e6f475bb9aa56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab7251fc7ba66f14c34714d0218ff912') in 0.008013 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_77.asset
+  artifactKey: Guid(c2ac93ab4d43c844c9e2ee78dd594f2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_77.asset using Guid(c2ac93ab4d43c844c9e2ee78dd594f2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '763416cbea15aaefe013873a3458bb5b') in 0.003993 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_100.asset
+  artifactKey: Guid(dc6e398e74608034cae715953f8bc684) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_100.asset using Guid(dc6e398e74608034cae715953f8bc684) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12a8fdc0dc01b1078ac8d6c48f3c334c') in 0.008243 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_69.asset
+  artifactKey: Guid(c78ca78c85c52fc4d838eab984385922) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_69.asset using Guid(c78ca78c85c52fc4d838eab984385922) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4dbcbe56a332d886b9ced501185cf04') in 0.004430 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_95.asset
+  artifactKey: Guid(a467fb73a4316c045a7ad890304da805) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_95.asset using Guid(a467fb73a4316c045a7ad890304da805) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dc5e816353fe3b7e80eff6c398ceccf') in 0.008216 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_65.asset
+  artifactKey: Guid(0b968ad1a7cdb4a47ba9427235547b61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_65.asset using Guid(0b968ad1a7cdb4a47ba9427235547b61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cefa1644d1a5d83d24d0727f0863e77') in 0.004082 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_93.asset
+  artifactKey: Guid(628bb1d716ca11d45b76d6d89ae364c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_93.asset using Guid(628bb1d716ca11d45b76d6d89ae364c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9078ba80929905182a05ab45680465e9') in 0.004298 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_83.asset
+  artifactKey: Guid(9040d32ad59f6574a8b0edbe352829f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_83.asset using Guid(9040d32ad59f6574a8b0edbe352829f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c31f771e83dab9ddb3d128b606f21cb2') in 0.008179 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_99.asset
+  artifactKey: Guid(24d89582bcd5dfb4cac9a99aecb4b874) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_99.asset using Guid(24d89582bcd5dfb4cac9a99aecb4b874) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0af4d03468eb278936f865f33ba5a4f') in 0.008268 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_107.asset
+  artifactKey: Guid(a2453f5d1e309874d92326ee7f3f25d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_107.asset using Guid(a2453f5d1e309874d92326ee7f3f25d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b14cfcf620ed96e3f49032130936f9a4') in 0.008301 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_108.asset
+  artifactKey: Guid(96d8c81e5f1bdb04db0ca99fa5f45190) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_108.asset using Guid(96d8c81e5f1bdb04db0ca99fa5f45190) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7659a06593fe9afef6ec23473d3a50bd') in 0.008691 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_111.asset
+  artifactKey: Guid(17cd2d93d6798f249bfec45336c24a1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_111.asset using Guid(17cd2d93d6798f249bfec45336c24a1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0ed7fbd949b83fae104b6a9606e7a6c') in 0.008657 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_67.asset
+  artifactKey: Guid(5f1475ab258ac5e4f8f953d58b68b5b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_67.asset using Guid(5f1475ab258ac5e4f8f953d58b68b5b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e489e0c15b1d73f0fa89f01f92e20bb') in 0.004261 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_82.asset
+  artifactKey: Guid(79de9ad1754ff0a468e09072468ef47d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_82.asset using Guid(79de9ad1754ff0a468e09072468ef47d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52a86826640e2e797c4cd33385af9f8a') in 0.008273 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_85.asset
+  artifactKey: Guid(083c794df89ccca48a9d100eeb53cb66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_85.asset using Guid(083c794df89ccca48a9d100eeb53cb66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f5a340868e20af4c4b76cbf4c3fc8b5') in 0.008650 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_70.asset
+  artifactKey: Guid(c0c1605f327fb534bb83ed830acc80ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_70.asset using Guid(c0c1605f327fb534bb83ed830acc80ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '061b39aac7ecbd6b6acf6cde877d14fa') in 0.004070 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_62.asset
+  artifactKey: Guid(28f560b18461b794aaa2a11881b7150d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_62.asset using Guid(28f560b18461b794aaa2a11881b7150d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dbc8a508de084d1c7bf7f8ed1679b8e') in 0.004165 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_81.asset
+  artifactKey: Guid(e4295d963e3aa3346a9be52f23263cca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_81.asset using Guid(e4295d963e3aa3346a9be52f23263cca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1740b7f1f3d63644c3d8e0d83957c255') in 0.003969 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_84.asset
+  artifactKey: Guid(d5f8dbefcfe1bba4e9b93e3ced79eb6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_84.asset using Guid(d5f8dbefcfe1bba4e9b93e3ced79eb6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa8a0969bd31742561d54c2a94918eab') in 0.008484 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_63.asset
+  artifactKey: Guid(617c4d9fa6d89b14b9d7d314a1aeeb31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_63.asset using Guid(617c4d9fa6d89b14b9d7d314a1aeeb31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc0fb8fd4903314be509221341e3188f') in 0.008604 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_87.asset
+  artifactKey: Guid(bf2fce8e41fe4e541abdc86ddedc32ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_87.asset using Guid(bf2fce8e41fe4e541abdc86ddedc32ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72b659a34950eaa45d42587723b4d02b') in 0.004141 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_103.asset
+  artifactKey: Guid(5ab69e1fb2e3dd5419a3ae6a3aa9bf7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_103.asset using Guid(5ab69e1fb2e3dd5419a3ae6a3aa9bf7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef4dc04ccecfebe51765fbb2f9832472') in 0.004300 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_73.asset
+  artifactKey: Guid(ee1d8c05b76d68843a36e17a65a82603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_73.asset using Guid(ee1d8c05b76d68843a36e17a65a82603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'faeac85f6dcf235730f2b69a27380cab') in 0.004014 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_71.asset
+  artifactKey: Guid(b752eeb39bdc86543adbc44c4eb924da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_71.asset using Guid(b752eeb39bdc86543adbc44c4eb924da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d612503dac280aee7580f43e40b1105') in 0.003840 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_91.asset
+  artifactKey: Guid(c814c8e34af96e047af5426414949c3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/Frostlands/snowTileset_91.asset using Guid(c814c8e34af96e047af5426414949c3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '924ada8527cbeaf0ff85af215742bcf0') in 0.004586 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+- Loaded All Assemblies, in  0.611 seconds
+Refreshing native plugins compatible for Editor in 0.96 ms, found 0 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.731 seconds
+Domain Reload Profiling: 1340ms
+	BeginReloadAssembly (182ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (13ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (33ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (24ms)
+	LoadAllAssembliesAndSetupDomain (355ms)
+		LoadAssemblies (243ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (207ms)
+			TypeCache.Refresh (196ms)
+				TypeCache.ScanAssembly (187ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (732ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (291ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (72ms)
+			ProcessInitializeOnLoadAttributes (173ms)
+			ProcessInitializeOnLoadMethodAttributes (33ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 1.37 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2972 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (1.5 MB). Loaded Objects now: 3754.
+Memory consumption went from 153.9 MB to 152.5 MB.
+Total: 4.375300 ms (FindLiveObjects: 0.313500 ms CreateObjectMapping: 0.093900 ms MarkObjects: 3.726600 ms  DeleteObjects: 0.240200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+- Loaded All Assemblies, in  0.595 seconds
+Refreshing native plugins compatible for Editor in 1.03 ms, found 0 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.726 seconds
+Domain Reload Profiling: 1318ms
+	BeginReloadAssembly (169ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (29ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (25ms)
+	LoadAllAssembliesAndSetupDomain (352ms)
+		LoadAssemblies (243ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (203ms)
+			TypeCache.Refresh (193ms)
+				TypeCache.ScanAssembly (184ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (726ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (289ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (72ms)
+			ProcessInitializeOnLoadAttributes (170ms)
+			ProcessInitializeOnLoadMethodAttributes (33ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (15ms)
+Refreshing native plugins compatible for Editor in 1.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2971 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (1.5 MB). Loaded Objects now: 3756.
+Memory consumption went from 155.6 MB to 154.1 MB.
+Total: 4.093600 ms (FindLiveObjects: 0.268300 ms CreateObjectMapping: 0.087300 ms MarkObjects: 3.463900 ms  DeleteObjects: 0.273400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+- Loaded All Assemblies, in  0.589 seconds
+Refreshing native plugins compatible for Editor in 1.04 ms, found 0 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.736 seconds
+Domain Reload Profiling: 1322ms
+	BeginReloadAssembly (160ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (28ms)
+	RebuildCommonClasses (33ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (24ms)
+	LoadAllAssembliesAndSetupDomain (356ms)
+		LoadAssemblies (230ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (203ms)
+			TypeCache.Refresh (193ms)
+				TypeCache.ScanAssembly (184ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (736ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (294ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (72ms)
+			ProcessInitializeOnLoadAttributes (176ms)
+			ProcessInitializeOnLoadMethodAttributes (33ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 1.13 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2971 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (1.5 MB). Loaded Objects now: 3758.
+Memory consumption went from 157.5 MB to 156.0 MB.
+Total: 3.449600 ms (FindLiveObjects: 0.249900 ms CreateObjectMapping: 0.096100 ms MarkObjects: 2.911000 ms  DeleteObjects: 0.191600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+- Loaded All Assemblies, in  0.590 seconds
+Refreshing native plugins compatible for Editor in 1.12 ms, found 0 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.731 seconds
+Domain Reload Profiling: 1318ms
+	BeginReloadAssembly (168ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (28ms)
+	RebuildCommonClasses (33ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (24ms)
+	LoadAllAssembliesAndSetupDomain (349ms)
+		LoadAssemblies (240ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (202ms)
+			TypeCache.Refresh (192ms)
+				TypeCache.ScanAssembly (182ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (732ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (291ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (72ms)
+			ProcessInitializeOnLoadAttributes (171ms)
+			ProcessInitializeOnLoadMethodAttributes (33ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (15ms)
+Refreshing native plugins compatible for Editor in 1.13 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2971 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (1.5 MB). Loaded Objects now: 3760.
+Memory consumption went from 159.4 MB to 158.0 MB.
+Total: 3.648100 ms (FindLiveObjects: 0.257900 ms CreateObjectMapping: 0.122200 ms MarkObjects: 3.073700 ms  DeleteObjects: 0.192800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+- Loaded All Assemblies, in  0.618 seconds
+Refreshing native plugins compatible for Editor in 1.00 ms, found 0 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.759 seconds
+Domain Reload Profiling: 1375ms
+	BeginReloadAssembly (175ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (28ms)
+	RebuildCommonClasses (35ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (25ms)
+	LoadAllAssembliesAndSetupDomain (367ms)
+		LoadAssemblies (254ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (210ms)
+			TypeCache.Refresh (200ms)
+				TypeCache.ScanAssembly (190ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (759ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (305ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (75ms)
+			ProcessInitializeOnLoadAttributes (178ms)
+			ProcessInitializeOnLoadMethodAttributes (38ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (15ms)
+Refreshing native plugins compatible for Editor in 1.28 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2971 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (1.5 MB). Loaded Objects now: 3762.
+Memory consumption went from 161.4 MB to 159.9 MB.
+Total: 4.685300 ms (FindLiveObjects: 0.385900 ms CreateObjectMapping: 0.091600 ms MarkObjects: 3.870200 ms  DeleteObjects: 0.336100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 874.856859 seconds.
+  path: Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/TilesetData/TS_Frostlands.asset
+  artifactKey: Guid(7d0668d64ee78e44fb06e8f4ada97170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ProceduralLevelGeneration/PG_Sprites/TilesetData/TS_Frostlands.asset using Guid(7d0668d64ee78e44fb06e8f4ada97170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72939b0f89bd0666b29dff805e188340') in 0.086079 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 266
+========================================================================
+Received Import Request.
+  Time since last request: 2.692592 seconds.
+  path: Assets/Sprites/248.png
+  artifactKey: Guid(f1f94363da13bd64eaf15d7cf0f02cc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/248.png using Guid(f1f94363da13bd64eaf15d7cf0f02cc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1f94520b275821a8e61781f5a03116c') in 0.060620 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Sprites/PlayerDie-.aseprite
+  artifactKey: Guid(f0f94940ff9f75041a96b0e1d59257c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/PlayerDie-.aseprite using Guid(f0f94940ff9f75041a96b0e1d59257c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d84687d9e02ae0922bde31f72e82c40') in 0.260259 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 36
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Sprites/SwordCursor.png
+  artifactKey: Guid(6792937759d045d468809916d4887ef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/SwordCursor.png using Guid(6792937759d045d468809916d4887ef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f093a88820c2c6cc6342f6ab0ff48563') in 0.010207 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.094099 seconds.
+  path: Assets/Sounds/AMBIENT-light-leak-adi-goldstein-main-version-07-00-7804.mp3
+  artifactKey: Guid(6b79e6cc31b4f7e4e8ea8271fc4746f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/AMBIENT-light-leak-adi-goldstein-main-version-07-00-7804.mp3 using Guid(6b79e6cc31b4f7e4e8ea8271fc4746f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9629abc32369c90bb35f9f60bfbb88c0') in 0.028670 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Sounds/MainMixer.mixer
+  artifactKey: Guid(c60d1e591aab29b409de80fb6b0cbc13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/MainMixer.mixer using Guid(c60d1e591aab29b409de80fb6b0cbc13) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Refreshing native plugins compatible for Editor in 1.07 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+ -> (artifact id: 'f454bffa35a8d9258069a904e5553767') in 0.002975 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.356956 seconds.
+  path: Assets/Settings/High_PipelineAsset.asset
+  artifactKey: Guid(fc4631edcf056944bab2a8bb614a957c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Settings/High_PipelineAsset.asset using Guid(fc4631edcf056944bab2a8bb614a957c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b19d3be48d91594ef6f92a94b7f20c1e') in 0.003990 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Settings/Lit2DSceneTemplate.scenetemplate
+  artifactKey: Guid(d03ed43fc9d8a4f2e9fa70c1c7916eb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Settings/Lit2DSceneTemplate.scenetemplate using Guid(d03ed43fc9d8a4f2e9fa70c1c7916eb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ced37b706fd2688f76da0563d8ab7e9b') in 0.084527 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Settings/Very Low_PipelineAsset.asset
+  artifactKey: Guid(97c33664f2264874085cf93c50c08f63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Settings/Very Low_PipelineAsset.asset using Guid(97c33664f2264874085cf93c50c08f63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2723063ad9e9ff184c2026aacc71395b') in 0.002568 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Settings/Low_PipelineAsset.asset
+  artifactKey: Guid(1ba2adc0219d78641933cc02deb94849) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Settings/Low_PipelineAsset.asset using Guid(1ba2adc0219d78641933cc02deb94849) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1975efc57ab6b1dfc5d4bf48041c4a3a') in 0.003675 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Settings/Very High_PipelineAsset_ForwardRenderer.asset
+  artifactKey: Guid(7053c418633fcf94da41b81f27eed9d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Settings/Very High_PipelineAsset_ForwardRenderer.asset using Guid(7053c418633fcf94da41b81f27eed9d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f0f2e1f94c8700bf490385004e58ad1') in 0.002273 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Settings/Medium_PipelineAsset.asset
+  artifactKey: Guid(7b7ee2f23d24ec5469661dbf1e374508) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Settings/Medium_PipelineAsset.asset using Guid(7b7ee2f23d24ec5469661dbf1e374508) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebcb590de95749043272e6206417578d') in 0.002360 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Settings/Renderer2D.asset
+  artifactKey: Guid(424799608f7334c24bf367e4bbfa7f9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Settings/Renderer2D.asset using Guid(424799608f7334c24bf367e4bbfa7f9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d81f1fa88d720aecad2433f790a3c9e') in 0.001618 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Settings/Very Low_PipelineAsset_ForwardRenderer.asset
+  artifactKey: Guid(a1825e0518e18ba4280019fee709b23d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Settings/Very Low_PipelineAsset_ForwardRenderer.asset using Guid(a1825e0518e18ba4280019fee709b23d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09f7e494d5ae3bdbc9931500211862b7') in 0.001825 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Settings/Low_PipelineAsset_ForwardRenderer.asset
+  artifactKey: Guid(3042864786b3ee342b32dcec0b0d8b42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Settings/Low_PipelineAsset_ForwardRenderer.asset using Guid(3042864786b3ee342b32dcec0b0d8b42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d72fddca1f15ec6275b2ce467fa6252') in 0.001855 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Settings/Very High_PipelineAsset.asset
+  artifactKey: Guid(153ca7dfa50710d45bca53bff9dfb06a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Settings/Very High_PipelineAsset.asset using Guid(153ca7dfa50710d45bca53bff9dfb06a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a1f3862d9ff97581d0adeb9fa945496') in 0.002162 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Settings/High_PipelineAsset_ForwardRenderer.asset
+  artifactKey: Guid(d20180d5cfd3bbb47b8bbc59d45555b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Settings/High_PipelineAsset_ForwardRenderer.asset using Guid(d20180d5cfd3bbb47b8bbc59d45555b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e298780ed29bdd2b7ab98762e3aacd72') in 0.001807 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Settings/Medium_PipelineAsset_ForwardRenderer.asset
+  artifactKey: Guid(7db3a0d2870f157428a9de627cad61e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Settings/Medium_PipelineAsset_ForwardRenderer.asset using Guid(7db3a0d2870f157428a9de627cad61e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42cf2054599599cdf0a3a3c15d67aee1') in 0.001836 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 2.191393 seconds.
+  path: Assets/Tilesets/Stairs.ase
+  artifactKey: Guid(471971f1d5c0e5147944fe11b92cefc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Stairs.ase using Guid(471971f1d5c0e5147944fe11b92cefc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45bd8f786e6b982af6b9a9fcd3410716') in 0.016319 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.556675 seconds.
+  path: Assets/UI Toolkit/PanelSettings.asset
+  artifactKey: Guid(0affd354fc24be14aa47ef049d6c2b13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI Toolkit/PanelSettings.asset using Guid(0affd354fc24be14aa47ef049d6c2b13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51dc5d844fd762b541f3e75b80708f79') in 0.023172 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 3.087292 seconds.
+  path: Assets/Tilesets/Floors+Walls/Wall-Bottom.ase
+  artifactKey: Guid(e1883310291bb7445aecf8e31f763c2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Floors+Walls/Wall-Bottom.ase using Guid(e1883310291bb7445aecf8e31f763c2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f7c2c12606141b04868347af914b8a1') in 0.039006 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Tilesets/Floors+Walls/Wall-Left.ase
+  artifactKey: Guid(146605f3ec9b7094a963c66563eaf8d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Floors+Walls/Wall-Left.ase using Guid(146605f3ec9b7094a963c66563eaf8d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8e4d7c52f0506c4d7296c6fa04add53') in 0.015788 seconds
+Internal: JobTempAlloc has allocations that are more than the maximum lifespan of 4 frames old - this is not allowed and likely a leak
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Tilesets/Floors+Walls/Wall-BottomRight.ase
+  artifactKey: Guid(694a266fb2c83254888540260a0d360f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Floors+Walls/Wall-BottomRight.ase using Guid(694a266fb2c83254888540260a0d360f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c4c106a90166611eec743eff0f9aec3') in 0.014037 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Tilesets/Floors+Walls/Wall-Top.ase
+  artifactKey: Guid(7b1745c11164b434b8e21e413b2272a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Floors+Walls/Wall-Top.ase using Guid(7b1745c11164b434b8e21e413b2272a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cbef3e9ab37c79c6bc04d38f664a6a6') in 0.013528 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Tilesets/Floors+Walls/Wall-TopRight.ase
+  artifactKey: Guid(9bde28588725837449d264c11790c0bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Floors+Walls/Wall-TopRight.ase using Guid(9bde28588725837449d264c11790c0bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76ae429295ce47e2b2e39b4f03df4c88') in 0.013783 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Tilesets/Floors+Walls/Wall-TopLeft.ase
+  artifactKey: Guid(5ddfba0d3d22a0c4981b82aa3460396a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Floors+Walls/Wall-TopLeft.ase using Guid(5ddfba0d3d22a0c4981b82aa3460396a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c49d48ad46744f1e2756a2117fb7f5d9') in 0.014495 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Tilesets/Floors+Walls/Wall-BottomLeft.ase
+  artifactKey: Guid(e70c6a5f004d56e469c8ef3afbac8732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Floors+Walls/Wall-BottomLeft.ase using Guid(e70c6a5f004d56e469c8ef3afbac8732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecb65486df752412a63ea82ed2b4a0a1') in 0.013632 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Tilesets/Floors+Walls/Wall-Right.ase
+  artifactKey: Guid(2347591d1ce7a6941abae3e6cfbc87ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilesets/Floors+Walls/Wall-Right.ase using Guid(2347591d1ce7a6941abae3e6cfbc87ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ef84cdfe1459abc1de19662e3813cd4') in 0.013262 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 8.135976 seconds.
+  path: Assets/Scripts/PlayerController.cs
+  artifactKey: Guid(11f31ed4b3d6c6a42a1aaf7711541275) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerController.cs using Guid(11f31ed4b3d6c6a42a1aaf7711541275) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37949430dd41f9409d2bcd265d26ffd6') in 0.000594 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 11)
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 11)
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+- Loaded All Assemblies, in  0.677 seconds
+Refreshing native plugins compatible for Editor in 1.06 ms, found 0 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.864 seconds
+Domain Reload Profiling: 1539ms
+	BeginReloadAssembly (195ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (14ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (38ms)
+	RebuildCommonClasses (36ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (28ms)
+	LoadAllAssembliesAndSetupDomain (402ms)
+		LoadAssemblies (264ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (238ms)
+			TypeCache.Refresh (222ms)
+				TypeCache.ScanAssembly (210ms)
+			ScanForSourceGeneratedMonoScriptInfo (5ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (865ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (330ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (82ms)
+			ProcessInitializeOnLoadAttributes (196ms)
+			ProcessInitializeOnLoadMethodAttributes (38ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (15ms)
+Refreshing native plugins compatible for Editor in 1.02 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2971 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 29 unused Assets / (1.5 MB). Loaded Objects now: 3825.
+Memory consumption went from 163.3 MB to 161.8 MB.
+Total: 3.867000 ms (FindLiveObjects: 0.276700 ms CreateObjectMapping: 0.108900 ms MarkObjects: 3.170800 ms  DeleteObjects: 0.309300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+- Loaded All Assemblies, in  0.641 seconds
+Refreshing native plugins compatible for Editor in 1.17 ms, found 0 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.810 seconds
+Domain Reload Profiling: 1449ms
+	BeginReloadAssembly (180ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (30ms)
+	RebuildCommonClasses (35ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (381ms)
+		LoadAssemblies (264ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (217ms)
+			TypeCache.Refresh (206ms)
+				TypeCache.ScanAssembly (196ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (811ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (308ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (75ms)
+			ProcessInitializeOnLoadAttributes (183ms)
+			ProcessInitializeOnLoadMethodAttributes (36ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 1.34 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2971 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (1.5 MB). Loaded Objects now: 3827.
+Memory consumption went from 165.0 MB to 163.5 MB.
+Total: 4.129700 ms (FindLiveObjects: 0.280600 ms CreateObjectMapping: 0.106800 ms MarkObjects: 3.529900 ms  DeleteObjects: 0.211100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 211.924091 seconds.
+  path: Assets/Scripts/PlayerController.cs
+  artifactKey: Guid(11f31ed4b3d6c6a42a1aaf7711541275) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerController.cs using Guid(11f31ed4b3d6c6a42a1aaf7711541275) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd24208150d188984953cb2f16ec1a742') in 0.009032 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 165.268128 seconds.
+  path: Assets/Scripts/PlayerController1.cs
+  artifactKey: Guid(fdfed381017eb70498abc7c5f4112a29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerController1.cs using Guid(fdfed381017eb70498abc7c5f4112a29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '320ceea08fe84c9f69bed600871a061a') in 0.000626 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 12.892242 seconds.
+  path: Assets/Scripts/PC_MOBA.cs
+  artifactKey: Guid(fdfed381017eb70498abc7c5f4112a29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PC_MOBA.cs using Guid(fdfed381017eb70498abc7c5f4112a29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '375dffb6e4f1e6f53bf7d8683cc1571c') in 0.000609 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0

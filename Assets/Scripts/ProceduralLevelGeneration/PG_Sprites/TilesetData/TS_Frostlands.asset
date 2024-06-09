@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f180d7d3c7abdfc4ab01d8c6c75ebe28, type: 3}
+  m_Name: TS_Frostlands
+  m_EditorClassIdentifier: 
+  floorTile: {fileID: 11400000, guid: bb12c5f1eeb60c24b973f91c9f7f6e93, type: 2}
+  wallTop: {fileID: 11400000, guid: 45bdea0f3e8b35f43a0037c364f61237, type: 2}
+  wallTopLeft: {fileID: 11400000, guid: 7f02fe3c7434db04892c3c1f8b810a4f, type: 2}
+  wallTopRight: {fileID: 11400000, guid: a2453f5d1e309874d92326ee7f3f25d0, type: 2}
+  wallTopLeftAndRight: {fileID: 11400000, guid: 421c5fc4a3501854c93083696111d1a5, type: 2}
+  wallTopLeftTurnUp: {fileID: 11400000, guid: aacf229f85d7e294899cad960b2cdd4d, type: 2}
+  wallTopRightTurnUp: {fileID: 11400000, guid: e63a5af12853175488ad984d16a3e98e, type: 2}
+  wallTopOuterLeft: {fileID: 11400000, guid: fcbdfbad3f7cebe4aad7c9e239d39705, type: 2}
+  wallTopOuterRight: {fileID: 11400000, guid: 35e0d6c85ec849946b9f415cb9cfd7f4, type: 2}
+  wallLeft: {fileID: 11400000, guid: 48a71ee42eb15084e8850eeef35a41fb, type: 2}
+  wallSideLeftTRCorner: {fileID: 11400000, guid: af3274a205e59504b92430460c0c15db, type: 2}
+  wallLeftRightTurn: {fileID: 11400000, guid: b85922bf0f2c06f44a86ab1fa8ede47b, type: 2}
+  wallRight: {fileID: 11400000, guid: 17cd2d93d6798f249bfec45336c24a1f, type: 2}
+  wallSideRightTLCorner: {fileID: 11400000, guid: 10f8bdfd97340dd4d9aa7d9716d0e7f1, type: 2}
+  wallRightLeftTurn: {fileID: 11400000, guid: 109fb08e86ced8a48bc69023ed7a34dd, type: 2}
+  wallBottom: {fileID: 11400000, guid: c9d554df10d7fee48ad49d55023a25b2, type: 2}
+  wallBottomLeft: {fileID: 11400000, guid: 1e27d0b10b26b6f47bc8cbb49eab8c78, type: 2}
+  wallBottomRight: {fileID: 11400000, guid: 993f3199dc5646e47b8308e4191cf02d, type: 2}
+  wallBottomLeftAndRight: {fileID: 11400000, guid: 7809ad72bca937b469cf12acff6772de, type: 2}
+  wallFull: {fileID: 11400000, guid: b41254a282691704688f0da519c20587, type: 2}
+  wallFullTop: {fileID: 11400000, guid: 96d8c81e5f1bdb04db0ca99fa5f45190, type: 2}
+  wallFullBottom: {fileID: 11400000, guid: eee128c7a55275f45b5e8bcf27e1ad32, type: 2}
+  wallInnerCornerDownLeft: {fileID: 11400000, guid: 1412518d2f83b164da17c1b62878ff7f, type: 2}
+  wallInnerCornerDownLeftTIntersection: {fileID: 11400000, guid: 76d72e9fbf0202e418a149a7426e3e6a, type: 2}
+  wallInnerCornerDownRight: {fileID: 11400000, guid: 6b9fd8b01f849734988af6e913464b49, type: 2}
+  wallInnerCornerDownRightTIntersection: {fileID: 11400000, guid: 39d1ad41172a57d40ac989fdf31fd5ef, type: 2}
+  potions:
+    _serializedList:
+    - Key: health
+      Value: {fileID: 6769569128524334235, guid: 46e6fea0777b37e4b8962af6b17dfa1d, type: 3}
+    - Key: speed
+      Value: {fileID: 2868880353803996590, guid: a4b6b30b7eb30d3418c376f1eccbbbff, type: 3}
+  enemies:
+    _serializedList:
+    - Key: slime
+      Value: {fileID: 220793210487700221, guid: ff620fef5ee8b4a489eb345244826da5, type: 3}
+    - Key: serpent
+      Value: {fileID: 2988081667011078456, guid: 11732fdce010b834296bd67e9c4e7d8e, type: 3}
+  collectibles:
+    _serializedList:
+    - Key: bronzeCoin
+      Value: {fileID: 312905065163277652, guid: 89a5f854b947af64c801233916bc487a, type: 3}
+    - Key: silverCoin
+      Value: {fileID: 2403942345939234056, guid: 3888a19de3e48c142b7704ecadb35328, type: 3}
+    - Key: goldCoin
+      Value: {fileID: 1235162638002214857, guid: f93aa07780fa5f041bf2d282b956dc65, type: 3}
+    - Key: woodenChest
+      Value: {fileID: 1511031129252231340, guid: a0330e3563e2c9045921de20bd563e04, type: 3}
+    - Key: royalChest
+      Value: {fileID: 386597214321539719, guid: 0d4c16241573cee48a092928555d054f, type: 3}
+  decorations:
+    _serializedList:
+    - Key: skull
+      Value: {fileID: 5362393851159513214, guid: 6bf5ebb74eb0abe47b8e42fa25cf4d13, type: 3}
+    - Key: oneBone
+      Value: {fileID: 3663006050197218062, guid: c92f3142ed94ce94c87de9528a8d2ab5, type: 3}
+    - Key: twoBone
+      Value: {fileID: 3726403319779044386, guid: 1f19ee9193eeca84ca304788a91024e8, type: 3}

@@ -53,6 +53,11 @@ public class PlayerController : MonoBehaviour
     private bool disableInput = false;
     private TrailRenderer dashTrail;
 
+
+    // Keybinds
+    [HideInInspector] public KeyCode meleeKey = KeyCode.Mouse0;
+    [HideInInspector] public KeyCode dashKey = KeyCode.Mouse1;
+
     void Awake()
     {
         animator = GetComponent<Animator>();
@@ -96,7 +101,7 @@ public class PlayerController : MonoBehaviour
 
         if (Time.time >= nextAttackTime)
         {
-            if (Input.GetKeyDown(KeyCode.Mouse0)) {
+            if (Input.GetKeyDown(meleeKey)) {
                 if (PauseMenu.GameIsPaused)
                     return;
 
@@ -104,7 +109,7 @@ public class PlayerController : MonoBehaviour
                 nextAttackTime = Time.time + 1 / attackSpeed;
             }
         }
-        if (Input.GetKeyDown(KeyCode.Mouse1) && canDash)
+        if (Input.GetKeyDown(dashKey) && canDash)
         {
             StartCoroutine(Dash());
         }

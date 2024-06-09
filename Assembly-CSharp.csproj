@@ -59,7 +59,7 @@
     <UnityVersion>2023.1.20f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Users\Matthew\.vscode\extensions\visualstudiotoolsforunity.vstuc-0.9.3\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Users\Matthew\.vscode\extensions\visualstudiotoolsforunity.vstuc-1.0.2\Analyzers\Microsoft.Unity.Analyzers.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2023.1.20f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2023.1.20f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
@@ -89,6 +89,7 @@
     <Compile Include="Assets\Scripts\EnemyScripts\TriggerTrap.cs" />
     <Compile Include="Assets\Scripts\ProceduralLevelGeneration\PG_Algorithms.cs" />
     <Compile Include="Assets\Scripts\EnemyScripts\RangedShot.cs" />
+    <Compile Include="Assets\Scripts\PC_MOBA.cs" />
     <Compile Include="Assets\Scripts\ProceduralLevelGeneration\WallGenerator.cs" />
     <Compile Include="Assets\Scripts\ProceduralLevelGeneration\GenerationAlgorithms\SimpleRandomWalkGenerator.cs" />
     <Compile Include="Assets\Prefabs\Items\Collectibles\CoinScript.cs" />
