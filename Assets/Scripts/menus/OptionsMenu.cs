@@ -85,6 +85,7 @@ public class OptionsMenu : MonoBehaviour
         PlayerPrefs.SetFloat(SoundManager.MASTER_KEY, masterVolumeSlider.value);
         PlayerPrefs.SetFloat(SoundManager.MUSIC_KEY, musicVolumeSlider.value);
         PlayerPrefs.SetFloat(SoundManager.SFX_GAMEPLAY_KEY, gameplayVolumeSlider.value);
+        isInOptionsMenu = false;
     }
 
     public void SetFullscreen(bool isFullscreen)
