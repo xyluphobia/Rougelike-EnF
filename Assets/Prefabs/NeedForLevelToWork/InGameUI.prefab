@@ -547,7 +547,7 @@ SortingGroup:
   m_GameObject: {fileID: 1051291112966791086}
   m_Enabled: 1
   m_SortingLayerID: 938235283
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 1
   m_SortAtRoot: 0
 --- !u!1 &1093934821444132535
@@ -1767,7 +1767,7 @@ GameObject:
   - component: {fileID: 666716921140691764}
   m_Layer: 5
   m_Name: InGameUI
-  m_TagString: Untagged
+  m_TagString: InGameUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2304,7 +2304,7 @@ SortingGroup:
   m_GameObject: {fileID: 3239041282320157266}
   m_Enabled: 1
   m_SortingLayerID: 938235283
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 1
   m_SortAtRoot: 0
 --- !u!1 &3336073108735811453
@@ -2986,7 +2986,7 @@ SortingGroup:
   m_GameObject: {fileID: 4412461600886012969}
   m_Enabled: 1
   m_SortingLayerID: 938235283
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 1
   m_SortAtRoot: 1
 --- !u!1 &4841657639572187102
@@ -4113,7 +4113,7 @@ SortingGroup:
   m_GameObject: {fileID: 7345285568074482429}
   m_Enabled: 1
   m_SortingLayerID: 938235283
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 2
   m_SortAtRoot: 0
 --- !u!223 &2591873210227253220
@@ -5495,6 +5495,6 @@ SortingGroup:
   m_GameObject: {fileID: 6835173431176382575}
   m_Enabled: 1
   m_SortingLayerID: 938235283
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 1
   m_SortAtRoot: 0

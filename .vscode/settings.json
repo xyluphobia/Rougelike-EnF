@@ -56,5 +56,7 @@
         "Behaviour",
         "Rigidbody",
         "Yellowpaper"
-    ]
+    ],
+    "FSharp.suggestGitignore": false,
+    "git.ignoreLimitWarning": true
 }

@@ -21,6 +21,7 @@ TagManager:
   - HealthTextUpdate
   - UpgradePanel
   - TilemapVisualizer
+  - InGameUI
   layers:
   - Default
   - TransparentFX

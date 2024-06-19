@@ -82,7 +82,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 312860243
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -2862362457084384950, guid: fb6ff299678713543a70e3a467cbb2b6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -264,7 +264,7 @@ MonoBehaviour:
   enemyAi: {fileID: -5973398576697948700}
   projectile: {fileID: 8168177434383956359, guid: 96a0b74680fcfda49a9b9117d1515e86, type: 3}
   firstShotAfterTime: 0.5
-  ShotsPerSecond: 2.5
+  ShotEveryXSeconds: 1.5
   attackPointUp: {fileID: 1263861584035494169}
   attackPointRight: {fileID: 6925172109815737725}
   attackPointDown: {fileID: 1780910275577518027}

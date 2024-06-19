@@ -222,7 +222,7 @@ public class BoardManager : MonoBehaviour
         LayoutObjectAtRandom(floorDecorations, floorDecorationsCount.minimum, floorDecorationsCount.maximum, TYPE_FLOOR_DECO);
         LayoutObjectAtRandom(collectiblesTiles, collectiblesCount.minimum, collectiblesCount.maximum, TYPE_COLLECTIBLES);
 
-        // enemyCount is 1E at level 2, 2E at level 4, 3E at level 8 etc
+        // enemyCount is 1 enemy at level 2, 2 enemies at level 4, 3 enemies at level 8 etc
         int enemyCount = (int)Mathf.Log(level, 2f) + 1;
         LayoutObjectAtRandom(enemyTiles, enemyCount, enemyCount, TYPE_ENEMY);
         

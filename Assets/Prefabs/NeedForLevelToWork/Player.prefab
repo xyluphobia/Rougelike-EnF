@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 7101389352014998957}
   - component: {fileID: 3498337405227505675}
   - component: {fileID: 902272084060168147}
+  - component: {fileID: -6212119138999546499}
   - component: {fileID: 7698485254044852837}
   - component: {fileID: 6306008981185285943}
   - component: {fileID: 5167797303664505513}
@@ -326,6 +327,36 @@ TrailRenderer:
   m_Autodestruct: 0
   m_Emitting: 0
   m_ApplyActiveColorSpace: 1
+--- !u!114 &-6212119138999546499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2215174607414617992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 444ad0e9265e1244f9d43cdfb58e0a54, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: gameplay
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!114 &7698485254044852837
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -375,6 +406,8 @@ MonoBehaviour:
   dashDuration: 0.2
   dashCooldown: 2
   dashClip: {fileID: 8300000, guid: e910657c2840864498ceb19ef0b580c1, type: 3}
+  meleeKey: 323
+  dashKey: 324
 --- !u!114 &6306008981185285943
 MonoBehaviour:
   m_ObjectHideFlags: 0

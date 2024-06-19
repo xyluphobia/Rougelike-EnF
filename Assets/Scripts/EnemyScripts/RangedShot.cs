@@ -12,7 +12,7 @@ public class RangedShot : MonoBehaviour
 
     private float currentShotCooldown;
     [SerializeField] private float firstShotAfterTime;
-    [SerializeField] private float ShotsPerSecond;
+    [SerializeField] private float ShotEveryXSeconds;
 
     [SerializeField] private Transform attackPointUp;
     [SerializeField] private Transform attackPointRight;
@@ -48,7 +48,7 @@ public class RangedShot : MonoBehaviour
     {
          SoundManager.instance.RandomizeSfx(projectileShotClips);
 
-        currentShotCooldown = ShotsPerSecond;
+        currentShotCooldown = ShotEveryXSeconds;
 
         Vector3 dir = enemyAi.movement;
         if (dir.x > 0.7)

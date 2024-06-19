@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 using TMPro;
 using CameraShake;
+using System;
 
 public class PlayerController : MonoBehaviour
 {
@@ -37,9 +39,6 @@ public class PlayerController : MonoBehaviour
     private PotionsAndAbilities potionsAndAbilities;
     private GameManager gm;
 
-    private float lastH = 0.0f;
-    private float lastV = 0.0f;
-
     private Rigidbody2D rb;
     private Vector2 movement;
 
@@ -55,8 +54,8 @@ public class PlayerController : MonoBehaviour
 
 
     // Keybinds
-    [HideInInspector] public KeyCode meleeKey = KeyCode.Mouse0;
-    [HideInInspector] public KeyCode dashKey = KeyCode.Mouse1;
+    private PlayerInput playerInput;
+    
 
     void Awake()
     {
@@ -70,60 +69,73 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+        playerInput = new PlayerInput();
+
         gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
         health = gm.playerHealth;
 
         healthText.text = "Health: " + health;
     }
 
-  
-    void Update()
+    void FixedUpdate()
     {
-        if (disableInput)
-            return;
+        if (disableInput) return;
 
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
+        rb.MovePosition(rb.position + movement.normalized * movementSpeed * Time.fixedDeltaTime);
+    }
+
+    /* Movement and Ability Input Handling */
+    private void OnMove(InputValue inputValue) {
+        if (disableInput) return;
+        
+        movement.x = inputValue.Get<Vector2>().x;
+        movement.y = inputValue.Get<Vector2>().y;
 
 
         animator.SetFloat("Horizontal", movement.x);
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Speed", movement.sqrMagnitude);
 
-        if (Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Horizontal") == -1 || Input.GetAxisRaw("Vertical") == 1 || Input.GetAxisRaw("Vertical") == -1)
+        if (movement.x == 1 || movement.x == -1 || movement.y == 1 ||  movement.y == -1)
         {
-            lastH = Input.GetAxisRaw("Horizontal");
-            lastV = Input.GetAxisRaw("Vertical");
-
-            animator.SetFloat("lastHorizontal", lastH);
-            animator.SetFloat("lastVertical", lastV);
+            animator.SetFloat("lastHorizontal", movement.x);
+            animator.SetFloat("lastVertical", movement.y);
         }
+    }
 
-        if (Time.time >= nextAttackTime)
+    private void OnMelee() {
+        if (!disableInput && Time.time >= nextAttackTime)
         {
-            if (Input.GetKeyDown(meleeKey)) {
-                if (PauseMenu.GameIsPaused)
-                    return;
-
-                Melee();
-                nextAttackTime = Time.time + 1 / attackSpeed;
-            }
+            Melee();
+            nextAttackTime = Time.time + 1.0f;
         }
-        if (Input.GetKeyDown(dashKey) && canDash)
+    }
+
+    private void OnDash() {
+        if(!disableInput && canDash) 
         {
             StartCoroutine(Dash());
         }
     }
 
-    void FixedUpdate()
-    {
-        if (disableInput)
-            return;
+    private void OnPause() {
+        PauseMenu pauseMenu = GameObject.FindGameObjectWithTag("InGameUI").GetComponent<PauseMenu>();
+        pauseMenu.PauseGame();
 
-        rb.MovePosition(rb.position + movement.normalized * movementSpeed * Time.fixedDeltaTime);
+        playerInput.actions.FindActionMap("UI").Enable();
+        playerInput.actions.FindActionMap("Gameplay").Disable();
     }
 
-    // Collision handling
+    private void OnResume() {
+        PauseMenu pauseMenu = GameObject.FindGameObjectWithTag("InGameUI").GetComponent<PauseMenu>();
+        pauseMenu.ResumeGame();
+
+        playerInput.actions.FindActionMap("Gameplay").Enable();
+        playerInput.actions.FindActionMap("UI").Disable();
+    }
+
+
+    /* Collision Handling */
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Exit"))

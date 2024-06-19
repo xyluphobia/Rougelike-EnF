@@ -50,6 +50,8 @@ MonoBehaviour:
       Value: {fileID: 220793210487700221, guid: ff620fef5ee8b4a489eb345244826da5, type: 3}
     - Key: serpent
       Value: {fileID: 2988081667011078456, guid: 11732fdce010b834296bd67e9c4e7d8e, type: 3}
+    - Key: rotator
+      Value: {fileID: 2988081667011078456, guid: 9a410766a0e99c84c9b40dd3928b18e4, type: 3}
   collectibles:
     _serializedList:
     - Key: bronzeCoin

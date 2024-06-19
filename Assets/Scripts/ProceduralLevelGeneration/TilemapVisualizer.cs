@@ -181,7 +181,7 @@ public class TilemapVisualizer : MonoBehaviour
         float ranVal = Random.value;
 
         if (ranVal < 0.65)
-            Instantiate(envTS_data.enemies["slime"], (Vector3Int)position, Quaternion.identity);
+            Instantiate(envTS_data.enemies["rotator"], (Vector3Int)position, Quaternion.identity);
         else if (ranVal < 1.0)
             Instantiate(envTS_data.enemies["serpent"], (Vector3Int)position, Quaternion.identity);
     }
