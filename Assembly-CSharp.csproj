@@ -62,16 +62,17 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\CursorManager.cs" />
     <Compile Include="Assets\Prefabs\Items\Collectibles\ChestScript.cs" />
+    <Compile Include="Assets\Scripts\Player\TriggerCollider.cs" />
     <Compile Include="Assets\Scripts\ProceduralLevelGeneration\AbstractDungeonGenerator.cs" />
     <Compile Include="Assets\Scripts\menus\GameOver.cs" />
     <Compile Include="Assets\Scripts\PotsAndAbility\UpgradeKeepAlive.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
     <Compile Include="Assets\Prefabs\Items\DisplayScorePotions.cs" />
     <Compile Include="Assets\Scripts\EnemyScripts\EnemyAI.cs" />
     <Compile Include="Assets\Scripts\ProceduralLevelGeneration\Data\SimpleRandomWalkData.cs" />
     <Compile Include="Assets\Scripts\Loader.cs" />
     <Compile Include="Assets\Scripts\menus\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\SoundManager.cs" />
-    <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\PotsAndAbility\PotionsAndAbilities.cs" />
     <Compile Include="Assets\Prefabs\NeedForLevelToWork\KeyBindings.cs" />
     <Compile Include="Assets\Prefabs\Popups\DestroyTextInSeconds.cs" />

@@ -64,7 +64,7 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""CycleMovementControlsDemo"",
+                    ""name"": ""TestShit"",
                     ""type"": ""Button"",
                     ""id"": ""fcc5745b-6040-4096-b3a4-c1bae575eb68"",
                     ""expectedControlType"": ""Button"",
@@ -224,7 +224,7 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""CycleMovementControlsDemo"",
+                    ""action"": ""TestShit"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -295,7 +295,7 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
         m_Gameplay_Dash = m_Gameplay.FindAction("Dash", throwIfNotFound: true);
         m_Gameplay_Melee = m_Gameplay.FindAction("Melee", throwIfNotFound: true);
         m_Gameplay_Pause = m_Gameplay.FindAction("Pause", throwIfNotFound: true);
-        m_Gameplay_CycleMovementControlsDemo = m_Gameplay.FindAction("CycleMovementControlsDemo", throwIfNotFound: true);
+        m_Gameplay_TestShit = m_Gameplay.FindAction("TestShit", throwIfNotFound: true);
         // PauseUI
         m_PauseUI = asset.FindActionMap("PauseUI", throwIfNotFound: true);
         m_PauseUI_Resume = m_PauseUI.FindAction("Resume", throwIfNotFound: true);
@@ -367,7 +367,7 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
     private readonly InputAction m_Gameplay_Dash;
     private readonly InputAction m_Gameplay_Melee;
     private readonly InputAction m_Gameplay_Pause;
-    private readonly InputAction m_Gameplay_CycleMovementControlsDemo;
+    private readonly InputAction m_Gameplay_TestShit;
     public struct GameplayActions
     {
         private @KeyBindings m_Wrapper;
@@ -376,7 +376,7 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
         public InputAction @Dash => m_Wrapper.m_Gameplay_Dash;
         public InputAction @Melee => m_Wrapper.m_Gameplay_Melee;
         public InputAction @Pause => m_Wrapper.m_Gameplay_Pause;
-        public InputAction @CycleMovementControlsDemo => m_Wrapper.m_Gameplay_CycleMovementControlsDemo;
+        public InputAction @TestShit => m_Wrapper.m_Gameplay_TestShit;
         public InputActionMap Get() { return m_Wrapper.m_Gameplay; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -398,9 +398,9 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
             @Pause.started += instance.OnPause;
             @Pause.performed += instance.OnPause;
             @Pause.canceled += instance.OnPause;
-            @CycleMovementControlsDemo.started += instance.OnCycleMovementControlsDemo;
-            @CycleMovementControlsDemo.performed += instance.OnCycleMovementControlsDemo;
-            @CycleMovementControlsDemo.canceled += instance.OnCycleMovementControlsDemo;
+            @TestShit.started += instance.OnTestShit;
+            @TestShit.performed += instance.OnTestShit;
+            @TestShit.canceled += instance.OnTestShit;
         }
 
         private void UnregisterCallbacks(IGameplayActions instance)
@@ -417,9 +417,9 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
             @Pause.started -= instance.OnPause;
             @Pause.performed -= instance.OnPause;
             @Pause.canceled -= instance.OnPause;
-            @CycleMovementControlsDemo.started -= instance.OnCycleMovementControlsDemo;
-            @CycleMovementControlsDemo.performed -= instance.OnCycleMovementControlsDemo;
-            @CycleMovementControlsDemo.canceled -= instance.OnCycleMovementControlsDemo;
+            @TestShit.started -= instance.OnTestShit;
+            @TestShit.performed -= instance.OnTestShit;
+            @TestShit.canceled -= instance.OnTestShit;
         }
 
         public void RemoveCallbacks(IGameplayActions instance)
@@ -535,7 +535,7 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
         void OnDash(InputAction.CallbackContext context);
         void OnMelee(InputAction.CallbackContext context);
         void OnPause(InputAction.CallbackContext context);
-        void OnCycleMovementControlsDemo(InputAction.CallbackContext context);
+        void OnTestShit(InputAction.CallbackContext context);
     }
     public interface IPauseUIActions
     {
