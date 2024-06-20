@@ -21,6 +21,9 @@ public class OptionsMenu : MonoBehaviour
 
     public static bool isInOptionsMenu = false;
 
+    [SerializeField] private GameObject pauseMenuUI;
+    [SerializeField] private GameObject optionsMenuUI;
+
     void Start()
     {
         resolutions = Screen.resolutions;
@@ -47,19 +50,7 @@ public class OptionsMenu : MonoBehaviour
         musicVolumeSlider.value = PlayerPrefs.GetFloat(SoundManager.MUSIC_KEY, 1f);
         gameplayVolumeSlider.value = PlayerPrefs.GetFloat(SoundManager.SFX_GAMEPLAY_KEY, 1f);
 
-        gameObject.SetActive(false);
-    }
-
-    void Update() 
-    {
-        if (Input.GetKeyDown(KeyCode.Escape)) 
-        {
-            if (isInOptionsMenu)  
-            {
-                isInOptionsMenu = false;
-                gameObject.SetActive(false);
-            }
-        }
+        optionsMenuUI.SetActive(false);
     }
 
     public void EnteredOptionsMenu()
@@ -86,6 +77,7 @@ public class OptionsMenu : MonoBehaviour
         PlayerPrefs.SetFloat(SoundManager.MUSIC_KEY, musicVolumeSlider.value);
         PlayerPrefs.SetFloat(SoundManager.SFX_GAMEPLAY_KEY, gameplayVolumeSlider.value);
         isInOptionsMenu = false;
+        pauseMenuUI.SetActive(true);
     }
 
     public void SetFullscreen(bool isFullscreen)

@@ -55,6 +55,7 @@ public class PlayerController : MonoBehaviour
 
     // Keybinds
     private PlayerInput playerInput;
+    public bool rebinding = false;
     
 
     void Awake()
@@ -83,7 +84,7 @@ public class PlayerController : MonoBehaviour
         rb.MovePosition(rb.position + movement.normalized * movementSpeed * Time.fixedDeltaTime);
     }
 
-    /* Movement and Ability Input Handling */
+/* Movement and Ability Input Handling */
     private void OnMove(InputValue inputValue) {
         if (disableInput) return;
         
@@ -122,13 +123,21 @@ public class PlayerController : MonoBehaviour
         pauseMenu.PauseGame();
     }
 
-    private void OnResume() {
-        PauseMenu pauseMenu = GameObject.FindGameObjectWithTag("InGameUI").GetComponent<PauseMenu>();
-        pauseMenu.ResumeGame();
+    private void OnResume()
+    {
+        if (!OptionsMenu.isInOptionsMenu)
+        {
+            PauseMenu pauseMenu = GameObject.FindGameObjectWithTag("InGameUI").GetComponent<PauseMenu>();
+            pauseMenu.ResumeGame();
+        }
+        else
+        {
+            GameObject.FindGameObjectWithTag("OptionsMenu").SetActive(false);
+        }
     }
 
 
-    /* Collision Handling */
+/* Collision Handling */
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Exit"))

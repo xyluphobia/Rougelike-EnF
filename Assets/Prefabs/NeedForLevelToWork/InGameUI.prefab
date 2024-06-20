@@ -6219,6 +6219,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1369807341855845483, guid: 5c7359a11cad3034096f504bbea6b983, type: 3}
+      propertyPath: pauseMenuUI
+      value: 
+      objectReference: {fileID: 2511173083518830648}
+    - target: {fileID: 1369807341855845483, guid: 5c7359a11cad3034096f504bbea6b983, type: 3}
+      propertyPath: optionsMenuUI
+      value: 
+      objectReference: {fileID: 694091127924649759}
+    - target: {fileID: 1369807341855845483, guid: 5c7359a11cad3034096f504bbea6b983, type: 3}
       propertyPath: musicVolumeSlider
       value: 
       objectReference: {fileID: 782024391195414180}
