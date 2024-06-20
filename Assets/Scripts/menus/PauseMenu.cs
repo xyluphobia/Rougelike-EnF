@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -18,12 +19,18 @@ public class PauseMenu : MonoBehaviour
 
     public void PauseGame()
     {
+        PlayerInput playerInput = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInput>();
+        playerInput.SwitchCurrentActionMap("PauseUI");
+
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
     }
 
     public void ResumeGame()
     {
+        PlayerInput playerInput = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInput>();
+        playerInput.SwitchCurrentActionMap("Gameplay");
+        
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
     }

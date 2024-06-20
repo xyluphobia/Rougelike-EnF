@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
+using UnityEngine.InputSystem;
 
 public class GameManager : MonoBehaviour
 {
@@ -31,6 +32,8 @@ public class GameManager : MonoBehaviour
 
     public float saveStopwatch = -1f;
 
+    public InputActionAsset actions;
+
     void Awake()
     {
         if (instance == null) 
@@ -41,6 +44,10 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         boardScript = GetComponent<CorridorFirstGenerator>();
+
+        var rebinds = PlayerPrefs.GetString("rebinds");
+        if (!string.IsNullOrEmpty(rebinds))
+            actions.LoadBindingOverridesFromJson(rebinds);
     }
 
     private void OnLevelFinishedLoading (Scene scene, LoadSceneMode mode)

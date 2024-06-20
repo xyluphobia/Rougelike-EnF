@@ -63,14 +63,13 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         potionsAndAbilities = GetComponent<PotionsAndAbilities>();
         dashTrail = GetComponent<TrailRenderer>();
+        playerInput = GetComponent<PlayerInput>();
 
         healthText = GameObject.Find("HealthText").GetComponent<TextMeshProUGUI>();
     }
 
     void Start()
     {
-        playerInput = new PlayerInput();
-
         gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
         health = gm.playerHealth;
 
@@ -121,17 +120,11 @@ public class PlayerController : MonoBehaviour
     private void OnPause() {
         PauseMenu pauseMenu = GameObject.FindGameObjectWithTag("InGameUI").GetComponent<PauseMenu>();
         pauseMenu.PauseGame();
-
-        playerInput.actions.FindActionMap("UI").Enable();
-        playerInput.actions.FindActionMap("Gameplay").Disable();
     }
 
     private void OnResume() {
         PauseMenu pauseMenu = GameObject.FindGameObjectWithTag("InGameUI").GetComponent<PauseMenu>();
         pauseMenu.ResumeGame();
-
-        playerInput.actions.FindActionMap("Gameplay").Enable();
-        playerInput.actions.FindActionMap("UI").Disable();
     }
 
 

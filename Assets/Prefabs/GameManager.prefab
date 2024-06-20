@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 6163819663793140548}
   - component: {fileID: 2844489481739531323}
   - component: {fileID: 3379612642913003377}
-  - component: {fileID: 8842915086821587057}
   - component: {fileID: 7038133860684863766}
   m_Layer: 0
   m_Name: GameManager
@@ -54,6 +53,7 @@ MonoBehaviour:
   score: -500
   playerHealth: 100
   saveStopwatch: -1
+  actions: {fileID: -944628639613478452, guid: 444ad0e9265e1244f9d43cdfb58e0a54, type: 3}
 --- !u!114 &3379612642913003377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72,22 +72,6 @@ MonoBehaviour:
   corridorLength: 20
   corridorCount: 7
   roomPercent: 1
---- !u!114 &8842915086821587057
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 275118339369010003}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af0186c132a965c43ad3e9b4a7a56c54, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  keyBindings: {fileID: -944628639613478452, guid: 444ad0e9265e1244f9d43cdfb58e0a54, type: 3}
-  actionMapName: gameplay
-  move: move
-  dash: dash
 --- !u!114 &7038133860684863766
 MonoBehaviour:
   m_ObjectHideFlags: 0

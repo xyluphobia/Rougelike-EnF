@@ -62,6 +62,15 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""CycleMovementControlsDemo"",
+                    ""type"": ""Button"",
+                    ""id"": ""fcc5745b-6040-4096-b3a4-c1bae575eb68"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -207,6 +216,17 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
                     ""action"": ""Pause"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""0d141ae9-4169-47ec-a6f9-46de126629ff"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CycleMovementControlsDemo"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -237,6 +257,34 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""RebindingKeepEmpty"",
+            ""id"": ""3c80cebd-6beb-422d-a657-9721c57d9358"",
+            ""actions"": [
+                {
+                    ""name"": ""New action"",
+                    ""type"": ""Button"",
+                    ""id"": ""ad23ff11-896f-4f97-b882-d93b755d9505"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""f3a1adb7-9c1f-4329-98a1-e6249dd21223"",
+                    ""path"": """",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""New action"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
@@ -247,9 +295,13 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
         m_Gameplay_Dash = m_Gameplay.FindAction("Dash", throwIfNotFound: true);
         m_Gameplay_Melee = m_Gameplay.FindAction("Melee", throwIfNotFound: true);
         m_Gameplay_Pause = m_Gameplay.FindAction("Pause", throwIfNotFound: true);
+        m_Gameplay_CycleMovementControlsDemo = m_Gameplay.FindAction("CycleMovementControlsDemo", throwIfNotFound: true);
         // PauseUI
         m_PauseUI = asset.FindActionMap("PauseUI", throwIfNotFound: true);
         m_PauseUI_Resume = m_PauseUI.FindAction("Resume", throwIfNotFound: true);
+        // RebindingKeepEmpty
+        m_RebindingKeepEmpty = asset.FindActionMap("RebindingKeepEmpty", throwIfNotFound: true);
+        m_RebindingKeepEmpty_Newaction = m_RebindingKeepEmpty.FindAction("New action", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -315,6 +367,7 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
     private readonly InputAction m_Gameplay_Dash;
     private readonly InputAction m_Gameplay_Melee;
     private readonly InputAction m_Gameplay_Pause;
+    private readonly InputAction m_Gameplay_CycleMovementControlsDemo;
     public struct GameplayActions
     {
         private @KeyBindings m_Wrapper;
@@ -323,6 +376,7 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
         public InputAction @Dash => m_Wrapper.m_Gameplay_Dash;
         public InputAction @Melee => m_Wrapper.m_Gameplay_Melee;
         public InputAction @Pause => m_Wrapper.m_Gameplay_Pause;
+        public InputAction @CycleMovementControlsDemo => m_Wrapper.m_Gameplay_CycleMovementControlsDemo;
         public InputActionMap Get() { return m_Wrapper.m_Gameplay; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -344,6 +398,9 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
             @Pause.started += instance.OnPause;
             @Pause.performed += instance.OnPause;
             @Pause.canceled += instance.OnPause;
+            @CycleMovementControlsDemo.started += instance.OnCycleMovementControlsDemo;
+            @CycleMovementControlsDemo.performed += instance.OnCycleMovementControlsDemo;
+            @CycleMovementControlsDemo.canceled += instance.OnCycleMovementControlsDemo;
         }
 
         private void UnregisterCallbacks(IGameplayActions instance)
@@ -360,6 +417,9 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
             @Pause.started -= instance.OnPause;
             @Pause.performed -= instance.OnPause;
             @Pause.canceled -= instance.OnPause;
+            @CycleMovementControlsDemo.started -= instance.OnCycleMovementControlsDemo;
+            @CycleMovementControlsDemo.performed -= instance.OnCycleMovementControlsDemo;
+            @CycleMovementControlsDemo.canceled -= instance.OnCycleMovementControlsDemo;
         }
 
         public void RemoveCallbacks(IGameplayActions instance)
@@ -423,15 +483,66 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
         }
     }
     public PauseUIActions @PauseUI => new PauseUIActions(this);
+
+    // RebindingKeepEmpty
+    private readonly InputActionMap m_RebindingKeepEmpty;
+    private List<IRebindingKeepEmptyActions> m_RebindingKeepEmptyActionsCallbackInterfaces = new List<IRebindingKeepEmptyActions>();
+    private readonly InputAction m_RebindingKeepEmpty_Newaction;
+    public struct RebindingKeepEmptyActions
+    {
+        private @KeyBindings m_Wrapper;
+        public RebindingKeepEmptyActions(@KeyBindings wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Newaction => m_Wrapper.m_RebindingKeepEmpty_Newaction;
+        public InputActionMap Get() { return m_Wrapper.m_RebindingKeepEmpty; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(RebindingKeepEmptyActions set) { return set.Get(); }
+        public void AddCallbacks(IRebindingKeepEmptyActions instance)
+        {
+            if (instance == null || m_Wrapper.m_RebindingKeepEmptyActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_RebindingKeepEmptyActionsCallbackInterfaces.Add(instance);
+            @Newaction.started += instance.OnNewaction;
+            @Newaction.performed += instance.OnNewaction;
+            @Newaction.canceled += instance.OnNewaction;
+        }
+
+        private void UnregisterCallbacks(IRebindingKeepEmptyActions instance)
+        {
+            @Newaction.started -= instance.OnNewaction;
+            @Newaction.performed -= instance.OnNewaction;
+            @Newaction.canceled -= instance.OnNewaction;
+        }
+
+        public void RemoveCallbacks(IRebindingKeepEmptyActions instance)
+        {
+            if (m_Wrapper.m_RebindingKeepEmptyActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IRebindingKeepEmptyActions instance)
+        {
+            foreach (var item in m_Wrapper.m_RebindingKeepEmptyActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_RebindingKeepEmptyActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public RebindingKeepEmptyActions @RebindingKeepEmpty => new RebindingKeepEmptyActions(this);
     public interface IGameplayActions
     {
         void OnMove(InputAction.CallbackContext context);
         void OnDash(InputAction.CallbackContext context);
         void OnMelee(InputAction.CallbackContext context);
         void OnPause(InputAction.CallbackContext context);
+        void OnCycleMovementControlsDemo(InputAction.CallbackContext context);
     }
     public interface IPauseUIActions
     {
         void OnResume(InputAction.CallbackContext context);
+    }
+    public interface IRebindingKeepEmptyActions
+    {
+        void OnNewaction(InputAction.CallbackContext context);
     }
 }
