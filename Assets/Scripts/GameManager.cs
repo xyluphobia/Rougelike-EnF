@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance = null;
     public CorridorFirstGenerator boardScript;
+    public SimpleRandomWalkGenerator bossRoomScript;
+    public bool isBossLevel = false;
 
     public float levelStartDelay = 1.4f;
     public int level = 0;
@@ -34,6 +36,10 @@ public class GameManager : MonoBehaviour
 
     public InputActionAsset actions;
 
+    /* ~~~~~~~~~~~ DEV ~~~~~~~~~~~ */
+    public bool ForceBossRoomNext = false;
+    /* ~~~~~~~~~~~ DEV ~~~~~~~~~~~ */
+
     void Awake()
     {
         if (instance == null) 
@@ -42,8 +48,6 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
 
         DontDestroyOnLoad(gameObject);
-
-        boardScript = GetComponent<CorridorFirstGenerator>();
 
         var rebinds = PlayerPrefs.GetString("rebinds");
         if (!string.IsNullOrEmpty(rebinds))
@@ -84,8 +88,16 @@ public class GameManager : MonoBehaviour
         UpgradePanelObject = GameObject.FindGameObjectWithTag("UpgradePanel");
         StartCoroutine(HideLevelImage());
         
-        boardScript.tilemapVisualizer = GameObject.FindGameObjectWithTag("TilemapVisualizer").GetComponent<TilemapVisualizer>();
-        boardScript.RunProceduralGeneration(/*level*/);
+        if (IsBossLevelChecker())
+        {
+            bossRoomScript.tilemapVisualizer = GameObject.FindGameObjectWithTag("TilemapVisualizer").GetComponent<TilemapVisualizer>();
+            bossRoomScript.RunProceduralGeneration();
+        }
+        else
+        {
+            boardScript.tilemapVisualizer = GameObject.FindGameObjectWithTag("TilemapVisualizer").GetComponent<TilemapVisualizer>();
+            boardScript.RunProceduralGeneration(/*level*/);
+        }
         
         scoreText = GameObject.FindGameObjectWithTag("ScoreText").GetComponent<TextMeshProUGUI>();
         UpdateScore(500);
@@ -193,5 +205,17 @@ public class GameManager : MonoBehaviour
             GameObject prefab = Instantiate(textObject, self.transform.position, Quaternion.identity);
             prefab.GetComponentInChildren<TextMeshPro>().text = input.ToString();
         }
+    }
+
+    private bool IsBossLevelChecker()
+    {
+        if (level % 5 == 0 || ForceBossRoomNext)
+        {
+            isBossLevel = true;
+            return true;
+        }
+
+        isBossLevel = false;
+        return false;
     }
 }

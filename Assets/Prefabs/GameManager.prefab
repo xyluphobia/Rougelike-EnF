@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6163819663793140548}
   - component: {fileID: 2844489481739531323}
   - component: {fileID: 3379612642913003377}
+  - component: {fileID: 5482090434056104260}
   - component: {fileID: 7038133860684863766}
   m_Layer: 0
   m_Name: GameManager
@@ -46,7 +47,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80ba2ccd011ec8f4b8fc920baf30a996, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boardScript: {fileID: 0}
+  boardScript: {fileID: 3379612642913003377}
+  bossRoomScript: {fileID: 5482090434056104260}
   levelStartDelay: 1.4
   level: 0
   scoreText: {fileID: 0}
@@ -54,6 +56,7 @@ MonoBehaviour:
   playerHealth: 100
   saveStopwatch: -1
   actions: {fileID: -944628639613478452, guid: 444ad0e9265e1244f9d43cdfb58e0a54, type: 3}
+  ForceBossRoomNext: 0
 --- !u!114 &3379612642913003377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72,6 +75,21 @@ MonoBehaviour:
   corridorLength: 20
   corridorCount: 7
   roomPercent: 1
+--- !u!114 &5482090434056104260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 275118339369010003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28ada36a85fcbef4390ec4142f422772, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tilemapVisualizer: {fileID: 0}
+  startPosition: {x: 0, y: 20}
+  randomWalkParameters: {fileID: 11400000, guid: 56eae5d39e83d3c489f3f242cf099854, type: 2}
 --- !u!114 &7038133860684863766
 MonoBehaviour:
   m_ObjectHideFlags: 0

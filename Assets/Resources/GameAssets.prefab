@@ -59,3 +59,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: a40b2f29c5750244b8ee2ceb65a4a3c7, type: 3}
   - {fileID: 8300000, guid: 325085eaf7d97c74ca47a897acfd4346, type: 3}
   - {fileID: 8300000, guid: a1d11f12889e5b64fa4f39e446a3aa86, type: 3}
+  standardProjectile: {fileID: 8168177434383956359, guid: 06594b578e7e77c4eb19bf12d6b5db9b, type: 3}
+  trackingProjectile: {fileID: 8168177434383956359, guid: 96a0b74680fcfda49a9b9117d1515e86, type: 3}
+  rotatorProjectile: {fileID: 8168177434383956359, guid: 51120ca1e84e6164bb77bbcddfc3e313, type: 3}

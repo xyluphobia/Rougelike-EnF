@@ -71,6 +71,51 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Development_ForceBossLevel"",
+                    ""type"": ""Button"",
+                    ""id"": ""7e7b1bb1-31ac-40c0-a4b1-a085137a5bf9"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Development_KillAllEnemies"",
+                    ""type"": ""Button"",
+                    ""id"": ""4752ea1d-b7ff-4275-a834-9ba8a19e1dc2"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Development_FullHeal"",
+                    ""type"": ""Button"",
+                    ""id"": ""d3e4e2eb-8e6f-4479-8794-8a63a9b1dddb"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Development_RechargeDash"",
+                    ""type"": ""Button"",
+                    ""id"": ""c83c1ad7-dccc-4bd7-80a0-77b8675a11bf"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Development_Invincibility"",
+                    ""type"": ""Button"",
+                    ""id"": ""4a2d67ad-34a0-4e9e-b0f5-14f0f40b26c8"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -227,6 +272,61 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
                     ""action"": ""TestShit"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""63dcc8e6-2d9b-4edf-8eb5-7e38f360ee34"",
+                    ""path"": ""<Keyboard>/f1"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Development_ForceBossLevel"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b0c35df2-e84f-4c44-863d-7b9ca3863ec9"",
+                    ""path"": ""<Keyboard>/f3"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Development_FullHeal"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""646df30e-5ca4-44d2-a847-d5552ac2fb35"",
+                    ""path"": ""<Keyboard>/f4"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Development_RechargeDash"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ffb113dd-b458-4ef4-b3d5-8f75ea38327c"",
+                    ""path"": ""<Keyboard>/f5"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Development_Invincibility"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b7dfa5ad-f84d-4f3f-a65b-eb070798aaee"",
+                    ""path"": ""<Keyboard>/f2"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Development_KillAllEnemies"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -296,6 +396,11 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
         m_Gameplay_Melee = m_Gameplay.FindAction("Melee", throwIfNotFound: true);
         m_Gameplay_Pause = m_Gameplay.FindAction("Pause", throwIfNotFound: true);
         m_Gameplay_TestShit = m_Gameplay.FindAction("TestShit", throwIfNotFound: true);
+        m_Gameplay_Development_ForceBossLevel = m_Gameplay.FindAction("Development_ForceBossLevel", throwIfNotFound: true);
+        m_Gameplay_Development_KillAllEnemies = m_Gameplay.FindAction("Development_KillAllEnemies", throwIfNotFound: true);
+        m_Gameplay_Development_FullHeal = m_Gameplay.FindAction("Development_FullHeal", throwIfNotFound: true);
+        m_Gameplay_Development_RechargeDash = m_Gameplay.FindAction("Development_RechargeDash", throwIfNotFound: true);
+        m_Gameplay_Development_Invincibility = m_Gameplay.FindAction("Development_Invincibility", throwIfNotFound: true);
         // PauseUI
         m_PauseUI = asset.FindActionMap("PauseUI", throwIfNotFound: true);
         m_PauseUI_Resume = m_PauseUI.FindAction("Resume", throwIfNotFound: true);
@@ -368,6 +473,11 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
     private readonly InputAction m_Gameplay_Melee;
     private readonly InputAction m_Gameplay_Pause;
     private readonly InputAction m_Gameplay_TestShit;
+    private readonly InputAction m_Gameplay_Development_ForceBossLevel;
+    private readonly InputAction m_Gameplay_Development_KillAllEnemies;
+    private readonly InputAction m_Gameplay_Development_FullHeal;
+    private readonly InputAction m_Gameplay_Development_RechargeDash;
+    private readonly InputAction m_Gameplay_Development_Invincibility;
     public struct GameplayActions
     {
         private @KeyBindings m_Wrapper;
@@ -377,6 +487,11 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
         public InputAction @Melee => m_Wrapper.m_Gameplay_Melee;
         public InputAction @Pause => m_Wrapper.m_Gameplay_Pause;
         public InputAction @TestShit => m_Wrapper.m_Gameplay_TestShit;
+        public InputAction @Development_ForceBossLevel => m_Wrapper.m_Gameplay_Development_ForceBossLevel;
+        public InputAction @Development_KillAllEnemies => m_Wrapper.m_Gameplay_Development_KillAllEnemies;
+        public InputAction @Development_FullHeal => m_Wrapper.m_Gameplay_Development_FullHeal;
+        public InputAction @Development_RechargeDash => m_Wrapper.m_Gameplay_Development_RechargeDash;
+        public InputAction @Development_Invincibility => m_Wrapper.m_Gameplay_Development_Invincibility;
         public InputActionMap Get() { return m_Wrapper.m_Gameplay; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -401,6 +516,21 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
             @TestShit.started += instance.OnTestShit;
             @TestShit.performed += instance.OnTestShit;
             @TestShit.canceled += instance.OnTestShit;
+            @Development_ForceBossLevel.started += instance.OnDevelopment_ForceBossLevel;
+            @Development_ForceBossLevel.performed += instance.OnDevelopment_ForceBossLevel;
+            @Development_ForceBossLevel.canceled += instance.OnDevelopment_ForceBossLevel;
+            @Development_KillAllEnemies.started += instance.OnDevelopment_KillAllEnemies;
+            @Development_KillAllEnemies.performed += instance.OnDevelopment_KillAllEnemies;
+            @Development_KillAllEnemies.canceled += instance.OnDevelopment_KillAllEnemies;
+            @Development_FullHeal.started += instance.OnDevelopment_FullHeal;
+            @Development_FullHeal.performed += instance.OnDevelopment_FullHeal;
+            @Development_FullHeal.canceled += instance.OnDevelopment_FullHeal;
+            @Development_RechargeDash.started += instance.OnDevelopment_RechargeDash;
+            @Development_RechargeDash.performed += instance.OnDevelopment_RechargeDash;
+            @Development_RechargeDash.canceled += instance.OnDevelopment_RechargeDash;
+            @Development_Invincibility.started += instance.OnDevelopment_Invincibility;
+            @Development_Invincibility.performed += instance.OnDevelopment_Invincibility;
+            @Development_Invincibility.canceled += instance.OnDevelopment_Invincibility;
         }
 
         private void UnregisterCallbacks(IGameplayActions instance)
@@ -420,6 +550,21 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
             @TestShit.started -= instance.OnTestShit;
             @TestShit.performed -= instance.OnTestShit;
             @TestShit.canceled -= instance.OnTestShit;
+            @Development_ForceBossLevel.started -= instance.OnDevelopment_ForceBossLevel;
+            @Development_ForceBossLevel.performed -= instance.OnDevelopment_ForceBossLevel;
+            @Development_ForceBossLevel.canceled -= instance.OnDevelopment_ForceBossLevel;
+            @Development_KillAllEnemies.started -= instance.OnDevelopment_KillAllEnemies;
+            @Development_KillAllEnemies.performed -= instance.OnDevelopment_KillAllEnemies;
+            @Development_KillAllEnemies.canceled -= instance.OnDevelopment_KillAllEnemies;
+            @Development_FullHeal.started -= instance.OnDevelopment_FullHeal;
+            @Development_FullHeal.performed -= instance.OnDevelopment_FullHeal;
+            @Development_FullHeal.canceled -= instance.OnDevelopment_FullHeal;
+            @Development_RechargeDash.started -= instance.OnDevelopment_RechargeDash;
+            @Development_RechargeDash.performed -= instance.OnDevelopment_RechargeDash;
+            @Development_RechargeDash.canceled -= instance.OnDevelopment_RechargeDash;
+            @Development_Invincibility.started -= instance.OnDevelopment_Invincibility;
+            @Development_Invincibility.performed -= instance.OnDevelopment_Invincibility;
+            @Development_Invincibility.canceled -= instance.OnDevelopment_Invincibility;
         }
 
         public void RemoveCallbacks(IGameplayActions instance)
@@ -536,6 +681,11 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
         void OnMelee(InputAction.CallbackContext context);
         void OnPause(InputAction.CallbackContext context);
         void OnTestShit(InputAction.CallbackContext context);
+        void OnDevelopment_ForceBossLevel(InputAction.CallbackContext context);
+        void OnDevelopment_KillAllEnemies(InputAction.CallbackContext context);
+        void OnDevelopment_FullHeal(InputAction.CallbackContext context);
+        void OnDevelopment_RechargeDash(InputAction.CallbackContext context);
+        void OnDevelopment_Invincibility(InputAction.CallbackContext context);
     }
     public interface IPauseUIActions
     {

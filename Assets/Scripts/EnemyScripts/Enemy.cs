@@ -16,7 +16,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private GameObject damageText;
     [SerializeField] private GameObject scoreText;
 
-    // Start is called before the first frame update
+
     void Start()
     {
         currentHealth = maxHealth;

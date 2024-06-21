@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 3498337405227505675}
   - component: {fileID: 902272084060168147}
   - component: {fileID: -6212119138999546499}
+  - component: {fileID: 9071213020904109426}
   - component: {fileID: 7698485254044852837}
   - component: {fileID: 6306008981185285943}
   - component: {fileID: 5167797303664505513}
@@ -358,6 +359,18 @@ MonoBehaviour:
   m_DefaultActionMap: Gameplay
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &9071213020904109426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2215174607414617992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03d585c23459db841937ec1af8d5a7d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &7698485254044852837
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -410,6 +423,7 @@ MonoBehaviour:
   dashClip: {fileID: 8300000, guid: e910657c2840864498ceb19ef0b580c1, type: 3}
   invulnerable: 0
   triggerCollider: {fileID: 3172864167198723390}
+  playerGlow: {fileID: 8970526455051380498}
 --- !u!114 &6306008981185285943
 MonoBehaviour:
   m_ObjectHideFlags: 0

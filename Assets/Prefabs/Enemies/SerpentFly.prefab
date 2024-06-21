@@ -269,6 +269,7 @@ MonoBehaviour:
   attackPointRight: {fileID: 6925172109815737725}
   attackPointDown: {fileID: 1780910275577518027}
   attackPointLeft: {fileID: 3119295507691436706}
+  waitXForAnim: 0.22
 --- !u!1 &3799133936217025723
 GameObject:
   m_ObjectHideFlags: 0

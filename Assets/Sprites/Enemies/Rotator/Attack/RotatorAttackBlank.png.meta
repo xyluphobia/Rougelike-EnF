@@ -1,0 +1,919 @@
+fileFormatVersion: 2
+guid: f119e174bd0334841849b069fc56d4b1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8119941038350932914
+    second: Beholder_attack_NOhitbox_0
+  - first:
+      213: -3379009054782065202
+    second: Beholder_attack_NOhitbox_1
+  - first:
+      213: 2542578765409891181
+    second: Beholder_attack_NOhitbox_2
+  - first:
+      213: -8856770516913560127
+    second: Beholder_attack_NOhitbox_3
+  - first:
+      213: -5824299530290026432
+    second: Beholder_attack_NOhitbox_4
+  - first:
+      213: 4287567182834181920
+    second: Beholder_attack_NOhitbox_5
+  - first:
+      213: -7972974549305649850
+    second: Beholder_attack_NOhitbox_6
+  - first:
+      213: -4865818960774814822
+    second: Beholder_attack_NOhitbox_7
+  - first:
+      213: 4533914879886129097
+    second: Beholder_attack_NOhitbox_8
+  - first:
+      213: -8926827148700256503
+    second: Beholder_attack_NOhitbox_9
+  - first:
+      213: 2450350681557922053
+    second: Beholder_attack_NOhitbox_10
+  - first:
+      213: -1547174007123118954
+    second: Beholder_attack_NOhitbox_11
+  - first:
+      213: -1448187325765418028
+    second: Beholder_attack_NOhitbox_12
+  - first:
+      213: -6912775923366198293
+    second: Beholder_attack_NOhitbox_13
+  - first:
+      213: -6048313316917100000
+    second: Beholder_attack_NOhitbox_14
+  - first:
+      213: 5872851532666696387
+    second: Beholder_attack_NOhitbox_15
+  - first:
+      213: -5656996166394701233
+    second: Beholder_attack_NOhitbox_16
+  - first:
+      213: -6599209578206449969
+    second: Beholder_attack_NOhitbox_17
+  - first:
+      213: -5983758906469674972
+    second: Beholder_attack_NOhitbox_18
+  - first:
+      213: 1299569526338990875
+    second: Beholder_attack_NOhitbox_19
+  - first:
+      213: 9106443066208487141
+    second: Beholder_attack_NOhitbox_20
+  - first:
+      213: -5349516205986953843
+    second: Beholder_attack_NOhitbox_21
+  - first:
+      213: -2800203848781710209
+    second: Beholder_attack_NOhitbox_22
+  - first:
+      213: 6531483233445026743
+    second: Beholder_attack_NOhitbox_23
+  - first:
+      213: -31688096734975535
+    second: Beholder_attack_NOhitbox_24
+  - first:
+      213: -2862412063357154722
+    second: Beholder_attack_NOhitbox_25
+  - first:
+      213: -5397600202356192970
+    second: Beholder_attack_NOhitbox_26
+  - first:
+      213: -4367726274605926946
+    second: Beholder_attack_NOhitbox_27
+  - first:
+      213: 9069050835425019905
+    second: Beholder_attack_NOhitbox_28
+  - first:
+      213: -1222883541061797440
+    second: Beholder_attack_NOhitbox_29
+  - first:
+      213: -5584253576091354406
+    second: Beholder_attack_NOhitbox_30
+  - first:
+      213: -3117503213230620414
+    second: Beholder_attack_NOhitbox_31
+  - first:
+      213: -8579860712167418018
+    second: Beholder_attack_NOhitbox_32
+  - first:
+      213: -8579012804996208896
+    second: Beholder_attack_NOhitbox_33
+  - first:
+      213: -5430885609348021877
+    second: Beholder_attack_NOhitbox_34
+  - first:
+      213: 6442509873609308932
+    second: Beholder_attack_NOhitbox_35
+  - first:
+      213: -7552188206552159804
+    second: Beholder_attack_NOhitbox_36
+  - first:
+      213: -330070848405439627
+    second: Beholder_attack_NOhitbox_37
+  - first:
+      213: 1677660843145836985
+    second: Beholder_attack_NOhitbox_38
+  - first:
+      213: 3020344635610898848
+    second: Beholder_attack_NOhitbox_39
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Rotator_AttackBlank_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 633
+        width: 96
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -48}
+        - {x: 48, y: 0}
+        - {x: 0, y: 48}
+        - {x: -48, y: 0}
+      physicsShape:
+      - - {x: 0, y: -48}
+        - {x: 48, y: 0}
+        - {x: 0, y: 48}
+        - {x: -48, y: 0}
+      tessellationDetail: -1
+      bones: []
+      spriteID: 501756d56f4610220800000000000000
+      internalID: 2450350681557922053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rotator_AttackBlank_2
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 633
+        width: 96
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -48}
+        - {x: 48, y: 0}
+        - {x: 0, y: 48}
+        - {x: -48, y: 0}
+      physicsShape:
+      - - {x: 0, y: -48}
+        - {x: 48, y: 0}
+        - {x: 0, y: 48}
+        - {x: -48, y: 0}
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69475b31075578ae0800000000000000
+      internalID: -1547174007123118954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rotator_AttackBlank_3
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 633
+        width: 96
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -48}
+        - {x: 48, y: 0}
+        - {x: 0, y: 48}
+        - {x: -48, y: 0}
+      physicsShape:
+      - - {x: 0, y: -48}
+        - {x: 48, y: 0}
+        - {x: 0, y: 48}
+        - {x: -48, y: 0}
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d3878fcc4107ebe0800000000000000
+      internalID: -1448187325765418028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rotator_AttackBlank_4
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 633
+        width: 96
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -48}
+        - {x: 48, y: 0}
+        - {x: 0, y: 48}
+        - {x: -48, y: 0}
+      physicsShape:
+      - - {x: 0, y: -48}
+        - {x: 48, y: 0}
+        - {x: 0, y: 48}
+        - {x: -48, y: 0}
+      tessellationDetail: -1
+      bones: []
+      spriteID: be382e35ce2e010a0800000000000000
+      internalID: -6912775923366198293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rotator_AttackBlank_5
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 633
+        width: 96
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -48}
+        - {x: 48, y: 0}
+        - {x: 0, y: 48}
+        - {x: -48, y: 0}
+      physicsShape:
+      - - {x: 0, y: -48}
+        - {x: 48, y: 0}
+        - {x: 0, y: 48}
+        - {x: -48, y: 0}
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02244e66513101ca0800000000000000
+      internalID: -6048313316917100000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rotator_AttackBlank_11
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 441
+        width: 96
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -48}
+        - {x: 48, y: 0}
+        - {x: 0, y: 48}
+        - {x: -48, y: 0}
+      physicsShape:
+      - - {x: 0, y: -48}
+        - {x: 48, y: 0}
+        - {x: 0, y: 48}
+        - {x: -48, y: 0}
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40bfd6e9894686950800000000000000
+      internalID: 6442509873609308932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rotator_AttackBlank_12
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 441
+        width: 96
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -48}
+        - {x: 48, y: 0}
+        - {x: 0, y: 48}
+        - {x: -48, y: 0}
+      physicsShape:
+      - - {x: 0, y: -48}
+        - {x: 48, y: 0}
+        - {x: 0, y: 48}
+        - {x: -48, y: 0}
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c9609fd6dc313790800000000000000
+      internalID: -7552188206552159804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rotator_AttackBlank_13
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 441
+        width: 96
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -48}
+        - {x: 48, y: 0}
+        - {x: 0, y: 48}
+        - {x: -48, y: 0}
+      physicsShape:
+      - - {x: 0, y: -48}
+        - {x: 48, y: 0}
+        - {x: 0, y: 48}
+        - {x: -48, y: 0}
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57bf41aef4a5b6bf0800000000000000
+      internalID: -330070848405439627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rotator_AttackBlank_14
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 441
+        width: 96
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -48}
+        - {x: 48, y: 0}
+        - {x: 0, y: 48}
+        - {x: -48, y: 0}
+      physicsShape:
+      - - {x: 0, y: -48}
+        - {x: 48, y: 0}
+        - {x: 0, y: 48}
+        - {x: -48, y: 0}
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b93a41f5af384710800000000000000
+      internalID: 1677660843145836985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rotator_AttackBlank_15
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 441
+        width: 96
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -48}
+        - {x: 48, y: 0}
+        - {x: 0, y: 48}
+        - {x: -48, y: 0}
+      physicsShape:
+      - - {x: 0, y: -48}
+        - {x: 48, y: 0}
+        - {x: 0, y: 48}
+        - {x: -48, y: 0}
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a128d0917b6ae920800000000000000
+      internalID: 3020344635610898848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rotator_AttackBlank_21
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 249
+        width: 96
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -48}
+        - {x: 48, y: 0}
+        - {x: 0, y: 48}
+        - {x: -48, y: 0}
+      physicsShape:
+      - - {x: 0, y: -48}
+        - {x: 48, y: 0}
+        - {x: 0, y: 48}
+        - {x: -48, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4820ef45563121041bb75455be369cb8
+      internalID: 1062626135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rotator_AttackBlank_22
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 249
+        width: 96
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -48}
+        - {x: 48, y: 0}
+        - {x: 0, y: 48}
+        - {x: -48, y: 0}
+      physicsShape:
+      - - {x: 0, y: -48}
+        - {x: 48, y: 0}
+        - {x: 0, y: 48}
+        - {x: -48, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d24dadafc1ca354e9a457fcf9a5bc7f
+      internalID: -374850083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rotator_AttackBlank_23
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 249
+        width: 96
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -48}
+        - {x: 48, y: 0}
+        - {x: 0, y: 48}
+        - {x: -48, y: 0}
+      physicsShape:
+      - - {x: 0, y: -48}
+        - {x: 48, y: 0}
+        - {x: 0, y: 48}
+        - {x: -48, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c31cb6d840c7f8a4cb7edd6bde859c81
+      internalID: -51697367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rotator_AttackBlank_24
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 249
+        width: 96
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -48}
+        - {x: 48, y: 0}
+        - {x: 0, y: 48}
+        - {x: -48, y: 0}
+      physicsShape:
+      - - {x: 0, y: -48}
+        - {x: 48, y: 0}
+        - {x: 0, y: 48}
+        - {x: -48, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d94a50d86d55d5541b8b38151f867cf7
+      internalID: 256080475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rotator_AttackBlank_25
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 249
+        width: 96
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -48}
+        - {x: 48, y: 0}
+        - {x: 0, y: 48}
+        - {x: -48, y: 0}
+      physicsShape:
+      - - {x: 0, y: -48}
+        - {x: 48, y: 0}
+        - {x: 0, y: 48}
+        - {x: -48, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f69bfc5a55c732842a2e4348a61dd837
+      internalID: -645818682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rotator_AttackBlank_31
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 57
+        width: 96
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -48}
+        - {x: 48, y: 0}
+        - {x: 0, y: 48}
+        - {x: -48, y: 0}
+      physicsShape:
+      - - {x: 0, y: -48}
+        - {x: 48, y: 0}
+        - {x: 0, y: 48}
+        - {x: -48, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d04f0c8293042b4d83cceac26874358
+      internalID: 1001634794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rotator_AttackBlank_32
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 57
+        width: 96
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -48}
+        - {x: 48, y: 0}
+        - {x: 0, y: 48}
+        - {x: -48, y: 0}
+      physicsShape:
+      - - {x: 0, y: -48}
+        - {x: 48, y: 0}
+        - {x: 0, y: 48}
+        - {x: -48, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a7db8c570a13e24cbf63c3b4ab4e110
+      internalID: -250259436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rotator_AttackBlank_33
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 57
+        width: 96
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -48}
+        - {x: 48, y: 0}
+        - {x: 0, y: 48}
+        - {x: -48, y: 0}
+      physicsShape:
+      - - {x: 0, y: -48}
+        - {x: 48, y: 0}
+        - {x: 0, y: 48}
+        - {x: -48, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0156147e2253bf24d98d592647513a28
+      internalID: 1966180639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rotator_AttackBlank_34
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 57
+        width: 96
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -48}
+        - {x: 48, y: 0}
+        - {x: 0, y: 48}
+        - {x: -48, y: 0}
+      physicsShape:
+      - - {x: 0, y: -48}
+        - {x: 48, y: 0}
+        - {x: 0, y: 48}
+        - {x: -48, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4af5cc0415419584f8f1345abb69ccf2
+      internalID: 1581757773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rotator_AttackBlank_35
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 57
+        width: 96
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -48}
+        - {x: 48, y: 0}
+        - {x: 0, y: 48}
+        - {x: -48, y: 0}
+      physicsShape:
+      - - {x: 0, y: -48}
+        - {x: 48, y: 0}
+        - {x: 0, y: 48}
+        - {x: -48, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c090393f1bd04164b99f91f4ba33dd8f
+      internalID: 957126273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 7ac8b62c80ffab444ad52e901ce4eed4
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Beholder_attack_NOhitbox_0: -8119941038350932914
+      Beholder_attack_NOhitbox_16: -5656996166394701233
+      Beholder_attack_NOhitbox_18: -5983758906469674972
+      Beholder_attack_NOhitbox_19: 1299569526338990875
+      Beholder_attack_NOhitbox_20: 9106443066208487141
+      Beholder_attack_NOhitbox_26: -5397600202356192970
+      Beholder_attack_NOhitbox_27: -4367726274605926946
+      Beholder_attack_NOhitbox_28: 9069050835425019905
+      Beholder_attack_NOhitbox_29: -1222883541061797440
+      Beholder_attack_NOhitbox_30: -5584253576091354406
+      Beholder_attack_NOhitbox_40: -1210386935
+      Beholder_attack_NOhitbox_41: 983601353
+      Beholder_attack_NOhitbox_42: -844266636
+      Beholder_attack_NOhitbox_43: -1809505612
+      Beholder_attack_NOhitbox_44: 352876504
+      Beholder_attack_NOhitbox_46: 1766115713
+      Beholder_attack_NOhitbox_47: -1631086003
+      Beholder_attack_NOhitbox_48: 410596465
+      Beholder_attack_NOhitbox_49: -1226890973
+      Beholder_attack_NOhitbox_50: -99377399
+      Beholder_attack_NOhitbox_51: 1627043064
+      Beholder_attack_NOhitbox_52: 2008506570
+      Beholder_attack_NOhitbox_53: -354926166
+      Beholder_attack_NOhitbox_54: -1401929792
+      Beholder_attack_NOhitbox_55: -5229347
+      Beholder_attack_NOhitbox_56: -2127447698
+      Beholder_attack_NOhitbox_57: -730854160
+      Beholder_attack_NOhitbox_58: 1825142070
+      Beholder_attack_NOhitbox_59: 1809402187
+      Beholder_attack_NOhitbox_6: -7972974549305649850
+      Beholder_attack_NOhitbox_65: -1271686200
+      Beholder_attack_NOhitbox_66: 1303022371
+      Beholder_attack_NOhitbox_67: -469455326
+      Beholder_attack_NOhitbox_68: 1154558644
+      Beholder_attack_NOhitbox_69: 1630467681
+      Beholder_attack_NOhitbox_7: -4865818960774814822
+      Beholder_attack_NOhitbox_70: -922155183
+      Beholder_attack_NOhitbox_71: 1058882674
+      Beholder_attack_NOhitbox_72: 1035439923
+      Beholder_attack_NOhitbox_73: 841876113
+      Beholder_attack_NOhitbox_74: -529750869
+      Beholder_attack_NOhitbox_75: -1445514117
+      Beholder_attack_NOhitbox_76: 994737566
+      Beholder_attack_NOhitbox_77: -1716847228
+      Beholder_attack_NOhitbox_78: 1250091735
+      Beholder_attack_NOhitbox_79: -839119499
+      Beholder_attack_NOhitbox_8: 4533914879886129097
+      Beholder_attack_NOhitbox_80: -786000377
+      Beholder_attack_NOhitbox_81: 1232658397
+      Beholder_attack_NOhitbox_82: -1112895425
+      Beholder_attack_NOhitbox_83: -768078350
+      Beholder_attack_NOhitbox_84: 973577049
+      Beholder_attack_NOhitbox_9: -8926827148700256503
+      Beholder_attack_NOhitbox_90: -1705652036
+      Beholder_attack_NOhitbox_91: 1116142543
+      Beholder_attack_NOhitbox_92: -391035313
+      Beholder_attack_NOhitbox_93: 154671586
+      Beholder_attack_NOhitbox_94: 191737928
+      Beholder_attack_NOhitbox_95: 1729522735
+      Beholder_attack_NOhitbox_96: 125173590
+      Beholder_attack_NOhitbox_97: 1091383460
+      Beholder_attack_NOhitbox_98: 300407140
+      Beholder_attack_NOhitbox_99: 59036455
+      Rotator_AttackBlank_1: 2450350681557922053
+      Rotator_AttackBlank_11: 6442509873609308932
+      Rotator_AttackBlank_12: -7552188206552159804
+      Rotator_AttackBlank_13: -330070848405439627
+      Rotator_AttackBlank_14: 1677660843145836985
+      Rotator_AttackBlank_15: 3020344635610898848
+      Rotator_AttackBlank_2: -1547174007123118954
+      Rotator_AttackBlank_21: 1062626135
+      Rotator_AttackBlank_22: -374850083
+      Rotator_AttackBlank_23: -51697367
+      Rotator_AttackBlank_24: 256080475
+      Rotator_AttackBlank_25: -645818682
+      Rotator_AttackBlank_3: -1448187325765418028
+      Rotator_AttackBlank_31: 1001634794
+      Rotator_AttackBlank_32: -250259436
+      Rotator_AttackBlank_33: 1966180639
+      Rotator_AttackBlank_34: 1581757773
+      Rotator_AttackBlank_35: 957126273
+      Rotator_AttackBlank_4: -6912775923366198293
+      Rotator_AttackBlank_5: -6048313316917100000
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

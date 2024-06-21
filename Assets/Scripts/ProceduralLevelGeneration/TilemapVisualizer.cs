@@ -18,6 +18,7 @@ public class TilemapVisualizer : MonoBehaviour
 
     private bool playerSpawned = false;
     private bool exitSpawned = false;
+    private bool bossSpawned = false;
 
     public void PaintFloorTiles(IEnumerable<Vector2Int> floorPositions) {
         floorTilemap.ClearAllTiles(); // Clear all current floor tiles. Remove this for it to iterate on the original instead of replace.
@@ -178,12 +179,21 @@ public class TilemapVisualizer : MonoBehaviour
     }
 
     private void PickAndInstantiateEnemy(Vector2Int position) {
-        float ranVal = Random.value;
+        if(!GameManager.instance.isBossLevel)
+        {
+            float ranVal = Random.value;
 
-        if (ranVal < 0.65)
-            Instantiate(envTS_data.enemies["slime"], (Vector3Int)position, Quaternion.identity);
-        else if (ranVal < 1.0)
-            Instantiate(envTS_data.enemies["serpent"], (Vector3Int)position, Quaternion.identity);
+            if (ranVal < 0.65)
+                Instantiate(envTS_data.enemies["slime"], (Vector3Int)position, Quaternion.identity);
+            else if (ranVal < 1.0)
+                Instantiate(envTS_data.enemies["serpent"], (Vector3Int)position, Quaternion.identity);
+        }
+
+        else if (!bossSpawned)
+        {
+            bossSpawned = true;
+            Instantiate(envTS_data.enemies["rotator"], (Vector3Int)position, Quaternion.identity);
+        }
     }
 
     public void PaintSingleBasicWall(Vector2Int position, string binaryType) 

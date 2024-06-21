@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 using TMPro;
 using CameraShake;
 using System;
+using UnityEngine.Rendering.Universal;
 
 public class PlayerController : MonoBehaviour
 {
@@ -49,12 +50,14 @@ public class PlayerController : MonoBehaviour
     [HideInInspector] public float dashCooldownReduction = 0f;
     [SerializeField] private AudioClip dashClip;
 
-    private bool canDash = true;
+    /*private < should be private outside of development*/ public bool canDash = true;
     private bool disableInput = false;
     [HideInInspector] public bool invulnerable = false;
     private bool ghostingActive = false;
     [SerializeField] private Collider2D triggerCollider;
+
     private TrailRenderer dashTrail;
+    [SerializeField] private Light2D playerGlow;
 
 
     // Keybinds
@@ -138,23 +141,10 @@ public class PlayerController : MonoBehaviour
             GameObject.FindGameObjectWithTag("OptionsMenu").SetActive(false);
         }
     }
-    private bool testToggle = false;
+    
     private void OnTestShit()
     {
-        if (!testToggle)
-        {
-            testToggle = true;
-            Debug.Log("On");
-
-            ToggleGhosting();
-        }
-        else
-        {
-            testToggle = false;
-            Debug.Log("Off");
-
-            ToggleGhosting();
-        }
+        
     }
 
 
@@ -163,6 +153,7 @@ public class PlayerController : MonoBehaviour
     {
         if (other.CompareTag("Exit"))
         {
+            invulnerable = true;
             StopWatch.stopwatchActive = false;
             GameManager.instance.ShowText(GameAssets.i.scoreText, 500, gameObject);
 
@@ -307,7 +298,9 @@ public class PlayerController : MonoBehaviour
         if (!ghostingActive || activate)
         {
             ghostingActive = true;
-            gameObject.GetComponent<SpriteRenderer>().color = new Color32(157,220,245, 200);
+            //playerGlow.color = new Color32(157, 220, 245, 200);
+            StartCoroutine(UpdateColorGradually(new Color32(167, 220, 235, 230), 6f));
+            gameObject.GetComponent<SpriteRenderer>().color = new Color32(157, 220, 245, 200);
 
             Physics2D.IgnoreLayerCollision(6, 9, true);
             triggerCollider.enabled = true;
@@ -319,11 +312,26 @@ public class PlayerController : MonoBehaviour
                 yield return new WaitForSeconds(lingerDuration);
             }
 
+            StartCoroutine(UpdateColorGradually(new Color32(255, 235, 143, 255), 6f));
             ghostingActive = false;
+            //playerGlow.color = new Color32(255, 235, 143, 255);
             gameObject.GetComponent<SpriteRenderer>().color = new Color32(255, 255, 255, 255);
 
             Physics2D.IgnoreLayerCollision(6, 9, false);
             triggerCollider.enabled = false;
+        }
+
+        IEnumerator UpdateColorGradually(Color goalColor, float speed)
+        {
+            Color startColor = playerGlow.color;
+
+            float tick = 0f;
+            while(playerGlow.color != goalColor)
+            {
+                tick += Time.deltaTime * speed;
+                playerGlow.color = Color.Lerp(startColor, goalColor, tick);
+                yield return null;
+            }
         }
     }
 }
