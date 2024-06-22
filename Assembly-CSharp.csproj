@@ -61,16 +61,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\CursorManager.cs" />
+    <Compile Include="Assets\Scripts\EnemyScripts\Projectiles\RangedShotRotatorProjectile.cs" />
     <Compile Include="Assets\Prefabs\Items\Collectibles\ChestScript.cs" />
     <Compile Include="Assets\Scripts\Player\TriggerCollider.cs" />
     <Compile Include="Assets\Scripts\ProceduralLevelGeneration\AbstractDungeonGenerator.cs" />
+    <Compile Include="Assets\Scripts\Player\DevelopmentKeybinds.cs" />
     <Compile Include="Assets\Scripts\menus\GameOver.cs" />
     <Compile Include="Assets\Scripts\PotsAndAbility\UpgradeKeepAlive.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
     <Compile Include="Assets\Prefabs\Items\DisplayScorePotions.cs" />
     <Compile Include="Assets\Scripts\EnemyScripts\EnemyAI.cs" />
     <Compile Include="Assets\Scripts\ProceduralLevelGeneration\Data\SimpleRandomWalkData.cs" />
+    <Compile Include="Assets\Scripts\EnemyScripts\Boss_Scripts\ModifyAttack.cs" />
     <Compile Include="Assets\Scripts\Loader.cs" />
+    <Compile Include="Assets\Scripts\EnemyScripts\Projectiles\RangedShotTrackingProjectile.cs" />
     <Compile Include="Assets\Scripts\menus\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\SoundManager.cs" />
     <Compile Include="Assets\Scripts\PotsAndAbility\PotionsAndAbilities.cs" />
@@ -80,14 +84,12 @@
     <Compile Include="Assets\Scripts\ProceduralLevelGeneration\TilemapVisualizer.cs" />
     <Compile Include="Assets\Scripts\PotsAndAbility\UpgradeUI.cs" />
     <Compile Include="Assets\Scripts\EnemyScripts\DamageOnCollision.cs" />
-    <Compile Include="Assets\Scripts\EnemyScripts\RangedShotProjectile.cs" />
     <Compile Include="Assets\Scripts\menus\OptionsMenu.cs" />
     <Compile Include="Assets\Scripts\ProceduralLevelGeneration\PG_Sprites\TilesetData\EnvironmentTilesetData.cs" />
     <Compile Include="Assets\Scripts\ProceduralLevelGeneration\GenerationAlgorithms\CorridorFirstGenerator.cs" />
+    <Compile Include="Assets\Scripts\EnemyScripts\Projectiles\RangedShotStandardProjectile.cs" />
     <Compile Include="Assets\Scripts\EnemyScripts\TriggerTrap.cs" />
     <Compile Include="Assets\Scripts\ProceduralLevelGeneration\PG_Algorithms.cs" />
-    <Compile Include="Assets\Scripts\EnemyScripts\RangedShot.cs" />
-    <Compile Include="Assets\Scripts\EnemyScripts\Boss_Scripts\Rotator.cs" />
     <Compile Include="Assets\Scripts\ProceduralLevelGeneration\WallGenerator.cs" />
     <Compile Include="Assets\Scripts\ProceduralLevelGeneration\GenerationAlgorithms\SimpleRandomWalkGenerator.cs" />
     <Compile Include="Assets\Prefabs\Items\Collectibles\CoinScript.cs" />
@@ -96,12 +98,12 @@
     <Compile Include="Assets\Scripts\EnemyScripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\ProceduralLevelGeneration\GenerationAlgorithms\RoomFirstGenerator.cs" />
     <Compile Include="Assets\Scripts\PotsAndAbility\SpeedPotion.cs" />
+    <Compile Include="Assets\Scripts\EnemyScripts\Projectiles\RangedShot.cs" />
     <Compile Include="Assets\Scripts\PotsAndAbility\HealthPotion.cs" />
     <Compile Include="Assets\Scripts\ProceduralLevelGeneration\WallTypesHelper.cs" />
     <Compile Include="Assets\Scripts\GameAssets.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\MovingObject.cs" />
-    <Compile Include="Assets\Scripts\EnemyScripts\Boss_Scripts\RotateControlsProjectile.cs" />
     <Compile Include="Assets\Scripts\BoardManager.cs" />
   </ItemGroup>
   <ItemGroup>

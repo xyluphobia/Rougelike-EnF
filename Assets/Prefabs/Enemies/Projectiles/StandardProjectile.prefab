@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9107362459537230509}
   - component: {fileID: 6791232121545986803}
   - component: {fileID: -412274949413446272}
-  - component: {fileID: -4978422990998610520}
+  - component: {fileID: -8397919430175789794}
   m_Layer: 8
   m_Name: StandardProjectile
   m_TagString: Untagged
@@ -150,7 +150,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &-4978422990998610520
+--- !u!114 &-8397919430175789794
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -159,12 +159,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 8168177434383956359}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: adf38f82cc9ea544f9962a6a72357e2e, type: 3}
+  m_Script: {fileID: 11500000, guid: ac1f575159af8fe4482e4143524c8c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dealDamageClips:
   - {fileID: 8300000, guid: c182e31b7418bbc45b2d4c7e90e38eb3, type: 3}
-  projectileSpeed: 4.5
-  damage: 25
+  projectileSpeed: 5
+  damage: 30
   direction: {x: 0, y: 0, z: 0}
-  trackingTime: 0.5
