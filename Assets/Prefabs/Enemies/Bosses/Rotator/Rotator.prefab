@@ -420,6 +420,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04af030ee19b78a44b7058fc1179eebc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  customGameObject1: {fileID: 8168177434383956359, guid: e9197bb919c022c4cb6455bd65aeecbe, type: 3}
+  customGameObject2: {fileID: 8168177434383956359, guid: 05ac3b2486dd8cc43a9b5782656c148d, type: 3}
+  customGameObject3: {fileID: 8168177434383956359, guid: 15da17284d53e0c428104c5e541883a6, type: 3}
 --- !u!1 &3448715515041328085
 GameObject:
   m_ObjectHideFlags: 0

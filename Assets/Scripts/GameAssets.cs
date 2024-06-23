@@ -32,8 +32,4 @@ public class GameAssets : MonoBehaviour
     public AudioClip chestCloseClip;
     public AudioClip[] potionPickupClips;
 
-    [Header("Monster Assets")]
-    public GameObject standardProjectile;
-    public GameObject trackingProjectile;
-    public GameObject rotatorProjectile;
 }

@@ -23,6 +23,14 @@ public class RangedShotStandardProjectile : MonoBehaviour
         selfCollider = GetComponent<Collider2D>();
 
         StartCoroutine(DestroyAfterTime(2f));
+
+        direction = target.position - transform.position;
+
+        Vector2 lookDir = direction;
+        transform.up = lookDir;
+
+        direction.Normalize();
+        movement = direction;
     }
 
     void FixedUpdate()
@@ -32,7 +40,7 @@ public class RangedShotStandardProjectile : MonoBehaviour
 
     private void MoveProjectile(Vector2 dir)
     {
-        rb.MovePosition((Vector2)transform.position + (dir * projectileSpeed * Time.deltaTime));
+        rb.MovePosition((Vector2)transform.position + (projectileSpeed * Time.deltaTime * dir));
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

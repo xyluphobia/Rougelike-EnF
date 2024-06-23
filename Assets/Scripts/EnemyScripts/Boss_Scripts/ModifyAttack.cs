@@ -8,6 +8,10 @@ public class ModifyAttack : MonoBehaviour
     private RangedShot rangedShot;
     private Animator animator;
 
+    [SerializeField] private GameObject customGameObject1;
+    [SerializeField] private GameObject customGameObject2;
+    [SerializeField] private GameObject customGameObject3;
+
     private void Awake()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
@@ -35,9 +39,9 @@ public class ModifyAttack : MonoBehaviour
         bool firstCycle = true;
         float shotAnimationTime = 0.3f;
         Enemy enemyScript = gameObject.GetComponent<Enemy>();
-        GameObject standardProjectile = GameAssets.i.standardProjectile;
-        GameObject trackingProjectile = GameAssets.i.trackingProjectile;
-        GameObject rotatorProjectile = GameAssets.i.rotatorProjectile;
+        GameObject standardProjectile = customGameObject1;
+        GameObject trackingProjectile = customGameObject2;
+        GameObject rotatorProjectile = customGameObject3;
 
         Transform AttackPositionUp = transform.Find("AttackUp"); 
         Transform AttackPositionDown = transform.Find("AttackDown");

@@ -11,7 +11,6 @@ public class RangedShotTrackingProjectile : MonoBehaviour
     private Transform target;
     private Vector2 movement;
     private Rigidbody2D rb;
-    private Collider2D selfCollider;
 
     public Vector3 direction;
     
@@ -22,7 +21,6 @@ public class RangedShotTrackingProjectile : MonoBehaviour
     {
         target = GameObject.FindGameObjectWithTag("Player").transform;
         rb = GetComponent<Rigidbody2D>();
-        selfCollider = GetComponent<Collider2D>();
 
         tracking = true;
 
@@ -66,7 +64,7 @@ public class RangedShotTrackingProjectile : MonoBehaviour
 
     private void MoveProjectile(Vector2 dir)
     {
-        rb.MovePosition((Vector2)transform.position + (dir * projectileSpeed * Time.deltaTime));
+        rb.MovePosition((Vector2)transform.position + (projectileSpeed * Time.deltaTime * dir));
     }
 
     private void OnTriggerEnter2D (Collider2D collision)
