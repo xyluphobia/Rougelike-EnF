@@ -430,6 +430,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af98b8f14763f5e4296e7ac8609ab821, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spinAudio:
+  - {fileID: 8300000, guid: d873ff76234307c40b137379e1dbe849, type: 3}
+  - {fileID: 8300000, guid: e948582906b149c4daba68f855aff0f8, type: 3}
+  - {fileID: 8300000, guid: f678c78358ac4be42929b66c8e8a1866, type: 3}
   standardProjectile: {fileID: 8168177434383956359, guid: e9197bb919c022c4cb6455bd65aeecbe, type: 3}
   trackingProjectile: {fileID: 8168177434383956359, guid: 05ac3b2486dd8cc43a9b5782656c148d, type: 3}
   rotatorProjectile: {fileID: 8168177434383956359, guid: 15da17284d53e0c428104c5e541883a6, type: 3}

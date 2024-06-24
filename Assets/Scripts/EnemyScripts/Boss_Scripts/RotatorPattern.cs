@@ -17,7 +17,7 @@ public class RotatorPattern : MonoBehaviour
     readonly float shotAnimationTime = 0.3f;
     private string originalBinds;
 
-    [SerializeField] AudioClip spinAudio;
+    [SerializeField] AudioClip[] spinAudio;
 
     [Header("Projectiles")]
     [SerializeField] private GameObject standardProjectile;
@@ -98,7 +98,7 @@ public class RotatorPattern : MonoBehaviour
     public IEnumerator RotatorAttackPattern()
     { 
         // Spin 3 times damaging in a proximity
-        StartCoroutine(rotateOverTime(3));
+        StartCoroutine(rotateOverTime(3, 2));
         yield return new WaitForSeconds(2.5f);  // need to add damage in aoe
 
         while (enemyScript.currentHealth > 0)
@@ -107,7 +107,7 @@ public class RotatorPattern : MonoBehaviour
             // Spin once damaging in proximity | This is skipped on the first rotation
             if (!firstCycle)
             {
-                StartCoroutine(rotateOverTime(1));
+                StartCoroutine(rotateOverTime(1, 0));
                 yield return new WaitForSeconds(1.5f);  // need to add damage in aoe
             }
 
@@ -157,7 +157,7 @@ public class RotatorPattern : MonoBehaviour
 
             /* ~~ Phase 2 ~~ */
             // Spin once damaging in proximity
-            StartCoroutine(rotateOverTime(1));
+            StartCoroutine(rotateOverTime(1, 0));
             yield return new WaitForSeconds(1.5f);  // need to add damage in aoe
 
             // Shoot 3 projectiles spawning in a line which move toward the players location at the time of firing forming a triangle
@@ -197,7 +197,7 @@ public class RotatorPattern : MonoBehaviour
 
             /* ~~ Phase 3 ~~ */
             // Spin twice damaging in proximity
-            StartCoroutine(rotateOverTime(2));
+            StartCoroutine(rotateOverTime(2, 1));
             yield return new WaitForSeconds(3f);  // need to add damage in aoe
 
             // Shoot 1 special projectile which rotates the players controls (previous control used to move 'Up' now moves you 'Right' etc) U>R, R>D, D>L, L>U
@@ -229,8 +229,9 @@ public class RotatorPattern : MonoBehaviour
         }
 
         /* ~~ Out Of Phase ~~ */
-        IEnumerator rotateOverTime(int rotationsRemaining)
+        IEnumerator rotateOverTime(int rotationsRemaining, int indexOfSwirl)
         {
+            SoundManager.instance.PlaySound(spinAudio[indexOfSwirl]);
             while (rotationsRemaining > 0 && enemyScript.currentHealth > 0)
             {
                 if (rotating)
@@ -240,7 +241,6 @@ public class RotatorPattern : MonoBehaviour
                 rotating = true;
                 damageOnCollision.enabled = true;
                 animator.SetBool("IsSpinning", true);
-                SoundManager.instance.PlaySound(spinAudio);
 
                 Vector3 newRot = gameObject.transform.eulerAngles + new Vector3(0, 0, 360);
                 Vector3 currentRot = gameObject.transform.eulerAngles;
