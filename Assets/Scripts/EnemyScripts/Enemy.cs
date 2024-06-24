@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private Animator animator;
     public int maxHealth = 20;
     public int currentHealth;
+    public bool invulnerable = false;
 
     [SerializeField] private AudioClip deathClip;
     [SerializeField] private AudioClip[] hitClips;
@@ -24,19 +25,26 @@ public class Enemy : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        if (invulnerable)
+            damage = 0;
+
         ShowText(damageText, damage);
         currentHealth -= damage;
 
-        animator.SetTrigger("Hurt");
-        
-        if (currentHealth <= 0)
+        if (!invulnerable)
         {
-            Die();
-            ShowText(scoreText, 100);
-            GameManager.instance.UpdateScore(100);
+            animator.SetTrigger("Hurt");
+
+            if (currentHealth <= 0)
+            {
+                Die();
+                ShowText(scoreText, 100);
+                GameManager.instance.UpdateScore(100);
+            }
+            else
+                SoundManager.instance.RandomizeSfx(hitClips);
         }
-        else
-            SoundManager.instance.RandomizeSfx(hitClips);
+        
     }
 
     private void ShowText(GameObject textObject, int input)

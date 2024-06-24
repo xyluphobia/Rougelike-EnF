@@ -58,6 +58,7 @@ public class PlayerController : MonoBehaviour
 
     private TrailRenderer dashTrail;
     [SerializeField] private Light2D playerGlow;
+    [SerializeField] private GameObject shieldEffect;
 
 
     // Keybinds
@@ -305,6 +306,8 @@ public class PlayerController : MonoBehaviour
         if (!ghostingActive || activate)
         {
             ghostingActive = true;
+            shieldEffect.SetActive(true);
+            StartCoroutine(FadeShieldEffect(new Color32(255, 255, 255, 255), 3f));
             //playerGlow.color = new Color32(157, 220, 245, 200);
             StartCoroutine(UpdateColorGradually(new Color32(167, 220, 235, 230), 6f));
             gameObject.GetComponent<SpriteRenderer>().color = new Color32(157, 220, 245, 200);
@@ -319,8 +322,10 @@ public class PlayerController : MonoBehaviour
                 yield return new WaitForSeconds(lingerDuration);
             }
 
+            StartCoroutine(FadeShieldEffect(new Color32(255, 255, 255, 0), 3f));
             StartCoroutine(UpdateColorGradually(new Color32(255, 235, 143, 255), 6f));
             ghostingActive = false;
+            shieldEffect.SetActive(false);
             //playerGlow.color = new Color32(255, 235, 143, 255);
             gameObject.GetComponent<SpriteRenderer>().color = new Color32(255, 255, 255, 255);
 
@@ -337,6 +342,19 @@ public class PlayerController : MonoBehaviour
             {
                 tick += Time.deltaTime * speed;
                 playerGlow.color = Color.Lerp(startColor, goalColor, tick);
+                yield return null;
+            }
+        }
+
+        IEnumerator FadeShieldEffect(Color goalColor, float speed)
+        {
+            Color startColor = shieldEffect.GetComponent<SpriteRenderer>().color;
+
+            float tick = 0f;
+            while (shieldEffect.GetComponent<SpriteRenderer>().color != goalColor)
+            {
+                tick += Time.deltaTime * speed;
+                shieldEffect.GetComponent<SpriteRenderer>().color = Color.Lerp(startColor, goalColor, tick);
                 yield return null;
             }
         }

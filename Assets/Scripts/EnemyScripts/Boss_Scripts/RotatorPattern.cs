@@ -11,13 +11,16 @@ public class RotatorPattern : MonoBehaviour
     private Enemy enemyScript;
     private EnemyAI enemyAi;
     private DamageOnCollision damageOnCollision;
+    private CircleCollider2D circleCollider;
 
     bool rotating = false;
     bool firstCycle = true;
     readonly float shotAnimationTime = 0.3f;
     private string originalBinds;
 
+    [Header("Spin/Swirl")]
     [SerializeField] AudioClip[] spinAudio;
+    [SerializeField] GameObject swirlEffect;
 
     [Header("Projectiles")]
     [SerializeField] private GameObject standardProjectile;
@@ -64,6 +67,7 @@ public class RotatorPattern : MonoBehaviour
         enemyScript = GetComponent<Enemy>();
         enemyAi = GetComponent<EnemyAI>();
         damageOnCollision = GetComponent<DamageOnCollision>();
+        circleCollider = GetComponent<CircleCollider2D>();
     }
 
     public void BindHolder(string originalBindsPassthrough)
@@ -232,6 +236,11 @@ public class RotatorPattern : MonoBehaviour
         IEnumerator rotateOverTime(int rotationsRemaining, int indexOfSwirl)
         {
             SoundManager.instance.PlaySound(spinAudio[indexOfSwirl]);
+            swirlEffect.SetActive(true);
+            StartCoroutine(FadeSwirlEffect(new Color32(255, 255, 255, 255), 3f));
+            enemyScript.invulnerable = true;
+            circleCollider.enabled = true;
+            damageOnCollision.enabled = true;
             while (rotationsRemaining > 0 && enemyScript.currentHealth > 0)
             {
                 if (rotating)
@@ -239,7 +248,6 @@ public class RotatorPattern : MonoBehaviour
                     yield break;
                 }
                 rotating = true;
-                damageOnCollision.enabled = true;
                 animator.SetBool("IsSpinning", true);
 
                 Vector3 newRot = gameObject.transform.eulerAngles + new Vector3(0, 0, 360);
@@ -255,9 +263,26 @@ public class RotatorPattern : MonoBehaviour
                 }
 
                 rotationsRemaining -= 1;
-                damageOnCollision.enabled = false;
                 rotating = false;
                 animator.SetBool("IsSpinning", false);
+            }
+            StartCoroutine(FadeSwirlEffect(new Color32(255, 255, 255, 0), 3f));
+            swirlEffect.SetActive(false);
+            enemyScript.invulnerable = false;
+            circleCollider.enabled = false;
+            damageOnCollision.enabled = false;
+
+            IEnumerator FadeSwirlEffect(Color goalColor, float speed)
+            {
+                Color startColor = swirlEffect.GetComponent<SpriteRenderer>().color;
+
+                float tick = 0f;
+                while (swirlEffect.GetComponent<SpriteRenderer>().color != goalColor)
+                {
+                    tick += Time.deltaTime * speed;
+                    swirlEffect.GetComponent<SpriteRenderer>().color = Color.Lerp(startColor, goalColor, tick);
+                    yield return null;
+                }
             }
         }
     }
