@@ -57,7 +57,7 @@ public class RangedShot : MonoBehaviour
         }
     }
 
-    public void EnemyShoot(GameObject projectileToShoot, Transform attackPoint = null, float waitTimeToPass = -1f)
+    public void EnemyShoot(GameObject projectileToShoot, Transform attackPoint = null, float waitTimeToPass = -1f, bool isSpecialAttack = false)
     {
         SoundManager.instance.RandomizeSfx(projectileShotClips);
 
@@ -78,7 +78,11 @@ public class RangedShot : MonoBehaviour
         {
             animator.SetFloat("attackH", dir.x);
             animator.SetFloat("attackV", dir.y);
-            animator.SetTrigger("Shoot");
+
+            if (isSpecialAttack)
+                animator.SetTrigger("SpecialAttack");
+            else
+                animator.SetTrigger("Shoot");
         }
 
         StartCoroutine(ShootAfterAnimation(projectileToShoot, attackPoint.position, passingWaitDuration));

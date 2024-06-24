@@ -8,6 +8,8 @@ public class RotatorPattern : MonoBehaviour
     private RangedShot rangedShot;
     private Animator animator;
     private Enemy enemyScript;
+    private EnemyAI enemyAi;
+    private DamageOnCollision damageOnCollision;
 
     bool rotating = false;
     bool firstCycle = true;
@@ -23,6 +25,12 @@ public class RotatorPattern : MonoBehaviour
     [SerializeField] private Transform AttackPositionDown;
     [SerializeField] private Transform AttackPositionLeft;
     [SerializeField] private Transform AttackPositionRight;
+
+    [Header("Special Attack Positions")]
+    [SerializeField] private Transform SpecialAttackPositionUp;
+    [SerializeField] private Transform SpecialAttackPositionDown;
+    [SerializeField] private Transform SpecialAttackPositionLeft;
+    [SerializeField] private Transform SpecialAttackPositionRight;
 
     [Header("Attack Positions Line Up")]
     [SerializeField] private Transform AttackPositionUpLine1;
@@ -50,6 +58,8 @@ public class RotatorPattern : MonoBehaviour
         rangedShot = GetComponent<RangedShot>();
         animator = GetComponent<Animator>();
         enemyScript = GetComponent<Enemy>();
+        enemyAi = GetComponent<EnemyAI>();
+        damageOnCollision = GetComponent<DamageOnCollision>();
     }
 
     public IEnumerator RotatorAttackPattern()
@@ -158,7 +168,28 @@ public class RotatorPattern : MonoBehaviour
             yield return new WaitForSeconds(3f);  // need to add damage in aoe
 
             // Shoot 1 special projectile which rotates the players controls (previous control used to move 'Up' now moves you 'Right' etc) U>R, R>D, D>L, L>U
-            rangedShot.EnemyShoot(rotatorProjectile, null, shotAnimationTime);
+            Vector2 dir = enemyAi.movement;
+            if (dir.x > 0.7)
+            {
+                rangedShot.EnemyShoot(rotatorProjectile, SpecialAttackPositionRight, shotAnimationTime, true);
+            }
+            else if (dir.x < -0.7)
+            {
+                rangedShot.EnemyShoot(rotatorProjectile, SpecialAttackPositionLeft, shotAnimationTime, true);
+            }
+            else if (dir.y > 0.7)
+            {
+                rangedShot.EnemyShoot(rotatorProjectile, SpecialAttackPositionUp, shotAnimationTime, true);
+            }
+            else if (dir.y < -0.7)
+            {
+                rangedShot.EnemyShoot(rotatorProjectile, SpecialAttackPositionDown, shotAnimationTime, true);
+            }
+            else
+            {
+                rangedShot.EnemyShoot(rotatorProjectile, SpecialAttackPositionDown, shotAnimationTime, true);
+            }
+
             yield return new WaitForSeconds(2.5f);
 
             firstCycle = false;
@@ -167,13 +198,14 @@ public class RotatorPattern : MonoBehaviour
         /* ~~ Out Of Phase ~~ */
         IEnumerator rotateOverTime(int rotationsRemaining)
         {
-            while (rotationsRemaining > 0)
+            while (rotationsRemaining > 0 && enemyScript.currentHealth > 0)
             {
                 if (rotating)
                 {
                     yield break;
                 }
                 rotating = true;
+                damageOnCollision.enabled = true;
                 animator.SetBool("IsSpinning", true);
 
                 Vector3 newRot = gameObject.transform.eulerAngles + new Vector3(0, 0, 360);
@@ -189,6 +221,7 @@ public class RotatorPattern : MonoBehaviour
                 }
 
                 rotationsRemaining -= 1;
+                damageOnCollision.enabled = false;
                 rotating = false;
                 animator.SetBool("IsSpinning", false);
             }

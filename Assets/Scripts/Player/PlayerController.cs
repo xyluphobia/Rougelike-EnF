@@ -264,7 +264,14 @@ public class PlayerController : MonoBehaviour
 
         foreach(Collider2D enemy in hitEnemies) 
         {
-            enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
+            if (enemy.CompareTag("PassDamage"))
+            {
+                enemy.GetComponentInChildren<Enemy>().TakeDamage(attackDamage);
+            }
+            else
+            {
+                enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
+            }
         }
     }
 

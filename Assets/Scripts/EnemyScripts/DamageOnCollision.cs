@@ -10,7 +10,7 @@ public class DamageOnCollision : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player")) 
+        if (collision.gameObject.CompareTag("Player") && this.enabled) 
         {
             SoundManager.instance.RandomizeSfx(dealDamageClips);
             collision.gameObject.GetComponent<PlayerController>().TakeDamage(damage);
