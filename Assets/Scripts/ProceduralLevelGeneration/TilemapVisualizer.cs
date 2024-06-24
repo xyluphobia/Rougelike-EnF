@@ -20,6 +20,10 @@ public class TilemapVisualizer : MonoBehaviour
     private bool exitSpawned = false;
     private bool bossSpawned = false;
 
+    private Transform enemyholder;
+    private Transform propHolder;
+    private Transform itemHolder;
+
     public void PaintFloorTiles(IEnumerable<Vector2Int> floorPositions) {
         floorTilemap.ClearAllTiles(); // Clear all current floor tiles. Remove this for it to iterate on the original instead of replace.
         wallTilemap.ClearAllTiles();
@@ -36,6 +40,10 @@ public class TilemapVisualizer : MonoBehaviour
         HashSet<Vector2Int> usedPositions = new();
         float iterations = 0f;
         float floorPositionsCount = floorPositions.Count;
+
+        enemyholder = Instantiate(GameAssets.i.EnemyHolder).transform;
+        propHolder = Instantiate(GameAssets.i.PropHolder).transform;
+        itemHolder = Instantiate(GameAssets.i.ItemHolder).transform;
 
         foreach (var position in floorPositions)
         {
@@ -118,11 +126,11 @@ public class TilemapVisualizer : MonoBehaviour
         float ranVal = Random.value;
 
         if (ranVal < 0.1)
-            Instantiate(envTS_data.decorations["skull"], (Vector3Int)position, Quaternion.identity);
+            Instantiate(envTS_data.decorations["skull"], (Vector3Int)position, Quaternion.identity, propHolder);
         else if (ranVal < 0.3)
-            Instantiate(envTS_data.decorations["oneBone"], (Vector3Int)position, Quaternion.identity);
+            Instantiate(envTS_data.decorations["oneBone"], (Vector3Int)position, Quaternion.identity, propHolder);
         else if (ranVal < 0.7)
-            Instantiate(envTS_data.decorations["twoBone"], (Vector3Int)position, Quaternion.identity);
+            Instantiate(envTS_data.decorations["twoBone"], (Vector3Int)position, Quaternion.identity, propHolder);
     }
 
     private HashSet<Vector2Int> GenerateCollectables(Vector2Int position, HashSet<Vector2Int> usedPositions)   
@@ -139,15 +147,15 @@ public class TilemapVisualizer : MonoBehaviour
         float ranVal = Random.value;
 
         if (ranVal < 0.4)
-            Instantiate(envTS_data.collectibles["bronzeCoin"], (Vector3Int)position, Quaternion.identity);
+            Instantiate(envTS_data.collectibles["bronzeCoin"], (Vector3Int)position, Quaternion.identity, itemHolder);
         else if (ranVal < 0.65)
-            Instantiate(envTS_data.collectibles["silverCoin"], (Vector3Int)position, Quaternion.identity);
+            Instantiate(envTS_data.collectibles["silverCoin"], (Vector3Int)position, Quaternion.identity, itemHolder);
         else if (ranVal < 0.75)
-            Instantiate(envTS_data.collectibles["goldCoin"], (Vector3Int)position, Quaternion.identity);
+            Instantiate(envTS_data.collectibles["goldCoin"], (Vector3Int)position, Quaternion.identity, itemHolder);
         else if (ranVal < 0.80)
-            Instantiate(envTS_data.collectibles["woodenChest"], (Vector3Int)position, Quaternion.identity);
+            Instantiate(envTS_data.collectibles["woodenChest"], (Vector3Int)position, Quaternion.identity, itemHolder);
         else if (ranVal > 0.98)
-            Instantiate(envTS_data.collectibles["royalChest"], (Vector3Int)position, Quaternion.identity);
+            Instantiate(envTS_data.collectibles["royalChest"], (Vector3Int)position, Quaternion.identity, itemHolder);
     }
 
     private HashSet<Vector2Int> GeneratePotions(Vector2Int position, HashSet<Vector2Int> usedPositions)   
@@ -164,9 +172,9 @@ public class TilemapVisualizer : MonoBehaviour
         float ranVal = Random.value;
 
         if (ranVal < 0.55)
-            Instantiate(envTS_data.potions["health"], (Vector3Int)position, Quaternion.identity);
+            Instantiate(envTS_data.potions["health"], (Vector3Int)position, Quaternion.identity, itemHolder);
         else
-            Instantiate(envTS_data.potions["speed"], (Vector3Int)position, Quaternion.identity);
+            Instantiate(envTS_data.potions["speed"], (Vector3Int)position, Quaternion.identity, itemHolder);
     }
 
     private HashSet<Vector2Int> GenerateEnemies(Vector2Int position, int typeAsInt, HashSet<Vector2Int> usedPositions)    {
@@ -184,15 +192,15 @@ public class TilemapVisualizer : MonoBehaviour
             float ranVal = Random.value;
 
             if (ranVal < 0.65)
-                Instantiate(envTS_data.enemies["slime"], (Vector3Int)position, Quaternion.identity);
+                Instantiate(envTS_data.enemies["slime"], (Vector3Int)position, Quaternion.identity, enemyholder);
             else if (ranVal < 1.0)
-                Instantiate(envTS_data.enemies["serpent"], (Vector3Int)position, Quaternion.identity);
+                Instantiate(envTS_data.enemies["serpent"], (Vector3Int)position, Quaternion.identity, enemyholder);
         }
 
         else if (!bossSpawned)
         {
             bossSpawned = true;
-            Instantiate(envTS_data.enemies["rotator"], (Vector3Int)position, Quaternion.identity);
+            Instantiate(envTS_data.enemies["rotator"], (Vector3Int)position, Quaternion.identity, enemyholder);
         }
     }
 

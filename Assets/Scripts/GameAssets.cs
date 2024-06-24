@@ -32,4 +32,8 @@ public class GameAssets : MonoBehaviour
     public AudioClip chestCloseClip;
     public AudioClip[] potionPickupClips;
 
+    [Header("Intantiated Objects Holders")]
+    public GameObject EnemyHolder;
+    public GameObject PropHolder;
+    public GameObject ItemHolder;
 }
