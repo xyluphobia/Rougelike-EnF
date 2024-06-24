@@ -11,7 +11,7 @@ public class Enemy : MonoBehaviour
     public int currentHealth;
 
     [SerializeField] private AudioClip deathClip;
-    [SerializeField] private AudioClip hitClip;
+    [SerializeField] private AudioClip[] hitClips;
 
     [SerializeField] private GameObject damageText;
     [SerializeField] private GameObject scoreText;
@@ -36,7 +36,7 @@ public class Enemy : MonoBehaviour
             GameManager.instance.UpdateScore(100);
         }
         else
-            SoundManager.instance.PlaySound(hitClip);
+            SoundManager.instance.RandomizeSfx(hitClips);
     }
 
     private void ShowText(GameObject textObject, int input)

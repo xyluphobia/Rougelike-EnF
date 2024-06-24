@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2ECE6269-9702-4E2D-F794-743E3122D8B9}|Assembly-CSharp.csproj|c:\\users\\matthew\\desktop\\rougelike simple\\assets\\scripts\\procedurallevelgeneration\\tilemapvisualizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2ECE6269-9702-4E2D-F794-743E3122D8B9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\procedurallevelgeneration\\tilemapvisualizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2ECE6269-9702-4E2D-F794-743E3122D8B9}|Assembly-CSharp.csproj|c:\\users\\matthew\\desktop\\rougelike simple\\assets\\scripts\\enemyscripts\\boss_scripts\\rotatorpattern.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2ECE6269-9702-4E2D-F794-743E3122D8B9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemyscripts\\boss_scripts\\rotatorpattern.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2ECE6269-9702-4E2D-F794-743E3122D8B9}|Assembly-CSharp.csproj|c:\\users\\matthew\\desktop\\rougelike simple\\assets\\scripts\\gameassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2ECE6269-9702-4E2D-F794-743E3122D8B9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gameassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2ECE6269-9702-4E2D-F794-743E3122D8B9}|Assembly-CSharp.csproj|c:\\users\\matthew\\desktop\\rougelike simple\\assets\\scripts\\enemyscripts\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2ECE6269-9702-4E2D-F794-743E3122D8B9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemyscripts\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2ECE6269-9702-4E2D-F794-743E3122D8B9}|Assembly-CSharp.csproj|C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\assets\\scripts\\enemyscripts\\projectiles\\rangedshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2ECE6269-9702-4E2D-F794-743E3122D8B9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemyscripts\\projectiles\\rangedshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,40 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "GameAssets.cs",
-              "DocumentMoniker": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\GameAssets.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\GameAssets.cs",
-              "ToolTip": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\GameAssets.cs",
-              "RelativeToolTip": "Assets\\Scripts\\GameAssets.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAQwCUAAAAgAAAA",
+              "Title": "RangedShot.cs",
+              "DocumentMoniker": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\EnemyScripts\\Projectiles\\RangedShot.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyScripts\\Projectiles\\RangedShot.cs",
+              "ToolTip": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\EnemyScripts\\Projectiles\\RangedShot.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EnemyScripts\\Projectiles\\RangedShot.cs",
+              "ViewState": "AQIAADMAAAAAAAAAAAAowEoAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T13:36:05.817Z",
+              "WhenOpened": "2024-06-24T15:23:40.696Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "TilemapVisualizer.cs",
-              "DocumentMoniker": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\ProceduralLevelGeneration\\TilemapVisualizer.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\ProceduralLevelGeneration\\TilemapVisualizer.cs",
-              "ToolTip": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\ProceduralLevelGeneration\\TilemapVisualizer.cs",
-              "RelativeToolTip": "Assets\\Scripts\\ProceduralLevelGeneration\\TilemapVisualizer.cs",
-              "ViewState": "AQIAAGAAAAAAAAAAAAAowCMBAAAAAAAA",
+              "Title": "RotatorPattern.cs",
+              "DocumentMoniker": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\EnemyScripts\\Boss_Scripts\\RotatorPattern.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyScripts\\Boss_Scripts\\RotatorPattern.cs",
+              "ToolTip": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\EnemyScripts\\Boss_Scripts\\RotatorPattern.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EnemyScripts\\Boss_Scripts\\RotatorPattern.cs",
+              "ViewState": "AQIAAN0AAAAAAAAAAAAIwGQAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T13:32:08.256Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Enemy.cs",
-              "DocumentMoniker": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\EnemyScripts\\Enemy.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyScripts\\Enemy.cs",
-              "ToolTip": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\EnemyScripts\\Enemy.cs",
-              "RelativeToolTip": "Assets\\Scripts\\EnemyScripts\\Enemy.cs",
-              "ViewState": "AQIAACcAAAAAAAAAAAAowDQAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T12:52:56.117Z",
+              "WhenOpened": "2024-06-24T14:45:35.83Z",
               "EditorCaption": ""
             }
           ]

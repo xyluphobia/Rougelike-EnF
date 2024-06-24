@@ -17,6 +17,8 @@ public class RotatorPattern : MonoBehaviour
     readonly float shotAnimationTime = 0.3f;
     private string originalBinds;
 
+    [SerializeField] AudioClip spinAudio;
+
     [Header("Projectiles")]
     [SerializeField] private GameObject standardProjectile;
     [SerializeField] private GameObject trackingProjectile;
@@ -97,7 +99,7 @@ public class RotatorPattern : MonoBehaviour
     { 
         // Spin 3 times damaging in a proximity
         StartCoroutine(rotateOverTime(3));
-        yield return new WaitForSeconds(4.5f);  // need to add damage in aoe
+        yield return new WaitForSeconds(2.5f);  // need to add damage in aoe
 
         while (enemyScript.currentHealth > 0)
         {
@@ -221,7 +223,7 @@ public class RotatorPattern : MonoBehaviour
                 rangedShot.EnemyShoot(rotatorProjectile, SpecialAttackPositionDown, shotAnimationTime, true);
             }
 
-            yield return new WaitForSeconds(2.5f);
+            yield return new WaitForSeconds(2f);
 
             firstCycle = false;
         }
@@ -238,6 +240,7 @@ public class RotatorPattern : MonoBehaviour
                 rotating = true;
                 damageOnCollision.enabled = true;
                 animator.SetBool("IsSpinning", true);
+                SoundManager.instance.PlaySound(spinAudio);
 
                 Vector3 newRot = gameObject.transform.eulerAngles + new Vector3(0, 0, 360);
                 Vector3 currentRot = gameObject.transform.eulerAngles;

@@ -201,7 +201,8 @@ MonoBehaviour:
   maxHealth: 10
   currentHealth: 0
   deathClip: {fileID: 8300000, guid: 34bea1e53b779094f93762f5003ad195, type: 3}
-  hitClip: {fileID: 8300000, guid: 562dad4bdb1684e4d97e790a76fa91b3, type: 3}
+  hitClips:
+  - {fileID: 8300000, guid: 562dad4bdb1684e4d97e790a76fa91b3, type: 3}
   damageText: {fileID: 1627277218652921935, guid: 5032713ea382dfd4ca33d29877a4b584, type: 3}
   scoreText: {fileID: 4785445402732521747, guid: 51cf5722b4b6a71428f4d8cfc2519295, type: 3}
 --- !u!114 &8720711730871888044

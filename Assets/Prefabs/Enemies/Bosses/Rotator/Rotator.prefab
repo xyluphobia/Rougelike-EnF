@@ -337,8 +337,11 @@ MonoBehaviour:
   animator: {fileID: 8047223156178942911}
   maxHealth: 200
   currentHealth: 0
-  deathClip: {fileID: 8300000, guid: 1d2732c6c4567404d8b7f56222a2fe9e, type: 3}
-  hitClip: {fileID: 8300000, guid: 1d2732c6c4567404d8b7f56222a2fe9e, type: 3}
+  deathClip: {fileID: 8300000, guid: 268dec43e9e3c874291e1886e13df3c0, type: 3}
+  hitClips:
+  - {fileID: 8300000, guid: 57a7a1f3ef5acb942bdd4f6ffc50b04e, type: 3}
+  - {fileID: 8300000, guid: 2a90395464990b44cb57a78dbbb2f9e6, type: 3}
+  - {fileID: 8300000, guid: b84027c2f10931043bf438c45a8010bc, type: 3}
   damageText: {fileID: 1627277218652921935, guid: 5032713ea382dfd4ca33d29877a4b584, type: 3}
   scoreText: {fileID: 4785445402732521747, guid: 51cf5722b4b6a71428f4d8cfc2519295, type: 3}
 --- !u!114 &-5973398576697948700
@@ -377,7 +380,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 50
   dealDamageClips:
-  - {fileID: 8300000, guid: c182e31b7418bbc45b2d4c7e90e38eb3, type: 3}
+  - {fileID: 8300000, guid: a3b23fefa713955488d87a92403a1a9f, type: 3}
 --- !u!114 &-8747826821445772359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -391,7 +394,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileShotClips:
-  - {fileID: 8300000, guid: a21c5e3c7dbcca042b96c6211c2a4cb4, type: 3}
+  - {fileID: 8300000, guid: 380b251e72d2fb547b4b2c248f4daf31, type: 3}
   enemy: {fileID: 121745398682407763}
   enemyAi: {fileID: -5973398576697948700}
   projectile: {fileID: 8168177434383956359, guid: 96a0b74680fcfda49a9b9117d1515e86, type: 3}
