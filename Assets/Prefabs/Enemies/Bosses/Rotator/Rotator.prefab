@@ -142,6 +142,7 @@ GameObject:
   - component: {fileID: 4699822315421197209}
   - component: {fileID: -8747826821445772359}
   - component: {fileID: 5811908759269980982}
+  - component: {fileID: -8076441428251178497}
   m_Layer: 9
   m_Name: Rotator
   m_TagString: Enemy
@@ -420,9 +421,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04af030ee19b78a44b7058fc1179eebc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  customGameObject1: {fileID: 8168177434383956359, guid: e9197bb919c022c4cb6455bd65aeecbe, type: 3}
-  customGameObject2: {fileID: 8168177434383956359, guid: 05ac3b2486dd8cc43a9b5782656c148d, type: 3}
-  customGameObject3: {fileID: 8168177434383956359, guid: 15da17284d53e0c428104c5e541883a6, type: 3}
+--- !u!114 &-8076441428251178497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3109608706164547240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af98b8f14763f5e4296e7ac8609ab821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  standardProjectile: {fileID: 8168177434383956359, guid: e9197bb919c022c4cb6455bd65aeecbe, type: 3}
+  trackingProjectile: {fileID: 8168177434383956359, guid: 05ac3b2486dd8cc43a9b5782656c148d, type: 3}
+  rotatorProjectile: {fileID: 8168177434383956359, guid: 15da17284d53e0c428104c5e541883a6, type: 3}
+  AttackPositionUp: {fileID: 1263861584035494169}
+  AttackPositionDown: {fileID: 1780910275577518027}
+  AttackPositionLeft: {fileID: 3119295507691436706}
+  AttackPositionRight: {fileID: 6925172109815737725}
+  AttackPositionUpLine1: {fileID: 496051658453050116}
+  AttackPositionUpLine2: {fileID: 505786070535687582}
+  AttackPositionUpLine3: {fileID: 1885904811092579602}
+  AttackPositionDownLine1: {fileID: 5279906723701060818}
+  AttackPositionDownLine2: {fileID: 5720232530686944168}
+  AttackPositionDownLine3: {fileID: 6551266043090604917}
+  AttackPositionLeftLine1: {fileID: 2977564876614646446}
+  AttackPositionLeftLine2: {fileID: 4982242575190651504}
+  AttackPositionLeftLine3: {fileID: 2653396422146824796}
+  AttackPositionRightLine1: {fileID: 6082863419231522921}
+  AttackPositionRightLine2: {fileID: 3404801627707757598}
+  AttackPositionRightLine3: {fileID: 2783626263974524402}
 --- !u!1 &3448715515041328085
 GameObject:
   m_ObjectHideFlags: 0

@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2ECE6269-9702-4E2D-F794-743E3122D8B9}|Assembly-CSharp.csproj|c:\\users\\matthew\\desktop\\rougelike simple\\assets\\scripts\\enemyscripts\\projectiles\\rangedshotstandardprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2ECE6269-9702-4E2D-F794-743E3122D8B9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemyscripts\\projectiles\\rangedshotstandardprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2ECE6269-9702-4E2D-F794-743E3122D8B9}|Assembly-CSharp.csproj|c:\\users\\matthew\\desktop\\rougelike simple\\assets\\scripts\\enemyscripts\\projectiles\\rangedshottrackingprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2ECE6269-9702-4E2D-F794-743E3122D8B9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemyscripts\\projectiles\\rangedshottrackingprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2ECE6269-9702-4E2D-F794-743E3122D8B9}|Assembly-CSharp.csproj|c:\\users\\matthew\\desktop\\rougelike simple\\assets\\scripts\\enemyscripts\\boss_scripts\\modifyattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2ECE6269-9702-4E2D-F794-743E3122D8B9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemyscripts\\boss_scripts\\modifyattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RangedShotTrackingProjectile.cs",
-              "DocumentMoniker": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\EnemyScripts\\Projectiles\\RangedShotTrackingProjectile.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyScripts\\Projectiles\\RangedShotTrackingProjectile.cs",
-              "ToolTip": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\EnemyScripts\\Projectiles\\RangedShotTrackingProjectile.cs",
-              "RelativeToolTip": "Assets\\Scripts\\EnemyScripts\\Projectiles\\RangedShotTrackingProjectile.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAgwC8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T14:04:40.745Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "RangedShotStandardProjectile.cs",
-              "DocumentMoniker": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\EnemyScripts\\Projectiles\\RangedShotStandardProjectile.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyScripts\\Projectiles\\RangedShotStandardProjectile.cs",
-              "ToolTip": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\EnemyScripts\\Projectiles\\RangedShotStandardProjectile.cs",
-              "RelativeToolTip": "Assets\\Scripts\\EnemyScripts\\Projectiles\\RangedShotStandardProjectile.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAgwC4AAAAFAAAA",
+              "Title": "ModifyAttack.cs",
+              "DocumentMoniker": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\EnemyScripts\\Boss_Scripts\\ModifyAttack.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyScripts\\Boss_Scripts\\ModifyAttack.cs",
+              "ToolTip": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\EnemyScripts\\Boss_Scripts\\ModifyAttack.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EnemyScripts\\Boss_Scripts\\ModifyAttack.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T14:03:51.286Z",
+              "WhenOpened": "2024-06-23T23:20:53.765Z",
               "EditorCaption": ""
             }
           ]

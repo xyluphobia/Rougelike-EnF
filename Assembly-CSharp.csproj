@@ -92,6 +92,7 @@
     <Compile Include="Assets\Scripts\ProceduralLevelGeneration\PG_Algorithms.cs" />
     <Compile Include="Assets\Scripts\ProceduralLevelGeneration\WallGenerator.cs" />
     <Compile Include="Assets\Scripts\ProceduralLevelGeneration\GenerationAlgorithms\SimpleRandomWalkGenerator.cs" />
+    <Compile Include="Assets\Scripts\EnemyScripts\Boss_Scripts\RotatorPattern.cs" />
     <Compile Include="Assets\Prefabs\Items\Collectibles\CoinScript.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\menus\MainMenu.cs" />
