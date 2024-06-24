@@ -63,6 +63,7 @@
     <Compile Include="Assets\Scripts\CursorManager.cs" />
     <Compile Include="Assets\Scripts\EnemyScripts\Projectiles\RangedShotRotatorProjectile.cs" />
     <Compile Include="Assets\Prefabs\Items\Collectibles\ChestScript.cs" />
+    <Compile Include="Assets\Scripts\EnemyScripts\DestroyParentOnDeath.cs" />
     <Compile Include="Assets\Scripts\Player\TriggerCollider.cs" />
     <Compile Include="Assets\Scripts\ProceduralLevelGeneration\AbstractDungeonGenerator.cs" />
     <Compile Include="Assets\Scripts\Player\DevelopmentKeybinds.cs" />

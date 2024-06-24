@@ -3,20 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2ECE6269-9702-4E2D-F794-743E3122D8B9}|Assembly-CSharp.csproj|c:\\users\\matthew\\desktop\\rougelike simple\\assets\\scripts\\enemyscripts\\boss_scripts\\rotatorpattern.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2ECE6269-9702-4E2D-F794-743E3122D8B9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemyscripts\\boss_scripts\\rotatorpattern.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2ECE6269-9702-4E2D-F794-743E3122D8B9}|Assembly-CSharp.csproj|c:\\users\\matthew\\desktop\\rougelike simple\\assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2ECE6269-9702-4E2D-F794-743E3122D8B9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2ECE6269-9702-4E2D-F794-743E3122D8B9}|Assembly-CSharp.csproj|c:\\users\\matthew\\desktop\\rougelike simple\\assets\\scripts\\enemyscripts\\projectiles\\rangedshotrotatorprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2ECE6269-9702-4E2D-F794-743E3122D8B9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemyscripts\\projectiles\\rangedshotrotatorprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2ECE6269-9702-4E2D-F794-743E3122D8B9}|Assembly-CSharp.csproj|c:\\users\\matthew\\desktop\\rougelike simple\\assets\\scripts\\player\\developmentkeybinds.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2ECE6269-9702-4E2D-F794-743E3122D8B9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\developmentkeybinds.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2ECE6269-9702-4E2D-F794-743E3122D8B9}|Assembly-CSharp.csproj|C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\assets\\scripts\\enemyscripts\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2ECE6269-9702-4E2D-F794-743E3122D8B9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemyscripts\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,53 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "RotatorPattern.cs",
-              "DocumentMoniker": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\EnemyScripts\\Boss_Scripts\\RotatorPattern.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyScripts\\Boss_Scripts\\RotatorPattern.cs",
-              "ToolTip": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\EnemyScripts\\Boss_Scripts\\RotatorPattern.cs",
-              "RelativeToolTip": "Assets\\Scripts\\EnemyScripts\\Boss_Scripts\\RotatorPattern.cs",
-              "ViewState": "AQIAAMAAAAAAAAAAAAAowOAAAAAhAAAA",
+              "Title": "Enemy.cs",
+              "DocumentMoniker": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\EnemyScripts\\Enemy.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyScripts\\Enemy.cs",
+              "ToolTip": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\EnemyScripts\\Enemy.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EnemyScripts\\Enemy.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAowDQAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T08:47:37.613Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DevelopmentKeybinds.cs",
-              "DocumentMoniker": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\Player\\DevelopmentKeybinds.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\DevelopmentKeybinds.cs",
-              "ToolTip": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\Player\\DevelopmentKeybinds.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\DevelopmentKeybinds.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAowB8AAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T07:42:42.437Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PlayerController.cs",
-              "DocumentMoniker": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\Player\\PlayerController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerController.cs",
-              "ToolTip": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\Player\\PlayerController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerController.cs",
-              "ViewState": "AQIAAMEAAAAAAAAAAAAUwMkAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T07:41:11.664Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RangedShotRotatorProjectile.cs",
-              "DocumentMoniker": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\EnemyScripts\\Projectiles\\RangedShotRotatorProjectile.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyScripts\\Projectiles\\RangedShotRotatorProjectile.cs",
-              "ToolTip": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\EnemyScripts\\Projectiles\\RangedShotRotatorProjectile.cs",
-              "RelativeToolTip": "Assets\\Scripts\\EnemyScripts\\Projectiles\\RangedShotRotatorProjectile.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAQwCUAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T07:39:33.493Z",
+              "WhenOpened": "2024-06-24T12:52:56.117Z",
               "EditorCaption": ""
             }
           ]

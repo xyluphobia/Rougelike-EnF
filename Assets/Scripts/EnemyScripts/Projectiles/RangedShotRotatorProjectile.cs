@@ -9,8 +9,7 @@ public class RangedShotRotatorProjectile : MonoBehaviour
     private PlayerController playerControllerScript;
     private PlayerInput playerInput;
 
-    private InputAction originalBinds;
-    private string newBinds;
+    private string originalBinds;
 
     void Awake()
     {
@@ -30,10 +29,10 @@ public class RangedShotRotatorProjectile : MonoBehaviour
             stringOriginalBinds = stringOriginalBinds.Remove(stringOriginalBinds.Length - 1, 1).Remove(0, 14);
 
             string[] splitInputs = stringOriginalBinds.Split(",");
-            string wasdLeft = splitInputs[0].Remove(0, 10);
-            string wasdRight = splitInputs[1].Remove(0, 10);
-            string wasdDown = splitInputs[2].Remove(0, 10);
-            string wasdUp = splitInputs[3].Remove(0, 10);
+            char wasdLeft = splitInputs[0][^1];
+            char wasdRight = splitInputs[1][^1];
+            char wasdDown = splitInputs[2][^1];
+            char wasdUp = splitInputs[3][^1];
 
             playerInput.currentActionMap.FindAction("Move").ApplyBindingOverride(1, $"<Keyboard>/{wasdUp}"); // wasdUp
             playerInput.currentActionMap.FindAction("Move").ApplyBindingOverride(2, $"<Keyboard>/{wasdDown}"); // wasdDown
@@ -44,6 +43,17 @@ public class RangedShotRotatorProjectile : MonoBehaviour
 
     private void SetOriginalActions()
     {
-        originalBinds = playerInput.actions["Move"];
+        originalBinds = playerInput.actions["Move"].ToString();
+    }
+
+    private void OnDestroy()
+    {
+        GameObject[] potentialRotatorObjects = GameObject.FindGameObjectsWithTag("Enemy");
+        foreach (GameObject rotator in potentialRotatorObjects)
+        {
+            RotatorPattern rotatorScript = rotator.GetComponent<RotatorPattern>();
+            if (rotatorScript != null)
+                rotatorScript.BindHolder(originalBinds);
+        }
     }
 }

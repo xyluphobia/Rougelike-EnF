@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class RotatorPattern : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class RotatorPattern : MonoBehaviour
     bool rotating = false;
     bool firstCycle = true;
     readonly float shotAnimationTime = 0.3f;
+    private string originalBinds;
 
     [Header("Projectiles")]
     [SerializeField] private GameObject standardProjectile;
@@ -60,6 +62,35 @@ public class RotatorPattern : MonoBehaviour
         enemyScript = GetComponent<Enemy>();
         enemyAi = GetComponent<EnemyAI>();
         damageOnCollision = GetComponent<DamageOnCollision>();
+    }
+
+    public void BindHolder(string originalBindsPassthrough)
+    {
+        if (originalBinds != null)
+            return;
+
+        originalBinds = originalBindsPassthrough;
+    }
+
+    private void OnDeath()
+    {
+        if (originalBinds == null) 
+            return;
+
+        originalBinds = originalBinds.Remove(originalBinds.Length - 1, 1).Remove(0, 14);
+
+        string[] splitInputs = originalBinds.Split(",");
+        char wasdUp = splitInputs[0][^1];
+        char wasdDown = splitInputs[1][^1];
+        char wasdLeft = splitInputs[2][^1];
+        char wasdRight = splitInputs[3][^1];
+
+        PlayerInput playerInput = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInput>();
+
+        playerInput.currentActionMap.FindAction("Move").ApplyBindingOverride(1, $"<Keyboard>/{wasdUp}"); // wasdUp
+        playerInput.currentActionMap.FindAction("Move").ApplyBindingOverride(2, $"<Keyboard>/{wasdDown}"); // wasdDown
+        playerInput.currentActionMap.FindAction("Move").ApplyBindingOverride(3, $"<Keyboard>/{wasdLeft}"); // wasdLeft
+        playerInput.currentActionMap.FindAction("Move").ApplyBindingOverride(4, $"<Keyboard>/{wasdRight}"); // wasdRight
     }
 
     public IEnumerator RotatorAttackPattern()

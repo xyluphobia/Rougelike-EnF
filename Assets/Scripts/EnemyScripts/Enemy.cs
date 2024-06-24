@@ -50,6 +50,7 @@ public class Enemy : MonoBehaviour
 
     void Die() 
     {
+        transform.parent.BroadcastMessage("OnDeath");
         CameraShaker.Presets.ShortShake2D(0.009f, 0.009f, 30, 3);
 
         SoundManager.instance.PlaySound(deathClip);
@@ -62,7 +63,6 @@ public class Enemy : MonoBehaviour
         animator.SetBool("IsDead", true);
 
         GetComponent<Collider2D>().enabled = false;
-        Destroy(this.gameObject, 1.6f);
         StartCoroutine(scaleOverTime(this.gameObject.transform, new Vector3(0, 0, 0), 4f));
     }
 
