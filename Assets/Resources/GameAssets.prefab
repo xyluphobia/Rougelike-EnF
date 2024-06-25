@@ -46,6 +46,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 2215174607414617992, guid: 7d7ae7955cdbd264eb905f2384d88ccf, type: 3}
   exit: {fileID: 8450017231335138196, guid: bc12c3b334c2df343980ffd5264a2a02, type: 3}
+  heart: {fileID: 1911087171991290819, guid: a77f1dee812a1fd4a8edad9d05ac6c65, type: 3}
+  halfHeart: {fileID: 2453116820603672904, guid: aed28929d6b7a884e9946556acc16c1a, type: 3}
   damageText: {fileID: 1627277218652921935, guid: 5032713ea382dfd4ca33d29877a4b584, type: 3}
   scoreText: {fileID: 4785445402732521747, guid: 51cf5722b4b6a71428f4d8cfc2519295, type: 3}
   healthChangeText: {fileID: 1707854643523481211, guid: 31940d9db343a7b4d9a1532b907d9961, type: 3}

@@ -19,6 +19,8 @@ public class GameAssets : MonoBehaviour
     [Header("Player/Important")]
     public GameObject player;
     public GameObject exit;
+    public GameObject heart;
+    public GameObject halfHeart;
 
     [Header("Popup Texts")]
     public GameObject damageText;

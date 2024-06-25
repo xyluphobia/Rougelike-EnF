@@ -23,6 +23,7 @@ TagManager:
   - TilemapVisualizer
   - InGameUI
   - PassDamage
+  - HealthBar
   layers:
   - Default
   - TransparentFX
