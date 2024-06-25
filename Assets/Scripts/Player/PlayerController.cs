@@ -49,6 +49,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float dashCooldown = 2f;
     [HideInInspector] public float dashCooldownReduction = 0f;
     [SerializeField] private AudioClip dashClip;
+    private Image dashTimerUI;
 
     /*private < should be private outside of development*/ public bool canDash = true;
     private bool disableInput = false;
@@ -74,6 +75,7 @@ public class PlayerController : MonoBehaviour
         playerInput = GetComponent<PlayerInput>();
 
         healthText = GameObject.Find("HealthText").GetComponent<TextMeshProUGUI>();
+        dashTimerUI = GameObject.Find("DashTimer").GetComponent<Image>();
     }
 
     void Start()
@@ -281,6 +283,7 @@ public class PlayerController : MonoBehaviour
         animator.SetTrigger("Dash");
         SoundManager.instance.PlaySound(dashClip);
         canDash = false;
+        dashTimerUI.fillAmount = 1f;
 
         invulnerable = true;
         StartCoroutine(ToggleGhosting(true));
@@ -295,10 +298,23 @@ public class PlayerController : MonoBehaviour
         StartCoroutine(ToggleGhosting(false, true, 0.25f));
         dashTrail.emitting = false;
         invulnerable = false;
+        dashCooldown -= dashCooldownReduction;
 
-        yield return new WaitForSeconds(Math.Max(0, dashCooldown - dashCooldownReduction));
+        StartCoroutine(DashCooldownUIUpdates());
+        yield return new WaitForSeconds(Math.Max(0, dashCooldown));
 
         canDash = true;
+
+        IEnumerator DashCooldownUIUpdates()
+        {
+            while (dashTimerUI.fillAmount > 0)
+            {
+                dashTimerUI.fillAmount -= 1 / dashCooldown * Time.deltaTime;
+                yield return new WaitForEndOfFrame();
+            }
+
+            dashTimerUI.fillAmount = 0;
+        }
     }
 
     private IEnumerator ToggleGhosting(bool activate = false, bool linger = false, float lingerDuration = 0f)
