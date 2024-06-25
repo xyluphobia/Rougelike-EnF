@@ -103,7 +103,7 @@ public class GameManager : MonoBehaviour
         UpdateScore(500);
 
         scoreUpdateText = GameObject.FindGameObjectWithTag("ScoreTextUpdate").GetComponent<TextMeshProUGUI>();
-        healthUpdateText = GameObject.FindGameObjectWithTag("HealthTextUpdate").GetComponent<TextMeshProUGUI>();
+        //healthUpdateText = GameObject.FindGameObjectWithTag("HealthTextUpdate").GetComponent<TextMeshProUGUI>();
 
 
         // logic dealing with when to show upgrades can be found in IEnumerator HideLevelImage().
@@ -164,7 +164,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            healthUpdateText.text = input;
+            //healthUpdateText.text = input;
             if (input[0] == '-')
                 healthUpdateText.color = new Color32(176, 0, 137, 255);
             else 

@@ -75,7 +75,7 @@ public class PlayerController : MonoBehaviour
         dashTrail = GetComponent<TrailRenderer>();
         playerInput = GetComponent<PlayerInput>();
 
-        healthText = GameObject.Find("HealthText").GetComponent<TextMeshProUGUI>();
+        //healthText = GameObject.Find("HealthText").GetComponent<TextMeshProUGUI>();
         healthBarScript = GameObject.Find("HealthBar").GetComponent<HealthBar>();
         dashTimerUI = GameObject.Find("DashTimer").GetComponent<Image>();
     }
@@ -85,7 +85,7 @@ public class PlayerController : MonoBehaviour
         gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
         health = gm.playerHealth;
 
-        healthText.text = "Health: " + health;
+        //healthText.text = "Health: " + health;
     }
 
     void FixedUpdate()
@@ -199,6 +199,17 @@ public class PlayerController : MonoBehaviour
         movementSpeed = movementSpeed / buff;
     }
 
+    public void HealDamage(int healBy)
+    {
+        health += healBy;
+        //GameManager.instance.TextChangeVisualizer(false, "+" + healBy.ToString());
+
+        if (health > maxHealth)
+            health = maxHealth;
+
+        healthBarScript.setHealth(health, maxHealth);
+    }
+
     public void TakeDamage(int damage)
     {
         if (invulnerable)
@@ -211,7 +222,7 @@ public class PlayerController : MonoBehaviour
         GameManager.instance.ShowText(GameAssets.i.damageText, damage, gameObject);
         SoundManager.instance.RandomizeSfx(takeDamageClips);
 
-        GameManager.instance.TextChangeVisualizer(false, "-" + damage.ToString());
+        //GameManager.instance.TextChangeVisualizer(false, "-" + damage.ToString());
 
         health -= damage;
         healthBarScript.setHealth(health, maxHealth);

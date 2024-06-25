@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2ECE6269-9702-4E2D-F794-743E3122D8B9}|Assembly-CSharp.csproj|c:\\users\\matthew\\desktop\\rougelike simple\\assets\\scripts\\ui\\healthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2ECE6269-9702-4E2D-F794-743E3122D8B9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\healthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2ECE6269-9702-4E2D-F794-743E3122D8B9}|Assembly-CSharp.csproj|C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2ECE6269-9702-4E2D-F794-743E3122D8B9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ECE6269-9702-4E2D-F794-743E3122D8B9}|Assembly-CSharp.csproj|c:\\users\\matthew\\desktop\\rougelike simple\\assets\\scripts\\ui\\healthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2ECE6269-9702-4E2D-F794-743E3122D8B9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\healthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,30 +18,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "HealthBar.cs",
               "DocumentMoniker": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\UI\\HealthBar.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\HealthBar.cs",
               "ToolTip": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\UI\\HealthBar.cs",
               "RelativeToolTip": "Assets\\Scripts\\UI\\HealthBar.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAhwBUAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-25T15:20:14.114Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "PlayerController.cs",
               "DocumentMoniker": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\Player\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerController.cs",
               "ToolTip": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\Player\\PlayerController.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerController.cs",
-              "ViewState": "AQIAAMQAAAAAAAAAAAAAANUAAAAmAAAA",
+              "ViewState": "AQIAAOoAAAAAAAAAAAASwPIAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-24T21:05:04.149Z",
               "EditorCaption": ""

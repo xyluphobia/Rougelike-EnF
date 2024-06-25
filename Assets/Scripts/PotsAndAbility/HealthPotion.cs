@@ -15,17 +15,7 @@ public class HealthPotion : PotionsAndAbilities
 
         GameManager.instance.UpdateScore(25);
 
-        int health = playerController.health;
-        int maxHealth = playerController.maxHealth;
-
-        int healthIncreaseBy = Mathf.RoundToInt(maxHealth * healPercentage);
-        health += healthIncreaseBy;
-        GameManager.instance.TextChangeVisualizer(false, "+" + healthIncreaseBy.ToString());
-
-        if (health > maxHealth)
-            health = maxHealth;
-
-        playerController.health = health;
-        playerController.healthText.text = "Health: " + health;
+        int healAmount = Mathf.RoundToInt(playerController.maxHealth * healPercentage);
+        playerController.HealDamage(healAmount);
     }
 }
