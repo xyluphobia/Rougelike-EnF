@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
 {
     public int health;
     public int maxHealth = 100;
+    private HealthBar healthBarScript;
 
     [HideInInspector] public TextMeshProUGUI healthText;
 
@@ -75,6 +76,7 @@ public class PlayerController : MonoBehaviour
         playerInput = GetComponent<PlayerInput>();
 
         healthText = GameObject.Find("HealthText").GetComponent<TextMeshProUGUI>();
+        healthBarScript = GameObject.Find("HealthBar").GetComponent<HealthBar>();
         dashTimerUI = GameObject.Find("DashTimer").GetComponent<Image>();
     }
 
@@ -212,14 +214,14 @@ public class PlayerController : MonoBehaviour
         GameManager.instance.TextChangeVisualizer(false, "-" + damage.ToString());
 
         health -= damage;
+        healthBarScript.setHealth(health, maxHealth);
 
-        // Debug.Log("Health: " + health);
         animator.SetTrigger("Hurt");
         
         if (health <= 0)
             Die();
 
-        healthText.text = "Health: " + health;
+        //healthText.text = "Health: " + health;
     }
 
     void Die() 
