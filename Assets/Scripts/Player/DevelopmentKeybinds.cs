@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DevelopmentKeybinds : MonoBehaviour
 {
@@ -17,6 +18,8 @@ public class DevelopmentKeybinds : MonoBehaviour
         {
             GameManager.instance.ForceBossRoomNext = true;
             Debug.Log("Next floor is boss floor: On");
+
+            SceneManager.LoadScene(2);
         }
         else
         {

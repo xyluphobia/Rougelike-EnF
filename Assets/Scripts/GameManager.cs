@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
 using UnityEngine.InputSystem;
+using UnityEngine.UIElements;
 
 public class GameManager : MonoBehaviour
 {
@@ -38,6 +39,7 @@ public class GameManager : MonoBehaviour
 
     /* ~~~~~~~~~~~ DEV ~~~~~~~~~~~ */
     public bool ForceBossRoomNext = false;
+    private bool UseCurrentLevel = true;
     /* ~~~~~~~~~~~ DEV ~~~~~~~~~~~ */
 
     void Awake()
@@ -73,6 +75,21 @@ public class GameManager : MonoBehaviour
     void InitGame()
     {
         if (SceneManager.GetActiveScene().name == "MainMenu") return;
+        if (!IsBossLevelChecker() && !UseCurrentLevel)
+        {
+            boardScript.tilemapVisualizer = GameObject.FindGameObjectWithTag("TilemapVisualizer").GetComponent<TilemapVisualizer>();
+            boardScript.RunProceduralGeneration(/*level*/);
+        }
+        else if (!ForceBossRoomNext && !UseCurrentLevel)
+        {
+            /*
+            bossRoomScript.tilemapVisualizer = GameObject.FindGameObjectWithTag("TilemapVisualizer").GetComponent<TilemapVisualizer>();
+            bossRoomScript.RunProceduralGeneration();
+            */
+
+            SceneManager.LoadScene(2);
+        }
+
         Time.timeScale = 1f;
 
         gameOverImage = GameObject.Find("GameOverImage");
@@ -88,23 +105,12 @@ public class GameManager : MonoBehaviour
         UpgradePanelObject = GameObject.FindGameObjectWithTag("UpgradePanel");
         StartCoroutine(HideLevelImage());
         
-        if (IsBossLevelChecker())
-        {
-            bossRoomScript.tilemapVisualizer = GameObject.FindGameObjectWithTag("TilemapVisualizer").GetComponent<TilemapVisualizer>();
-            bossRoomScript.RunProceduralGeneration();
-        }
-        else
-        {
-            boardScript.tilemapVisualizer = GameObject.FindGameObjectWithTag("TilemapVisualizer").GetComponent<TilemapVisualizer>();
-            boardScript.RunProceduralGeneration(/*level*/);
-        }
         
         scoreText = GameObject.FindGameObjectWithTag("ScoreText").GetComponent<TextMeshProUGUI>();
         UpdateScore(500);
 
         scoreUpdateText = GameObject.FindGameObjectWithTag("ScoreTextUpdate").GetComponent<TextMeshProUGUI>();
         //healthUpdateText = GameObject.FindGameObjectWithTag("HealthTextUpdate").GetComponent<TextMeshProUGUI>();
-
 
         // logic dealing with when to show upgrades can be found in IEnumerator HideLevelImage().
     }

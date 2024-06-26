@@ -15,6 +15,7 @@ public class RotatorPattern : MonoBehaviour
 
     bool rotating = false;
     bool firstCycle = true;
+    bool swapAngle = false;
     readonly float shotAnimationTime = 0.3f;
     private string originalBinds;
 
@@ -58,6 +59,9 @@ public class RotatorPattern : MonoBehaviour
     [SerializeField] private Transform AttackPositionRightLine1;
     [SerializeField] private Transform AttackPositionRightLine2;
     [SerializeField] private Transform AttackPositionRightLine3;
+
+    [Header("Phase 2 Attack Positions")]
+    [SerializeField] private Transform[] Phase2AttackPositions;
 
     private void Awake()
     {
@@ -103,11 +107,11 @@ public class RotatorPattern : MonoBehaviour
     { 
         // Spin 3 times damaging in a proximity
         StartCoroutine(rotateOverTime(3, 2));
-        yield return new WaitForSeconds(2.5f);  // need to add damage in aoe
+        yield return new WaitForSeconds(2f);  // need to add damage in aoe
 
-        while (enemyScript.currentHealth > 0)
+        while (enemyScript.currentHealth > 200)
         {
-            /* ~~ Phase 1 ~~ */
+            /* ~~ Attack 1 ~~ */
             // Spin once damaging in proximity | This is skipped on the first rotation
             if (!firstCycle)
             {
@@ -123,6 +127,7 @@ public class RotatorPattern : MonoBehaviour
             nums.Remove(spawn2);
 
             yield return new WaitForSeconds(1f);
+            if (enemyScript.currentHealth < 200) break;
 
             bool numFound = false;
             if (nums.Contains(1))
@@ -159,13 +164,15 @@ public class RotatorPattern : MonoBehaviour
             }
             yield return new WaitForSeconds(1.5f);
 
-            /* ~~ Phase 2 ~~ */
+            /* ~~ Attack 2 ~~ */
             // Spin once damaging in proximity
             StartCoroutine(rotateOverTime(1, 0));
             yield return new WaitForSeconds(1.5f);  // need to add damage in aoe
 
             // Shoot 3 projectiles spawning in a line which move toward the players location at the time of firing forming a triangle
             yield return new WaitForSeconds(1f);
+            if (enemyScript.currentHealth < 200) break;
+
             Vector2 direction = GameObject.FindGameObjectWithTag("Player").transform.position - transform.position;
             switch (rangedShot.findDirection(direction).name)
             {
@@ -199,10 +206,11 @@ public class RotatorPattern : MonoBehaviour
             }
             yield return new WaitForSeconds(2f);
 
-            /* ~~ Phase 3 ~~ */
+            /* ~~ Attack 3 ~~ */
             // Spin twice damaging in proximity
             StartCoroutine(rotateOverTime(2, 1));
             yield return new WaitForSeconds(3f);  // need to add damage in aoe
+            if (enemyScript.currentHealth < 200) break;
 
             // Shoot 1 special projectile which rotates the players controls (previous control used to move 'Up' now moves you 'Right' etc) U>R, R>D, D>L, L>U
             Vector2 dir = enemyAi.movement;
@@ -232,6 +240,59 @@ public class RotatorPattern : MonoBehaviour
             firstCycle = false;
         }
 
+        /* ~~ Phase 2 ~~ */
+        while (enemyScript.currentHealth <= 200 && enemyScript.currentHealth > 0)
+        {
+            /* ~~ Attack 1 ~~ */
+            StartCoroutine(rotateOverTime(2, 0));
+            yield return new WaitForSeconds(3f);
+
+            rangedShot.EnemyShoot(trackingProjectile, Phase2AttackPositions[0], shotAnimationTime);
+            yield return new WaitForSeconds(shotAnimationTime);
+            rangedShot.EnemyShoot(trackingProjectile, Phase2AttackPositions[3], 0);
+            rangedShot.EnemyShoot(trackingProjectile, Phase2AttackPositions[6], 0);
+            rangedShot.EnemyShoot(trackingProjectile, Phase2AttackPositions[9], 0);
+
+            yield return new WaitForSeconds(1.75f);
+
+            /* ~~ Attack 2 ~~ */
+            StartCoroutine(rotateOverTime(2, 0));
+            yield return new WaitForSeconds(3f);
+
+            rangedShot.EnemyShoot(standardProjectile, Phase2AttackPositions[1], shotAnimationTime);
+            yield return new WaitForSeconds(shotAnimationTime);
+            rangedShot.EnemyShoot(standardProjectile, Phase2AttackPositions[2], 0);
+            rangedShot.EnemyShoot(standardProjectile, Phase2AttackPositions[4], 0);
+            rangedShot.EnemyShoot(standardProjectile, Phase2AttackPositions[5], 0);
+            rangedShot.EnemyShoot(standardProjectile, Phase2AttackPositions[7], 0);
+            rangedShot.EnemyShoot(standardProjectile, Phase2AttackPositions[8], 0);
+            rangedShot.EnemyShoot(standardProjectile, Phase2AttackPositions[10], 0);
+            rangedShot.EnemyShoot(standardProjectile, Phase2AttackPositions[11], 0);
+
+            yield return new WaitForSeconds(1.75f);
+            /* ~~ Attack 3 ~~ */
+
+            StartCoroutine(rotateOverTime(3, 0));
+            yield return new WaitForSeconds(3f);
+
+            if (swapAngle)
+            {
+                swapAngle = false;
+                rangedShot.EnemyShoot(rotatorProjectile, Phase2AttackPositions[12], shotAnimationTime, true);
+                yield return new WaitForSeconds(shotAnimationTime);
+                rangedShot.EnemyShoot(rotatorProjectile, Phase2AttackPositions[14], 0, true);
+            }
+            else
+            {
+                swapAngle = true;
+                rangedShot.EnemyShoot(rotatorProjectile, Phase2AttackPositions[15], shotAnimationTime, true);
+                yield return new WaitForSeconds(shotAnimationTime);
+                rangedShot.EnemyShoot(rotatorProjectile, Phase2AttackPositions[13], 0, true);
+            }
+
+            yield return new WaitForSeconds(1.75f);
+        }
+
         /* ~~ Out Of Phase ~~ */
         IEnumerator rotateOverTime(int rotationsRemaining, int indexOfSwirl)
         {
@@ -241,6 +302,8 @@ public class RotatorPattern : MonoBehaviour
             enemyScript.invulnerable = true;
             circleCollider.enabled = true;
             damageOnCollision.enabled = true;
+            enemyAi.chasePlayer = true;
+
             while (rotationsRemaining > 0 && enemyScript.currentHealth > 0)
             {
                 if (rotating)
@@ -266,11 +329,14 @@ public class RotatorPattern : MonoBehaviour
                 rotating = false;
                 animator.SetBool("IsSpinning", false);
             }
+
+            enemyAi.chasePlayer = false;
             StartCoroutine(FadeSwirlEffect(new Color32(255, 255, 255, 0), 3f));
             swirlEffect.SetActive(false);
             enemyScript.invulnerable = false;
             circleCollider.enabled = false;
             damageOnCollision.enabled = false;
+
 
             IEnumerator FadeSwirlEffect(Color goalColor, float speed)
             {

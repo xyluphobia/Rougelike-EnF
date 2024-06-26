@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3379612642913003377}
   - component: {fileID: 5482090434056104260}
   - component: {fileID: 7038133860684863766}
+  - component: {fileID: 2965902753788017088}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: GameManager
@@ -49,6 +50,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boardScript: {fileID: 3379612642913003377}
   bossRoomScript: {fileID: 5482090434056104260}
+  isBossLevel: 0
   levelStartDelay: 1.4
   level: 0
   scoreText: {fileID: 0}
@@ -130,3 +132,15 @@ MonoBehaviour:
   wallBottom: {fileID: 6509111082349352072, guid: f57474be53bf8324389e8d2d06aec7e5, type: 3}
   wallBottomLeft: {fileID: 7661594777433706584, guid: ee8e5180c4781644499aa906ad3d4e50, type: 3}
   wallBottomRight: {fileID: 6421906084273240071, guid: a62066f2faa456447a347eb6e54ed145, type: 3}
+--- !u!114 &2965902753788017088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 275118339369010003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07513f7a39160a840a411b3c8e2dcd59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

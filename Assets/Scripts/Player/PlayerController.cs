@@ -282,7 +282,7 @@ public class PlayerController : MonoBehaviour
         {
             if (enemy.CompareTag("PassDamage"))
             {
-                enemy.GetComponentInChildren<Enemy>().TakeDamage(attackDamage);
+                enemy.transform.parent.GetComponentInChildren<Enemy>().TakeDamage(attackDamage);
             }
             else
             {

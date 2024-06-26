@@ -21,6 +21,7 @@ public class EnemyAI : MonoBehaviour
 
     private bool isInChaseRange;
     public bool isInAttackRange;
+    [HideInInspector] public bool chasePlayer = false;
 
 
     void Awake()
@@ -66,8 +67,13 @@ public class EnemyAI : MonoBehaviour
             animator.SetBool("IsMoving", isInChaseRange);
             MoveCharacter(movement);
         }
+        if (isInChaseRange && chasePlayer)
+        {
+            animator.SetBool("IsMoving", isInChaseRange);
+            MoveCharacter(movement);
+        }
 
-        if (isInAttackRange)
+        if (isInAttackRange && !chasePlayer)
         {
             animator.SetBool("IsMoving", false);
             rb.velocity = Vector2.zero;
