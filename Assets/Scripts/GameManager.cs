@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour
 
     /* ~~~~~~~~~~~ DEV ~~~~~~~~~~~ */
     public bool ForceBossRoomNext = false;
-    private bool UseCurrentLevel = true;
+    private bool UseCurrentLevel = false;
     /* ~~~~~~~~~~~ DEV ~~~~~~~~~~~ */
 
     void Awake()
@@ -102,7 +102,7 @@ public class GameManager : MonoBehaviour
         levelText.text = "Level " + level;
         levelImage.SetActive(true);
 
-        UpgradePanelObject = GameObject.FindGameObjectWithTag("UpgradePanel");
+        //UpgradePanelObject = GameObject.FindGameObjectWithTag("UpgradePanel");
         StartCoroutine(HideLevelImage());
         
         
@@ -121,12 +121,14 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(levelStartDelay);
         levelImage.SetActive(false);
 
-
+        /*
         if (level % 4 == 0) {
             ShowUpgradePanelAfterLevelImageHidden();
         }
         else
             StopWatch.stopwatchActive = true;
+        */
+        StopWatch.stopwatchActive = true;
     }
 
     private void ShowUpgradePanelAfterLevelImageHidden() {

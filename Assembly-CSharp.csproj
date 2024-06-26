@@ -89,6 +89,7 @@
     <Compile Include="Assets\Scripts\ProceduralLevelGeneration\TilemapVisualizer.cs" />
     <Compile Include="Assets\Scripts\EnemyScripts\Boss_Scripts\OpenGatesOnBossDeath.cs" />
     <Compile Include="Assets\Scripts\EnemyScripts\DamageOnCollision.cs" />
+    <Compile Include="Assets\Scripts\Player\AfterImage.cs" />
     <Compile Include="Assets\Scripts\menus\OptionsMenu.cs" />
     <Compile Include="Assets\Scripts\ProceduralLevelGeneration\PG_Sprites\TilesetData\EnvironmentTilesetData.cs" />
     <Compile Include="Assets\Scripts\Items\PotsAndAbility\UpgradeKeepAlive.cs" />

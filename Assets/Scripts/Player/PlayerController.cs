@@ -50,6 +50,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float dashCooldown = 2f;
     [HideInInspector] public float dashCooldownReduction = 0f;
     [SerializeField] private AudioClip dashClip;
+    [SerializeField] private GameObject afterImage;
     private Image dashTimerUI;
 
     /*private < should be private outside of development*/ public bool canDash = true;
@@ -58,7 +59,6 @@ public class PlayerController : MonoBehaviour
     private bool ghostingActive = false;
     [SerializeField] private Collider2D triggerCollider;
 
-    private TrailRenderer dashTrail;
     [SerializeField] private Light2D playerGlow;
     [SerializeField] private GameObject shieldEffect;
 
@@ -72,7 +72,6 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         potionsAndAbilities = GetComponent<PotionsAndAbilities>();
-        dashTrail = GetComponent<TrailRenderer>();
         playerInput = GetComponent<PlayerInput>();
 
         //healthText = GameObject.Find("HealthText").GetComponent<TextMeshProUGUI>();
@@ -290,7 +289,7 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
-
+    
     private IEnumerator Dash()
     {
         animator.SetTrigger("Dash");
@@ -300,7 +299,6 @@ public class PlayerController : MonoBehaviour
 
         invulnerable = true;
         StartCoroutine(ToggleGhosting(true));
-        dashTrail.emitting = true;
         disableInput = true;
 
         rb.velocity = new Vector2(movement.normalized.x * dashingPower, movement.normalized.y * dashingPower);
@@ -309,9 +307,9 @@ public class PlayerController : MonoBehaviour
 
         disableInput = false;
         StartCoroutine(ToggleGhosting(false, true, 0.25f));
-        dashTrail.emitting = false;
         invulnerable = false;
         dashCooldown -= dashCooldownReduction;
+        dashCooldownReduction = 0f;
 
         StartCoroutine(DashCooldownUIUpdates());
         yield return new WaitForSeconds(Math.Max(0, dashCooldown));
@@ -343,6 +341,8 @@ public class PlayerController : MonoBehaviour
 
             Physics2D.IgnoreLayerCollision(6, 9, true);
             triggerCollider.enabled = true;
+
+            StartCoroutine(AfterImage());
         }
         else
         {
@@ -385,6 +385,19 @@ public class PlayerController : MonoBehaviour
                 tick += Time.deltaTime * speed;
                 shieldEffect.GetComponent<SpriteRenderer>().color = Color.Lerp(startColor, goalColor, tick);
                 yield return null;
+            }
+        }
+
+        IEnumerator AfterImage()
+        {
+            afterImage.GetComponent<SpriteRenderer>().sprite = GetComponent<SpriteRenderer>().sprite;
+            int clonesSpawned = 0;
+
+            while (clonesSpawned < 3)
+            {
+                clonesSpawned++;
+                Instantiate(afterImage, gameObject.transform.position, Quaternion.identity);
+                yield return new WaitForSeconds(0.07f);
             }
         }
     }
