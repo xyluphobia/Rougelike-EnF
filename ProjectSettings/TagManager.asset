@@ -24,6 +24,7 @@ TagManager:
   - InGameUI
   - PassDamage
   - HealthBar
+  - LockedDoor
   layers:
   - Default
   - TransparentFX

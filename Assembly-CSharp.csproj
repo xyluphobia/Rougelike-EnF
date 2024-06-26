@@ -84,6 +84,7 @@
     <Compile Include="Assets\Scripts\SoundManager.cs" />
     <Compile Include="Assets\Scripts\Traps\TriggerTrap.cs" />
     <Compile Include="Assets\Prefabs\NeedForLevelToWork\KeyBindings.cs" />
+    <Compile Include="Assets\Scripts\Traps\IlluminateDoor.cs" />
     <Compile Include="Assets\Prefabs\Popups\DestroyTextInSeconds.cs" />
     <Compile Include="Assets\Scripts\StopWatch.cs" />
     <Compile Include="Assets\Scripts\ProceduralLevelGeneration\TilemapVisualizer.cs" />

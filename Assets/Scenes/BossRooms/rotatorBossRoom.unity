@@ -146,11 +146,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 987550189166424143, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
       propertyPath: m_text
-      value: D
+      value: W
       objectReference: {fileID: 0}
     - target: {fileID: 2182335357918832104, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
       propertyPath: m_text
-      value: A
+      value: S
       objectReference: {fileID: 0}
     - target: {fileID: 2589669445567445872, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
       propertyPath: m_Name
@@ -158,11 +158,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3234921648123556898, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
       propertyPath: m_text
-      value: S
+      value: D
+      objectReference: {fileID: 0}
+    - target: {fileID: 4734745652298009943, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4734745652298009943, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4734745652298009943, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4734745652298009943, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6271124465327856315, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
       propertyPath: m_text
-      value: W
+      value: A
       objectReference: {fileID: 0}
     - target: {fileID: 7530926323743698345, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
       propertyPath: m_Pivot.x
@@ -243,6 +259,42 @@ PrefabInstance:
     - target: {fileID: 7530926323743698345, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7761507219307216083, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7761507219307216083, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7761507219307216083, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7761507219307216083, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8067372232735587149, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8067372232735587149, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8067372232735587149, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8067372232735587149, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8894577824578346688, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20723,6 +20775,10 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 0e5a527d019feed4e9a168b7bcdfdc96, type: 2}
     - target: {fileID: 1675523694364926060, guid: 47c9fee0d11e13245a00186c3ccf528e, type: 3}
       propertyPath: m_Name
+      value: LockedDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1675523694364926060, guid: 47c9fee0d11e13245a00186c3ccf528e, type: 3}
+      propertyPath: m_TagString
       value: LockedDoor
       objectReference: {fileID: 0}
     - target: {fileID: 7499467176003812805, guid: 47c9fee0d11e13245a00186c3ccf528e, type: 3}

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class OpenLockedDoor : MonoBehaviour
 {
@@ -11,15 +12,17 @@ public class OpenLockedDoor : MonoBehaviour
     {
         if (Inventory.instance.haveItem(doorKey.name))
         {
-            Debug.Log("got here");
             foreach (GameObject door in doorsToOpen)
             {
                 door.GetComponent<Animator>().SetBool("doorOpen", true);
                 door.GetComponent<BoxCollider2D>().enabled = false;
+
+                if (door.TryGetComponent(out Light2D lightScript))
+                {
+                    lightScript.enabled = false;
+                }
             }
             Inventory.instance.removeItemFromInventory(doorKey.name, 1);
         }
-
-        Debug.Log("ObjectName: " + doorKey.name);
     }
 }

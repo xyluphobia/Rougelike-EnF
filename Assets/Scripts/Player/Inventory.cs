@@ -38,12 +38,12 @@ public class Inventory : MonoBehaviour
         if (heldItems.ContainsKey(key))
         {
             heldItems[key].itemCount += amount;
+            GameObject.Find("InventoryTemp").transform.localScale = Vector3.one;
         }
         else
         {
             heldItems.Add(key, new Item { itemObject = item, itemCount = amount });
         }
-        Debug.Log(key);
     }
 
     public void removeItemFromInventory(string key, int amount)
@@ -56,6 +56,8 @@ public class Inventory : MonoBehaviour
             heldItems[key].itemCount -= amount;
             if (heldItems[key].itemCount <= 0)
                 heldItems.Remove(key);
+
+            GameObject.Find("InventoryTemp").transform.localScale = Vector3.zero;
         }
     }
 
