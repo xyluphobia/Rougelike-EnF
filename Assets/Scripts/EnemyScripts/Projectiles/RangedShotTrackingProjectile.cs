@@ -7,6 +7,7 @@ public class RangedShotTrackingProjectile : MonoBehaviour
     [SerializeField] private AudioClip[] dealDamageClips;
     [SerializeField] private float projectileSpeed;
     [SerializeField] private int damage = 25;
+    public float destroyProjectileAfter = 2f;
 
     private Transform target;
     private Vector2 movement;
@@ -15,7 +16,7 @@ public class RangedShotTrackingProjectile : MonoBehaviour
     public Vector3 direction;
     
     public static bool tracking;
-    [SerializeField] private float trackingTime;
+    public float trackingTime;
     
     void Start()
     {
@@ -24,7 +25,7 @@ public class RangedShotTrackingProjectile : MonoBehaviour
 
         tracking = true;
 
-        StartCoroutine(DestroyAfterTime(2f));
+        StartCoroutine(DestroyAfterTime(destroyProjectileAfter));
         StartCoroutine(ProjectileTrackingTimer(trackingTime));
     }
 

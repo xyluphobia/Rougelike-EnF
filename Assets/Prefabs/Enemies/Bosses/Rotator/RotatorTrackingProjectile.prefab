@@ -165,10 +165,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dealDamageClips:
   - {fileID: 8300000, guid: a3b23fefa713955488d87a92403a1a9f, type: 3}
-  projectileSpeed: 4
+  projectileSpeed: 3
   damage: 20
+  destroyProjectileAfter: 4
   direction: {x: 0, y: 0, z: 0}
-  trackingTime: 1.5
+  trackingTime: 2.5
 --- !u!95 &2795371078464031374
 Animator:
   serializedVersion: 7

@@ -10,6 +10,9 @@ public class Enemy : MonoBehaviour
     public int maxHealth = 20;
     public int currentHealth;
     public bool invulnerable = false;
+    [SerializeField] private bool hasHealthBar = false;
+    [SerializeField] private GameObject healthBar;
+    private HealthBar healthBarScript;
 
     [SerializeField] private AudioClip deathClip;
     [SerializeField] private AudioClip[] hitClips;
@@ -18,9 +21,11 @@ public class Enemy : MonoBehaviour
     [SerializeField] private GameObject scoreText;
 
 
-    void Start()
+    void Awake()
     {
         currentHealth = maxHealth;
+        if (hasHealthBar)
+            healthBarScript = healthBar.GetComponent<HealthBar>();
     }
 
     public void TakeDamage(int damage)
@@ -30,6 +35,10 @@ public class Enemy : MonoBehaviour
 
         ShowText(damageText, damage);
         currentHealth -= damage;
+
+        if (hasHealthBar)
+            healthBarScript.setHealth(currentHealth, maxHealth);
+
 
         if (!invulnerable)
         {

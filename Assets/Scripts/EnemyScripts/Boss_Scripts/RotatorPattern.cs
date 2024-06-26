@@ -241,56 +241,63 @@ public class RotatorPattern : MonoBehaviour
         }
 
         /* ~~ Phase 2 ~~ */
+        trackingProjectile.GetComponent<RangedShotTrackingProjectile>().destroyProjectileAfter = 4f;
+        trackingProjectile.GetComponent<RangedShotTrackingProjectile>().trackingTime = 2.5f;
+        rotatorProjectile.GetComponent<RangedShotTrackingProjectile>().destroyProjectileAfter = 4f;
+        standardProjectile.GetComponent<RangedShotStandardProjectile>().destroyProjectileAfter = 5f;
+
         while (enemyScript.currentHealth <= 200 && enemyScript.currentHealth > 0)
         {
             /* ~~ Attack 1 ~~ */
             StartCoroutine(rotateOverTime(2, 0));
-            yield return new WaitForSeconds(3f);
+            //yield return new WaitForSeconds(3f);
 
-            rangedShot.EnemyShoot(trackingProjectile, Phase2AttackPositions[0], shotAnimationTime);
-            yield return new WaitForSeconds(shotAnimationTime);
-            rangedShot.EnemyShoot(trackingProjectile, Phase2AttackPositions[3], 0);
-            rangedShot.EnemyShoot(trackingProjectile, Phase2AttackPositions[6], 0);
+            rangedShot.EnemyShoot(trackingProjectile, Phase2AttackPositions[1], 0);
+            //yield return new WaitForSeconds(shotAnimationTime);
+            rangedShot.EnemyShoot(trackingProjectile, Phase2AttackPositions[2], 0);
+            rangedShot.EnemyShoot(trackingProjectile, Phase2AttackPositions[8], 0);
             rangedShot.EnemyShoot(trackingProjectile, Phase2AttackPositions[9], 0);
 
-            yield return new WaitForSeconds(1.75f);
+            yield return new WaitForSeconds(1.75f + 1.5f);
 
             /* ~~ Attack 2 ~~ */
             StartCoroutine(rotateOverTime(2, 0));
-            yield return new WaitForSeconds(3f);
+            //yield return new WaitForSeconds(3f);
 
-            rangedShot.EnemyShoot(standardProjectile, Phase2AttackPositions[1], shotAnimationTime);
-            yield return new WaitForSeconds(shotAnimationTime);
-            rangedShot.EnemyShoot(standardProjectile, Phase2AttackPositions[2], 0);
+            rangedShot.EnemyShoot(standardProjectile, Phase2AttackPositions[13], 0);
+            //yield return new WaitForSeconds(shotAnimationTime);
+            rangedShot.EnemyShoot(standardProjectile, Phase2AttackPositions[0], 0);
+            rangedShot.EnemyShoot(standardProjectile, Phase2AttackPositions[3], 0);
             rangedShot.EnemyShoot(standardProjectile, Phase2AttackPositions[4], 0);
-            rangedShot.EnemyShoot(standardProjectile, Phase2AttackPositions[5], 0);
+            rangedShot.EnemyShoot(standardProjectile, Phase2AttackPositions[6], 0);
             rangedShot.EnemyShoot(standardProjectile, Phase2AttackPositions[7], 0);
-            rangedShot.EnemyShoot(standardProjectile, Phase2AttackPositions[8], 0);
             rangedShot.EnemyShoot(standardProjectile, Phase2AttackPositions[10], 0);
             rangedShot.EnemyShoot(standardProjectile, Phase2AttackPositions[11], 0);
 
-            yield return new WaitForSeconds(1.75f);
+            yield return new WaitForSeconds(1.75f + 1.5f);
             /* ~~ Attack 3 ~~ */
 
             StartCoroutine(rotateOverTime(3, 0));
-            yield return new WaitForSeconds(3f);
+            //yield return new WaitForSeconds(3f);
 
             if (swapAngle)
             {
                 swapAngle = false;
-                rangedShot.EnemyShoot(rotatorProjectile, Phase2AttackPositions[12], shotAnimationTime, true);
-                yield return new WaitForSeconds(shotAnimationTime);
-                rangedShot.EnemyShoot(rotatorProjectile, Phase2AttackPositions[14], 0, true);
+                rangedShot.EnemyShoot(rotatorProjectile, Phase2AttackPositions[5], 0, true);
+                //yield return new WaitForSeconds(shotAnimationTime);
+                rangedShot.EnemyShoot(rotatorProjectile, Phase2AttackPositions[11], 0, true);
+                rangedShot.EnemyShoot(rotatorProjectile, Phase2AttackPositions[13], 0, true);
             }
             else
             {
                 swapAngle = true;
-                rangedShot.EnemyShoot(rotatorProjectile, Phase2AttackPositions[15], shotAnimationTime, true);
-                yield return new WaitForSeconds(shotAnimationTime);
-                rangedShot.EnemyShoot(rotatorProjectile, Phase2AttackPositions[13], 0, true);
+                rangedShot.EnemyShoot(rotatorProjectile, Phase2AttackPositions[12], 0, true);
+                //yield return new WaitForSeconds(shotAnimationTime);
+                rangedShot.EnemyShoot(rotatorProjectile, Phase2AttackPositions[4], 0, true);
+                rangedShot.EnemyShoot(rotatorProjectile, Phase2AttackPositions[6], 0, true);
             }
 
-            yield return new WaitForSeconds(1.75f);
+            yield return new WaitForSeconds(1.75f + 1.5f);
         }
 
         /* ~~ Out Of Phase ~~ */

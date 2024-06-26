@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 1920
+    x: 0
     y: 43
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Hierarchy
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 150}
   m_MaxSize: {x: 24288, y: 24288}
   vertical: 0
-  controlID: 18
+  controlID: 109
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 150}
   m_MaxSize: {x: 16192, y: 24288}
   vertical: 1
-  controlID: 19
+  controlID: 110
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 0
-  controlID: 20
+  controlID: 111
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -299,7 +299,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 181
+  controlID: 177
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -399,7 +399,7 @@ MonoBehaviour:
     m_TextWithWhitespace: "Game\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 2264
+    x: 344
     y: 73
     width: 1135
     height: 616
@@ -499,7 +499,7 @@ MonoBehaviour:
     m_TextWithWhitespace: "Hierarchy\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1920
+    x: 0
     y: 73
     width: 343
     height: 403
@@ -519,7 +519,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 76f6f9ff5280fbff5606fdffa2b1ffff4eb2fffffcb6ffff02beffff78cdffffc0d2ffff9ce2ffffb8e2ffff1afbfffff4ffffff4a840000d2c600005ef40100
+      m_ExpandedIDs: 6e61fdff7461fdff52b1feff54b1feff56b1feff8cb8feffb0c1feff4ac7fefffee7feff4cf5feffea04ffffd270ffff2477ffff3e8dffff7aabffffded5ffff08fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -564,7 +564,7 @@ MonoBehaviour:
     m_TextWithWhitespace: "Console\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1920
+    x: 0
     y: 497
     width: 343
     height: 192
@@ -600,7 +600,7 @@ MonoBehaviour:
     m_TextWithWhitespace: "Scene\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 2264
+    x: 344
     y: 73
     width: 1135
     height: 616
@@ -1029,9 +1029,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.9480281, y: 10.446505, z: 0.03201323}
+    m_Target: {x: 1008.1502, y: 581.5029, z: -10.378676}
     speed: 2
-    m_Value: {x: 0.9480281, y: 10.446505, z: 0.03201323}
+    m_Value: {x: 1008.1502, y: 581.5029, z: -10.378676}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1081,9 +1081,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 10.034699
+    m_Target: 713.0883
     speed: 2
-    m_Value: 10.034699
+    m_Value: 713.0883
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1335,9 +1335,9 @@ MonoBehaviour:
       e32: 0
       e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: 0e5a527d019feed4e9a168b7bcdfdc96, type: 2}
+  m_AnimatorController: {fileID: 9100000, guid: 99b86f192243e0146abe946f6c693ac4, type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: 7878599069041692306, guid: 0e5a527d019feed4e9a168b7bcdfdc96, type: 2}
+  - m_Target: {fileID: 4987505483452273229, guid: 99b86f192243e0146abe946f6c693ac4, type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
   stateMachineGraphGUI: {fileID: 0}
@@ -1371,7 +1371,7 @@ MonoBehaviour:
     m_TextWithWhitespace: "Project\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1920
+    x: 0
     y: 710
     width: 744
     height: 281
@@ -1397,7 +1397,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs/Items/Drops
+    - Assets/Fantasy RPG heroes pack (by Franuka)
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1407,16 +1407,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 65
   m_LastFolders:
-  - Assets/Prefabs/Items/Drops
+  - Assets/Fantasy RPG heroes pack (by Franuka)
   m_LastFoldersGridSize: 65
   m_LastProjectPath: C:\Users\Matthew\Desktop\Rougelike Simple
   m_LockTracker:
     m_IsLocked: 1
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 159}
-    m_SelectedIDs: 0ab50000
-    m_LastClickedID: 46346
-    m_ExpandedIDs: 00000000567300005a7300005c7300005e730000627300009673000000ca9a3b
+    scrollPos: {x: 0, y: 60}
+    m_SelectedIDs: 6a740000
+    m_LastClickedID: 29802
+    m_ExpandedIDs: 000000001a7400001c7400001e74000020740000727400009074000092740000ee2b010000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1444,7 +1444,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 176}
     m_SelectedIDs: c0720000
     m_LastClickedID: 29376
-    m_ExpandedIDs: 0000000056730000587300005a7300005c7300005e730000607300006273000064730000
+    m_ExpandedIDs: 000000001a7400001c7400001e74000020740000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1471,8 +1471,8 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c623000002520000aaaf000074b20000824f0000ba4f0000c24e00009a5300003a4d0000324d0000fc52000096500000221f0200988c0000f4a1000000000000465c00000655000036c800006c7400008c2f0100
+    m_HadKeyboardFocusLastEvent: 0
+    m_ExpandedInstanceIDs: c623000002520000aaaf000074b20000824f0000ba4f0000c24e00009a5300003a4d0000324d0000fc52000096500000221f0200988c0000f4a1000000000000465c00000655000036c800006c7400008c2f0100e07b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1521,7 +1521,7 @@ MonoBehaviour:
     m_TextWithWhitespace: "Project\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 2665
+    x: 745
     y: 710
     width: 734
     height: 281
@@ -1547,7 +1547,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Sprites/Traps
+    - Assets/Scripts/UI
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1557,16 +1557,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Sprites/Traps
+  - Assets/Scripts/UI
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Matthew\Desktop\Rougelike Simple
   m_LockTracker:
     m_IsLocked: 1
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 639}
-    m_SelectedIDs: 14b50000
-    m_LastClickedID: 46356
-    m_ExpandedIDs: 0000000056730000587300005a7300005c7300005e730000607300006273000064730000a6730000ac73000010b5000014b5000000ca9a3b
+    scrollPos: {x: 0, y: 271}
+    m_SelectedIDs: 767f0000
+    m_LastClickedID: 32630
+    m_ExpandedIDs: 000000001a7400001c7400001e740000207400007a74000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1594,7 +1594,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000056730000587300005a7300005c7300005e730000607300006273000064730000
+    m_ExpandedIDs: 000000001a7400001c7400001e74000020740000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1625,18 +1625,18 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: 88740000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: BossHealthBar
+      m_OriginalName: BossHealthBar
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 76920
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 14}
     m_CreateAssetUtility:
@@ -1649,7 +1649,7 @@ MonoBehaviour:
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 16
   m_SkipHiddenPackages: 0
-  m_DirectoriesAreaWidth: 196
+  m_DirectoriesAreaWidth: 191
 --- !u!114 &23
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1671,7 +1671,7 @@ MonoBehaviour:
     m_TextWithWhitespace: "Inspector\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 3401
+    x: 1481
     y: 73
     width: 438
     height: 918
