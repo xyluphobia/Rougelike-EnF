@@ -103,6 +103,11 @@ public class RotatorPattern : MonoBehaviour
         playerInput.currentActionMap.FindAction("Move").ApplyBindingOverride(4, $"<Keyboard>/{wasdRight}"); // wasdRight
     }
 
+    private void OnPlayerDied()
+    {
+        OnDeath();
+    }
+
     public IEnumerator RotatorAttackPattern()
     { 
         // Spin 3 times damaging in a proximity

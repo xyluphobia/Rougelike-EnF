@@ -7,6 +7,9 @@ using TMPro;
 using CameraShake;
 using System;
 using UnityEngine.Rendering.Universal;
+using UnityEditor.SearchService;
+using UnityEditor.SceneManagement;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -236,6 +239,11 @@ public class PlayerController : MonoBehaviour
 
     void Die() 
     {
+        foreach (var item in SceneManager.GetActiveScene().GetRootGameObjects())
+        {
+            item.BroadcastMessage("OnPlayerDied", SendMessageOptions.DontRequireReceiver);
+        }
+
         SoundManager.instance.RandomizeSfx(deathClips);
         animator.SetBool("IsDead", true);
         GameManager.instance.GameOver();
