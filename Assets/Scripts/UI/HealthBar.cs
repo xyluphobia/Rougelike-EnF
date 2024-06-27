@@ -6,11 +6,14 @@ using UnityEngine.UI;
 public class HealthBar : MonoBehaviour
 {
     [SerializeField] private Image healthBar;
+    [SerializeField] private Gradient healthBarGradient;
+    private float _target;
 
     public void setHealth (float health, float maxHealth)
     {
-        //healthBar.fillAmount = health / maxHealth;
-        StartCoroutine(healthBarChangeOverTime(health / maxHealth));
+        float target = health / maxHealth;
+        StartCoroutine(healthBarChangeOverTime(target));
+        CheckHealthBarGradient(target);
     }
 
     private IEnumerator healthBarChangeOverTime(float healthGoal)
@@ -35,5 +38,10 @@ public class HealthBar : MonoBehaviour
 
         if (healthGoal <= 0)
             healthBar.fillAmount = 0;
+    }
+
+    private void CheckHealthBarGradient(float target)
+    {
+        healthBar.color = healthBarGradient.Evaluate(target);
     }
 }

@@ -128,6 +128,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 14019410826039881, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
+      propertyPath: healthBarGradient.ctime1
+      value: 31418
+      objectReference: {fileID: 0}
+    - target: {fileID: 14019410826039881, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
+      propertyPath: healthBarGradient.ctime2
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 14019410826039881, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
+      propertyPath: healthBarGradient.key0.b
+      value: 0.18431373
+      objectReference: {fileID: 0}
+    - target: {fileID: 14019410826039881, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
+      propertyPath: healthBarGradient.key0.g
+      value: 0.13333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 14019410826039881, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
+      propertyPath: healthBarGradient.key0.r
+      value: 0.9254902
+      objectReference: {fileID: 0}
+    - target: {fileID: 14019410826039881, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
+      propertyPath: healthBarGradient.key1.b
+      value: 0.12967247
+      objectReference: {fileID: 0}
+    - target: {fileID: 14019410826039881, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
+      propertyPath: healthBarGradient.key1.g
+      value: 0.86300045
+      objectReference: {fileID: 0}
+    - target: {fileID: 14019410826039881, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
+      propertyPath: healthBarGradient.key1.r
+      value: 0.8867924
+      objectReference: {fileID: 0}
+    - target: {fileID: 14019410826039881, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
+      propertyPath: healthBarGradient.key2.b
+      value: 0.05490196
+      objectReference: {fileID: 0}
+    - target: {fileID: 14019410826039881, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
+      propertyPath: healthBarGradient.key2.g
+      value: 0.62352943
+      objectReference: {fileID: 0}
+    - target: {fileID: 14019410826039881, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
+      propertyPath: healthBarGradient.key2.r
+      value: 0.29411766
+      objectReference: {fileID: 0}
+    - target: {fileID: 14019410826039881, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
+      propertyPath: healthBarGradient.m_NumColorKeys
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 264052763728808523, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -148,6 +196,18 @@ PrefabInstance:
       propertyPath: m_text
       value: W
       objectReference: {fileID: 0}
+    - target: {fileID: 1665713109708175866, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
+      propertyPath: m_Color.b
+      value: 0.055802763
+      objectReference: {fileID: 0}
+    - target: {fileID: 1665713109708175866, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
+      propertyPath: m_Color.g
+      value: 0.6226415
+      objectReference: {fileID: 0}
+    - target: {fileID: 1665713109708175866, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
+      propertyPath: m_Color.r
+      value: 0.29239058
+      objectReference: {fileID: 0}
     - target: {fileID: 2182335357918832104, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
       propertyPath: m_text
       value: S
@@ -159,6 +219,18 @@ PrefabInstance:
     - target: {fileID: 3234921648123556898, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
       propertyPath: m_text
       value: D
+      objectReference: {fileID: 0}
+    - target: {fileID: 4597199214901684414, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4597199214901684414, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -92
+      objectReference: {fileID: 0}
+    - target: {fileID: 4597199214901684414, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4734745652298009943, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1031,7 +1103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4692411, g: 0.06132078, b: 1, a: 1}
+  m_Color: {r: 0.37331626, g: 0, b: 0.70980394, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -19929,6 +20001,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 406599987}
+  healthBarGradient:
+    serializedVersion: 2
+    key0: {r: 0.30980393, g: 0, b: 0.70980394, a: 1}
+    key1: {r: 0.3764706, g: 0, b: 0.70980394, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 193
+    ctime1: 65535
+    ctime2: 0
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_ColorSpace: -1
+    m_NumColorKeys: 2
+    m_NumAlphaKeys: 2
 --- !u!1 &1513709812
 GameObject:
   m_ObjectHideFlags: 0

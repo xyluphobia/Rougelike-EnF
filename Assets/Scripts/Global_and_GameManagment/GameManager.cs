@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour
 
     /* ~~~~~~~~~~~ DEV ~~~~~~~~~~~ */
     public bool ForceBossRoomNext = false;
-    private bool UseCurrentLevel = false;
+    private bool UseCurrentLevel = true;
     /* ~~~~~~~~~~~ DEV ~~~~~~~~~~~ */
 
     void Awake()
