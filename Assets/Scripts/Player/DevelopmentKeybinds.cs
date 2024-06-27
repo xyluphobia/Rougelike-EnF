@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class DevelopmentKeybinds : MonoBehaviour
 {
     private PlayerController player;
+    private WASDCharacter wasdPlayerScript;
     private void Awake()
     {
         player = GetComponent<PlayerController>();
@@ -62,13 +63,12 @@ public class DevelopmentKeybinds : MonoBehaviour
     private void OnDevelopment_FullHeal()
     {
         player.health = player.maxHealth;
-        player.healthText.text = "Health: " + player.maxHealth;
         Debug.Log("You are fully healed.");
     }
 
     private void OnDevelopment_RechargeDash()
     {
-        player.canDash = true;
+        wasdPlayerScript.canDash = true;
         Debug.Log("Dash reset.");
     }
 }

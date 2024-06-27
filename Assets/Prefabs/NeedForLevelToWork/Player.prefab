@@ -47,6 +47,7 @@ GameObject:
   - component: {fileID: -6212119138999546499}
   - component: {fileID: 9071213020904109426}
   - component: {fileID: 7698485254044852837}
+  - component: {fileID: 6151919003110754960}
   - component: {fileID: 6306008981185285943}
   - component: {fileID: 5167797303664505513}
   m_Layer: 6
@@ -272,9 +273,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 100
-  healthText: {fileID: 0}
-  movementSpeed: 4
-  restartLevelDelay: 1
+  animator: {fileID: 0}
   deathClips:
   - {fileID: 8300000, guid: 5e0b3b0ea8944d94cb623c9780c623b5, type: 3}
   - {fileID: 8300000, guid: 8a05f096cf2efdf4da296675e95ec002, type: 3}
@@ -287,6 +286,31 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 04b65ab50ee87484290806e63613781e, type: 3}
   - {fileID: 8300000, guid: 99d3a71f9b980db40b81719c6a506a1e, type: 3}
   - {fileID: 8300000, guid: a6c91616d5a20d3448f70829a2531592, type: 3}
+  afterImage: {fileID: 1061537307095912521, guid: c774d41460f5101468f5a581ad732c13, type: 3}
+  movementSpeed: 4
+  restartLevelDelay: 1
+  disableInput: 0
+  invulnerable: 0
+  triggerCollider: {fileID: 3172864167198723390}
+  playerGlow: {fileID: 8970526455051380498}
+--- !u!114 &6151919003110754960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2215174607414617992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537f882f54e3204419e2aff8af362d2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dashingPower: 10
+  dashDuration: 0.2
+  dashCooldown: 2
+  dashCooldownReduction: 0
+  dashClip: {fileID: 8300000, guid: e910657c2840864498ceb19ef0b580c1, type: 3}
+  canDash: 1
   meleeClips:
   - {fileID: 8300000, guid: c956db55dc1d88246a13f4fc107b6097, type: 3}
   - {fileID: 8300000, guid: 9fcb2e31e18e28d48b4e79515591e6da, type: 3}
@@ -303,17 +327,6 @@ MonoBehaviour:
   enemyLayers:
     serializedVersion: 2
     m_Bits: 512
-  dashingPower: 10
-  dashDuration: 0.2
-  dashCooldown: 2
-  dashCooldownReduction: 0
-  dashClip: {fileID: 8300000, guid: e910657c2840864498ceb19ef0b580c1, type: 3}
-  afterImage: {fileID: 1061537307095912521, guid: c774d41460f5101468f5a581ad732c13, type: 3}
-  canDash: 1
-  invulnerable: 0
-  triggerCollider: {fileID: 3172864167198723390}
-  playerGlow: {fileID: 8970526455051380498}
-  shieldEffect: {fileID: 9186479693182404434}
 --- !u!114 &6306008981185285943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -554,7 +567,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89b946605a81a594f9445650ecc12439, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerControllerScript: {fileID: 7698485254044852837}
+  playerControllerScriptWASD: {fileID: 0}
 --- !u!1 &8395362058135650927
 GameObject:
   m_ObjectHideFlags: 0

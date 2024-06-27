@@ -113,6 +113,7 @@
     <Compile Include="Assets\Scripts\Traps\OpenLockedDoor.cs" />
     <Compile Include="Assets\Scripts\EnemyScripts\Projectiles\RangedShot.cs" />
     <Compile Include="Assets\Scripts\ProceduralLevelGeneration\WallTypesHelper.cs" />
+    <Compile Include="Assets\Scripts\Player\WASDCharacter.cs" />
     <Compile Include="Assets\Scripts\Global_and_GameManagment\GameAssets.cs" />
     <Compile Include="Assets\Scripts\MovingObject.cs" />
     <Compile Include="Assets\Scripts\Items\PotsAndAbility\HealthPotion.cs" />
