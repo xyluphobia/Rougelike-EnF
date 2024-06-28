@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1271928768827850579}
   - component: {fileID: 999597395187468029}
   - component: {fileID: 826354147660191406}
+  - component: {fileID: 3393599311651963493}
   m_Layer: 0
   m_Name: HealthPotion
   m_TagString: HealthPotion
@@ -74,7 +75,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 26486809
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 786059973974212258, guid: d2967f56c0a7b3b4c86068c62058e7b6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -170,3 +171,20 @@ MonoBehaviour:
   damageText: {fileID: 1627277218652921935, guid: 5032713ea382dfd4ca33d29877a4b584, type: 3}
   scoreText: {fileID: 4785445402732521747, guid: 51cf5722b4b6a71428f4d8cfc2519295, type: 3}
   healthPotion: 1
+--- !u!114 &3393599311651963493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8757545981971237210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46c118c1ed386c641baf62474864d6d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldown: 0
+  duration: 0
+  playerController: {fileID: 0}
+  speedPotion: {fileID: 0}
+  healthPotion: {fileID: 0}

@@ -18,22 +18,17 @@ public class PlayerController : MonoBehaviour
     [HideInInspector] public Animator animator;
     private Rigidbody2D rb;
     private HealthBar healthBarScript;
+    private GameManager gm;
 
     [SerializeField] private AudioClip[] deathClips;
     [SerializeField] private AudioClip[] takeDamageClips;
-    [SerializeField] private GameObject afterImage;
 
     public float movementSpeed = 4.0f;
     public float restartLevelDelay = 1f;
-
-    private PotionsAndAbilities potionsAndAbilities;
-    private GameManager gm;
     
     [HideInInspector] public bool disableInput = false;
     [HideInInspector] public bool invulnerable = false;
-    private bool ghostingActive = false;
-    [SerializeField] private Collider2D triggerCollider;
-    [SerializeField] private Light2D playerGlow;
+    public Light2D playerGlow;
     
     private PlayerInput playerInput;
 
@@ -41,7 +36,6 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        potionsAndAbilities = GetComponent<PotionsAndAbilities>();
         playerInput = GetComponent<PlayerInput>();
 
         healthBarScript = GameObject.Find("HealthBar").GetComponent<HealthBar>();
@@ -55,11 +49,7 @@ public class PlayerController : MonoBehaviour
 
     
 
-/* Movement and Ability Input Handling */
-    
-
-    
-
+    /* Inputs */
     private void OnPause() {
         PauseMenu pauseMenu = GameObject.FindGameObjectWithTag("InGameUI").GetComponent<PauseMenu>();
         pauseMenu.PauseGame();
@@ -84,7 +74,7 @@ public class PlayerController : MonoBehaviour
     }
 
 
-/* Collision Handling */
+    /* Collisions */
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Exit"))
@@ -101,25 +91,9 @@ public class PlayerController : MonoBehaviour
             Invoke("Restart", restartLevelDelay);
             enabled = false;
         }
-        else if (other.CompareTag("HealthPotion"))
-        {
-            potionsAndAbilities.healthPotion.useHealthPotion(0.25f);
-            other.gameObject.transform.parent.gameObject.SetActive(false);
-        }
-        else if (other.CompareTag("SpeedPotion"))
-        {
-            potionsAndAbilities.speedPotion.useSpeedPotion();
-            other.gameObject.transform.parent.gameObject.SetActive(false);
-        } 
-
     }
 
-    private void Restart()
-    {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex);
-        disableInput = false;
-    }
-
+    /* Damage & Healing */
     public void HealDamage(int healBy)
     {
         health += healBy;
@@ -163,59 +137,11 @@ public class PlayerController : MonoBehaviour
         GameManager.instance.GameOver();
     }
 
-    public IEnumerator ToggleGhosting(bool activate = false, bool linger = false, float lingerDuration = 0f)
+    /* Other */
+    private void Restart()
     {
-        if (!ghostingActive || activate)
-        {
-            ghostingActive = true;
-            StartCoroutine(UpdateColorGradually(new Color32(167, 220, 235, 230), 6f));
-            gameObject.GetComponent<SpriteRenderer>().color = new Color32(157, 220, 245, 200);
-
-            Physics2D.IgnoreLayerCollision(6, 9, true);
-            triggerCollider.enabled = true;
-
-            StartCoroutine(AfterImage());
-        }
-        else
-        {
-            if (linger)
-            {
-                yield return new WaitForSeconds(lingerDuration);
-            }
-
-            StartCoroutine(UpdateColorGradually(new Color32(255, 235, 143, 255), 6f));
-            ghostingActive = false;
-            gameObject.GetComponent<SpriteRenderer>().color = new Color32(255, 255, 255, 255);
-
-            Physics2D.IgnoreLayerCollision(6, 9, false);
-            triggerCollider.enabled = false;
-        }
-
-        IEnumerator UpdateColorGradually(Color goalColor, float speed)
-        {
-            Color startColor = playerGlow.color;
-
-            float tick = 0f;
-            while(playerGlow.color != goalColor)
-            {
-                tick += Time.deltaTime * speed;
-                playerGlow.color = Color.Lerp(startColor, goalColor, tick);
-                yield return null;
-            }
-        }
-
-        IEnumerator AfterImage()
-        {
-            afterImage.GetComponent<SpriteRenderer>().sprite = GetComponent<SpriteRenderer>().sprite;
-            int clonesSpawned = 0;
-
-            while (clonesSpawned < 3)
-            {
-                clonesSpawned++;
-                Instantiate(afterImage, gameObject.transform.position, Quaternion.identity);
-                yield return new WaitForSeconds(0.07f);
-            }
-        }
+        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex);
+        disableInput = false;
     }
 
     public void Boost(float buff)

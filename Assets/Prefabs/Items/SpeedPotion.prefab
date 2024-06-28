@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3496943841491547769}
   - component: {fileID: 6139289860974561279}
   - component: {fileID: -850576641897634731}
+  - component: {fileID: 6192130103390233055}
   m_Layer: 0
   m_Name: SpeedPotion
   m_TagString: SpeedPotion
@@ -74,7 +75,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 26486809
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 7030382418513390955, guid: df6c16afb8fee8940b5aafd0dfc1f152, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -170,3 +171,21 @@ MonoBehaviour:
   damageText: {fileID: 1627277218652921935, guid: 5032713ea382dfd4ca33d29877a4b584, type: 3}
   scoreText: {fileID: 4785445402732521747, guid: 51cf5722b4b6a71428f4d8cfc2519295, type: 3}
   healthPotion: 0
+--- !u!114 &6192130103390233055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6549381414446981921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 838d3a6221c33104c98d985da9d2f54c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldown: 9.9
+  duration: 10
+  playerController: {fileID: 0}
+  speedPotion: {fileID: 0}
+  healthPotion: {fileID: 0}
+  boostPercentage: 50

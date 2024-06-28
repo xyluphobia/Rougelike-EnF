@@ -16,8 +16,11 @@ public class WASDCharacter : MonoBehaviour
     [SerializeField] private float dashDuration = 1f;
     [SerializeField] private float dashCooldown = 2f;
     [HideInInspector] public float dashCooldownReduction = 0f;
+    [SerializeField] private GameObject afterImage;
     [SerializeField] private AudioClip dashClip;
+    [SerializeField] private Collider2D triggerCollider;
     private Image dashTimerUI;
+    private bool ghostingActive = false;
 
     public bool canDash = true; /* should be private outside of development*/
 
@@ -36,7 +39,6 @@ public class WASDCharacter : MonoBehaviour
     private float nextAttackTime = 0.0f;
     [SerializeField] private LayerMask enemyLayers;
 
-    // Keybinds
     private PlayerInput playerInput;
 
     private void Awake()
@@ -55,6 +57,7 @@ public class WASDCharacter : MonoBehaviour
         rb.MovePosition(rb.position + movement.normalized * playerController.movementSpeed * Time.fixedDeltaTime);
     }
 
+    /* Inputs */
     private void OnMove(InputValue inputValue)
     {
         if (playerController.disableInput) return;
@@ -91,6 +94,7 @@ public class WASDCharacter : MonoBehaviour
         }
     }
 
+    /* Abilities */
     void Melee()
     {
         SoundManager.instance.RandomizeSfx(meleeClips);
@@ -148,7 +152,7 @@ public class WASDCharacter : MonoBehaviour
         dashTimerUI.fillAmount = 1f;
 
         playerController.invulnerable = true;
-        StartCoroutine(playerController.ToggleGhosting(true));
+        StartCoroutine(ToggleGhosting(true));
         playerController.disableInput = true;
 
         rb.velocity = new Vector2(movement.normalized.x * dashingPower, movement.normalized.y * dashingPower);
@@ -156,7 +160,7 @@ public class WASDCharacter : MonoBehaviour
         yield return new WaitForSeconds(dashDuration);
 
         playerController.disableInput = false;
-        StartCoroutine(playerController.ToggleGhosting(false, true, 0.25f));
+        StartCoroutine(ToggleGhosting(false, true, 0.25f));
         playerController.invulnerable = false;
         dashCooldown -= dashCooldownReduction;
         dashCooldownReduction = 0f;
@@ -175,6 +179,61 @@ public class WASDCharacter : MonoBehaviour
             }
 
             dashTimerUI.fillAmount = 0;
+        }
+    }
+
+    public IEnumerator ToggleGhosting(bool activate = false, bool linger = false, float lingerDuration = 0f)
+    {
+        if (!ghostingActive || activate)
+        {
+            ghostingActive = true;
+            StartCoroutine(UpdateColorGradually(new Color32(167, 220, 235, 230), 6f));
+            gameObject.GetComponent<SpriteRenderer>().color = new Color32(157, 220, 245, 200);
+
+            Physics2D.IgnoreLayerCollision(6, 9, true);
+            triggerCollider.enabled = true;
+
+            StartCoroutine(AfterImage());
+        }
+        else
+        {
+            if (linger)
+            {
+                yield return new WaitForSeconds(lingerDuration);
+            }
+
+            StartCoroutine(UpdateColorGradually(new Color32(255, 235, 143, 255), 6f));
+            ghostingActive = false;
+            gameObject.GetComponent<SpriteRenderer>().color = new Color32(255, 255, 255, 255);
+
+            Physics2D.IgnoreLayerCollision(6, 9, false);
+            triggerCollider.enabled = false;
+        }
+
+        IEnumerator UpdateColorGradually(Color goalColor, float speed)
+        {
+            Color startColor = playerController.playerGlow.color;
+
+            float tick = 0f;
+            while (playerController.playerGlow.color != goalColor)
+            {
+                tick += Time.deltaTime * speed;
+                playerController.playerGlow.color = Color.Lerp(startColor, goalColor, tick);
+                yield return null;
+            }
+        }
+
+        IEnumerator AfterImage()
+        {
+            afterImage.GetComponent<SpriteRenderer>().sprite = GetComponent<SpriteRenderer>().sprite;
+            int clonesSpawned = 0;
+
+            while (clonesSpawned < 3)
+            {
+                clonesSpawned++;
+                Instantiate(afterImage, gameObject.transform.position, Quaternion.identity);
+                yield return new WaitForSeconds(0.07f);
+            }
         }
     }
 }

@@ -24,6 +24,8 @@ public class SpeedPotion : PotionsAndAbilities
             speedPotionEffect();
             abilityTimer = Time.time + cooldown;
         }
+
+        transform.parent.gameObject.SetActive(false);
     }
 
     private void speedPotionEffect()
@@ -36,5 +38,14 @@ public class SpeedPotion : PotionsAndAbilities
     private void resetSpeedPotionEffect()
     {
         playerController.ResetBoost(boostAsPercent);
+    }
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            useSpeedPotion();
+        }
     }
 }
