@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class MOBACharacter : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    public void TakeControl()
     {
-        
+
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnMove_MOBA()
     {
-        
+
     }
 }

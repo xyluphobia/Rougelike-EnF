@@ -308,6 +308,34 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "GameplayMOBA",
+            "id": "c991d027-1685-4a0e-8d05-a3d06dd47daa",
+            "actions": [
+                {
+                    "name": "Move_MOBA",
+                    "type": "Button",
+                    "id": "3f4bd3a6-b754-42cf-b691-80096a762c35",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "3dc8cb4c-1be2-4f2e-86ff-039092053d0b",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move_MOBA",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []

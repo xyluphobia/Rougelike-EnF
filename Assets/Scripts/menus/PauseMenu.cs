@@ -29,7 +29,7 @@ public class PauseMenu : MonoBehaviour
     public void ResumeGame()
     {
         PlayerInput playerInput = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInput>();
-        playerInput.SwitchCurrentActionMap("Gameplay");
+        playerInput.SwitchCurrentActionMap("Gameplay");  // this first needs to detect which action map is required based on character then switch to it
         
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;

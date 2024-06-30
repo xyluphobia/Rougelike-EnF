@@ -330,6 +330,34 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""GameplayMOBA"",
+            ""id"": ""c991d027-1685-4a0e-8d05-a3d06dd47daa"",
+            ""actions"": [
+                {
+                    ""name"": ""Move_MOBA"",
+                    ""type"": ""Button"",
+                    ""id"": ""3f4bd3a6-b754-42cf-b691-80096a762c35"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""3dc8cb4c-1be2-4f2e-86ff-039092053d0b"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move_MOBA"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
@@ -352,6 +380,9 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
         // RebindingKeepEmpty
         m_RebindingKeepEmpty = asset.FindActionMap("RebindingKeepEmpty", throwIfNotFound: true);
         m_RebindingKeepEmpty_Newaction = m_RebindingKeepEmpty.FindAction("New action", throwIfNotFound: true);
+        // GameplayMOBA
+        m_GameplayMOBA = asset.FindActionMap("GameplayMOBA", throwIfNotFound: true);
+        m_GameplayMOBA_Move_MOBA = m_GameplayMOBA.FindAction("Move_MOBA", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -619,6 +650,52 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
         }
     }
     public RebindingKeepEmptyActions @RebindingKeepEmpty => new RebindingKeepEmptyActions(this);
+
+    // GameplayMOBA
+    private readonly InputActionMap m_GameplayMOBA;
+    private List<IGameplayMOBAActions> m_GameplayMOBAActionsCallbackInterfaces = new List<IGameplayMOBAActions>();
+    private readonly InputAction m_GameplayMOBA_Move_MOBA;
+    public struct GameplayMOBAActions
+    {
+        private @KeyBindings m_Wrapper;
+        public GameplayMOBAActions(@KeyBindings wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Move_MOBA => m_Wrapper.m_GameplayMOBA_Move_MOBA;
+        public InputActionMap Get() { return m_Wrapper.m_GameplayMOBA; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(GameplayMOBAActions set) { return set.Get(); }
+        public void AddCallbacks(IGameplayMOBAActions instance)
+        {
+            if (instance == null || m_Wrapper.m_GameplayMOBAActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_GameplayMOBAActionsCallbackInterfaces.Add(instance);
+            @Move_MOBA.started += instance.OnMove_MOBA;
+            @Move_MOBA.performed += instance.OnMove_MOBA;
+            @Move_MOBA.canceled += instance.OnMove_MOBA;
+        }
+
+        private void UnregisterCallbacks(IGameplayMOBAActions instance)
+        {
+            @Move_MOBA.started -= instance.OnMove_MOBA;
+            @Move_MOBA.performed -= instance.OnMove_MOBA;
+            @Move_MOBA.canceled -= instance.OnMove_MOBA;
+        }
+
+        public void RemoveCallbacks(IGameplayMOBAActions instance)
+        {
+            if (m_Wrapper.m_GameplayMOBAActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IGameplayMOBAActions instance)
+        {
+            foreach (var item in m_Wrapper.m_GameplayMOBAActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_GameplayMOBAActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public GameplayMOBAActions @GameplayMOBA => new GameplayMOBAActions(this);
     public interface IGameplayActions
     {
         void OnMove(InputAction.CallbackContext context);
@@ -639,5 +716,9 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
     public interface IRebindingKeepEmptyActions
     {
         void OnNewaction(InputAction.CallbackContext context);
+    }
+    public interface IGameplayMOBAActions
+    {
+        void OnMove_MOBA(InputAction.CallbackContext context);
     }
 }
