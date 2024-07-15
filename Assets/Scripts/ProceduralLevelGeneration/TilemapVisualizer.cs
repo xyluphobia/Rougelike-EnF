@@ -57,7 +57,8 @@ public class TilemapVisualizer : MonoBehaviour
             }
 
             if (!playerSpawned && iterations >= floorPositionsCount * 0.1f) {
-                Instantiate(GameAssets.i.player, (Vector3Int)position, Quaternion.identity);
+                GameObject playerHolder = Instantiate(GameAssets.i.player, (Vector3Int)position, Quaternion.identity);
+                playerHolder.GetComponent<PlayerController>().setActivePlayer();
                 playerSpawned = true;
                 usedPositions.Add(position);
             }

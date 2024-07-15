@@ -25,6 +25,7 @@ TagManager:
   - PassDamage
   - HealthBar
   - LockedDoor
+  - PortraitImage
   layers:
   - Default
   - TransparentFX

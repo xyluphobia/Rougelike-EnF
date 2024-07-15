@@ -12,6 +12,8 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
+    public bool activePlayer = false;
+
     public int health;
     public int maxHealth = 100;
 
@@ -32,11 +34,17 @@ public class PlayerController : MonoBehaviour
     
     private PlayerInput playerInput;
 
+    public Sprite portraitToInput;
+    private Image playerPortrait;
+
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         playerInput = GetComponent<PlayerInput>();
+        playerInput.enabled = false;
+        if (activePlayer)
+            setActivePlayer();
 
         healthBarScript = GameObject.Find("HealthBar").GetComponent<HealthBar>();
     }
@@ -45,6 +53,15 @@ public class PlayerController : MonoBehaviour
     {
         gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
         health = gm.playerHealth;
+    }
+
+    public void setActivePlayer()
+    {
+        gameObject.tag = "Player";
+        playerInput.enabled = true;
+
+        playerPortrait = GameObject.FindGameObjectWithTag("PortraitImage").GetComponent<Image>();
+        playerPortrait.sprite = portraitToInput;
     }
 
     
