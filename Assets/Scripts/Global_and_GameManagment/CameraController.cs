@@ -9,7 +9,14 @@ public class CameraController : MonoBehaviour
 
     void Start()
     {
-        target = GameObject.FindGameObjectWithTag("Player").transform;
+        SetCameraTarget();
+    }
+    public void SetCameraTarget(GameObject targetToSet = null)
+    {
+        if (targetToSet != null)
+            target = targetToSet.transform;
+        else
+            target = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     void Update()

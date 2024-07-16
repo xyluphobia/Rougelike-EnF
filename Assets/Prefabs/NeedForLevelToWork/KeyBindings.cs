@@ -24,6 +24,62 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
     ""name"": ""KeyBindings"",
     ""maps"": [
         {
+            ""name"": ""PauseUI"",
+            ""id"": ""1cb7c8f1-ad52-45e2-8bd5-ba7c58078bde"",
+            ""actions"": [
+                {
+                    ""name"": ""Resume"",
+                    ""type"": ""Button"",
+                    ""id"": ""e675d9fe-d9fc-4f27-8b63-a708a1c09902"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""74ab5d8e-7108-4993-a94c-c8bc1b2f045a"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Resume"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""RebindingKeepEmpty"",
+            ""id"": ""3c80cebd-6beb-422d-a657-9721c57d9358"",
+            ""actions"": [
+                {
+                    ""name"": ""New action"",
+                    ""type"": ""Button"",
+                    ""id"": ""ad23ff11-896f-4f97-b882-d93b755d9505"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""f3a1adb7-9c1f-4329-98a1-e6249dd21223"",
+                    ""path"": """",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""New action"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
+        },
+        {
             ""name"": ""Gameplay"",
             ""id"": ""656b6b51-4522-4cd8-b915-b2de3d28b72e"",
             ""actions"": [
@@ -276,62 +332,6 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
             ]
         },
         {
-            ""name"": ""PauseUI"",
-            ""id"": ""1cb7c8f1-ad52-45e2-8bd5-ba7c58078bde"",
-            ""actions"": [
-                {
-                    ""name"": ""Resume"",
-                    ""type"": ""Button"",
-                    ""id"": ""e675d9fe-d9fc-4f27-8b63-a708a1c09902"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                }
-            ],
-            ""bindings"": [
-                {
-                    ""name"": """",
-                    ""id"": ""74ab5d8e-7108-4993-a94c-c8bc1b2f045a"",
-                    ""path"": ""<Keyboard>/escape"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Resume"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                }
-            ]
-        },
-        {
-            ""name"": ""RebindingKeepEmpty"",
-            ""id"": ""3c80cebd-6beb-422d-a657-9721c57d9358"",
-            ""actions"": [
-                {
-                    ""name"": ""New action"",
-                    ""type"": ""Button"",
-                    ""id"": ""ad23ff11-896f-4f97-b882-d93b755d9505"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                }
-            ],
-            ""bindings"": [
-                {
-                    ""name"": """",
-                    ""id"": ""f3a1adb7-9c1f-4329-98a1-e6249dd21223"",
-                    ""path"": """",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""New action"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                }
-            ]
-        },
-        {
             ""name"": ""GameplayMOBA"",
             ""id"": ""c991d027-1685-4a0e-8d05-a3d06dd47daa"",
             ""actions"": [
@@ -339,6 +339,15 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
                     ""name"": ""Move_MOBA"",
                     ""type"": ""Button"",
                     ""id"": ""3f4bd3a6-b754-42cf-b691-80096a762c35"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""TestShit"",
+                    ""type"": ""Button"",
+                    ""id"": ""6c604650-b22b-4c96-994a-3a868f411fdd"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -356,12 +365,29 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
                     ""action"": ""Move_MOBA"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""bb28ec2e-4b7c-45e5-ba7c-164c3c5061e1"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""TestShit"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
     ],
     ""controlSchemes"": []
 }");
+        // PauseUI
+        m_PauseUI = asset.FindActionMap("PauseUI", throwIfNotFound: true);
+        m_PauseUI_Resume = m_PauseUI.FindAction("Resume", throwIfNotFound: true);
+        // RebindingKeepEmpty
+        m_RebindingKeepEmpty = asset.FindActionMap("RebindingKeepEmpty", throwIfNotFound: true);
+        m_RebindingKeepEmpty_Newaction = m_RebindingKeepEmpty.FindAction("New action", throwIfNotFound: true);
         // Gameplay
         m_Gameplay = asset.FindActionMap("Gameplay", throwIfNotFound: true);
         m_Gameplay_Move = m_Gameplay.FindAction("Move", throwIfNotFound: true);
@@ -374,15 +400,10 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
         m_Gameplay_Development_FullHeal = m_Gameplay.FindAction("Development_FullHeal", throwIfNotFound: true);
         m_Gameplay_Development_RechargeDash = m_Gameplay.FindAction("Development_RechargeDash", throwIfNotFound: true);
         m_Gameplay_Development_Invincibility = m_Gameplay.FindAction("Development_Invincibility", throwIfNotFound: true);
-        // PauseUI
-        m_PauseUI = asset.FindActionMap("PauseUI", throwIfNotFound: true);
-        m_PauseUI_Resume = m_PauseUI.FindAction("Resume", throwIfNotFound: true);
-        // RebindingKeepEmpty
-        m_RebindingKeepEmpty = asset.FindActionMap("RebindingKeepEmpty", throwIfNotFound: true);
-        m_RebindingKeepEmpty_Newaction = m_RebindingKeepEmpty.FindAction("New action", throwIfNotFound: true);
         // GameplayMOBA
         m_GameplayMOBA = asset.FindActionMap("GameplayMOBA", throwIfNotFound: true);
         m_GameplayMOBA_Move_MOBA = m_GameplayMOBA.FindAction("Move_MOBA", throwIfNotFound: true);
+        m_GameplayMOBA_TestShit = m_GameplayMOBA.FindAction("TestShit", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -440,6 +461,98 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
     {
         return asset.FindBinding(bindingMask, out action);
     }
+
+    // PauseUI
+    private readonly InputActionMap m_PauseUI;
+    private List<IPauseUIActions> m_PauseUIActionsCallbackInterfaces = new List<IPauseUIActions>();
+    private readonly InputAction m_PauseUI_Resume;
+    public struct PauseUIActions
+    {
+        private @KeyBindings m_Wrapper;
+        public PauseUIActions(@KeyBindings wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Resume => m_Wrapper.m_PauseUI_Resume;
+        public InputActionMap Get() { return m_Wrapper.m_PauseUI; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(PauseUIActions set) { return set.Get(); }
+        public void AddCallbacks(IPauseUIActions instance)
+        {
+            if (instance == null || m_Wrapper.m_PauseUIActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_PauseUIActionsCallbackInterfaces.Add(instance);
+            @Resume.started += instance.OnResume;
+            @Resume.performed += instance.OnResume;
+            @Resume.canceled += instance.OnResume;
+        }
+
+        private void UnregisterCallbacks(IPauseUIActions instance)
+        {
+            @Resume.started -= instance.OnResume;
+            @Resume.performed -= instance.OnResume;
+            @Resume.canceled -= instance.OnResume;
+        }
+
+        public void RemoveCallbacks(IPauseUIActions instance)
+        {
+            if (m_Wrapper.m_PauseUIActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IPauseUIActions instance)
+        {
+            foreach (var item in m_Wrapper.m_PauseUIActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_PauseUIActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public PauseUIActions @PauseUI => new PauseUIActions(this);
+
+    // RebindingKeepEmpty
+    private readonly InputActionMap m_RebindingKeepEmpty;
+    private List<IRebindingKeepEmptyActions> m_RebindingKeepEmptyActionsCallbackInterfaces = new List<IRebindingKeepEmptyActions>();
+    private readonly InputAction m_RebindingKeepEmpty_Newaction;
+    public struct RebindingKeepEmptyActions
+    {
+        private @KeyBindings m_Wrapper;
+        public RebindingKeepEmptyActions(@KeyBindings wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Newaction => m_Wrapper.m_RebindingKeepEmpty_Newaction;
+        public InputActionMap Get() { return m_Wrapper.m_RebindingKeepEmpty; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(RebindingKeepEmptyActions set) { return set.Get(); }
+        public void AddCallbacks(IRebindingKeepEmptyActions instance)
+        {
+            if (instance == null || m_Wrapper.m_RebindingKeepEmptyActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_RebindingKeepEmptyActionsCallbackInterfaces.Add(instance);
+            @Newaction.started += instance.OnNewaction;
+            @Newaction.performed += instance.OnNewaction;
+            @Newaction.canceled += instance.OnNewaction;
+        }
+
+        private void UnregisterCallbacks(IRebindingKeepEmptyActions instance)
+        {
+            @Newaction.started -= instance.OnNewaction;
+            @Newaction.performed -= instance.OnNewaction;
+            @Newaction.canceled -= instance.OnNewaction;
+        }
+
+        public void RemoveCallbacks(IRebindingKeepEmptyActions instance)
+        {
+            if (m_Wrapper.m_RebindingKeepEmptyActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IRebindingKeepEmptyActions instance)
+        {
+            foreach (var item in m_Wrapper.m_RebindingKeepEmptyActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_RebindingKeepEmptyActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public RebindingKeepEmptyActions @RebindingKeepEmpty => new RebindingKeepEmptyActions(this);
 
     // Gameplay
     private readonly InputActionMap m_Gameplay;
@@ -559,107 +672,17 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
     }
     public GameplayActions @Gameplay => new GameplayActions(this);
 
-    // PauseUI
-    private readonly InputActionMap m_PauseUI;
-    private List<IPauseUIActions> m_PauseUIActionsCallbackInterfaces = new List<IPauseUIActions>();
-    private readonly InputAction m_PauseUI_Resume;
-    public struct PauseUIActions
-    {
-        private @KeyBindings m_Wrapper;
-        public PauseUIActions(@KeyBindings wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Resume => m_Wrapper.m_PauseUI_Resume;
-        public InputActionMap Get() { return m_Wrapper.m_PauseUI; }
-        public void Enable() { Get().Enable(); }
-        public void Disable() { Get().Disable(); }
-        public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(PauseUIActions set) { return set.Get(); }
-        public void AddCallbacks(IPauseUIActions instance)
-        {
-            if (instance == null || m_Wrapper.m_PauseUIActionsCallbackInterfaces.Contains(instance)) return;
-            m_Wrapper.m_PauseUIActionsCallbackInterfaces.Add(instance);
-            @Resume.started += instance.OnResume;
-            @Resume.performed += instance.OnResume;
-            @Resume.canceled += instance.OnResume;
-        }
-
-        private void UnregisterCallbacks(IPauseUIActions instance)
-        {
-            @Resume.started -= instance.OnResume;
-            @Resume.performed -= instance.OnResume;
-            @Resume.canceled -= instance.OnResume;
-        }
-
-        public void RemoveCallbacks(IPauseUIActions instance)
-        {
-            if (m_Wrapper.m_PauseUIActionsCallbackInterfaces.Remove(instance))
-                UnregisterCallbacks(instance);
-        }
-
-        public void SetCallbacks(IPauseUIActions instance)
-        {
-            foreach (var item in m_Wrapper.m_PauseUIActionsCallbackInterfaces)
-                UnregisterCallbacks(item);
-            m_Wrapper.m_PauseUIActionsCallbackInterfaces.Clear();
-            AddCallbacks(instance);
-        }
-    }
-    public PauseUIActions @PauseUI => new PauseUIActions(this);
-
-    // RebindingKeepEmpty
-    private readonly InputActionMap m_RebindingKeepEmpty;
-    private List<IRebindingKeepEmptyActions> m_RebindingKeepEmptyActionsCallbackInterfaces = new List<IRebindingKeepEmptyActions>();
-    private readonly InputAction m_RebindingKeepEmpty_Newaction;
-    public struct RebindingKeepEmptyActions
-    {
-        private @KeyBindings m_Wrapper;
-        public RebindingKeepEmptyActions(@KeyBindings wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Newaction => m_Wrapper.m_RebindingKeepEmpty_Newaction;
-        public InputActionMap Get() { return m_Wrapper.m_RebindingKeepEmpty; }
-        public void Enable() { Get().Enable(); }
-        public void Disable() { Get().Disable(); }
-        public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(RebindingKeepEmptyActions set) { return set.Get(); }
-        public void AddCallbacks(IRebindingKeepEmptyActions instance)
-        {
-            if (instance == null || m_Wrapper.m_RebindingKeepEmptyActionsCallbackInterfaces.Contains(instance)) return;
-            m_Wrapper.m_RebindingKeepEmptyActionsCallbackInterfaces.Add(instance);
-            @Newaction.started += instance.OnNewaction;
-            @Newaction.performed += instance.OnNewaction;
-            @Newaction.canceled += instance.OnNewaction;
-        }
-
-        private void UnregisterCallbacks(IRebindingKeepEmptyActions instance)
-        {
-            @Newaction.started -= instance.OnNewaction;
-            @Newaction.performed -= instance.OnNewaction;
-            @Newaction.canceled -= instance.OnNewaction;
-        }
-
-        public void RemoveCallbacks(IRebindingKeepEmptyActions instance)
-        {
-            if (m_Wrapper.m_RebindingKeepEmptyActionsCallbackInterfaces.Remove(instance))
-                UnregisterCallbacks(instance);
-        }
-
-        public void SetCallbacks(IRebindingKeepEmptyActions instance)
-        {
-            foreach (var item in m_Wrapper.m_RebindingKeepEmptyActionsCallbackInterfaces)
-                UnregisterCallbacks(item);
-            m_Wrapper.m_RebindingKeepEmptyActionsCallbackInterfaces.Clear();
-            AddCallbacks(instance);
-        }
-    }
-    public RebindingKeepEmptyActions @RebindingKeepEmpty => new RebindingKeepEmptyActions(this);
-
     // GameplayMOBA
     private readonly InputActionMap m_GameplayMOBA;
     private List<IGameplayMOBAActions> m_GameplayMOBAActionsCallbackInterfaces = new List<IGameplayMOBAActions>();
     private readonly InputAction m_GameplayMOBA_Move_MOBA;
+    private readonly InputAction m_GameplayMOBA_TestShit;
     public struct GameplayMOBAActions
     {
         private @KeyBindings m_Wrapper;
         public GameplayMOBAActions(@KeyBindings wrapper) { m_Wrapper = wrapper; }
         public InputAction @Move_MOBA => m_Wrapper.m_GameplayMOBA_Move_MOBA;
+        public InputAction @TestShit => m_Wrapper.m_GameplayMOBA_TestShit;
         public InputActionMap Get() { return m_Wrapper.m_GameplayMOBA; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -672,6 +695,9 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
             @Move_MOBA.started += instance.OnMove_MOBA;
             @Move_MOBA.performed += instance.OnMove_MOBA;
             @Move_MOBA.canceled += instance.OnMove_MOBA;
+            @TestShit.started += instance.OnTestShit;
+            @TestShit.performed += instance.OnTestShit;
+            @TestShit.canceled += instance.OnTestShit;
         }
 
         private void UnregisterCallbacks(IGameplayMOBAActions instance)
@@ -679,6 +705,9 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
             @Move_MOBA.started -= instance.OnMove_MOBA;
             @Move_MOBA.performed -= instance.OnMove_MOBA;
             @Move_MOBA.canceled -= instance.OnMove_MOBA;
+            @TestShit.started -= instance.OnTestShit;
+            @TestShit.performed -= instance.OnTestShit;
+            @TestShit.canceled -= instance.OnTestShit;
         }
 
         public void RemoveCallbacks(IGameplayMOBAActions instance)
@@ -696,6 +725,14 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
         }
     }
     public GameplayMOBAActions @GameplayMOBA => new GameplayMOBAActions(this);
+    public interface IPauseUIActions
+    {
+        void OnResume(InputAction.CallbackContext context);
+    }
+    public interface IRebindingKeepEmptyActions
+    {
+        void OnNewaction(InputAction.CallbackContext context);
+    }
     public interface IGameplayActions
     {
         void OnMove(InputAction.CallbackContext context);
@@ -709,16 +746,9 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
         void OnDevelopment_RechargeDash(InputAction.CallbackContext context);
         void OnDevelopment_Invincibility(InputAction.CallbackContext context);
     }
-    public interface IPauseUIActions
-    {
-        void OnResume(InputAction.CallbackContext context);
-    }
-    public interface IRebindingKeepEmptyActions
-    {
-        void OnNewaction(InputAction.CallbackContext context);
-    }
     public interface IGameplayMOBAActions
     {
         void OnMove_MOBA(InputAction.CallbackContext context);
+        void OnTestShit(InputAction.CallbackContext context);
     }
 }

@@ -11,6 +11,7 @@ public class MOBACharacter : MonoBehaviour
     private void Start()
     {
         playerController = GetComponent<PlayerController>();
+        lastClickedPos = transform.position;
     }
 
     private void FixedUpdate()
