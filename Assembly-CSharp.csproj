@@ -1001,8 +1001,8 @@
       <HintPath>C:\Program Files\Unity\Hub\Editor\2023.1.20f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.RenderPipelines.Universal.2D.Runtime">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.2D.Runtime.dll</HintPath>
+    <Reference Include="Unity.2D.Tilemap.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.2D.Aseprite.Common">
@@ -1029,8 +1029,8 @@
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="com.gasgiant.camera-shake">
-      <HintPath>Library\ScriptAssemblies\com.gasgiant.camera-shake.dll</HintPath>
+    <Reference Include="Unity.AI.Navigation.Updater">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Updater.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
@@ -1045,12 +1045,12 @@
       <HintPath>Library\ScriptAssemblies\Unity.2D.Common.Path.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.AI.Navigation.Updater">
-      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Updater.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.2D.Common.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Common.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="com.gasgiant.camera-shake">
+      <HintPath>Library\ScriptAssemblies\com.gasgiant.camera-shake.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
@@ -1081,12 +1081,12 @@
       <HintPath>Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.Mathematics">
-      <HintPath>Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.AI.Navigation.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor">
@@ -1157,8 +1157,8 @@
       <HintPath>Library\ScriptAssemblies\Unity.InputSystem.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
+    <Reference Include="Unity.RenderPipelines.Universal.2D.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.2D.Runtime.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
@@ -1171,13 +1171,13 @@
       <Project>{B7C826FA-CFFC-9C4C-6791-29EB73B2FDC8}</Project>
       <Name>NavMeshPlusEditor</Name>
     </ProjectReference>
-    <ProjectReference Include="AYellowpaper.SerializedCollections.csproj">
-      <Project>{455D3DFC-A83A-1C34-8D9C-5B8E88D921DE}</Project>
-      <Name>AYellowpaper.SerializedCollections</Name>
-    </ProjectReference>
     <ProjectReference Include="NavMeshPlus.csproj">
       <Project>{7815AC77-4085-0EEE-7995-E75B779DFB43}</Project>
       <Name>NavMeshPlus</Name>
+    </ProjectReference>
+    <ProjectReference Include="AYellowpaper.SerializedCollections.csproj">
+      <Project>{455D3DFC-A83A-1C34-8D9C-5B8E88D921DE}</Project>
+      <Name>AYellowpaper.SerializedCollections</Name>
     </ProjectReference>
     <ProjectReference Include="AYellowpaper.SerializedCollections.Editor.csproj">
       <Project>{E4164C15-9FDE-1207-3B2D-1B9C059813DF}</Project>

@@ -8,30 +8,47 @@ public class MOBACharacter : MonoBehaviour
     private PlayerController playerController;
     private NavMeshAgent navAgent;
 
-    Vector2 lastClickedPos;
+    Vector2 clickedPos;
+    Vector2 lastFramePos;
+    Vector2 currentFramePos;
 
     private void Start()
     {
         playerController = GetComponent<PlayerController>();
 
-        navAgent = GetComponentInChildren<NavMeshAgent>();
+        navAgent = GetComponent<NavMeshAgent>();
         navAgent.updateRotation = false;
         navAgent.updateUpAxis = false;
 
-        lastClickedPos = transform.position;
+        lastFramePos = transform.position;
     }
 
-    private void FixedUpdate()
-    {/*
-        if ((Vector2)transform.position != lastClickedPos)
+    private void FixedUpdate() // could find direction by saving previous step and comparing against current position then checking which direction was travelled
+    {
+        currentFramePos = transform.position;
+
+        if (currentFramePos != lastFramePos)
         {
-            float step = playerController.movementSpeed * Time.deltaTime;
-            transform.position = Vector2.MoveTowards(transform.position, lastClickedPos, step);
+            Vector2 diffVector = new Vector2(System.Math.Abs(currentFramePos.x - lastFramePos.x), System.Math.Abs(currentFramePos.y - lastFramePos.y));
+
+            float diffXPercent = diffVector.x / (diffVector.x + diffVector.y);
+            float diffYPercent = diffVector.y / (diffVector.x + diffVector.y);
+
+            if (currentFramePos.x < lastFramePos.x)
+                diffXPercent *= -1;
+            if (currentFramePos.y < lastFramePos.y)
+                diffYPercent *= -1;
+
+            playerController.animator.SetFloat("Horizontal", diffXPercent);
+            playerController.animator.SetFloat("Vertical", diffYPercent);
+            playerController.animator.SetFloat("Speed", diffVector.sqrMagnitude);
+
+            lastFramePos = currentFramePos;
         }
         else
         {
             playerController.animator.SetFloat("Speed", 0);
-        }*/
+        }
     }
 
     public void TakeControl()
@@ -41,7 +58,7 @@ public class MOBACharacter : MonoBehaviour
 
     private void OnMove_MOBA()
     {
-        lastClickedPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        clickedPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         /*
         float diffX = lastClickedPos.x - transform.position.x;
         float diffY = lastClickedPos.y - transform.position.y;
@@ -62,6 +79,6 @@ public class MOBACharacter : MonoBehaviour
             playerController.animator.SetFloat("lastVertical", diffY);
         }
         */
-        navAgent.SetDestination(new Vector3(lastClickedPos.x, lastClickedPos.y));
+        navAgent.SetDestination(new Vector3(clickedPos.x, clickedPos.y));
     }
 }

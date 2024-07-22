@@ -7,7 +7,7 @@ public class SpeedPotion : PotionsAndAbilities
     [SerializeField] private int boostPercentage;
     private float boostAsPercent;
     
-    void Awake()
+    void Start()
     {
         playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
         boostAsPercent = (100f + boostPercentage) / 100f;
