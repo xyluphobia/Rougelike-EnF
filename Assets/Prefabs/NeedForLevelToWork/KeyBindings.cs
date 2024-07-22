@@ -120,6 +120,15 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
+                    ""name"": ""Interact"",
+                    ""type"": ""Button"",
+                    ""id"": ""fcdde390-f31a-4910-afe1-281604376795"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
                     ""name"": ""TestShit"",
                     ""type"": ""Button"",
                     ""id"": ""fcc5745b-6040-4096-b3a4-c1bae575eb68"",
@@ -328,6 +337,17 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
                     ""action"": ""Development_KillAllEnemies"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""0239c786-3471-42e5-991b-cb67cf3d3c33"",
+                    ""path"": ""<Keyboard>/f"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Interact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -339,6 +359,15 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
                     ""name"": ""Move_MOBA"",
                     ""type"": ""Button"",
                     ""id"": ""3f4bd3a6-b754-42cf-b691-80096a762c35"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Interact"",
+                    ""type"": ""Button"",
+                    ""id"": ""6a621fed-c3dc-413a-b1ff-c50ea6027df3"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -376,6 +405,17 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
                     ""action"": ""TestShit"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""512cdffc-97f6-475e-87e4-65651b316bac"",
+                    ""path"": ""<Keyboard>/f"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Interact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -394,6 +434,7 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
         m_Gameplay_Dash = m_Gameplay.FindAction("Dash", throwIfNotFound: true);
         m_Gameplay_Melee = m_Gameplay.FindAction("Melee", throwIfNotFound: true);
         m_Gameplay_Pause = m_Gameplay.FindAction("Pause", throwIfNotFound: true);
+        m_Gameplay_Interact = m_Gameplay.FindAction("Interact", throwIfNotFound: true);
         m_Gameplay_TestShit = m_Gameplay.FindAction("TestShit", throwIfNotFound: true);
         m_Gameplay_Development_ForceBossLevel = m_Gameplay.FindAction("Development_ForceBossLevel", throwIfNotFound: true);
         m_Gameplay_Development_KillAllEnemies = m_Gameplay.FindAction("Development_KillAllEnemies", throwIfNotFound: true);
@@ -403,6 +444,7 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
         // GameplayMOBA
         m_GameplayMOBA = asset.FindActionMap("GameplayMOBA", throwIfNotFound: true);
         m_GameplayMOBA_Move_MOBA = m_GameplayMOBA.FindAction("Move_MOBA", throwIfNotFound: true);
+        m_GameplayMOBA_Interact = m_GameplayMOBA.FindAction("Interact", throwIfNotFound: true);
         m_GameplayMOBA_TestShit = m_GameplayMOBA.FindAction("TestShit", throwIfNotFound: true);
     }
 
@@ -561,6 +603,7 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
     private readonly InputAction m_Gameplay_Dash;
     private readonly InputAction m_Gameplay_Melee;
     private readonly InputAction m_Gameplay_Pause;
+    private readonly InputAction m_Gameplay_Interact;
     private readonly InputAction m_Gameplay_TestShit;
     private readonly InputAction m_Gameplay_Development_ForceBossLevel;
     private readonly InputAction m_Gameplay_Development_KillAllEnemies;
@@ -575,6 +618,7 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
         public InputAction @Dash => m_Wrapper.m_Gameplay_Dash;
         public InputAction @Melee => m_Wrapper.m_Gameplay_Melee;
         public InputAction @Pause => m_Wrapper.m_Gameplay_Pause;
+        public InputAction @Interact => m_Wrapper.m_Gameplay_Interact;
         public InputAction @TestShit => m_Wrapper.m_Gameplay_TestShit;
         public InputAction @Development_ForceBossLevel => m_Wrapper.m_Gameplay_Development_ForceBossLevel;
         public InputAction @Development_KillAllEnemies => m_Wrapper.m_Gameplay_Development_KillAllEnemies;
@@ -602,6 +646,9 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
             @Pause.started += instance.OnPause;
             @Pause.performed += instance.OnPause;
             @Pause.canceled += instance.OnPause;
+            @Interact.started += instance.OnInteract;
+            @Interact.performed += instance.OnInteract;
+            @Interact.canceled += instance.OnInteract;
             @TestShit.started += instance.OnTestShit;
             @TestShit.performed += instance.OnTestShit;
             @TestShit.canceled += instance.OnTestShit;
@@ -636,6 +683,9 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
             @Pause.started -= instance.OnPause;
             @Pause.performed -= instance.OnPause;
             @Pause.canceled -= instance.OnPause;
+            @Interact.started -= instance.OnInteract;
+            @Interact.performed -= instance.OnInteract;
+            @Interact.canceled -= instance.OnInteract;
             @TestShit.started -= instance.OnTestShit;
             @TestShit.performed -= instance.OnTestShit;
             @TestShit.canceled -= instance.OnTestShit;
@@ -676,12 +726,14 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
     private readonly InputActionMap m_GameplayMOBA;
     private List<IGameplayMOBAActions> m_GameplayMOBAActionsCallbackInterfaces = new List<IGameplayMOBAActions>();
     private readonly InputAction m_GameplayMOBA_Move_MOBA;
+    private readonly InputAction m_GameplayMOBA_Interact;
     private readonly InputAction m_GameplayMOBA_TestShit;
     public struct GameplayMOBAActions
     {
         private @KeyBindings m_Wrapper;
         public GameplayMOBAActions(@KeyBindings wrapper) { m_Wrapper = wrapper; }
         public InputAction @Move_MOBA => m_Wrapper.m_GameplayMOBA_Move_MOBA;
+        public InputAction @Interact => m_Wrapper.m_GameplayMOBA_Interact;
         public InputAction @TestShit => m_Wrapper.m_GameplayMOBA_TestShit;
         public InputActionMap Get() { return m_Wrapper.m_GameplayMOBA; }
         public void Enable() { Get().Enable(); }
@@ -695,6 +747,9 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
             @Move_MOBA.started += instance.OnMove_MOBA;
             @Move_MOBA.performed += instance.OnMove_MOBA;
             @Move_MOBA.canceled += instance.OnMove_MOBA;
+            @Interact.started += instance.OnInteract;
+            @Interact.performed += instance.OnInteract;
+            @Interact.canceled += instance.OnInteract;
             @TestShit.started += instance.OnTestShit;
             @TestShit.performed += instance.OnTestShit;
             @TestShit.canceled += instance.OnTestShit;
@@ -705,6 +760,9 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
             @Move_MOBA.started -= instance.OnMove_MOBA;
             @Move_MOBA.performed -= instance.OnMove_MOBA;
             @Move_MOBA.canceled -= instance.OnMove_MOBA;
+            @Interact.started -= instance.OnInteract;
+            @Interact.performed -= instance.OnInteract;
+            @Interact.canceled -= instance.OnInteract;
             @TestShit.started -= instance.OnTestShit;
             @TestShit.performed -= instance.OnTestShit;
             @TestShit.canceled -= instance.OnTestShit;
@@ -739,6 +797,7 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
         void OnDash(InputAction.CallbackContext context);
         void OnMelee(InputAction.CallbackContext context);
         void OnPause(InputAction.CallbackContext context);
+        void OnInteract(InputAction.CallbackContext context);
         void OnTestShit(InputAction.CallbackContext context);
         void OnDevelopment_ForceBossLevel(InputAction.CallbackContext context);
         void OnDevelopment_KillAllEnemies(InputAction.CallbackContext context);
@@ -749,6 +808,7 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
     public interface IGameplayMOBAActions
     {
         void OnMove_MOBA(InputAction.CallbackContext context);
+        void OnInteract(InputAction.CallbackContext context);
         void OnTestShit(InputAction.CallbackContext context);
     }
 }

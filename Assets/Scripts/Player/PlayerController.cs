@@ -90,15 +90,15 @@ public class PlayerController : MonoBehaviour
             GameObject.FindGameObjectWithTag("OptionsMenu").SetActive(false);
         }
     }
-    
-    private void OnTestShit()
+
+    private void OnInteract()
     {
-        RaycastHit2D[] nearbyObjects = Physics2D.CircleCastAll(transform.position, 2f, new Vector2(1,1));
+        RaycastHit2D[] nearbyObjects = Physics2D.CircleCastAll(transform.position, 2f, (Vector2)transform.position);
 
         foreach (RaycastHit2D item in nearbyObjects)
         {
             if (item.transform.gameObject.CompareTag("Interactable"))
-            { 
+            {
                 GameObject interactableObject = item.transform.gameObject;
 
                 if (interactableObject.layer == 6)  // Layer 6 is the player layer.
@@ -109,6 +109,11 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
+    }    
+    
+    private void OnTestShit()
+    {
+        
     }
 
 

@@ -15,7 +15,7 @@ C:/Users/Matthew/Desktop/Rougelike Simple
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-52677
+51562
 Successfully changed project path to: C:/Users/Matthew/Desktop/Rougelike Simple
 C:/Users/Matthew/Desktop/Rougelike Simple
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ C:/Users/Matthew/Desktop/Rougelike Simple
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [22064] Host "[IP] 192.168.1.38 [Port] 0 [Flags] 2 [Guid] 2342304378 [EditorId] 2342304378 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-ED5AA6K) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [25324] Host "[IP] 192.168.1.38 [Port] 0 [Flags] 2 [Guid] 3999742370 [EditorId] 3999742370 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-ED5AA6K) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [22064] Host "[IP] 192.168.1.38 [Port] 0 [Flags] 2 [Guid] 2342304378 [EditorId] 2342304378 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-ED5AA6K) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [25324] Host "[IP] 192.168.1.38 [Port] 0 [Flags] 2 [Guid] 3999742370 [EditorId] 3999742370 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-ED5AA6K) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 19 workers.
-Library Redirect Path: Library/Refreshing native plugins compatible for Editor in 2.37 ms, found 0 plugins.
+Library Redirect Path: Library/Refreshing native plugins compatible for Editor in 336.96 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2023.1.20f1 (35a524b12060)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2023.1.20f1/Editor/Data/Resources/UnitySubsystems
@@ -70,7 +70,7 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2023.1.20f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2023.1.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2023.1.20f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56636
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56712
 Begin MonoManager ReloadAssembly
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
@@ -84,41 +84,41 @@ C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.1.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002599 seconds.
-- Loaded All Assemblies, in  0.272 seconds
+Registered in 0.118650 seconds.
+- Loaded All Assemblies, in  8.073 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-- Finished resetting the current domain, in  0.235 seconds
-Domain Reload Profiling: 506ms
-	BeginReloadAssembly (91ms)
+- Finished resetting the current domain, in  0.222 seconds
+Domain Reload Profiling: 8294ms
+	BeginReloadAssembly (6382ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (25ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (36ms)
-	LoadAllAssembliesAndSetupDomain (112ms)
-		LoadAssemblies (89ms)
+	RebuildCommonClasses (506ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (157ms)
+	LoadAllAssembliesAndSetupDomain (1018ms)
+		LoadAssemblies (6380ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (109ms)
-			TypeCache.Refresh (108ms)
-				TypeCache.ScanAssembly (100ms)
+		AnalyzeDomain (1015ms)
+			TypeCache.Refresh (1014ms)
+				TypeCache.ScanAssembly (749ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (236ms)
+	FinalizeReload (222ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (200ms)
+		SetupLoadedEditorAssemblies (188ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (7ms)
+			InitializePlatformSupportModulesInManaged (6ms)
 			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (6ms)
-			ProcessInitializeOnLoadAttributes (143ms)
-			ProcessInitializeOnLoadMethodAttributes (40ms)
+			BeforeProcessingInitializeOnLoad (5ms)
+			ProcessInitializeOnLoadAttributes (128ms)
+			ProcessInitializeOnLoadMethodAttributes (45ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -139,53 +139,54 @@ C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-- Loaded All Assemblies, in  0.568 seconds
-Refreshing native plugins compatible for Editor in 0.83 ms, found 0 plugins.
+- Loaded All Assemblies, in  4.603 seconds
+Refreshing native plugins compatible for Editor in 0.75 ms, found 0 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.473 seconds
-Domain Reload Profiling: 1039ms
-	BeginReloadAssembly (207ms)
+- Finished resetting the current domain, in  0.655 seconds
+Domain Reload Profiling: 5256ms
+	BeginReloadAssembly (203ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (19ms)
+		CreateAndSetChildDomain (20ms)
 	RebuildCommonClasses (23ms)
 	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (26ms)
-	LoadAllAssembliesAndSetupDomain (304ms)
-		LoadAssemblies (202ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (4340ms)
+		LoadAssemblies (4239ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (171ms)
-			TypeCache.Refresh (148ms)
-				TypeCache.ScanAssembly (139ms)
-			ScanForSourceGeneratedMonoScriptInfo (17ms)
-			ResolveRequiredComponents (6ms)
-	FinalizeReload (473ms)
+		AnalyzeDomain (167ms)
+			TypeCache.Refresh (146ms)
+				TypeCache.ScanAssembly (140ms)
+			ScanForSourceGeneratedMonoScriptInfo (13ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (656ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (295ms)
+		SetupLoadedEditorAssemblies (292ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (5ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (82ms)
-			ProcessInitializeOnLoadAttributes (173ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (76ms)
+			ProcessInitializeOnLoadAttributes (177ms)
 			ProcessInitializeOnLoadMethodAttributes (28ms)
-			AfterProcessingInitializeOnLoad (2ms)
+			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (5ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
-Refreshing native plugins compatible for Editor in 0.77 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 1.34 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3544 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 61 unused Assets / (1.5 MB). Loaded Objects now: 4097.
-Memory consumption went from 191.2 MB to 189.8 MB.
-Total: 4.012500 ms (FindLiveObjects: 0.172700 ms CreateObjectMapping: 0.097300 ms MarkObjects: 3.537600 ms  DeleteObjects: 0.203900 ms)
+Memory consumption went from 191.2 MB to 189.7 MB.
+Total: 3.039500 ms (FindLiveObjects: 0.148800 ms CreateObjectMapping: 0.076100 ms MarkObjects: 2.641400 ms  DeleteObjects: 0.172000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
@@ -198,20 +199,20 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 87795.736998 seconds.
-  path: Assets/Scripts/Global_and_GameManagment/CameraController.cs
-  artifactKey: Guid(4983055bd9b529945badedaa271509c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Global_and_GameManagment/CameraController.cs using Guid(4983055bd9b529945badedaa271509c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '572b07f3868742544e6326113d840f8f') in 0.002999 seconds
+  Time since last request: 283382.695860 seconds.
+  path: Assets/Scripts/Player/PlayerController.cs
+  artifactKey: Guid(11f31ed4b3d6c6a42a1aaf7711541275) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player/PlayerController.cs using Guid(11f31ed4b3d6c6a42a1aaf7711541275) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31089edaa47b6fbace4e57c176d11e29') in 0.002238 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Prepare
-Refreshing native plugins compatible for Editor in 36.13 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.80 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 4 unused Assets / (1.4 MB). Loaded Objects now: 4097.
-Memory consumption went from 108.7 MB to 107.2 MB.
-Total: 15.033900 ms (FindLiveObjects: 0.503900 ms CreateObjectMapping: 0.105200 ms MarkObjects: 14.241700 ms  DeleteObjects: 0.181000 ms)
+Memory consumption went from 108.6 MB to 107.2 MB.
+Total: 2.723700 ms (FindLiveObjects: 0.163700 ms CreateObjectMapping: 0.091800 ms MarkObjects: 2.339000 ms  DeleteObjects: 0.128300 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -230,529 +231,469 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 19367.995370 seconds.
-  path: Assets/Sprites/Player/WASDCharacter
-  artifactKey: Guid(3723b90ea7a33ee4b9093426832ba75f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Player/WASDCharacter using Guid(3723b90ea7a33ee4b9093426832ba75f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4409852361f34a2b97d3f3f89bb938ee') in 0.023092 seconds
+  Time since last request: 80.551033 seconds.
+  path: Assets/Scripts/Player/PlayerController.cs
+  artifactKey: Guid(11f31ed4b3d6c6a42a1aaf7711541275) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player/PlayerController.cs using Guid(11f31ed4b3d6c6a42a1aaf7711541275) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15c5e23f0e212136033c4e164d944c78') in 0.003239 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
-Received Import Request.
-  Time since last request: 29.814657 seconds.
-  path: Assets/Sprites/Player/MOBACharacter/Cast
-  artifactKey: Guid(4beaa03a87fdef14c81fdc068d6f2ec2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Player/MOBACharacter/Cast using Guid(4beaa03a87fdef14c81fdc068d6f2ec2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cc230f6cf18928393f37151a8135344') in 0.000506 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 6.690067 seconds.
-  path: Assets/Sprites/Player/MOBACharacter/Cast/SorcererCast.png
-  artifactKey: Guid(a9e6988d56d6a194ca1bcdc0529a849c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Player/MOBACharacter/Cast/SorcererCast.png using Guid(a9e6988d56d6a194ca1bcdc0529a849c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd34b20a13696db757bdd18c642cf8aa6') in 0.090595 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 6
-========================================================================
-Received Import Request.
-  Time since last request: 18.298477 seconds.
-  path: Assets/Sprites/Player/MOBACharacter
-  artifactKey: Guid(a77a18568e0db07408b733821ec46b70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Player/MOBACharacter using Guid(a77a18568e0db07408b733821ec46b70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc846f69e4cb082c6db6d587c9b4d320') in 0.001015 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 21.452507 seconds.
-  path: Assets/Sprites/Player/MOBACharacter/Projectiles
-  artifactKey: Guid(51cceb0f626facf41b8decd14a92e590) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Player/MOBACharacter/Projectiles using Guid(51cceb0f626facf41b8decd14a92e590) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f06781ebaf43f392b3125491a5d1538') in 0.000385 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 11.386946 seconds.
-  path: Assets/Fantasy RPG heroes pack (by Franuka)/Banner.gif
-  artifactKey: Guid(9f81b967c9b8a1e4585ba0e1f4a63d70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy RPG heroes pack (by Franuka)/Banner.gif using Guid(9f81b967c9b8a1e4585ba0e1f4a63d70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89eb752abafa56c0af21b90389c45e4e') in 0.018533 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 3.884948 seconds.
-  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Arrow.png
-  artifactKey: Guid(4e1b1a75977f4ab43be7459996f5ced1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Arrow.png using Guid(4e1b1a75977f4ab43be7459996f5ced1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2317b4ee45b4a66c882dadb861a0f83f') in 0.012412 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Bomb_impact.png
-  artifactKey: Guid(01641799880362e4aa08c2ba34db43bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Bomb_impact.png using Guid(01641799880362e4aa08c2ba34db43bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '483a78088fd4c40a79c8632777da40f7') in 0.018784 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 4
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Boomerang_impact.png
-  artifactKey: Guid(cb9ffacc544bf5643874bc0e6407b45a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Boomerang_impact.png using Guid(cb9ffacc544bf5643874bc0e6407b45a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66837f9744af380b6aa423c6077601e7') in 0.012802 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 4
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Fireball.png
-  artifactKey: Guid(01530d202b50451438e2d1d5617d79b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Fireball.png using Guid(01530d202b50451438e2d1d5617d79b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6859c3e9a2fa7887a6ab6a166b0176e') in 0.010045 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Bomb.png
-  artifactKey: Guid(ce55293309406624887c81070c3681e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Bomb.png using Guid(ce55293309406624887c81070c3681e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '877af8bee7e6396f504c16c03c863139') in 0.011218 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Fireball_impact.png
-  artifactKey: Guid(4bcc30524f3fcac40be7492b801ddb63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Fireball_impact.png using Guid(4bcc30524f3fcac40be7492b801ddb63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fc8975877e39e28d1278f3e9d7b6e35') in 0.013908 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/LightningBolt_impact.png
-  artifactKey: Guid(da6ad741e797bd44b9923c5e86e54c37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/LightningBolt_impact.png using Guid(da6ad741e797bd44b9923c5e86e54c37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d84bb0a1e3787c894beff7c4d707073') in 0.023047 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/LightningBolt_initial.png
-  artifactKey: Guid(280959287f0068744b68da93a6043607) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/LightningBolt_initial.png using Guid(280959287f0068744b68da93a6043607) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '803902b02b3f932a71daf43c97c12e33') in 0.014532 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Bomb_tilting.png
-  artifactKey: Guid(1f9d5b62cb57d5c499b117e165d13376) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Bomb_tilting.png using Guid(1f9d5b62cb57d5c499b117e165d13376) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4719fb29329e6596fb4c0508eda1380a') in 0.017878 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Box_breaking.png
-  artifactKey: Guid(8198bfcc54fa90349bf90684ccb42380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Box_breaking.png using Guid(8198bfcc54fa90349bf90684ccb42380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59dce5b2c010aa0468e9c458537caf21') in 0.063635 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 14
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/IceShard_initial.png
-  artifactKey: Guid(ae68c9a39860c0a4d98c0322f4c0af30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/IceShard_initial.png using Guid(ae68c9a39860c0a4d98c0322f4c0af30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15fcdc82b8b6c0b5004f377c2ce7770e') in 0.012864 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/LightningBolt.png
-  artifactKey: Guid(1c1739031a37ab145a641f6045ff4e2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/LightningBolt.png using Guid(1c1739031a37ab145a641f6045ff4e2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2729a2f4018e6c2722c59bfb8ab0aac5') in 0.013531 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Arrow_impact.png
-  artifactKey: Guid(3deb922b470414c419272c3f0e2405c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Arrow_impact.png using Guid(3deb922b470414c419272c3f0e2405c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54b170f3db07e6aab0653323a3967591') in 0.027077 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Fireball_initial.png
-  artifactKey: Guid(ece0f0f18d6657941a12b00c97f2110a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Fireball_initial.png using Guid(ece0f0f18d6657941a12b00c97f2110a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8684f482b77486b22265591e639d6b89') in 0.021916 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Bomb_red.png
-  artifactKey: Guid(06ca6067bfaa2c64291a52f15b63b01f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Bomb_red.png using Guid(06ca6067bfaa2c64291a52f15b63b01f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0393e1adb652042271c6ccc690b6b26') in 0.015223 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/IceShard.png
-  artifactKey: Guid(1021ba774b840574cb9c388e6c365775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/IceShard.png using Guid(1021ba774b840574cb9c388e6c365775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf7a623857aa3cf333d1b8eb1cdc1169') in 0.021519 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Boomerang.png
-  artifactKey: Guid(8cf8a9f44290c6f4f9aae642943fc25e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Boomerang.png using Guid(8cf8a9f44290c6f4f9aae642943fc25e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb1a1e4aa2001f66bf26fa80afa53d65') in 0.012877 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Dagger_impact.png
-  artifactKey: Guid(a501aa357db22d74485906980fb3a1ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Dagger_impact.png using Guid(a501aa357db22d74485906980fb3a1ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c73645e1348eea14179b81dfea2ee2f5') in 0.013212 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Box_broken.png
-  artifactKey: Guid(6217f5dff831ed843bee5f726ed9fbdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Box_broken.png using Guid(6217f5dff831ed843bee5f726ed9fbdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec300d29f018be8539e748a0f101e97b') in 0.027016 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Box.png
-  artifactKey: Guid(faf4f9545e979e24dab6dc6c1ee73d2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Box.png using Guid(faf4f9545e979e24dab6dc6c1ee73d2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '606682c4483c05cc807d3cd4abea11e6') in 0.021982 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Grass_breaking.png
-  artifactKey: Guid(0ad661c301084d643ba6744f375c4100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Grass_breaking.png using Guid(0ad661c301084d643ba6744f375c4100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b941e1b2b425b9db1552af7ade9595b0') in 0.071624 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 28
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/IceShard_impact.png
-  artifactKey: Guid(5cecc3013dc797c41b4a0c253f797d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/IceShard_impact.png using Guid(5cecc3013dc797c41b4a0c253f797d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcd5a5b675ba0b6752545f686da8fa08') in 0.011211 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000110 seconds.
-  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Dagger.png
-  artifactKey: Guid(7b028bfe3c2e5294f8bec7ebb8d7cc0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Dagger.png using Guid(7b028bfe3c2e5294f8bec7ebb8d7cc0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '247b03dac409f651293addc157a5ce2b') in 0.011964 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Grass_broken.png
-  artifactKey: Guid(a5fef83ed57f5b04786868e5ae224519) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Grass_broken.png using Guid(a5fef83ed57f5b04786868e5ae224519) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd9710758e932bf6e7f249cdf78f3862') in 0.015029 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 6
-========================================================================
-Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Grass.png
-  artifactKey: Guid(3b27d71a17053da408743d461bcde885) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Grass.png using Guid(3b27d71a17053da408743d461bcde885) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '711e61eae07bcde825393489bb8f6dde') in 0.014467 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 4.106817 seconds.
-  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/MagicMissile.png
-  artifactKey: Guid(e62e609f89560f04bb67aef743604534) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/MagicMissile.png using Guid(e62e609f89560f04bb67aef743604534) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '671a10030dad0a37cee9c2c80e22e0c6') in 0.010029 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Pot.png
-  artifactKey: Guid(c375d064f2a0a684c9d5afe2ca43ed4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Pot.png using Guid(c375d064f2a0a684c9d5afe2ca43ed4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a91d79989f6f6030e5fca7946d094988') in 0.012345 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/MagicMissile_impact.png
-  artifactKey: Guid(083aaf010a76a8d4a9c28bfac8521224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/MagicMissile_impact.png using Guid(083aaf010a76a8d4a9c28bfac8521224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b54efb5694774f098ad5a77d38733db6') in 0.011964 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000130 seconds.
-  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/MagicMissile_initial.png
-  artifactKey: Guid(cffb931302fb77841be42c51ca5a2099) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/MagicMissile_initial.png using Guid(cffb931302fb77841be42c51ca5a2099) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '290c125cf452ff55219ac205b97dba7a') in 0.017760 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Pot_breaking.png
-  artifactKey: Guid(50df9bfa11af95446811be9a63ce2000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Pot_breaking.png using Guid(50df9bfa11af95446811be9a63ce2000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ef7f02629d467e54520f592a2bfdc28') in 0.044213 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 154.445306 seconds.
-  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Pot_broken.png
-  artifactKey: Guid(ec264d88a01b20241b45008308c0ffa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Pot_broken.png using Guid(ec264d88a01b20241b45008308c0ffa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '938b2d9d1c7ffeeabf405dd00bb500aa') in 0.014611 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 4
-========================================================================
-Received Import Request.
-  Time since last request: 0.000065 seconds.
-  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Spear.png
-  artifactKey: Guid(927e0ff3e9f412b4bb1c5073c3731359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Spear.png using Guid(927e0ff3e9f412b4bb1c5073c3731359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d3b1c01819bf9c5e4aa293f1ead03dc') in 0.012334 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Spear_impact.png
-  artifactKey: Guid(d6f919f76716dcb4c947159ebd83cd23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy RPG heroes pack (by Franuka)/1x/Projectiles & Breakables/Spear_impact.png using Guid(d6f919f76716dcb4c947159ebd83cd23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '403a7f16185141e649a385e65eb83437') in 0.023387 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
-========================================================================
-Received Import Request.
-  Time since last request: 59.786698 seconds.
-  path: Assets/Sprites/Player/MOBACharacter/Projectiles/Fireball.png
-  artifactKey: Guid(01530d202b50451438e2d1d5617d79b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Player/MOBACharacter/Projectiles/Fireball.png using Guid(01530d202b50451438e2d1d5617d79b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b364c3fcc4f93b7276cd79d51854662a') in 0.011729 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 1.033997 seconds.
-  path: Assets/Sprites/Player/MOBACharacter/Projectiles/IceShard.png
-  artifactKey: Guid(1021ba774b840574cb9c388e6c365775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Player/MOBACharacter/Projectiles/IceShard.png using Guid(1021ba774b840574cb9c388e6c365775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa88abec58e707678c405457f30df919') in 0.011447 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.825646 seconds.
-  path: Assets/Sprites/Player/MOBACharacter/Projectiles/LightningBolt_impact.png
-  artifactKey: Guid(da6ad741e797bd44b9923c5e86e54c37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Player/MOBACharacter/Projectiles/LightningBolt_impact.png using Guid(da6ad741e797bd44b9923c5e86e54c37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66fc14a50c60b06aa1e12e1c1fb0422d') in 0.017023 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.465941 seconds.
-  path: Assets/Sprites/Player/MOBACharacter/Projectiles/Fireball_initial.png
-  artifactKey: Guid(ece0f0f18d6657941a12b00c97f2110a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Player/MOBACharacter/Projectiles/Fireball_initial.png using Guid(ece0f0f18d6657941a12b00c97f2110a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8805a9c7dbe4f7082f45065b37cbf9ae') in 0.010744 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.451575 seconds.
-  path: Assets/Sprites/Player/MOBACharacter/Projectiles/LightningBolt.png
-  artifactKey: Guid(1c1739031a37ab145a641f6045ff4e2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Player/MOBACharacter/Projectiles/LightningBolt.png using Guid(1c1739031a37ab145a641f6045ff4e2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c895c1a358bc32ba9d2a58ddcdbd656') in 0.019650 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 18.701683 seconds.
-  path: Assets/Sprites/Player/MOBACharacter/Projectiles/Fireball.png
-  artifactKey: Guid(01530d202b50451438e2d1d5617d79b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Player/MOBACharacter/Projectiles/Fireball.png using Guid(01530d202b50451438e2d1d5617d79b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b78c539910fc1833112895d47834417c') in 0.010353 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 1.614176 seconds.
-  path: Assets/Sprites/Player/MOBACharacter/Projectiles/IceShard.png
-  artifactKey: Guid(1021ba774b840574cb9c388e6c365775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Player/MOBACharacter/Projectiles/IceShard.png using Guid(1021ba774b840574cb9c388e6c365775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '714dfa6b4630d245d56102cf72e80679') in 0.010540 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 4.185591 seconds.
-  path: Assets/Sprites/Player/MOBACharacter/Projectiles/Fireball_impact.png
-  artifactKey: Guid(4bcc30524f3fcac40be7492b801ddb63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Player/MOBACharacter/Projectiles/Fireball_impact.png using Guid(4bcc30524f3fcac40be7492b801ddb63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b78cd37eda477600ee93c480d5b623f') in 0.014799 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 18.371918 seconds.
-  path: Assets/Sprites/Player/MOBACharacter/Projectiles/Fireball_impact.png
-  artifactKey: Guid(4bcc30524f3fcac40be7492b801ddb63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Player/MOBACharacter/Projectiles/Fireball_impact.png using Guid(4bcc30524f3fcac40be7492b801ddb63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef6a9d1d4b62a1a68dd906959ada2481') in 0.019196 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
-========================================================================
-Received Import Request.
-  Time since last request: 4.254762 seconds.
-  path: Assets/Sprites/Player/MOBACharacter/Projectiles/IceShard_impact.png
-  artifactKey: Guid(5cecc3013dc797c41b4a0c253f797d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Player/MOBACharacter/Projectiles/IceShard_impact.png using Guid(5cecc3013dc797c41b4a0c253f797d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efc4cd6227b9d713443b7f0036714e10') in 0.017239 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 7.095407 seconds.
-  path: Assets/Sprites/Player/MOBACharacter/Projectiles/IceShard_impact.png
-  artifactKey: Guid(5cecc3013dc797c41b4a0c253f797d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Player/MOBACharacter/Projectiles/IceShard_impact.png using Guid(5cecc3013dc797c41b4a0c253f797d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc03ca677f11436c17351619294b1359') in 0.022081 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
-========================================================================
-Received Import Request.
-  Time since last request: 12.351855 seconds.
-  path: Assets/Sprites/Player/MOBACharacter/Projectiles/LightningBolt_impact.png
-  artifactKey: Guid(da6ad741e797bd44b9923c5e86e54c37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Player/MOBACharacter/Projectiles/LightningBolt_impact.png using Guid(da6ad741e797bd44b9923c5e86e54c37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92f3b72c8fda05561c9388f3334ff0be') in 0.025119 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
-========================================================================
-Received Import Request.
-  Time since last request: 3.665973 seconds.
-  path: Assets/Sprites/Player/MOBACharacter/Projectiles/LightningBolt_initial.png
-  artifactKey: Guid(280959287f0068744b68da93a6043607) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Player/MOBACharacter/Projectiles/LightningBolt_initial.png using Guid(280959287f0068744b68da93a6043607) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b499232850ed01d47e849640bf79ce72') in 0.010227 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.790095 seconds.
-  path: Assets/Sprites/Player/MOBACharacter/Projectiles/MagicMissile_impact.png
-  artifactKey: Guid(083aaf010a76a8d4a9c28bfac8521224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Player/MOBACharacter/Projectiles/MagicMissile_impact.png using Guid(083aaf010a76a8d4a9c28bfac8521224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e207a1435b0d82ba859666000a28da5') in 0.012869 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 20.564679 seconds.
-  path: Assets/Sprites/Player/MOBACharacter/Projectiles/MagicMissile_impact.png
-  artifactKey: Guid(083aaf010a76a8d4a9c28bfac8521224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Player/MOBACharacter/Projectiles/MagicMissile_impact.png using Guid(083aaf010a76a8d4a9c28bfac8521224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f95f6c7d36883b35fa00cc3fca2350bf') in 0.020468 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
-========================================================================
-Received Import Request.
-  Time since last request: 277.536288 seconds.
-  path: Assets/Prefabs/Characters
-  artifactKey: Guid(b853bfbb4b5680e4691afe33175fd62d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Characters using Guid(b853bfbb4b5680e4691afe33175fd62d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b06ae8028969be1fe321e026248fbd7') in 0.001226 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 19.957639 seconds.
-  path: Assets/Prefabs/Characters/PlayerProjectiles
-  artifactKey: Guid(8201b012ee3831541a6f63d85de8ab17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Characters/PlayerProjectiles using Guid(8201b012ee3831541a6f63d85de8ab17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a47caf150286da187c78e7ccb292ad77') in 0.000472 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 270.245233 seconds.
-  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat
-  artifactKey: Guid(79459efec17a4d00a321bdcc27bbc385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat using Guid(79459efec17a4d00a321bdcc27bbc385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37f3ec33b5ebed1cdb2faf1796497fb4') in 0.283191 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Fonts/Stepalange.asset
-  artifactKey: Guid(bdf4423795276644e8a288d82319df70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fonts/Stepalange.asset using Guid(bdf4423795276644e8a288d82319df70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9829ec469600139f0148fe1412aad65') in 0.056132 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
-  artifactKey: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '000a2c0bfd62cc418e2d8e75193b8c0e') in 0.030635 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
-  artifactKey: Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset using Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2ddada60fbe72cbcf00e4bff6f31e11') in 0.024439 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 29.028948 seconds.
-  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat
-  artifactKey: Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat using Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4fa7e4738cf03aaf5f304ebead909d1') in 0.032921 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 462.699655 seconds.
-  path: Assets/Prefabs/Characters/PlayerProjectiles/FireballProjectile.prefab
-  artifactKey: Guid(7a9b0deb72b276b43a9c586db8f2357b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Characters/PlayerProjectiles/FireballProjectile.prefab using Guid(7a9b0deb72b276b43a9c586db8f2357b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60943cd3daebbd505526f1afb070658c') in 0.025286 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 125.213339 seconds.
-  path: Assets/Prefabs/Characters/PlayerProjectiles/IceProjectile.prefab
-  artifactKey: Guid(8ccdfca283d34004bb039e35a04a7252) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Characters/PlayerProjectiles/IceProjectile.prefab using Guid(8ccdfca283d34004bb039e35a04a7252) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '729f529de9607f4adcd996a8291b9052') in 0.012433 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 168.108675 seconds.
-  path: Assets/Prefabs/Characters/PlayerProjectiles/LightningProjectile.prefab
-  artifactKey: Guid(94b9681842fe0af4fadad7311bff0869) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Characters/PlayerProjectiles/LightningProjectile.prefab using Guid(94b9681842fe0af4fadad7311bff0869) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cbf03238f13d50bae73f06cdce32524') in 0.012498 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 31.098380 seconds.
-  path: Assets/Prefabs/Characters/PlayerProjectiles/FireballProjectile.prefab
-  artifactKey: Guid(7a9b0deb72b276b43a9c586db8f2357b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Characters/PlayerProjectiles/FireballProjectile.prefab using Guid(7a9b0deb72b276b43a9c586db8f2357b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f67533e3d04f5763b3fb89d4f64490e') in 0.006871 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 85.433621 seconds.
-  path: Assets/Prefabs/Characters/PlayerProjectiles/MagicMissleProjectile.prefab
-  artifactKey: Guid(921104aee8d669c4fa4640119795af9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Characters/PlayerProjectiles/MagicMissleProjectile.prefab using Guid(921104aee8d669c4fa4640119795af9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2f238f32d465021a194db221714c326') in 0.011859 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+- Loaded All Assemblies, in  0.480 seconds
+Refreshing native plugins compatible for Editor in 0.79 ms, found 0 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.577 seconds
+Domain Reload Profiling: 1056ms
+	BeginReloadAssembly (135ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (27ms)
+	RebuildCommonClasses (24ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (18ms)
+	LoadAllAssembliesAndSetupDomain (292ms)
+		LoadAssemblies (205ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (160ms)
+			TypeCache.Refresh (150ms)
+				TypeCache.ScanAssembly (142ms)
+			ScanForSourceGeneratedMonoScriptInfo (4ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (578ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (272ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (79ms)
+			ProcessInitializeOnLoadAttributes (160ms)
+			ProcessInitializeOnLoadMethodAttributes (22ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Refreshing native plugins compatible for Editor in 0.74 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3375 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 28 unused Assets / (1.5 MB). Loaded Objects now: 4100.
+Memory consumption went from 162.9 MB to 161.4 MB.
+Total: 2.607600 ms (FindLiveObjects: 0.127500 ms CreateObjectMapping: 0.058800 ms MarkObjects: 2.284900 ms  DeleteObjects: 0.136000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+- Loaded All Assemblies, in  0.430 seconds
+Refreshing native plugins compatible for Editor in 0.98 ms, found 0 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.550 seconds
+Domain Reload Profiling: 978ms
+	BeginReloadAssembly (123ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (25ms)
+	RebuildCommonClasses (21ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (16ms)
+	LoadAllAssembliesAndSetupDomain (260ms)
+		LoadAssemblies (181ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (142ms)
+			TypeCache.Refresh (135ms)
+				TypeCache.ScanAssembly (129ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (550ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (269ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (77ms)
+			ProcessInitializeOnLoadAttributes (158ms)
+			ProcessInitializeOnLoadMethodAttributes (23ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Refreshing native plugins compatible for Editor in 0.94 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3374 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 28 unused Assets / (1.5 MB). Loaded Objects now: 4102.
+Memory consumption went from 164.6 MB to 163.2 MB.
+Total: 2.654300 ms (FindLiveObjects: 0.142000 ms CreateObjectMapping: 0.070500 ms MarkObjects: 2.294500 ms  DeleteObjects: 0.146700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 145.407808 seconds.
+  path: Assets/Prefabs/NeedForLevelToWork/KeyBindings.inputactions
+  artifactKey: Guid(444ad0e9265e1244f9d43cdfb58e0a54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/NeedForLevelToWork/KeyBindings.inputactions using Guid(444ad0e9265e1244f9d43cdfb58e0a54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8531c07bc597f8f85a23c1cae939e37d') in 0.029301 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+- Loaded All Assemblies, in  0.465 seconds
+Refreshing native plugins compatible for Editor in 0.95 ms, found 0 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.585 seconds
+Domain Reload Profiling: 1049ms
+	BeginReloadAssembly (130ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (29ms)
+	RebuildCommonClasses (23ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (17ms)
+	LoadAllAssembliesAndSetupDomain (285ms)
+		LoadAssemblies (198ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (153ms)
+			TypeCache.Refresh (141ms)
+				TypeCache.ScanAssembly (135ms)
+			ScanForSourceGeneratedMonoScriptInfo (4ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (586ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (272ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (76ms)
+			ProcessInitializeOnLoadAttributes (161ms)
+			ProcessInitializeOnLoadMethodAttributes (23ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Refreshing native plugins compatible for Editor in 0.72 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3374 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 28 unused Assets / (1.5 MB). Loaded Objects now: 4105.
+Memory consumption went from 166.6 MB to 165.1 MB.
+Total: 2.730200 ms (FindLiveObjects: 0.229500 ms CreateObjectMapping: 0.083000 ms MarkObjects: 2.276200 ms  DeleteObjects: 0.140700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 40.756552 seconds.
+  path: Assets/Prefabs/NeedForLevelToWork/KeyBindings.inputactions
+  artifactKey: Guid(444ad0e9265e1244f9d43cdfb58e0a54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/NeedForLevelToWork/KeyBindings.inputactions using Guid(444ad0e9265e1244f9d43cdfb58e0a54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a311963cfa573749de63896a88c6580b') in 0.023161 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+- Loaded All Assemblies, in  0.429 seconds
+Refreshing native plugins compatible for Editor in 0.78 ms, found 0 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.622 seconds
+Domain Reload Profiling: 1049ms
+	BeginReloadAssembly (121ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (25ms)
+	RebuildCommonClasses (21ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (16ms)
+	LoadAllAssembliesAndSetupDomain (261ms)
+		LoadAssemblies (183ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (140ms)
+			TypeCache.Refresh (130ms)
+				TypeCache.ScanAssembly (124ms)
+			ScanForSourceGeneratedMonoScriptInfo (4ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (623ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (319ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (87ms)
+			ProcessInitializeOnLoadAttributes (192ms)
+			ProcessInitializeOnLoadMethodAttributes (29ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Refreshing native plugins compatible for Editor in 0.75 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3374 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 28 unused Assets / (1.5 MB). Loaded Objects now: 4107.
+Memory consumption went from 168.5 MB to 167.0 MB.
+Total: 2.728400 ms (FindLiveObjects: 0.129700 ms CreateObjectMapping: 0.070800 ms MarkObjects: 2.382400 ms  DeleteObjects: 0.144700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+- Loaded All Assemblies, in  0.438 seconds
+Refreshing native plugins compatible for Editor in 1.11 ms, found 0 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.536 seconds
+Domain Reload Profiling: 972ms
+	BeginReloadAssembly (128ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (28ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (16ms)
+	LoadAllAssembliesAndSetupDomain (263ms)
+		LoadAssemblies (187ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (141ms)
+			TypeCache.Refresh (131ms)
+				TypeCache.ScanAssembly (124ms)
+			ScanForSourceGeneratedMonoScriptInfo (4ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (536ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (254ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (72ms)
+			ProcessInitializeOnLoadAttributes (150ms)
+			ProcessInitializeOnLoadMethodAttributes (22ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Refreshing native plugins compatible for Editor in 0.73 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3374 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 28 unused Assets / (1.5 MB). Loaded Objects now: 4109.
+Memory consumption went from 170.4 MB to 169.0 MB.
+Total: 2.702100 ms (FindLiveObjects: 0.127100 ms CreateObjectMapping: 0.077700 ms MarkObjects: 2.358500 ms  DeleteObjects: 0.138200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+- Loaded All Assemblies, in  0.409 seconds
+Refreshing native plugins compatible for Editor in 0.97 ms, found 0 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.525 seconds
+Domain Reload Profiling: 932ms
+	BeginReloadAssembly (116ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (23ms)
+	RebuildCommonClasses (21ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (16ms)
+	LoadAllAssembliesAndSetupDomain (246ms)
+		LoadAssemblies (175ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (131ms)
+			TypeCache.Refresh (125ms)
+				TypeCache.ScanAssembly (119ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (525ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (251ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (71ms)
+			ProcessInitializeOnLoadAttributes (148ms)
+			ProcessInitializeOnLoadMethodAttributes (22ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Refreshing native plugins compatible for Editor in 0.74 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3374 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 28 unused Assets / (1.5 MB). Loaded Objects now: 4111.
+Memory consumption went from 172.3 MB to 170.9 MB.
+Total: 2.629300 ms (FindLiveObjects: 0.131900 ms CreateObjectMapping: 0.064700 ms MarkObjects: 2.290500 ms  DeleteObjects: 0.141500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
