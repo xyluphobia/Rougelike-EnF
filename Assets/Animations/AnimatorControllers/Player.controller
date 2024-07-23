@@ -301,67 +301,67 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: lastVertical
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Horizontal
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Vertical
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: attackH
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: attackV
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Speed
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: IsDead
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Hurt
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Melee
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Dash
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -803,7 +803,7 @@ BlendTree:
   m_Name: Walk
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: a354aeae75326c64d9244114673ad6db, type: 2}
+    m_Motion: {fileID: 4652216726591465977, guid: b4617933a94a2474a88d0f5fc7fa20d7, type: 3}
     m_Threshold: 0
     m_Position: {x: 1.4, y: 0}
     m_TimeScale: 1
@@ -811,7 +811,7 @@ BlendTree:
     m_DirectBlendParameter: Horizontal
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 8e3b64b725f3caa41895d97051ced014, type: 2}
+    m_Motion: {fileID: -2239573254572558582, guid: 3197b351f0689644eae2d459b8852b26, type: 3}
     m_Threshold: 0.33333334
     m_Position: {x: 0, y: 0.75}
     m_TimeScale: 1
@@ -819,7 +819,7 @@ BlendTree:
     m_DirectBlendParameter: Horizontal
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 9d05fbe32d287cc4ca4197c0e1f5517f, type: 2}
+    m_Motion: {fileID: -6080175609721227243, guid: 928448498196bd14cbeebe69c82ec3ce, type: 3}
     m_Threshold: 0.6666667
     m_Position: {x: -1.4, y: 0}
     m_TimeScale: 1
@@ -827,7 +827,7 @@ BlendTree:
     m_DirectBlendParameter: Horizontal
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 9644d516e8e223049bd2b5356138d46c, type: 2}
+    m_Motion: {fileID: -2820466789972667983, guid: ac9d9943bde393b41bd8fef40998fa6e, type: 3}
     m_Threshold: 1
     m_Position: {x: 0, y: -0.75}
     m_TimeScale: 1
