@@ -352,6 +352,51 @@
                     "initialStateCheck": false
                 },
                 {
+                    "name": "Pause",
+                    "type": "Button",
+                    "id": "6104f10a-383e-4883-ac20-9f515d22d8c7",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "AbilityOne",
+                    "type": "Button",
+                    "id": "40ee3c58-e602-47f4-afe9-f3ca1dacf036",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "AbilityTwo",
+                    "type": "Button",
+                    "id": "ba4d6af0-2c4c-4aa2-acfc-3cf897b8b7b3",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "AbilityThree",
+                    "type": "Button",
+                    "id": "0e740e30-dc54-4a85-8a95-d34f2ff1776c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "UltimateAbility",
+                    "type": "Button",
+                    "id": "b86fbc66-2483-4b63-8f4c-f5287ecf2eff",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
                     "name": "TestShit",
                     "type": "Button",
                     "id": "6c604650-b22b-4c96-994a-3a868f411fdd",
@@ -375,6 +420,61 @@
                 },
                 {
                     "name": "",
+                    "id": "512cdffc-97f6-475e-87e4-65651b316bac",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c54c4ae7-21a1-4339-a23a-1c74b41bfd60",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AbilityOne",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6a71b607-a328-4e9a-a095-c141ab106b4d",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AbilityTwo",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "62894c27-90ed-47ab-983a-9f67ce107b73",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AbilityThree",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6af23957-e1ef-42a7-9066-9dba11c75faf",
+                    "path": "<Keyboard>/r",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UltimateAbility",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "bb28ec2e-4b7c-45e5-ba7c-164c3c5061e1",
                     "path": "<Keyboard>/e",
                     "interactions": "",
@@ -386,12 +486,12 @@
                 },
                 {
                     "name": "",
-                    "id": "512cdffc-97f6-475e-87e4-65651b316bac",
-                    "path": "<Keyboard>/f",
+                    "id": "17631122-17cf-42b8-8e95-81209d755bf5",
+                    "path": "<Keyboard>/escape",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Interact",
+                    "action": "Pause",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

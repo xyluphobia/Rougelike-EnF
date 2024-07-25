@@ -374,6 +374,51 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
+                    ""name"": ""Pause"",
+                    ""type"": ""Button"",
+                    ""id"": ""6104f10a-383e-4883-ac20-9f515d22d8c7"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""AbilityOne"",
+                    ""type"": ""Button"",
+                    ""id"": ""40ee3c58-e602-47f4-afe9-f3ca1dacf036"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""AbilityTwo"",
+                    ""type"": ""Button"",
+                    ""id"": ""ba4d6af0-2c4c-4aa2-acfc-3cf897b8b7b3"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""AbilityThree"",
+                    ""type"": ""Button"",
+                    ""id"": ""0e740e30-dc54-4a85-8a95-d34f2ff1776c"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""UltimateAbility"",
+                    ""type"": ""Button"",
+                    ""id"": ""b86fbc66-2483-4b63-8f4c-f5287ecf2eff"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
                     ""name"": ""TestShit"",
                     ""type"": ""Button"",
                     ""id"": ""6c604650-b22b-4c96-994a-3a868f411fdd"",
@@ -397,6 +442,61 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""512cdffc-97f6-475e-87e4-65651b316bac"",
+                    ""path"": ""<Keyboard>/f"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Interact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c54c4ae7-21a1-4339-a23a-1c74b41bfd60"",
+                    ""path"": ""<Keyboard>/q"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""AbilityOne"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6a71b607-a328-4e9a-a095-c141ab106b4d"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""AbilityTwo"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""62894c27-90ed-47ab-983a-9f67ce107b73"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""AbilityThree"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6af23957-e1ef-42a7-9066-9dba11c75faf"",
+                    ""path"": ""<Keyboard>/r"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""UltimateAbility"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""bb28ec2e-4b7c-45e5-ba7c-164c3c5061e1"",
                     ""path"": ""<Keyboard>/e"",
                     ""interactions"": """",
@@ -408,12 +508,12 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""512cdffc-97f6-475e-87e4-65651b316bac"",
-                    ""path"": ""<Keyboard>/f"",
+                    ""id"": ""17631122-17cf-42b8-8e95-81209d755bf5"",
+                    ""path"": ""<Keyboard>/escape"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Interact"",
+                    ""action"": ""Pause"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -445,6 +545,11 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
         m_GameplayMOBA = asset.FindActionMap("GameplayMOBA", throwIfNotFound: true);
         m_GameplayMOBA_Move_MOBA = m_GameplayMOBA.FindAction("Move_MOBA", throwIfNotFound: true);
         m_GameplayMOBA_Interact = m_GameplayMOBA.FindAction("Interact", throwIfNotFound: true);
+        m_GameplayMOBA_Pause = m_GameplayMOBA.FindAction("Pause", throwIfNotFound: true);
+        m_GameplayMOBA_AbilityOne = m_GameplayMOBA.FindAction("AbilityOne", throwIfNotFound: true);
+        m_GameplayMOBA_AbilityTwo = m_GameplayMOBA.FindAction("AbilityTwo", throwIfNotFound: true);
+        m_GameplayMOBA_AbilityThree = m_GameplayMOBA.FindAction("AbilityThree", throwIfNotFound: true);
+        m_GameplayMOBA_UltimateAbility = m_GameplayMOBA.FindAction("UltimateAbility", throwIfNotFound: true);
         m_GameplayMOBA_TestShit = m_GameplayMOBA.FindAction("TestShit", throwIfNotFound: true);
     }
 
@@ -727,6 +832,11 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
     private List<IGameplayMOBAActions> m_GameplayMOBAActionsCallbackInterfaces = new List<IGameplayMOBAActions>();
     private readonly InputAction m_GameplayMOBA_Move_MOBA;
     private readonly InputAction m_GameplayMOBA_Interact;
+    private readonly InputAction m_GameplayMOBA_Pause;
+    private readonly InputAction m_GameplayMOBA_AbilityOne;
+    private readonly InputAction m_GameplayMOBA_AbilityTwo;
+    private readonly InputAction m_GameplayMOBA_AbilityThree;
+    private readonly InputAction m_GameplayMOBA_UltimateAbility;
     private readonly InputAction m_GameplayMOBA_TestShit;
     public struct GameplayMOBAActions
     {
@@ -734,6 +844,11 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
         public GameplayMOBAActions(@KeyBindings wrapper) { m_Wrapper = wrapper; }
         public InputAction @Move_MOBA => m_Wrapper.m_GameplayMOBA_Move_MOBA;
         public InputAction @Interact => m_Wrapper.m_GameplayMOBA_Interact;
+        public InputAction @Pause => m_Wrapper.m_GameplayMOBA_Pause;
+        public InputAction @AbilityOne => m_Wrapper.m_GameplayMOBA_AbilityOne;
+        public InputAction @AbilityTwo => m_Wrapper.m_GameplayMOBA_AbilityTwo;
+        public InputAction @AbilityThree => m_Wrapper.m_GameplayMOBA_AbilityThree;
+        public InputAction @UltimateAbility => m_Wrapper.m_GameplayMOBA_UltimateAbility;
         public InputAction @TestShit => m_Wrapper.m_GameplayMOBA_TestShit;
         public InputActionMap Get() { return m_Wrapper.m_GameplayMOBA; }
         public void Enable() { Get().Enable(); }
@@ -750,6 +865,21 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
             @Interact.started += instance.OnInteract;
             @Interact.performed += instance.OnInteract;
             @Interact.canceled += instance.OnInteract;
+            @Pause.started += instance.OnPause;
+            @Pause.performed += instance.OnPause;
+            @Pause.canceled += instance.OnPause;
+            @AbilityOne.started += instance.OnAbilityOne;
+            @AbilityOne.performed += instance.OnAbilityOne;
+            @AbilityOne.canceled += instance.OnAbilityOne;
+            @AbilityTwo.started += instance.OnAbilityTwo;
+            @AbilityTwo.performed += instance.OnAbilityTwo;
+            @AbilityTwo.canceled += instance.OnAbilityTwo;
+            @AbilityThree.started += instance.OnAbilityThree;
+            @AbilityThree.performed += instance.OnAbilityThree;
+            @AbilityThree.canceled += instance.OnAbilityThree;
+            @UltimateAbility.started += instance.OnUltimateAbility;
+            @UltimateAbility.performed += instance.OnUltimateAbility;
+            @UltimateAbility.canceled += instance.OnUltimateAbility;
             @TestShit.started += instance.OnTestShit;
             @TestShit.performed += instance.OnTestShit;
             @TestShit.canceled += instance.OnTestShit;
@@ -763,6 +893,21 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
             @Interact.started -= instance.OnInteract;
             @Interact.performed -= instance.OnInteract;
             @Interact.canceled -= instance.OnInteract;
+            @Pause.started -= instance.OnPause;
+            @Pause.performed -= instance.OnPause;
+            @Pause.canceled -= instance.OnPause;
+            @AbilityOne.started -= instance.OnAbilityOne;
+            @AbilityOne.performed -= instance.OnAbilityOne;
+            @AbilityOne.canceled -= instance.OnAbilityOne;
+            @AbilityTwo.started -= instance.OnAbilityTwo;
+            @AbilityTwo.performed -= instance.OnAbilityTwo;
+            @AbilityTwo.canceled -= instance.OnAbilityTwo;
+            @AbilityThree.started -= instance.OnAbilityThree;
+            @AbilityThree.performed -= instance.OnAbilityThree;
+            @AbilityThree.canceled -= instance.OnAbilityThree;
+            @UltimateAbility.started -= instance.OnUltimateAbility;
+            @UltimateAbility.performed -= instance.OnUltimateAbility;
+            @UltimateAbility.canceled -= instance.OnUltimateAbility;
             @TestShit.started -= instance.OnTestShit;
             @TestShit.performed -= instance.OnTestShit;
             @TestShit.canceled -= instance.OnTestShit;
@@ -809,6 +954,11 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
     {
         void OnMove_MOBA(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
+        void OnPause(InputAction.CallbackContext context);
+        void OnAbilityOne(InputAction.CallbackContext context);
+        void OnAbilityTwo(InputAction.CallbackContext context);
+        void OnAbilityThree(InputAction.CallbackContext context);
+        void OnUltimateAbility(InputAction.CallbackContext context);
         void OnTestShit(InputAction.CallbackContext context);
     }
 }

@@ -57,6 +57,11 @@ public class WASDCharacter : MonoBehaviour
         rb.MovePosition(rb.position + movement.normalized * playerController.movementSpeed * Time.fixedDeltaTime);
     }
 
+    public void TakeControl()
+    {
+        playerController.SetActiveAbilityBar(GameAssets.i.AbilityBarWASD);
+    }
+
     /* Inputs */
     private void OnMove(InputValue inputValue)
     {
@@ -165,21 +170,10 @@ public class WASDCharacter : MonoBehaviour
         dashCooldown -= dashCooldownReduction;
         dashCooldownReduction = 0f;
 
-        StartCoroutine(DashCooldownUIUpdates());
+        StartCoroutine(playerController.CooldownUIUpdater(dashTimerUI, dashCooldown, true));
         yield return new WaitForSeconds(Math.Max(0, dashCooldown));
 
         canDash = true;
-
-        IEnumerator DashCooldownUIUpdates()
-        {
-            while (dashTimerUI.fillAmount > 0)
-            {
-                dashTimerUI.fillAmount -= 1 / dashCooldown * Time.deltaTime;
-                yield return new WaitForEndOfFrame();
-            }
-
-            dashTimerUI.fillAmount = 0;
-        }
     }
 
     public IEnumerator ToggleGhosting(bool activate = false, bool linger = false, float lingerDuration = 0f)

@@ -73,6 +73,15 @@ public class PlayerController : MonoBehaviour
         playerInput.enabled = false;
     }
     
+    public void SetActiveAbilityBar(GameObject BarToSet)
+    {
+        if (GameAssets.i.AbilityBarActive != null)
+        {
+            GameAssets.i.AbilityBarActive.SetActive(false);
+        }
+        GameAssets.i.AbilityBarActive = BarToSet;
+        BarToSet.SetActive(true);
+    }
 
     /* Inputs */
     private void OnPause() {
@@ -197,5 +206,19 @@ public class PlayerController : MonoBehaviour
     public void ResetBoost(float buff)
     {
         movementSpeed = movementSpeed / buff;
+    }
+
+    public IEnumerator CooldownUIUpdater(Image TimerUI, float Cooldown, bool ImageFillSet = false)
+    {
+        if (!ImageFillSet)
+            TimerUI.fillAmount = 1;
+
+        while (TimerUI.fillAmount > 0)
+        {
+            TimerUI.fillAmount -= 1 / Cooldown * Time.deltaTime;
+            yield return new WaitForEndOfFrame();
+        }
+
+        TimerUI.fillAmount = 0;
     }
 }

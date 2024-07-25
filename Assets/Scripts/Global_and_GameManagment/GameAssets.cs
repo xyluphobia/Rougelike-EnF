@@ -16,6 +16,17 @@ public class GameAssets : MonoBehaviour
             return _instance; 
         } 
     }
+    public GameObject AbilityBarActive;
+    public GameObject AbilityBarWASD;
+    public GameObject AbilityBarMOBA;
+    private void Awake()
+    {
+        AbilityBarWASD = GameObject.Find("AbilityBarWASD");
+        AbilityBarMOBA = GameObject.Find("AbilityBarMOBA");
+        AbilityBarWASD.SetActive(false);
+        AbilityBarMOBA.SetActive(false);
+    }
+
     [Header("Player/Important")]
     public GameObject player;
     public GameObject exit;
