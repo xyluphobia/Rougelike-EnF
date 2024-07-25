@@ -25,16 +25,9 @@ public class RangedShotTrackingProjectile : MonoBehaviour
 
         tracking = true;
 
-        StartCoroutine(DestroyAfterTime(destroyProjectileAfter));
+        StartCoroutine(Tools.instance.DestroyAfterTime(gameObject, destroyProjectileAfter));
         StartCoroutine(ProjectileTrackingTimer(trackingTime));
     }
-
-    IEnumerator DestroyAfterTime(float time)
-    {
-        yield return new WaitForSeconds(time);
-        Destroy(gameObject);
-    }
-
 
     void Update()
     {

@@ -32,6 +32,9 @@ public class GameAssets : MonoBehaviour
     public GameObject exit;
     public GameObject movementIndicatorArrow;
 
+    [Header("MOBA Character")]
+    public GameObject lightningBoltProjectile;
+
     [Header("Popup Texts")]
     public GameObject damageText;
     public GameObject scoreText;

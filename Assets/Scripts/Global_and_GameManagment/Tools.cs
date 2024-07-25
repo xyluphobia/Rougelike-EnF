@@ -18,5 +18,9 @@ public class Tools : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    
+    public IEnumerator DestroyAfterTime(GameObject objectToDestroy, float timeUntilDestroyed)
+    {
+        yield return new WaitForSeconds(timeUntilDestroyed);
+        Destroy(objectToDestroy);
+    }
 }

@@ -93,8 +93,38 @@ public class MOBACharacter : MonoBehaviour
     }
 
     /* Abilities */
-    private void OnAbilityOne() /* |Q| Basic Damage Ability */
+    private void OnAbilityOne() /* |Q| Basic Damage Ability ~ Lightning Bolt */
     {
+        // Target nearest enemy to mouse,
+        // On colision with an enemy if any enemies are within a certain range spawn a bolt from the hit enemy going toward all in range
+        // (On bolt script) On impact store the current enemy in a "hit" list (possibly on the tools script),
+        // (On bolt script) then store an array of all nearby enemies within X radius then send a bolt off toward each of them that are not on the "hit" list.
+
+        float closestDistance = Mathf.Infinity;
+        Transform closestEnemy = null;
+        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+        RaycastHit2D[] nearbyEnemies = Physics2D.CircleCastAll(mousePos, 2f, (Vector2)transform.position);
+        foreach (RaycastHit2D enemy in nearbyEnemies)
+        {
+            float distance = Vector3.Distance(enemy.point, mousePos);
+            if (distance < closestDistance)
+            {
+                closestDistance = distance;
+                closestEnemy = enemy.transform;
+            }
+        }
+
+        if (closestEnemy != null)
+        {
+            GameObject bolt = Instantiate(GameAssets.i.lightningBoltProjectile, transform.position, Quaternion.identity);
+            bolt.GetComponent<LightningProjectile>().spawnedByPlayer = true;
+            bolt.GetComponent<LightningProjectile>().target = closestEnemy;
+        }
+        else
+        {
+            Debug.Log("No nearby enemies");
+        }
 
     }
 
