@@ -76,6 +76,7 @@
     <Compile Include="Assets\Prefabs\Items\DisplayScorePotions.cs" />
     <Compile Include="Assets\Scripts\EnemyScripts\EnemyAI.cs" />
     <Compile Include="Assets\Scripts\ProceduralLevelGeneration\Data\SimpleRandomWalkData.cs" />
+    <Compile Include="Assets\Scripts\Global_and_GameManagment\Scale0_OnTriggerEnter.cs" />
     <Compile Include="Assets\Scripts\EnemyScripts\Boss_Scripts\ModifyAttack.cs" />
     <Compile Include="Assets\Scripts\Global_and_GameManagment\SoundManager.cs" />
     <Compile Include="Assets\Scripts\EnemyScripts\Boss_Scripts\ActivateBossOnRoomEnter.cs" />

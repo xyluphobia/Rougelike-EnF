@@ -7,9 +7,9 @@ public class CameraController : MonoBehaviour
     public GameObject target;
     private Vector3 targetPoint;
 
-    private readonly float lookAheadSpeed = 5f;
-    private readonly float lookAheadDistanceX = 2.5f;
-    private readonly float lookAheadDistanceY = 1.5f;
+    private readonly float lookAheadSpeed = 3f;
+    private readonly float lookAheadDistanceX = 2f;
+    private readonly float lookAheadDistanceY = 1f;
     private Vector2 lookOffset;
 
     private Vector2 targetCurrentPosition;

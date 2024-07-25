@@ -205,7 +205,7 @@ MonoBehaviour:
   m_ActionEvents: []
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: c991d027-1685-4a0e-8d05-a3d06dd47daa
+  m_DefaultActionMap: GameplayMOBA
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!114 &-3964855141841943578
@@ -276,7 +276,7 @@ NavMeshAgent:
   m_AutoRepath: 1
   m_Height: 0.1
   m_BaseOffset: 0.45
-  m_WalkableMask: 4294967295
+  m_WalkableMask: 1
   m_ObstacleAvoidanceType: 4
 --- !u!1 &4569995575180537675
 GameObject:

@@ -64,6 +64,8 @@ public class PlayerController : MonoBehaviour
 
         playerPortrait = GameObject.FindGameObjectWithTag("PortraitImage").GetComponent<Image>();
         playerPortrait.sprite = portraitToInput;
+
+        gameObject.SendMessage("TakeControl", null, SendMessageOptions.DontRequireReceiver);
     }
     private void setInactivePlayer()
     {

@@ -8,6 +8,8 @@ public class MOBACharacter : MonoBehaviour
     private PlayerController playerController;
     private NavMeshAgent navAgent;
 
+    private GameObject movementIndicatorArrow;
+
     Vector2 clickedPos;
     Vector2 lastFramePos;
     Vector2 currentFramePos;
@@ -53,32 +55,21 @@ public class MOBACharacter : MonoBehaviour
 
     public void TakeControl()
     {
-
+        movementIndicatorArrow = Instantiate(GameAssets.i.movementIndicatorArrow);
+        movementIndicatorArrow.transform.localScale = Vector3.zero;
     }
 
     private void OnMove_MOBA()
     {
         clickedPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        /*
-        float diffX = lastClickedPos.x - transform.position.x;
-        float diffY = lastClickedPos.y - transform.position.y;
-
-        playerController.animator.SetFloat("Horizontal", diffX);
-        playerController.animator.SetFloat("Vertical", diffY);
-        playerController.animator.SetFloat("Speed", lastClickedPos.sqrMagnitude);
-
-
-        if (diffX > diffY)
-        {
-            diffY = (diffY / diffX) * 100;
-            diffX = 1;
-            playerController.animator.SetFloat("lastHorizontal", diffX);
-        }
-        else
-        {
-            playerController.animator.SetFloat("lastVertical", diffY);
-        }
-        */
         navAgent.SetDestination(new Vector3(clickedPos.x, clickedPos.y));
+
+        // instantiate it on taking control of the game and set its size to 0
+        // keep a reference to it after instantiating it
+        // move it to the clicked position and up the size to 1
+        // on trigger size set to 0 not destroyed.
+
+        movementIndicatorArrow.transform.localScale = Vector3.one;
+        movementIndicatorArrow.transform.position = navAgent.destination;
     }
 }
