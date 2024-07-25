@@ -43,8 +43,6 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
         playerInput = GetComponent<PlayerInput>();
         playerInput.enabled = false;
-        if (activePlayer)
-            setActivePlayer();
 
         healthBarScript = GameObject.Find("HealthBar").GetComponent<HealthBar>();
     }
@@ -53,6 +51,11 @@ public class PlayerController : MonoBehaviour
     {
         gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
         health = gm.playerHealth;
+
+        if (activePlayer)
+            setActivePlayer();
+        else
+            setInactivePlayer();
     }
 
     public void setActivePlayer()
@@ -71,6 +74,8 @@ public class PlayerController : MonoBehaviour
     {
         gameObject.tag = "Interactable";
         playerInput.enabled = false;
+
+        gameObject.SendMessage("GiveControl", null, SendMessageOptions.DontRequireReceiver);
     }
     
     public void SetActiveAbilityBar(GameObject BarToSet)

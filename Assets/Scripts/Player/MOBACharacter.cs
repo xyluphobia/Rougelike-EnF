@@ -13,9 +13,11 @@ public class MOBACharacter : MonoBehaviour
     private Image[] AbilityBarImageHolder;
     private Dictionary<string, Image> AbilityImagesDict = new();
 
+    [SerializeField] private AudioClip teleportStartSfx;
+    [SerializeField] private AudioClip teleportEndSfx;
     private bool isTeleporting = false;
     public bool teleportIsOnCooldown = false;
-    public float teleportCooldown = 5f;
+    public float teleportCooldown = .5f;
 
     private Vector2 clickedPos;
     private Vector2 lastFramePos;
@@ -74,6 +76,11 @@ public class MOBACharacter : MonoBehaviour
         playerController.SetActiveAbilityBar(GameAssets.i.AbilityBarMOBA);
     }
 
+    public void GiveControl()
+    {
+        Destroy(movementIndicatorArrow);
+    }
+
     private void OnMove_MOBA()
     {
         if (isTeleporting) return;
@@ -116,11 +123,13 @@ public class MOBACharacter : MonoBehaviour
         IEnumerator TeleportingAnimationHandler()
         {
             playerController.animator.SetBool("Teleporting", true);
-            yield return new WaitForSeconds(0.417f);
+            SoundManager.instance.PlaySound(teleportStartSfx);
+            yield return new WaitForSeconds(0.65f);  // Anim time is: 0.417s
 
             gameObject.transform.position = teleportLocaiton;
 
             playerController.animator.SetBool("Teleporting", false);
+            SoundManager.instance.PlaySound(teleportEndSfx);
             yield return new WaitForSeconds(0.333f);
             isTeleporting = false;
         }
