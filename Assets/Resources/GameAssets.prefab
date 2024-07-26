@@ -51,6 +51,7 @@ MonoBehaviour:
   exit: {fileID: 8450017231335138196, guid: bc12c3b334c2df343980ffd5264a2a02, type: 3}
   movementIndicatorArrow: {fileID: 1161545672674720223, guid: f9a02c804e2ecd841b42f0b6290969e8, type: 3}
   lightningBoltProjectile: {fileID: 3130245145842358942, guid: 94b9681842fe0af4fadad7311bff0869, type: 3}
+  icicleProjectile: {fileID: 6787528957687982488, guid: 8ccdfca283d34004bb039e35a04a7252, type: 3}
   damageText: {fileID: 1627277218652921935, guid: 5032713ea382dfd4ca33d29877a4b584, type: 3}
   scoreText: {fileID: 4785445402732521747, guid: 51cf5722b4b6a71428f4d8cfc2519295, type: 3}
   healthChangeText: {fileID: 1707854643523481211, guid: 31940d9db343a7b4d9a1532b907d9961, type: 3}

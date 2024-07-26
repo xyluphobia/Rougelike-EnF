@@ -34,6 +34,7 @@ public class GameAssets : MonoBehaviour
 
     [Header("MOBA Character")]
     public GameObject lightningBoltProjectile;
+    public GameObject icicleProjectile;
 
     [Header("Popup Texts")]
     public GameObject damageText;

@@ -18,12 +18,21 @@ public class MOBACharacter : MonoBehaviour
 
     [SerializeField] private AudioClip lightningCastSfx;
     private bool lightningIsOnCooldown = false;
-    private float lightningCooldown = 0.5f;
+    private float lightningCooldown = 1.5f;
+
+    [SerializeField] private AudioClip icicleCastSfx;
+    private bool icicleIsOnCooldownRapid = false;
+    private float icicleCooldownRapid = 0.5f;
+    private float icicleCooldownGeneral = 3f;
+    private int icicleRapidShotsUsed = 0;
+    private Coroutine activeUITimer = null;
+    private Coroutine activeGeneralIcicleTimer = null;
+    [HideInInspector] public Dictionary<GameObject, int> enemyFreezeCounters = new();
 
     [SerializeField] private AudioClip teleportStartSfx;
     [SerializeField] private AudioClip teleportEndSfx;
     private bool teleportIsOnCooldown = false;
-    private float teleportCooldown = 3;
+    private float teleportCooldown = 5f;
 
     private Vector2 clickedPos;
     private Vector2 lastFramePos;
@@ -104,6 +113,8 @@ public class MOBACharacter : MonoBehaviour
         if (lightningIsOnCooldown || !canCast) return;
 
         canCast = false;
+        StartCoroutine(playerController.CooldownUIUpdater(AbilityImagesDict["QTimer"], lightningCooldown));
+
         float closestDistance = Mathf.Infinity;
         Transform closestEnemy = null;
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -151,7 +162,58 @@ public class MOBACharacter : MonoBehaviour
     private void OnAbilityTwo() /* |W| Interesting Ability ~ Icicle */
     {
         // Target is slowed stacking with each hit until 3 hits where the target is frozen completely
-        // Fires towards mouse
+        // Fires towards mouse NO TRACKING
+        // Allows 3 activations using the rapid cooldown amount, after these activations no more casts are allowed until the general cooldown is finished
+        // The general cooldown starts after each of the 3 activations so if the timer elapses before 3 casts are used the ability is reset fully to 0 rapid fires used
+
+        if (icicleIsOnCooldownRapid || !canCast) return;
+
+        canCast = false;
+        if (icicleRapidShotsUsed < 3)
+        {
+            StopCoroutineIfNotNull(activeUITimer);
+            StopCoroutineIfNotNull(activeGeneralIcicleTimer);
+
+            activeGeneralIcicleTimer = StartCoroutine(IcicleGeneralAbilityCooldown());
+            StartCoroutine(HoldCastPositionForSeconds(0.25f));
+
+            GameObject icicle = Instantiate(GameAssets.i.icicleProjectile, transform.position, Quaternion.identity);
+            if (icicleRapidShotsUsed != 2) /* First Two Shots ~ Slows 30% | 60% */
+            {
+                activeUITimer = StartCoroutine(playerController.CooldownUIUpdater(AbilityImagesDict["WTimer"], icicleCooldownRapid));
+                StartCoroutine(IcicleRapidAbilityCooldown());
+
+                if (icicleRapidShotsUsed == 1)
+                {
+                    icicle.transform.localScale *= 1.15f;
+                    icicle.GetComponent<IcicleProjectile>().projectileSpeed = 6f;
+                }
+            }
+            else /* Third shot ~ Freezes 100% (No Movement & No Attacks) */
+            {
+                activeUITimer = StartCoroutine(playerController.CooldownUIUpdater(AbilityImagesDict["WTimer"], icicleCooldownGeneral));
+                icicle.transform.localScale *= 1.3f;
+                icicle.GetComponent<IcicleProjectile>().projectileSpeed = 7f;
+            }
+            icicle.GetComponent<IcicleProjectile>().SetDirection(Camera.main.ScreenToWorldPoint(Input.mousePosition));
+
+            // spawn projectile
+            // scale the projectile up based on which shot it is making the 3rd one largest
+            icicleRapidShotsUsed += 1;
+        }
+        canCast = true;
+
+        IEnumerator IcicleGeneralAbilityCooldown()
+        {
+            yield return new WaitForSeconds(icicleCooldownGeneral);
+            icicleRapidShotsUsed = 0;
+        }
+        IEnumerator IcicleRapidAbilityCooldown()
+        {
+            icicleIsOnCooldownRapid = true;
+            yield return new WaitForSeconds(icicleCooldownRapid);
+            icicleIsOnCooldownRapid = false;
+        }
     }
 
     private void OnAbilityThree() /* |E| Movement Ability ~ Teleport */
@@ -253,6 +315,13 @@ public class MOBACharacter : MonoBehaviour
                         break;
                 }
                 break;
+        }
+    }
+    private void StopCoroutineIfNotNull(Coroutine coroutine)
+    {
+        if (coroutine != null)
+        {
+            StopCoroutine(coroutine);
         }
     }
 }

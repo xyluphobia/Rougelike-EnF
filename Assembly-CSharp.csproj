@@ -82,6 +82,7 @@
     <Compile Include="Assets\Scripts\EnemyScripts\Boss_Scripts\ActivateBossOnRoomEnter.cs" />
     <Compile Include="Assets\Scripts\Global_and_GameManagment\Tools.cs" />
     <Compile Include="Assets\Scripts\Items\PotsAndAbility\PotionsAndAbilities.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerProjectiles\IcicleProjectile.cs" />
     <Compile Include="Assets\Scripts\EnemyScripts\Projectiles\RangedShotTrackingProjectile.cs" />
     <Compile Include="Assets\Scripts\menus\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\Player\MOBACharacter.cs" />

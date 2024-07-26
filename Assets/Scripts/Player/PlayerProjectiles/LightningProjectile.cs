@@ -10,12 +10,13 @@ public class LightningProjectile : MonoBehaviour
     private float projectileSpeed = 3.5f;
     private bool dying = false;
 
-    public bool spawnedByPlayer = false;
-    public List<GameObject> lightningBoltHitEnemies = new();
-    public Transform target = null;
+    [HideInInspector] public bool spawnedByPlayer = false;
+    [HideInInspector] public List<GameObject> lightningBoltHitEnemies = new();
+    [HideInInspector] public Transform target = null;
 
     void Start()
     {
+        GetComponent<Animator>().SetTrigger("Casted");
         rb = GetComponent<Rigidbody2D>();
 
         StartCoroutine(Tools.instance.DestroyAfterTime(gameObject, 2f));

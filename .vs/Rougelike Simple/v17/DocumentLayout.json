@@ -7,8 +7,16 @@
       "RelativeMoniker": "D:0:0:{2ECE6269-9702-4E2D-F794-743E3122D8B9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\mobacharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{2ECE6269-9702-4E2D-F794-743E3122D8B9}|Assembly-CSharp.csproj|c:\\users\\matthew\\desktop\\rougelike simple\\assets\\scripts\\player\\playerprojectiles\\icicleprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2ECE6269-9702-4E2D-F794-743E3122D8B9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerprojectiles\\icicleprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2ECE6269-9702-4E2D-F794-743E3122D8B9}|Assembly-CSharp.csproj|C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\assets\\scripts\\player\\playerprojectiles\\lightningprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2ECE6269-9702-4E2D-F794-743E3122D8B9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerprojectiles\\lightningprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ECE6269-9702-4E2D-F794-743E3122D8B9}|Assembly-CSharp.csproj|c:\\users\\matthew\\desktop\\rougelike simple\\assets\\scripts\\enemyscripts\\enemyai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2ECE6269-9702-4E2D-F794-743E3122D8B9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemyscripts\\enemyai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2ECE6269-9702-4E2D-F794-743E3122D8B9}|Assembly-CSharp.csproj|C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\assets\\scripts\\global_and_gamemanagment\\tools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,12 +27,12 @@
       "RelativeMoniker": "D:0:0:{2ECE6269-9702-4E2D-F794-743E3122D8B9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\global_and_gamemanagment\\gameassets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2ECE6269-9702-4E2D-F794-743E3122D8B9}|Assembly-CSharp.csproj|C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\assets\\scripts\\global_and_gamemanagment\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2ECE6269-9702-4E2D-F794-743E3122D8B9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\global_and_gamemanagment\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2ECE6269-9702-4E2D-F794-743E3122D8B9}|Assembly-CSharp.csproj|C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2ECE6269-9702-4E2D-F794-743E3122D8B9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ECE6269-9702-4E2D-F794-743E3122D8B9}|Assembly-CSharp.csproj|C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\assets\\scripts\\global_and_gamemanagment\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2ECE6269-9702-4E2D-F794-743E3122D8B9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\global_and_gamemanagment\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,11 +42,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "GameManager.cs",
               "DocumentMoniker": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\Global_and_GameManagment\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Global_and_GameManagment\\GameManager.cs",
@@ -51,41 +59,57 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "GameAssets.cs",
               "DocumentMoniker": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\Global_and_GameManagment\\GameAssets.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Global_and_GameManagment\\GameAssets.cs",
               "ToolTip": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\Global_and_GameManagment\\GameAssets.cs",
               "RelativeToolTip": "Assets\\Scripts\\Global_and_GameManagment\\GameAssets.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAgwCIAAAAeAAAA",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwCUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-25T06:54:24.5Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Tools.cs",
               "DocumentMoniker": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\Global_and_GameManagment\\Tools.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Global_and_GameManagment\\Tools.cs",
               "ToolTip": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\Global_and_GameManagment\\Tools.cs",
               "RelativeToolTip": "Assets\\Scripts\\Global_and_GameManagment\\Tools.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAQwCcAAAAFAAAA",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAwwD0AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-27T09:28:08.922Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EnemyAI.cs",
+              "DocumentMoniker": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\EnemyScripts\\EnemyAI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyScripts\\EnemyAI.cs",
+              "ToolTip": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\EnemyScripts\\EnemyAI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EnemyScripts\\EnemyAI.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAgwB8AAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T09:28:33.676Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "LightningProjectile.cs",
-              "DocumentMoniker": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\Player\\PlayerProjectiles\\LightningProjectile.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerProjectiles\\LightningProjectile.cs",
-              "ToolTip": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\Player\\PlayerProjectiles\\LightningProjectile.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerProjectiles\\LightningProjectile.cs",
-              "ViewState": "AQIAAEkAAAAAAAAAAAAcwGMAAAAAAAAA",
+              "Title": "IcicleProjectile.cs",
+              "DocumentMoniker": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\Player\\PlayerProjectiles\\IcicleProjectile.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerProjectiles\\IcicleProjectile.cs",
+              "ToolTip": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\Player\\PlayerProjectiles\\IcicleProjectile.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerProjectiles\\IcicleProjectile.cs",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAowAoAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T09:03:56.322Z"
+              "WhenOpened": "2024-07-26T07:43:37.783Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -95,14 +119,27 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\MOBACharacter.cs",
               "ToolTip": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\Player\\MOBACharacter.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\MOBACharacter.cs",
-              "ViewState": "AQIAAFwAAAAAAAAAAAAgwHsAAAAAAAAA",
+              "ViewState": "AQIAAKsAAAAAAAAAAAAmwLcAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-25T04:50:40.939Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
+              "Title": "LightningProjectile.cs",
+              "DocumentMoniker": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\Player\\PlayerProjectiles\\LightningProjectile.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerProjectiles\\LightningProjectile.cs",
+              "ToolTip": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\Player\\PlayerProjectiles\\LightningProjectile.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerProjectiles\\LightningProjectile.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAowBIAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T09:03:56.322Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "PlayerController.cs",
               "DocumentMoniker": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\Player\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerController.cs",
@@ -110,7 +147,8 @@
               "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerController.cs",
               "ViewState": "AQIAAKoAAAAAAAAAAADwv68AAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T01:48:10.783Z"
+              "WhenOpened": "2024-07-26T01:48:10.783Z",
+              "EditorCaption": ""
             }
           ]
         }

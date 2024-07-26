@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyAI : MonoBehaviour
 {
     public float speed;
+    [HideInInspector] public float defaultSpeed;
     public float attackRadius;
 
     [SerializeField] private float checkRadius;
@@ -33,6 +34,7 @@ public class EnemyAI : MonoBehaviour
 
     void Start()
     {
+        defaultSpeed = speed;
         StartCoroutine(EnableAiAfter(2.0f));
         this.enabled = false;
     }
