@@ -3913,6 +3913,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1732146665423712238, guid: cd3cb7e478e836241a1535f068e1fc8d, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4109927645747079022, guid: cd3cb7e478e836241a1535f068e1fc8d, type: 3}
       propertyPath: m_Name
       value: MOBACharacter

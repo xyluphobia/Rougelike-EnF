@@ -275,7 +275,7 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""0d141ae9-4169-47ec-a6f9-46de126629ff"",
-                    ""path"": ""<Keyboard>/e"",
+                    ""path"": ""<Keyboard>/tab"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -498,7 +498,7 @@ public partial class @KeyBindings: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""bb28ec2e-4b7c-45e5-ba7c-164c3c5061e1"",
-                    ""path"": ""<Keyboard>/e"",
+                    ""path"": ""<Keyboard>/tab"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",

@@ -76,6 +76,12 @@ public class MOBACharacter : MonoBehaviour
             playerController.animator.SetFloat("Speed", diffVector.sqrMagnitude);
 
             lastFramePos = currentFramePos;
+
+            if (diffXPercent > 0.7f || diffXPercent < -0.7f || diffYPercent > 0.7f || diffYPercent < -0.7f)
+            {
+                playerController.animator.SetFloat("lastHorizontal", diffXPercent);
+                playerController.animator.SetFloat("lastVertical", diffYPercent);
+            }
         }
         else
         {

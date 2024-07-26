@@ -129,7 +129,7 @@ public class PlayerController : MonoBehaviour
     
     private void OnTestShit()
     {
-        
+        TakeDamage(100);
     }
 
 
