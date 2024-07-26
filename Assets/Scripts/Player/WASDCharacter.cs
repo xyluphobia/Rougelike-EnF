@@ -127,7 +127,6 @@ public class WASDCharacter : MonoBehaviour
             attackPoint = attackPointDown;
         }
 
-        // Debug.Log(mousePositionPlayer);
         playerController.animator.SetFloat("attackH", mousePositionPlayer.x);
         playerController.animator.SetFloat("attackV", mousePositionPlayer.y);
 

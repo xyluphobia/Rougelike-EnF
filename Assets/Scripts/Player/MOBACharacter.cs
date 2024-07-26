@@ -12,12 +12,18 @@ public class MOBACharacter : MonoBehaviour
     private GameObject movementIndicatorArrow;
     private Image[] AbilityBarImageHolder;
     private Dictionary<string, Image> AbilityImagesDict = new();
+    private bool disableMovement = false;
+    private bool canCast = true;
+    [SerializeField] private AudioClip fizzledCastSfx;
+
+    [SerializeField] private AudioClip lightningCastSfx;
+    private bool lightningIsOnCooldown = false;
+    private float lightningCooldown = 0.5f;
 
     [SerializeField] private AudioClip teleportStartSfx;
     [SerializeField] private AudioClip teleportEndSfx;
-    private bool isTeleporting = false;
-    public bool teleportIsOnCooldown = false;
-    public float teleportCooldown = .5f;
+    private bool teleportIsOnCooldown = false;
+    private float teleportCooldown = 3;
 
     private Vector2 clickedPos;
     private Vector2 lastFramePos;
@@ -83,7 +89,7 @@ public class MOBACharacter : MonoBehaviour
 
     private void OnMove_MOBA()
     {
-        if (isTeleporting) return;
+        if (disableMovement) return;
 
         clickedPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         navAgent.SetDestination(new Vector3(clickedPos.x, clickedPos.y));
@@ -95,11 +101,9 @@ public class MOBACharacter : MonoBehaviour
     /* Abilities */
     private void OnAbilityOne() /* |Q| Basic Damage Ability ~ Lightning Bolt */
     {
-        // Target nearest enemy to mouse,
-        // On colision with an enemy if any enemies are within a certain range spawn a bolt from the hit enemy going toward all in range
-        // (On bolt script) On impact store the current enemy in a "hit" list (possibly on the tools script),
-        // (On bolt script) then store an array of all nearby enemies within X radius then send a bolt off toward each of them that are not on the "hit" list.
+        if (lightningIsOnCooldown || !canCast) return;
 
+        canCast = false;
         float closestDistance = Mathf.Infinity;
         Transform closestEnemy = null;
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -107,25 +111,41 @@ public class MOBACharacter : MonoBehaviour
         RaycastHit2D[] nearbyEnemies = Physics2D.CircleCastAll(mousePos, 2f, (Vector2)transform.position);
         foreach (RaycastHit2D enemy in nearbyEnemies)
         {
-            float distance = Vector3.Distance(enemy.point, mousePos);
-            if (distance < closestDistance)
+            if (enemy.transform.CompareTag("Enemy"))
             {
-                closestDistance = distance;
-                closestEnemy = enemy.transform;
+                float distance = Vector3.Distance(enemy.point, mousePos);
+                if (distance < closestDistance)
+                {
+                    closestDistance = distance;
+                    closestEnemy = enemy.transform;
+                }
             }
         }
 
         if (closestEnemy != null)
         {
+            StartCoroutine(HoldCastPositionForSeconds(0.25f));
+            StartCoroutine(LightningAbilityCooldown());
+            SoundManager.instance.PlaySound(lightningCastSfx);
+
             GameObject bolt = Instantiate(GameAssets.i.lightningBoltProjectile, transform.position, Quaternion.identity);
             bolt.GetComponent<LightningProjectile>().spawnedByPlayer = true;
             bolt.GetComponent<LightningProjectile>().target = closestEnemy;
         }
         else
         {
-            Debug.Log("No nearby enemies");
+            StartCoroutine(HoldCastPositionForSeconds(0.25f, true, "LightningBolt"));
+            SoundManager.instance.PlaySound(fizzledCastSfx);
+
+            canCast = true;
         }
 
+        IEnumerator LightningAbilityCooldown()
+        {
+            lightningIsOnCooldown = true;
+            yield return new WaitForSeconds(lightningCooldown);
+            lightningIsOnCooldown = false;
+        }
     }
 
     private void OnAbilityTwo() /* |W| Interesting Ability ~ Icicle */
@@ -136,13 +156,14 @@ public class MOBACharacter : MonoBehaviour
 
     private void OnAbilityThree() /* |E| Movement Ability ~ Teleport */
     {
-        if (teleportIsOnCooldown) return;
+        if (teleportIsOnCooldown || !canCast) return;
 
+        canCast = false;
         StartCoroutine(TeleportAbilityCooldown());
         StartCoroutine(playerController.CooldownUIUpdater(AbilityImagesDict["ETimer"], teleportCooldown));
 
 
-        isTeleporting = true;
+        disableMovement = true;
         navAgent.ResetPath();
         navAgent.velocity = Vector3.zero;
         movementIndicatorArrow.transform.localScale = Vector3.zero;
@@ -161,7 +182,8 @@ public class MOBACharacter : MonoBehaviour
             playerController.animator.SetBool("Teleporting", false);
             SoundManager.instance.PlaySound(teleportEndSfx);
             yield return new WaitForSeconds(0.333f);
-            isTeleporting = false;
+            disableMovement = false;
+            canCast = true;
         }
 
         IEnumerator TeleportAbilityCooldown()
@@ -177,4 +199,60 @@ public class MOBACharacter : MonoBehaviour
 
     }
 
+    IEnumerator HoldCastPositionForSeconds(float secondsToHold, bool fizzling = false, string fizzledProjectile = "")
+    {
+        disableMovement = true;
+
+        Dictionary<string, float> mouseDirections = Tools.instance.FindDirectionOfMouseFromPlayer(Camera.main.ScreenToWorldPoint(Input.mousePosition), transform);
+        playerController.animator.SetFloat("attackH", mouseDirections["AttackH"]);
+        playerController.animator.SetFloat("attackV", mouseDirections["AttackV"]);
+
+        if (fizzling)
+        {
+            fizzlingSpell(mouseDirections, fizzledProjectile);
+        }
+
+        playerController.animator.SetBool("Casting", true);
+        yield return new WaitForSeconds(secondsToHold);
+        playerController.animator.SetBool("Casting", false);
+        disableMovement = false;
+        canCast = true;
+    }
+
+    private void fizzlingSpell(Dictionary<string, float> mouseDirections, string fizzledProjectile)
+    {
+        string direction = Tools.instance.GetDirectionAsString(mouseDirections["AttackH"], mouseDirections["AttackV"]);
+        switch (fizzledProjectile)
+        {
+            case "LightningBolt":
+                GameObject bolt;
+                switch (direction)
+                {
+                    case "Up":
+                        bolt = Instantiate(GameAssets.i.lightningBoltProjectile, transform.position + Vector3.up, Quaternion.identity);
+                        bolt.GetComponent<LightningProjectile>().target = bolt.transform;
+                        bolt.GetComponent<LightningProjectile>().DestroyAfterAnim("Up");
+                        break;
+
+                    case "Right":
+                        bolt = Instantiate(GameAssets.i.lightningBoltProjectile, transform.position + Vector3.right, Quaternion.identity);
+                        bolt.GetComponent<LightningProjectile>().target = bolt.transform;
+                        bolt.GetComponent<LightningProjectile>().DestroyAfterAnim("Right");
+                        break;
+
+                    case "Down":
+                        bolt = Instantiate(GameAssets.i.lightningBoltProjectile, transform.position + Vector3.down, Quaternion.identity);
+                        bolt.GetComponent<LightningProjectile>().target = bolt.transform;
+                        bolt.GetComponent<LightningProjectile>().DestroyAfterAnim("Down");
+                        break;
+
+                    case "Left":
+                        bolt = Instantiate(GameAssets.i.lightningBoltProjectile, transform.position + Vector3.left, Quaternion.identity);
+                        bolt.GetComponent<LightningProjectile>().target = bolt.transform;
+                        bolt.GetComponent<LightningProjectile>().DestroyAfterAnim("Left");
+                        break;
+                }
+                break;
+        }
+    }
 }

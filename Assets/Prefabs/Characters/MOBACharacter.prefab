@@ -256,10 +256,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60db674dd45488444bb5d641ccbcddd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lightningCastSfx: {fileID: 0}
   teleportStartSfx: {fileID: 8300000, guid: 0986220f9cff40f4c9ac7d8a722a6e61, type: 3}
   teleportEndSfx: {fileID: 8300000, guid: 97ccd237aac45db41802974c38237c47, type: 3}
-  teleportIsOnCooldown: 0
-  teleportCooldown: 5
 --- !u!195 &8729806848206798780
 NavMeshAgent:
   m_ObjectHideFlags: 0

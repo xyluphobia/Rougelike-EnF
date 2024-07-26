@@ -23,4 +23,40 @@ public class Tools : MonoBehaviour
         yield return new WaitForSeconds(timeUntilDestroyed);
         Destroy(objectToDestroy);
     }
+
+    public Dictionary<string, float> FindDirectionOfMouseFromPlayer(Vector3 mousePositionWorld, Transform midReference)
+    {
+        mousePositionWorld.z = midReference.transform.position.z;
+
+        Vector3 mousePositionPlayer = mousePositionWorld - midReference.transform.position;
+        mousePositionPlayer.Normalize();
+
+        //Dictionary<string, float> resultDict = new() { { "AttackH", mousePositionPlayer.x }, { "AttackV", mousePositionPlayer.y } };
+
+        return new Dictionary<string, float> { { "AttackH", mousePositionPlayer.x }, { "AttackV", mousePositionPlayer.y } };
+    }
+
+    public string GetDirectionAsString(float AttackH, float AttackV)
+    {
+        string direction = "Unknown";
+
+        if (AttackV > 0.7f)
+        {
+            direction = "Up";
+        }
+        else if (AttackV < -0.7f)
+        {
+            direction = "Down";
+        }
+        else if (AttackH > 0.7f)
+        {
+            direction = "Right";
+        }
+        else if (AttackH < -0.7f)
+        {
+            direction = "Left";
+        }
+
+        return direction;
+    }
 }

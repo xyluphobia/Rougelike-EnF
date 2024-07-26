@@ -8,6 +8,7 @@ public class LightningProjectile : MonoBehaviour
     private Vector3 direction;
     private Vector2 movement = Vector2.zero;
     private float projectileSpeed = 3.5f;
+    private bool dying = false;
 
     public bool spawnedByPlayer = false;
     public List<GameObject> lightningBoltHitEnemies = new();
@@ -22,11 +23,14 @@ public class LightningProjectile : MonoBehaviour
 
     void Update()
     {
+        if (dying) return;
+
         if (target == null)
         {
             transform.localScale = Vector3.zero;
             return;
         }
+
         transform.localScale = Vector3.one;
 
         direction = target.position - transform.position;
@@ -66,11 +70,41 @@ public class LightningProjectile : MonoBehaviour
                     bolt.GetComponent<LightningProjectile>().target = enemy.transform;
                 }
             }
-            Destroy(gameObject);
+            DestroyAfterAnim();
         }
         else if (collision.CompareTag("Wall"))
         {
-            Destroy(gameObject);
+            DestroyAfterAnim();
         }
+    }
+
+    public void DestroyAfterAnim(string direction = null)
+    {
+        dying = true;
+
+        if (!string.IsNullOrEmpty(direction))
+        {
+            transform.rotation = Quaternion.identity;
+            switch (direction)
+            {
+                case "Up":
+                    transform.rotation *= Quaternion.Euler(0, 0, 90f);
+                    break;
+
+                case "Right":
+                    break;
+
+                case "Down":
+                    transform.rotation *= Quaternion.Euler(0, 0, -90f);
+                    break;
+
+                case "Left":
+                    transform.rotation *= Quaternion.Euler(0, 0, -180f);
+                    break;
+            }
+        }
+
+        GetComponent<Animator>().SetTrigger("Impact");
+        Destroy(gameObject, 0.25f * 0.7f);
     }
 }
