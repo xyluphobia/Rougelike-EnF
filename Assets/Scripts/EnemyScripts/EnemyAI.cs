@@ -60,23 +60,14 @@ public class EnemyAI : MonoBehaviour
         isInChaseRange = Physics2D.OverlapCircle(transform.position, checkRadius, PlayerLayer);
         isInAttackRange = Physics2D.OverlapCircle(transform.position, attackRadius, PlayerLayer);
 
-        if (shouldRotate)
-        {
-            UpdateAnimation();
-        }
+        
 
-        if (isInChaseRange && !isInAttackRange)
+        if (isInChaseRange && !isInAttackRange || isInChaseRange && chasePlayer)
         {
             UpdateAnimation();
             agent.SetDestination(target.position);
         }
-        if (isInChaseRange && chasePlayer)
-        {
-            UpdateAnimation();
-            agent.SetDestination(target.position);
-        }
-
-        if (isInAttackRange && !chasePlayer)
+        else if (isInAttackRange && !chasePlayer)
         {
             agent.ResetPath();
 
@@ -100,6 +91,11 @@ public class EnemyAI : MonoBehaviour
                 animator.SetFloat("lastHorizontal", diffXPercent);
                 animator.SetFloat("lastVertical", diffYPercent);
             }
+        }
+        else
+        {
+            agent.ResetPath();
+            UpdateAnimation();
         }
     }
 

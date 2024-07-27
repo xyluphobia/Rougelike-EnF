@@ -16,15 +16,9 @@ public class SpeedPotion : PotionsAndAbilities
     public void useSpeedPotion() 
     {
         PickupPotion();
+        speedPotionEffect();
 
         GameManager.instance.UpdateScore(25);
-
-        if (Time.time >= abilityTimer)
-        {
-            speedPotionEffect();
-            abilityTimer = Time.time + cooldown;
-        }
-
         transform.parent.gameObject.SetActive(false);
     }
 
@@ -37,7 +31,7 @@ public class SpeedPotion : PotionsAndAbilities
 
     private void resetSpeedPotionEffect()
     {
-        playerController.ResetBoost(boostAsPercent);
+        playerController.ResetBoost();
     }
 
 

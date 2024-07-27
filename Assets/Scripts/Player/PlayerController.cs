@@ -26,6 +26,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private AudioClip[] takeDamageClips;
 
     public float movementSpeed = 4.0f;
+    private float defaultMovementSpeed;
     public float restartLevelDelay = 1f;
     
     [HideInInspector] public bool disableInput = false;
@@ -45,6 +46,7 @@ public class PlayerController : MonoBehaviour
         playerInput.enabled = false;
 
         healthBarScript = GameObject.Find("HealthBar").GetComponent<HealthBar>();
+        defaultMovementSpeed = movementSpeed;
     }
 
     void Start()
@@ -134,7 +136,7 @@ public class PlayerController : MonoBehaviour
     
     private void OnTestShit()
     {
-        TakeDamage(100);
+        
     }
 
 
@@ -210,12 +212,17 @@ public class PlayerController : MonoBehaviour
 
     public void Boost(float buff)
     {
+        if (movementSpeed > defaultMovementSpeed)
+            return;
+        
         movementSpeed = movementSpeed * buff;
+        animator.speed *= buff;
     }
 
-    public void ResetBoost(float buff)
+    public void ResetBoost()
     {
-        movementSpeed = movementSpeed / buff;
+        movementSpeed = defaultMovementSpeed;
+        animator.speed = 1;
     }
 
     public IEnumerator CooldownUIUpdater(Image TimerUI, float Cooldown, bool ImageFillSet = false)

@@ -223,7 +223,7 @@ MonoBehaviour:
   speed: 1
   defaultSpeed: 0
   attackRadius: 5
-  checkRadius: 10
+  checkRadius: 12
   shouldRotate: 1
   PlayerLayer:
     serializedVersion: 2
