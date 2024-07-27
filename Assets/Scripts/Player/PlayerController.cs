@@ -60,6 +60,8 @@ public class PlayerController : MonoBehaviour
 
     public void setActivePlayer()
     {
+        activePlayer = true;
+
         gameObject.tag = "Player";
         playerInput.enabled = true;
 
@@ -69,9 +71,12 @@ public class PlayerController : MonoBehaviour
         playerPortrait.sprite = portraitToInput;
 
         gameObject.SendMessage("TakeControl", null, SendMessageOptions.DontRequireReceiver);
+        
     }
     private void setInactivePlayer()
     {
+        activePlayer = false;
+
         gameObject.tag = "Interactable";
         playerInput.enabled = false;
 
@@ -145,7 +150,7 @@ public class PlayerController : MonoBehaviour
             rb.velocity = Vector2.zero;
             disableInput = true;
 
-            GameManager.instance.setPlayerHealth(health);
+            GameManager.instance.setPlayerForNextLevel(health, gameObject);
 
             Invoke("Restart", restartLevelDelay);
             enabled = false;

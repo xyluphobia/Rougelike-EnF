@@ -10,6 +10,8 @@ public class WASDCharacter : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 movement;
     private PlayerController playerController;
+    private Image[] AbilityBarImageHolder;
+    private Dictionary<string, Image> AbilityImagesDict = new();
 
     [Header("Dash Settings")]
     [SerializeField] private float dashingPower = 10f;
@@ -19,7 +21,6 @@ public class WASDCharacter : MonoBehaviour
     [SerializeField] private GameObject afterImage;
     [SerializeField] private AudioClip dashClip;
     [SerializeField] private Collider2D triggerCollider;
-    private Image dashTimerUI;
     private bool ghostingActive = false;
 
     public bool canDash = true; /* should be private outside of development*/
@@ -41,13 +42,17 @@ public class WASDCharacter : MonoBehaviour
 
     private PlayerInput playerInput;
 
-    private void Awake()
+    private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         playerInput = GetComponent<PlayerInput>();
         playerController = GetComponent<PlayerController>();
 
-        dashTimerUI = GameObject.Find("DashTimer").GetComponent<Image>();
+        AbilityBarImageHolder = GameAssets.i.AbilityBarWASD.GetComponentsInChildren<Image>(true);
+        foreach (Image img in AbilityBarImageHolder)
+        {
+            AbilityImagesDict.Add(img.transform.name, img);
+        };
     }
 
     void FixedUpdate()
@@ -59,7 +64,7 @@ public class WASDCharacter : MonoBehaviour
 
     public void TakeControl()
     {
-        playerController.SetActiveAbilityBar(GameAssets.i.AbilityBarWASD);
+        GetComponent<PlayerController>().SetActiveAbilityBar(GameAssets.i.AbilityBarWASD);
     }
 
     /* Inputs */
@@ -153,7 +158,7 @@ public class WASDCharacter : MonoBehaviour
         playerController.animator.SetTrigger("Dash");
         SoundManager.instance.PlaySound(dashClip);
         canDash = false;
-        dashTimerUI.fillAmount = 1f;
+        AbilityImagesDict["DashTimer"].fillAmount = 1f;
 
         playerController.invulnerable = true;
         StartCoroutine(ToggleGhosting(true));
@@ -169,7 +174,7 @@ public class WASDCharacter : MonoBehaviour
         dashCooldown -= dashCooldownReduction;
         dashCooldownReduction = 0f;
 
-        StartCoroutine(playerController.CooldownUIUpdater(dashTimerUI, dashCooldown, true));
+        StartCoroutine(playerController.CooldownUIUpdater(AbilityImagesDict["DashTimer"], dashCooldown, true));
         yield return new WaitForSeconds(Math.Max(0, dashCooldown));
 
         canDash = true;

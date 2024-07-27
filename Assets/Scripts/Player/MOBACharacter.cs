@@ -94,7 +94,7 @@ public class MOBACharacter : MonoBehaviour
         movementIndicatorArrow = Instantiate(GameAssets.i.movementIndicatorArrow);
         movementIndicatorArrow.transform.localScale = Vector3.zero;
 
-        playerController.SetActiveAbilityBar(GameAssets.i.AbilityBarMOBA);
+        GetComponent<PlayerController>().SetActiveAbilityBar(GameAssets.i.AbilityBarMOBA);
     }
 
     public void GiveControl()
@@ -236,7 +236,7 @@ public class MOBACharacter : MonoBehaviour
         navAgent.velocity = Vector3.zero;
         movementIndicatorArrow.transform.localScale = Vector3.zero;
 
-        Vector2 teleportLocaiton = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 teleportLocation = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         StartCoroutine(TeleportingAnimationHandler());
 
         IEnumerator TeleportingAnimationHandler()
@@ -245,7 +245,7 @@ public class MOBACharacter : MonoBehaviour
             SoundManager.instance.PlaySound(teleportStartSfx);
             yield return new WaitForSeconds(0.65f);  // Anim time is: 0.417s
 
-            gameObject.transform.position = teleportLocaiton;
+            navAgent.Warp(teleportLocation);
 
             playerController.animator.SetBool("Teleporting", false);
             SoundManager.instance.PlaySound(teleportEndSfx);

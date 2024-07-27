@@ -32,6 +32,7 @@ public class GameManager : MonoBehaviour
     private GameObject UpgradePanelObject;
 
     public int playerHealth = 100;
+    private string currentPlayerCharacterString;
 
     public float saveStopwatch = -1f;
 
@@ -39,7 +40,7 @@ public class GameManager : MonoBehaviour
 
     /* ~~~~~~~~~~~ DEV ~~~~~~~~~~~ */
     public bool ForceBossRoomNext = false;
-    private bool UseCurrentLevel = true;
+    private bool UseCurrentLevel = false;
     /* ~~~~~~~~~~~ DEV ~~~~~~~~~~~ */
 
     void Awake()
@@ -147,8 +148,19 @@ public class GameManager : MonoBehaviour
         gameOverImage.SetActive(true);
     }
 
-    public void setPlayerHealth(int health) {
+    public void setPlayerForNextLevel(int health, GameObject playerCharacter)
+    {
         playerHealth = health;
+        currentPlayerCharacterString = playerCharacter.name;
+    }
+    public GameObject GetCurrentPlayer()
+    {
+        if (currentPlayerCharacterString == GameAssets.i.WASDCharacter.name || currentPlayerCharacterString == GameAssets.i.WASDCharacter.name + "(Clone)")
+            return GameAssets.i.WASDCharacter;
+        else if (currentPlayerCharacterString == GameAssets.i.MOBACharacter.name || currentPlayerCharacterString == GameAssets.i.MOBACharacter.name + "(Clone)")
+            return GameAssets.i.MOBACharacter;
+        else
+            return GameAssets.i.defaultPlayer;
     }
 
     public void UpdateScore(int scoreToAdd)

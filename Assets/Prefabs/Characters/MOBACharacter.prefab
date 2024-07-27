@@ -232,7 +232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11f31ed4b3d6c6a42a1aaf7711541275, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activePlayer: 1
+  activePlayer: 0
   health: 0
   maxHealth: 100
   animator: {fileID: 0}
@@ -256,7 +256,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60db674dd45488444bb5d641ccbcddd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fizzledCastSfx: {fileID: 0}
   lightningCastSfx: {fileID: 0}
+  icicleCastSfx: {fileID: 0}
   teleportStartSfx: {fileID: 8300000, guid: 0986220f9cff40f4c9ac7d8a722a6e61, type: 3}
   teleportEndSfx: {fileID: 8300000, guid: 97ccd237aac45db41802974c38237c47, type: 3}
 --- !u!195 &8729806848206798780

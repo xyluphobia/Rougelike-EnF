@@ -16,9 +16,9 @@ public class GameAssets : MonoBehaviour
             return _instance; 
         } 
     }
-    public GameObject AbilityBarActive;
-    public GameObject AbilityBarWASD;
-    public GameObject AbilityBarMOBA;
+    [HideInInspector] public GameObject AbilityBarActive;
+    [HideInInspector] public GameObject AbilityBarWASD;
+    [HideInInspector] public GameObject AbilityBarMOBA;
     private void Awake()
     {
         AbilityBarWASD = GameObject.Find("AbilityBarWASD");
@@ -28,7 +28,9 @@ public class GameAssets : MonoBehaviour
     }
 
     [Header("Player/Important")]
-    public GameObject player;
+    public GameObject defaultPlayer;
+    public GameObject WASDCharacter;
+    public GameObject MOBACharacter;
     public GameObject exit;
     public GameObject movementIndicatorArrow;
 

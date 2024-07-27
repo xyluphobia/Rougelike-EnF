@@ -373,6 +373,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 32788243516449214, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 32788243516449214, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 32788243516449214, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 32788243516449214, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 264052763728808523, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -392,6 +408,54 @@ PrefabInstance:
     - target: {fileID: 2589669445567445872, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
       propertyPath: m_Name
       value: InGameUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 2664017765606038479, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2664017765606038479, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2664017765606038479, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2664017765606038479, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5348747686470519708, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5348747686470519708, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5348747686470519708, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5348747686470519708, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6719879016058345110, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6719879016058345110, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6719879016058345110, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6719879016058345110, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7530926323743698345, guid: 1e840f6189273cc479fb584863c69c6a, type: 3}
       propertyPath: m_Pivot.x
@@ -1905,6 +1969,14 @@ PrefabInstance:
     - target: {fileID: 7056415969747975764, guid: cc10cdbf5ca18984c93361f053ddab42, type: 3}
       propertyPath: m_CompressBounds
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7386263456751079727, guid: cc10cdbf5ca18984c93361f053ddab42, type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: 9e1ea1624cdd26f4b8f69aed028158d9, type: 2}
+    - target: {fileID: 7386263456751079727, guid: cc10cdbf5ca18984c93361f053ddab42, type: 3}
+      propertyPath: m_LayerMask.m_Bits
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7547853778731258384, guid: cc10cdbf5ca18984c93361f053ddab42, type: 3}
       propertyPath: envTS_data

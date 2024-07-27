@@ -57,7 +57,7 @@ public class TilemapVisualizer : MonoBehaviour
             }
 
             if (!playerSpawned && iterations >= floorPositionsCount * 0.1f) {
-                GameObject playerHolder = Instantiate(GameAssets.i.player, (Vector3Int)position, Quaternion.identity);
+                GameObject playerHolder = Instantiate(GameManager.instance.GetCurrentPlayer(), (Vector3Int)position, Quaternion.identity);
                 playerHolder.GetComponent<PlayerController>().setActivePlayer();
                 playerSpawned = true;
                 usedPositions.Add(position);
@@ -159,7 +159,7 @@ public class TilemapVisualizer : MonoBehaviour
             Instantiate(envTS_data.collectibles["royalChest"], (Vector3Int)position, Quaternion.identity, itemHolder);
     }
 
-    private HashSet<Vector2Int> GeneratePotions(Vector2Int position, HashSet<Vector2Int> usedPositions)   
+    private HashSet<Vector2Int>GeneratePotions(Vector2Int position, HashSet<Vector2Int> usedPositions)   
     {
         if (Random.value > 0.6f) {
             PickAndInstantiatePotion(position);
