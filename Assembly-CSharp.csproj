@@ -62,13 +62,13 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Items\PotsAndAbility\SpeedPotion.cs" />
     <Compile Include="Assets\Scripts\Global_and_GameManagment\CameraController.cs" />
-    <Compile Include="Assets\Scripts\EnemyScripts\Projectiles\RangedShotRotatorProjectile.cs" />
     <Compile Include="Assets\Prefabs\Items\Collectibles\ChestScript.cs" />
     <Compile Include="Assets\Scripts\EnemyScripts\DestroyParentOnDeath.cs" />
     <Compile Include="Assets\Scripts\Player\TriggerCollider.cs" />
     <Compile Include="Assets\Scripts\ProceduralLevelGeneration\AbstractDungeonGenerator.cs" />
     <Compile Include="Assets\Scripts\Global_and_GameManagment\BoardManager.cs" />
     <Compile Include="Assets\Scripts\Player\DevelopmentKeybinds.cs" />
+    <Compile Include="Assets\Scripts\EnemyScripts\Boss_Scripts\Rotator\RotatorPattern.cs" />
     <Compile Include="Assets\Scripts\menus\GameOver.cs" />
     <Compile Include="Assets\Scripts\Items\PotsAndAbility\UpgradeUI.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
@@ -103,11 +103,11 @@
     <Compile Include="Assets\Scripts\ProceduralLevelGeneration\PG_Algorithms.cs" />
     <Compile Include="Assets\Scripts\ProceduralLevelGeneration\WallGenerator.cs" />
     <Compile Include="Assets\Scripts\Global_and_GameManagment\GameManager.cs" />
+    <Compile Include="Assets\Scripts\EnemyScripts\Boss_Scripts\Rotator\RangedShotRotatorProjectile.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerProjectiles\LightningProjectile.cs" />
     <Compile Include="Assets\Scripts\ProceduralLevelGeneration\GenerationAlgorithms\SimpleRandomWalkGenerator.cs" />
     <Compile Include="Assets\Scripts\Items\Drops\DropItem.cs" />
     <Compile Include="Assets\Scripts\Global_and_GameManagment\CursorManager.cs" />
-    <Compile Include="Assets\Scripts\EnemyScripts\Boss_Scripts\RotatorPattern.cs" />
     <Compile Include="Assets\Scripts\Items\Drops\PickupItem.cs" />
     <Compile Include="Assets\Prefabs\Items\Collectibles\CoinScript.cs" />
     <Compile Include="Assets\Scripts\menus\MainMenu.cs" />

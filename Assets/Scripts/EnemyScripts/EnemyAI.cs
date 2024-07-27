@@ -70,6 +70,7 @@ public class EnemyAI : MonoBehaviour
         else if (isInAttackRange && !chasePlayer)
         {
             agent.ResetPath();
+            animator.SetBool("IsMoving", false);
 
             Vector2 diffVector = new Vector2(target.position.x - transform.position.x, target.position.y - transform.position.y);
             float diffXPercent = diffVector.x / (diffVector.x + diffVector.y);

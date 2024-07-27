@@ -32,15 +32,15 @@ public class GameManager : MonoBehaviour
     private GameObject UpgradePanelObject;
 
     public int playerHealth = 100;
-    private string currentPlayerCharacterString;
+    public string currentPlayerCharacterString;
 
     public float saveStopwatch = -1f;
 
     public InputActionAsset actions;
 
     /* ~~~~~~~~~~~ DEV ~~~~~~~~~~~ */
-    public bool ForceBossRoomNext = false;
-    private bool UseCurrentLevel = false;
+    public bool ForceBossRoomNext = true;
+    private bool UseCurrentLevel = true;
     /* ~~~~~~~~~~~ DEV ~~~~~~~~~~~ */
 
     void Awake()
@@ -155,9 +155,9 @@ public class GameManager : MonoBehaviour
     }
     public GameObject GetCurrentPlayer()
     {
-        if (currentPlayerCharacterString == GameAssets.i.WASDCharacter.name || currentPlayerCharacterString == GameAssets.i.WASDCharacter.name + "(Clone)")
+        if (currentPlayerCharacterString.Equals(GameAssets.i.WASDCharacter.name) || currentPlayerCharacterString.Equals(GameAssets.i.WASDCharacter.name + "(Clone)"))
             return GameAssets.i.WASDCharacter;
-        else if (currentPlayerCharacterString == GameAssets.i.MOBACharacter.name || currentPlayerCharacterString == GameAssets.i.MOBACharacter.name + "(Clone)")
+        else if (currentPlayerCharacterString.Equals(GameAssets.i.MOBACharacter.name) || currentPlayerCharacterString.Equals(GameAssets.i.MOBACharacter.name + "(Clone)"))
             return GameAssets.i.MOBACharacter;
         else
             return GameAssets.i.defaultPlayer;
