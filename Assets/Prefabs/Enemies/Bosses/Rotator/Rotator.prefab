@@ -135,8 +135,8 @@ GameObject:
   - component: {fileID: 2349096390969900292}
   - component: {fileID: 2430894662866492496}
   - component: {fileID: 8047223156178942911}
-  - component: {fileID: 6306911024067682005}
   - component: {fileID: 9158743690579953700}
+  - component: {fileID: 2265160514164744440}
   - component: {fileID: 121745398682407763}
   - component: {fileID: -5973398576697948700}
   - component: {fileID: 4699822315421197209}
@@ -263,33 +263,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!50 &6306911024067682005
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3109608706164547240}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
 --- !u!58 &9158743690579953700
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -326,6 +299,28 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.59
+--- !u!195 &2265160514164744440
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3109608706164547240}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 1
+  m_Acceleration: 100
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!114 &121745398682407763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -342,6 +337,8 @@ MonoBehaviour:
   maxHealth: 200
   currentHealth: 0
   invulnerable: 0
+  hasHealthBar: 0
+  healthBar: {fileID: 0}
   deathClip: {fileID: 8300000, guid: 268dec43e9e3c874291e1886e13df3c0, type: 3}
   hitClips:
   - {fileID: 8300000, guid: 57a7a1f3ef5acb942bdd4f6ffc50b04e, type: 3}
@@ -362,14 +359,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
+  defaultSpeed: 0
   attackRadius: 10
   checkRadius: 12
   shouldRotate: 1
   PlayerLayer:
     serializedVersion: 2
     m_Bits: 64
+  canMove: 1
   movement: {x: 0, y: 0}
-  direction: {x: 0, y: 0, z: 0}
   isInAttackRange: 0
   chasePlayer: 0
 --- !u!114 &4699822315421197209
@@ -478,6 +476,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemToDrop: {fileID: 0}
+  dropLocation: {x: 0, y: 0, z: 0}
 --- !u!1 &3302807675336117311
 GameObject:
   m_ObjectHideFlags: 0

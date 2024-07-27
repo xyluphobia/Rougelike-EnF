@@ -78,8 +78,28 @@ public class EnemyAI : MonoBehaviour
 
         if (isInAttackRange && !chasePlayer)
         {
-            animator.SetBool("IsMoving", false);
             agent.ResetPath();
+
+            Vector2 diffVector = new Vector2(target.position.x - transform.position.x, target.position.y - transform.position.y);
+            float diffXPercent = diffVector.x / (diffVector.x + diffVector.y);
+            float diffYPercent = diffVector.y / (diffVector.x + diffVector.y);
+
+            if (target.position.x < transform.position.x)
+                diffXPercent *= -1;
+            if (target.position.y < transform.position.y)
+                diffYPercent *= -1;
+
+            animator.SetFloat("attackH", diffXPercent);
+            animator.SetFloat("attackV", diffYPercent);
+
+            animator.SetFloat("Horizontal", diffXPercent);
+            animator.SetFloat("Vertical", diffYPercent);
+
+            if (diffXPercent > 0.7f || diffXPercent < -0.7f || diffYPercent > 0.7f || diffYPercent < -0.7f)
+            {
+                animator.SetFloat("lastHorizontal", diffXPercent);
+                animator.SetFloat("lastVertical", diffYPercent);
+            }
         }
     }
 
@@ -105,6 +125,8 @@ public class EnemyAI : MonoBehaviour
                 diffXPercent *= -1;
             if (currentFramePos.y < lastFramePos.y)
                 diffYPercent *= -1;
+
+            movement = new Vector2(diffXPercent, diffYPercent);
 
             animator.SetFloat("Horizontal", diffXPercent);
             animator.SetFloat("Vertical", diffYPercent);

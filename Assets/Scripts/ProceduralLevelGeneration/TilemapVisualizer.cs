@@ -8,6 +8,7 @@ using UnityEngine;
 using UnityEngine.Tilemaps;
 using Random = UnityEngine.Random;
 using Debug = UnityEngine.Debug;
+using NavMeshPlus.Components;
 
 public class TilemapVisualizer : MonoBehaviour
 {
@@ -30,13 +31,17 @@ public class TilemapVisualizer : MonoBehaviour
         
         PaintTiles(floorPositions, floorTilemap, envTS_data.floorTile);
     }
+    private NavMeshSurface Surface2D;
 
-
-    public void GenerateFloorPositionsBinary(HashSet<Vector2Int> floorPositions)
+    public async void GenerateFloorPositionsBinary(HashSet<Vector2Int> floorPositions)
     /* 
         Makes a matrix of 8 positions in a clockwise direction around the each position in the floorPositions list.
     */
     {
+        // Bake in Nav Mesh at run time.
+        Surface2D = GameObject.FindGameObjectWithTag("TilemapVisualizer").GetComponent<NavMeshSurface>();
+        await Surface2D.BuildNavMeshAsync();
+
         HashSet<Vector2Int> usedPositions = new();
         float iterations = 0f;
         float floorPositionsCount = floorPositions.Count;
@@ -61,6 +66,8 @@ public class TilemapVisualizer : MonoBehaviour
                 playerHolder.GetComponent<PlayerController>().setActivePlayer();
                 playerSpawned = true;
                 usedPositions.Add(position);
+
+                GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraController>().enabled = true;
             }
             else if (!exitSpawned && iterations >= floorPositionsCount * 0.9f) {
                 exitSpawned = true;

@@ -5,7 +5,6 @@ using UnityEngine.InputSystem;
 
 public class RotatorPattern : MonoBehaviour
 {
-    private Rigidbody2D rb;
     private RangedShot rangedShot;
     private Animator animator;
     private Enemy enemyScript;
@@ -65,7 +64,6 @@ public class RotatorPattern : MonoBehaviour
 
     private void Awake()
     {
-        rb = GetComponent<Rigidbody2D>();
         rangedShot = GetComponent<RangedShot>();
         animator = GetComponent<Animator>();
         enemyScript = GetComponent<Enemy>();

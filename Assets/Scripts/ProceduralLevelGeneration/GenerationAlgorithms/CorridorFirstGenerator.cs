@@ -13,13 +13,11 @@ public class CorridorFirstGenerator : SimpleRandomWalkGenerator
     [Range(0.1f, 1f)]
     private float roomPercent = 0.8f;
 
-    private NavMeshSurface Surface2D;
+    
     public override void RunProceduralGeneration() {
         CorridorFirstGeneration();
 
-        // Bake in Nav Mesh at run time.
-        Surface2D = GameObject.FindGameObjectWithTag("TilemapVisualizer").GetComponent<NavMeshSurface>();
-        Surface2D.BuildNavMeshAsync();
+        
     }
 
     private void CorridorFirstGeneration() {

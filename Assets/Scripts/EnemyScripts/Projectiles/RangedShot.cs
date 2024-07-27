@@ -60,8 +60,6 @@ public class RangedShot : MonoBehaviour
 
     public void EnemyShoot(GameObject projectileToShoot, Transform attackPoint = null, float waitTimeToPass = -1f, bool isSpecialAttack = false)
     {
-        enemyAi.canMove = false;
-
         Vector2 dir = enemyAi.movement;
         if (attackPoint == null)
             attackPoint = findDirection(dir);
@@ -76,9 +74,12 @@ public class RangedShot : MonoBehaviour
             passingWaitDuration = waitTimeToPass;
 
         if (passingWaitDuration != 0f)
-        {
+        {/*
             animator.SetFloat("attackH", dir.x);
             animator.SetFloat("attackV", dir.y);
+
+            animator.SetFloat("Horizontal", dir.x);
+            animator.SetFloat("Vertical", dir.y);*/
             SoundManager.instance.RandomizeSfx(projectileShotClips);
 
             if (isSpecialAttack)
@@ -86,12 +87,12 @@ public class RangedShot : MonoBehaviour
             else
                 animator.SetTrigger("Shoot");
         }
-
         StartCoroutine(ShootAfterAnimation(projectileToShoot, attackPoint.position, passingWaitDuration));
     }
 
     private IEnumerator ShootAfterAnimation(GameObject projectileToShootFinal, Vector3 attackPointPosition, float waitTime)
     {
+        enemyAi.canMove = false;
         yield return new WaitForSeconds(waitTime);
         Instantiate(projectileToShootFinal, attackPointPosition, gameObject.transform.rotation);
         enemyAi.canMove = true;
