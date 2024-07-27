@@ -1971,6 +1971,14 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7386263456751079727, guid: cc10cdbf5ca18984c93361f053ddab42, type: 3}
+      propertyPath: m_VoxelSize
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7386263456751079727, guid: cc10cdbf5ca18984c93361f053ddab42, type: 3}
+      propertyPath: m_AgentTypeID
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7386263456751079727, guid: cc10cdbf5ca18984c93361f053ddab42, type: 3}
       propertyPath: m_NavMeshData
       value: 
       objectReference: {fileID: 23800000, guid: 9e1ea1624cdd26f4b8f69aed028158d9, type: 2}

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class EnemyAI : MonoBehaviour
 {
@@ -14,11 +15,13 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private LayerMask PlayerLayer;
 
     private Transform target;
-    private Rigidbody2D rb;
     private Animator animator;
+    private NavMeshAgent agent;
+    public bool canMove = true;
     public Vector2 movement;
 
-    public Vector3 direction;
+    private Vector2 lastFramePos;
+    private Vector2 currentFramePos;
 
     private bool isInChaseRange;
     public bool isInAttackRange;
@@ -27,16 +30,17 @@ public class EnemyAI : MonoBehaviour
 
     void Awake()
     {
-        rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         target = GameObject.FindGameObjectWithTag("Player").transform;
+        agent = GetComponentInParent<NavMeshAgent>();
     }
-
     void Start()
     {
-        defaultSpeed = speed;
+        lastFramePos = transform.position;
         StartCoroutine(EnableAiAfter(2.0f));
         this.enabled = false;
+        agent.updateRotation = false;
+        agent.updateUpAxis = false;
     }
 
     IEnumerator EnableAiAfter(float time)
@@ -45,46 +49,77 @@ public class EnemyAI : MonoBehaviour
         this.enabled = true;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
+        if (!canMove)
+        {
+            agent.ResetPath();
+            return;
+        }
+
         isInChaseRange = Physics2D.OverlapCircle(transform.position, checkRadius, PlayerLayer);
         isInAttackRange = Physics2D.OverlapCircle(transform.position, attackRadius, PlayerLayer);
 
-        direction = target.position - transform.position;
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        direction.Normalize();
-        movement = direction;
-
         if (shouldRotate)
         {
-            animator.SetFloat("Horizontal", direction.x);
-            animator.SetFloat("Vertical", direction.y);
+            UpdateAnimation();
         }
-    }
 
-    private void FixedUpdate()
-    {
         if (isInChaseRange && !isInAttackRange)
         {
-            animator.SetBool("IsMoving", isInChaseRange);
-            MoveCharacter(movement);
+            UpdateAnimation();
+            agent.SetDestination(target.position);
         }
         if (isInChaseRange && chasePlayer)
         {
-            animator.SetBool("IsMoving", isInChaseRange);
-            MoveCharacter(movement);
+            UpdateAnimation();
+            agent.SetDestination(target.position);
         }
 
         if (isInAttackRange && !chasePlayer)
         {
             animator.SetBool("IsMoving", false);
-            rb.velocity = Vector2.zero;
+            agent.ResetPath();
         }
     }
 
-
-    private void MoveCharacter(Vector2 dir)
+    public void OnDeath()
     {
-        rb.MovePosition((Vector2)transform.position + (dir * speed * Time.deltaTime));
+        agent.enabled = false;
+    }
+
+    private void UpdateAnimation()
+    {
+        currentFramePos = transform.position;
+
+        if (currentFramePos != lastFramePos)
+        {
+            animator.SetBool("IsMoving", true);
+
+            Vector2 diffVector = new Vector2(System.Math.Abs(currentFramePos.x - lastFramePos.x), System.Math.Abs(currentFramePos.y - lastFramePos.y));
+
+            float diffXPercent = diffVector.x / (diffVector.x + diffVector.y);
+            float diffYPercent = diffVector.y / (diffVector.x + diffVector.y);
+
+            if (currentFramePos.x < lastFramePos.x)
+                diffXPercent *= -1;
+            if (currentFramePos.y < lastFramePos.y)
+                diffYPercent *= -1;
+
+            animator.SetFloat("Horizontal", diffXPercent);
+            animator.SetFloat("Vertical", diffYPercent);
+
+            lastFramePos = currentFramePos;
+
+            if (diffXPercent > 0.7f || diffXPercent < -0.7f || diffYPercent > 0.7f || diffYPercent < -0.7f)
+            {
+                animator.SetFloat("lastHorizontal", diffXPercent);
+                animator.SetFloat("lastVertical", diffYPercent);
+            }
+        }
+        else
+        {
+            animator.SetBool("IsMoving", false);
+        }
     }
 }

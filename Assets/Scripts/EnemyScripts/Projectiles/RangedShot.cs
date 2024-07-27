@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class RangedShot : MonoBehaviour
 {
@@ -59,6 +60,8 @@ public class RangedShot : MonoBehaviour
 
     public void EnemyShoot(GameObject projectileToShoot, Transform attackPoint = null, float waitTimeToPass = -1f, bool isSpecialAttack = false)
     {
+        enemyAi.canMove = false;
+
         Vector2 dir = enemyAi.movement;
         if (attackPoint == null)
             attackPoint = findDirection(dir);
@@ -91,6 +94,7 @@ public class RangedShot : MonoBehaviour
     {
         yield return new WaitForSeconds(waitTime);
         Instantiate(projectileToShootFinal, attackPointPosition, gameObject.transform.rotation);
+        enemyAi.canMove = true;
     }
 
     public Transform findDirection(Vector2 dir)
