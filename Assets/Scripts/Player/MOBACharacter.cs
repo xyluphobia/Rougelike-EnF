@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Rendering.Universal;
+using UnityEngine.TextCore.Text;
 using UnityEngine.UI;
 
 public class MOBACharacter : MonoBehaviour
@@ -17,13 +19,13 @@ public class MOBACharacter : MonoBehaviour
     [SerializeField] private AudioClip fizzledCastSfx;
 
     [SerializeField] private AudioClip lightningCastSfx;
-    private bool lightningIsOnCooldown = false;
-    private float lightningCooldown = 1.5f;
+    private bool abilityOneIsOnCooldown = false;
+    [HideInInspector] public float abilityOneCooldown = 1.5f;
 
     [SerializeField] private AudioClip icicleCastSfx;
-    private bool icicleIsOnCooldownRapid = false;
-    private float icicleCooldownRapid = 0.5f;
-    private float icicleCooldownGeneral = 3f;
+    private bool abilityTwoIsOnCooldownRapid = false;
+    [HideInInspector] public float abilityTwoCooldownRapid = 0.5f;
+    [HideInInspector] public float abilityTwoCooldownGeneral = 3f;
     private int icicleRapidShotsUsed = 0;
     private Coroutine activeUITimer = null;
     private Coroutine activeGeneralIcicleTimer = null;
@@ -31,12 +33,18 @@ public class MOBACharacter : MonoBehaviour
 
     [SerializeField] private AudioClip teleportStartSfx;
     [SerializeField] private AudioClip teleportEndSfx;
-    private bool teleportIsOnCooldown = false;
-    private float teleportCooldown = 5f;
+    private bool abilityThreeIsOnCooldown = false;
+    [HideInInspector] public float abilityThreeCooldown = 5f;
+
+    [SerializeField] private AudioClip ultimateSfx;
+    private bool ultimateIsOnCooldown = false;
+    [HideInInspector] public float ultimateCooldown = 60f;
 
     private Vector2 clickedPos;
     private Vector2 lastFramePos;
     private Vector2 currentFramePos;
+
+    [HideInInspector] public bool firedByAi = false;
 
     private void Start()
     {
@@ -61,7 +69,7 @@ public class MOBACharacter : MonoBehaviour
 
         if (currentFramePos != lastFramePos)
         {
-            Vector2 diffVector = new Vector2(System.Math.Abs(currentFramePos.x - lastFramePos.x), System.Math.Abs(currentFramePos.y - lastFramePos.y));
+            Vector2 diffVector = new(System.Math.Abs(currentFramePos.x - lastFramePos.x), System.Math.Abs(currentFramePos.y - lastFramePos.y));
 
             float diffXPercent = diffVector.x / (diffVector.x + diffVector.y);
             float diffYPercent = diffVector.y / (diffVector.x + diffVector.y);
@@ -114,18 +122,31 @@ public class MOBACharacter : MonoBehaviour
     }
 
     /* Abilities */
-    private void OnAbilityOne() /* |Q| Basic Damage Ability ~ Lightning Bolt */
+    public void OnAbilityOne() /* |Q| Basic Damage Ability ~ Lightning Bolt */
     {
-        if (lightningIsOnCooldown || !canCast) return;
+        if (abilityOneIsOnCooldown || !canCast) return;
+
+        Vector3 abilityOrigin;
+        float circleCastSize;
+        if (firedByAi)
+        {
+            abilityOrigin = transform.position;
+            circleCastSize = 15f;
+        }
+        else
+        {
+            abilityOrigin = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            circleCastSize = 4f;
+            StartCoroutine(playerController.CooldownUIUpdater(AbilityImagesDict["QTimer"], abilityOneCooldown));
+        }
 
         canCast = false;
-        StartCoroutine(playerController.CooldownUIUpdater(AbilityImagesDict["QTimer"], lightningCooldown));
 
         float closestDistance = Mathf.Infinity;
         Transform closestEnemy = null;
-        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 mousePos = abilityOrigin;
 
-        RaycastHit2D[] nearbyEnemies = Physics2D.CircleCastAll(mousePos, 2f, (Vector2)transform.position);
+        RaycastHit2D[] nearbyEnemies = Physics2D.CircleCastAll(mousePos, circleCastSize, (Vector2)transform.position);
         foreach (RaycastHit2D enemy in nearbyEnemies)
         {
             if (enemy.transform.CompareTag("Enemy"))
@@ -141,7 +162,7 @@ public class MOBACharacter : MonoBehaviour
 
         if (closestEnemy != null)
         {
-            StartCoroutine(HoldCastPositionForSeconds(0.25f));
+            StartCoroutine(HoldCastPositionForSeconds(0.25f, closestEnemy.position));
             StartCoroutine(LightningAbilityCooldown());
             SoundManager.instance.PlaySound(lightningCastSfx);
 
@@ -151,7 +172,7 @@ public class MOBACharacter : MonoBehaviour
         }
         else
         {
-            StartCoroutine(HoldCastPositionForSeconds(0.25f, true, "LightningBolt"));
+            StartCoroutine(HoldCastPositionForSeconds(0.25f, abilityOrigin, true, "LightningBolt"));
             SoundManager.instance.PlaySound(fizzledCastSfx);
 
             canCast = true;
@@ -159,20 +180,53 @@ public class MOBACharacter : MonoBehaviour
 
         IEnumerator LightningAbilityCooldown()
         {
-            lightningIsOnCooldown = true;
-            yield return new WaitForSeconds(lightningCooldown);
-            lightningIsOnCooldown = false;
+            abilityOneIsOnCooldown = true;
+            yield return new WaitForSeconds(abilityOneCooldown);
+            abilityOneIsOnCooldown = false;
         }
     }
 
-    private void OnAbilityTwo() /* |W| Interesting Ability ~ Icicle */
+    public void OnAbilityTwo() /* |W| Interesting Ability ~ Icicle */
     {
         // Target is slowed stacking with each hit until 3 hits where the target is frozen completely
         // Fires towards mouse NO TRACKING
         // Allows 3 activations using the rapid cooldown amount, after these activations no more casts are allowed until the general cooldown is finished
         // The general cooldown starts after each of the 3 activations so if the timer elapses before 3 casts are used the ability is reset fully to 0 rapid fires used
 
-        if (icicleIsOnCooldownRapid || !canCast) return;
+        if (abilityTwoIsOnCooldownRapid || !canCast) return;
+
+        Vector3 abilityOrigin;
+        if (firedByAi)
+        {
+            float closestDistance = Mathf.Infinity;
+            Transform closestEnemy = null;
+            RaycastHit2D[] nearbyEnemies = Physics2D.CircleCastAll(transform.position, 15f, (Vector2)transform.position);
+            foreach (RaycastHit2D enemy in nearbyEnemies)
+            {
+                if (enemy.transform.CompareTag("Enemy"))
+                {
+                    float distance = Vector3.Distance(enemy.point, transform.position);
+                    if (distance < closestDistance)
+                    {
+                        closestDistance = distance;
+                        closestEnemy = enemy.transform;
+                    }
+                }
+            }
+
+            if (closestEnemy != null)
+            {
+                abilityOrigin = closestEnemy.position;
+            }
+            else
+            {
+                return;
+            }
+        }
+        else
+        {
+            abilityOrigin = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        }
 
         canCast = false;
         if (icicleRapidShotsUsed < 3)
@@ -181,12 +235,13 @@ public class MOBACharacter : MonoBehaviour
             StopCoroutineIfNotNull(activeGeneralIcicleTimer);
 
             activeGeneralIcicleTimer = StartCoroutine(IcicleGeneralAbilityCooldown());
-            StartCoroutine(HoldCastPositionForSeconds(0.25f));
+            StartCoroutine(HoldCastPositionForSeconds(0.25f, abilityOrigin));
 
             GameObject icicle = Instantiate(GameAssets.i.icicleProjectile, transform.position, Quaternion.identity);
             if (icicleRapidShotsUsed != 2) /* First Two Shots ~ Slows 30% | 60% */
             {
-                activeUITimer = StartCoroutine(playerController.CooldownUIUpdater(AbilityImagesDict["WTimer"], icicleCooldownRapid));
+                if (!firedByAi)
+                    activeUITimer = StartCoroutine(playerController.CooldownUIUpdater(AbilityImagesDict["WTimer"], abilityTwoCooldownRapid));
                 StartCoroutine(IcicleRapidAbilityCooldown());
 
                 if (icicleRapidShotsUsed == 1)
@@ -197,11 +252,12 @@ public class MOBACharacter : MonoBehaviour
             }
             else /* Third shot ~ Freezes 100% (No Movement & No Attacks) */
             {
-                activeUITimer = StartCoroutine(playerController.CooldownUIUpdater(AbilityImagesDict["WTimer"], icicleCooldownGeneral));
+                if (!firedByAi)
+                    activeUITimer = StartCoroutine(playerController.CooldownUIUpdater(AbilityImagesDict["WTimer"], abilityTwoCooldownGeneral));
                 icicle.transform.localScale *= 1.3f;
                 icicle.GetComponent<IcicleProjectile>().projectileSpeed = 7f;
             }
-            icicle.GetComponent<IcicleProjectile>().SetDirection(Camera.main.ScreenToWorldPoint(Input.mousePosition));
+            icicle.GetComponent<IcicleProjectile>().SetDirection(abilityOrigin);
 
             // spawn projectile
             // scale the projectile up based on which shot it is making the 3rd one largest
@@ -211,32 +267,41 @@ public class MOBACharacter : MonoBehaviour
 
         IEnumerator IcicleGeneralAbilityCooldown()
         {
-            yield return new WaitForSeconds(icicleCooldownGeneral);
+            yield return new WaitForSeconds(abilityTwoCooldownGeneral);
             icicleRapidShotsUsed = 0;
         }
         IEnumerator IcicleRapidAbilityCooldown()
         {
-            icicleIsOnCooldownRapid = true;
-            yield return new WaitForSeconds(icicleCooldownRapid);
-            icicleIsOnCooldownRapid = false;
+            abilityTwoIsOnCooldownRapid = true;
+            yield return new WaitForSeconds(abilityTwoCooldownRapid);
+            abilityTwoIsOnCooldownRapid = false;
         }
     }
 
-    private void OnAbilityThree() /* |E| Movement Ability ~ Teleport */
+    public void OnAbilityThree() /* |E| Movement Ability ~ Teleport */
     {
-        if (teleportIsOnCooldown || !canCast) return;
+        if (abilityThreeIsOnCooldown || !canCast) return;
+
+        Vector3 abilityOrigin;
+        if (firedByAi)
+        {
+            abilityOrigin = transform.position + (Vector3)(6f * Random.insideUnitCircle);
+        }
+        else
+        {
+            abilityOrigin = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            movementIndicatorArrow.transform.localScale = Vector3.zero;
+            StartCoroutine(playerController.CooldownUIUpdater(AbilityImagesDict["ETimer"], abilityThreeCooldown));
+        }
 
         canCast = false;
         StartCoroutine(TeleportAbilityCooldown());
-        StartCoroutine(playerController.CooldownUIUpdater(AbilityImagesDict["ETimer"], teleportCooldown));
-
 
         disableMovement = true;
         navAgent.ResetPath();
         navAgent.velocity = Vector3.zero;
-        movementIndicatorArrow.transform.localScale = Vector3.zero;
 
-        Vector2 teleportLocation = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 teleportLocation = abilityOrigin;
         StartCoroutine(TeleportingAnimationHandler());
 
         IEnumerator TeleportingAnimationHandler()
@@ -256,28 +321,82 @@ public class MOBACharacter : MonoBehaviour
 
         IEnumerator TeleportAbilityCooldown()
         {
-            teleportIsOnCooldown = true;
-            yield return new WaitForSeconds(teleportCooldown);
-            teleportIsOnCooldown = false;
+            abilityThreeIsOnCooldown = true;
+            yield return new WaitForSeconds(abilityThreeCooldown);
+            abilityThreeIsOnCooldown = false;
         }
     }
 
-    private void OnUltimateAbility() /* |R| Ultimate Ability */
+    public void OnUltimateAbility() /* |R| Ultimate Ability */
     {
+        if (ultimateIsOnCooldown || !canCast) return;
 
+        Vector3 abilityOrigin;
+        if (firedByAi)
+        {
+            abilityOrigin = transform.position;
+        }
+        else
+        {
+            abilityOrigin = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            StartCoroutine(playerController.CooldownUIUpdater(AbilityImagesDict["RTimer"], ultimateCooldown));
+        }
+        StartCoroutine(UltimateAbilityCooldown());
+
+        GameObject chosenCharacter;
+        chosenCharacter = GetSelectedCharacter(); /* Change this to allow picking what you summon */
+
+        if (NavMesh.SamplePosition(abilityOrigin, out NavMeshHit closestNavPosition, 100, -1))
+        {
+            Debug.Log(closestNavPosition.position);
+            GameObject character = Instantiate(chosenCharacter, closestNavPosition.position, Quaternion.identity);
+
+            character.GetComponent<Rigidbody2D>().isKinematic = true;
+            character.GetComponent<Rigidbody2D>().simulated = false;
+            character.AddComponent<MOBA_WildMagicClone>();
+            character.GetComponent<SpriteRenderer>().color = new Color32(47, 255, 255, 137);
+            character.GetComponentInChildren<Light2D>().color = new Color32(143, 236, 255, 255);
+            if (character.TryGetComponent<NavMeshAgent>(out NavMeshAgent agent))
+            {
+                agent.obstacleAvoidanceType = ObstacleAvoidanceType.NoObstacleAvoidance;
+                agent.avoidancePriority = 99;
+            }
+        }
+        else 
+        {
+            Debug.Log("No closest nav position.");
+        }
+
+
+
+
+        GameObject GetSelectedCharacter() /* Change this to allow picking what you summon */
+        {
+            GameObject character;
+            character = GameAssets.i.MOBACharacter;
+
+            return character;
+        }
+
+        IEnumerator UltimateAbilityCooldown()
+        {
+            ultimateIsOnCooldown = true;
+            yield return new WaitForSeconds(ultimateCooldown);
+            ultimateIsOnCooldown = false;
+        }
     }
 
-    IEnumerator HoldCastPositionForSeconds(float secondsToHold, bool fizzling = false, string fizzledProjectile = "")
+    IEnumerator HoldCastPositionForSeconds(float secondsToHold, Vector3 abilityOrigin, bool fizzling = false, string fizzledProjectile = "")
     {
         disableMovement = true;
 
-        Dictionary<string, float> mouseDirections = Tools.instance.FindDirectionOfMouseFromPlayer(Camera.main.ScreenToWorldPoint(Input.mousePosition), transform);
+        Dictionary<string, float> mouseDirections = Tools.instance.FindDirectionOfMouseFromPlayer(abilityOrigin, transform);
         playerController.animator.SetFloat("attackH", mouseDirections["AttackH"]);
         playerController.animator.SetFloat("attackV", mouseDirections["AttackV"]);
 
         if (fizzling)
         {
-            fizzlingSpell(mouseDirections, fizzledProjectile);
+            FizzlingSpell(mouseDirections, fizzledProjectile);
         }
 
         playerController.animator.SetBool("Casting", true);
@@ -287,7 +406,7 @@ public class MOBACharacter : MonoBehaviour
         canCast = true;
     }
 
-    private void fizzlingSpell(Dictionary<string, float> mouseDirections, string fizzledProjectile)
+    private void FizzlingSpell(Dictionary<string, float> mouseDirections, string fizzledProjectile)
     {
         string direction = Tools.instance.GetDirectionAsString(mouseDirections["AttackH"], mouseDirections["AttackV"]);
         switch (fizzledProjectile)
