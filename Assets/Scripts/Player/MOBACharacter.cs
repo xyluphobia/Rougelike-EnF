@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -38,7 +39,11 @@ public class MOBACharacter : MonoBehaviour
 
     [SerializeField] private AudioClip ultimateSfx;
     private bool ultimateIsOnCooldown = false;
-    [HideInInspector] public float ultimateCooldown = 60f;
+    private float ultimateCooldown = 30f;
+    private bool ultimateSwapPositionIsOnCooldown = false;
+    private float ultimateSwapPositionCooldown = 5f;
+    private Coroutine swapTimer;
+    [HideInInspector] public GameObject currentClone;
 
     private Vector2 clickedPos;
     private Vector2 lastFramePos;
@@ -60,7 +65,10 @@ public class MOBACharacter : MonoBehaviour
         foreach (Image img in AbilityBarImageHolder)
         {
             AbilityImagesDict.Add(img.transform.name, img);
+            img.fillAmount = 0f;
         }
+
+        StartRTimerCoroutine();
     }
 
     private void FixedUpdate() // could find direction by saving previous step and comparing against current position then checking which direction was travelled
@@ -170,7 +178,7 @@ public class MOBACharacter : MonoBehaviour
             bolt.GetComponent<LightningProjectile>().spawnedByPlayer = true;
             bolt.GetComponent<LightningProjectile>().target = closestEnemy;
         }
-        else
+        else if (!firedByAi)
         {
             StartCoroutine(HoldCastPositionForSeconds(0.25f, abilityOrigin, true, "LightningBolt"));
             SoundManager.instance.PlaySound(fizzledCastSfx);
@@ -329,61 +337,87 @@ public class MOBACharacter : MonoBehaviour
 
     public void OnUltimateAbility() /* |R| Ultimate Ability */
     {
-        if (ultimateIsOnCooldown || !canCast) return;
+        if (!canCast) return;
 
-        Vector3 abilityOrigin;
-        if (firedByAi)
+        if (ultimateIsOnCooldown && !ultimateSwapPositionIsOnCooldown && currentClone != null)
         {
-            abilityOrigin = transform.position;
+            StartCoroutine(UltimateSwapPositionCooldown());
+            swapTimer = StartCoroutine(playerController.CooldownUIUpdater(AbilityImagesDict["RTimer"], ultimateSwapPositionCooldown));
+            
+            currentClone.GetComponent<MOBA_WildMagicClone>().SwapWithPlayer(transform.position);
+            return;
         }
-        else
+        else if (!ultimateIsOnCooldown)
         {
-            abilityOrigin = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            StartCoroutine(playerController.CooldownUIUpdater(AbilityImagesDict["RTimer"], ultimateCooldown));
-        }
-        StartCoroutine(UltimateAbilityCooldown());
-
-        GameObject chosenCharacter;
-        chosenCharacter = GetSelectedCharacter(); /* Change this to allow picking what you summon */
-
-        if (NavMesh.SamplePosition(abilityOrigin, out NavMeshHit closestNavPosition, 100, -1))
-        {
-            Debug.Log(closestNavPosition.position);
-            GameObject character = Instantiate(chosenCharacter, closestNavPosition.position, Quaternion.identity);
-
-            character.GetComponent<Rigidbody2D>().isKinematic = true;
-            character.GetComponent<Rigidbody2D>().simulated = false;
-            character.AddComponent<MOBA_WildMagicClone>();
-            character.GetComponent<SpriteRenderer>().color = new Color32(47, 255, 255, 137);
-            character.GetComponentInChildren<Light2D>().color = new Color32(143, 236, 255, 255);
-            if (character.TryGetComponent<NavMeshAgent>(out NavMeshAgent agent))
+            ultimateIsOnCooldown = true;
+            Vector3 abilityOrigin;
+            if (firedByAi)
             {
-                agent.obstacleAvoidanceType = ObstacleAvoidanceType.NoObstacleAvoidance;
-                agent.avoidancePriority = 99;
+                abilityOrigin = transform.position;
+            }
+            else
+            {
+                abilityOrigin = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            }
+
+            GameObject chosenCharacter;
+            chosenCharacter = GetSelectedCharacter(); /* Change this to allow picking what you summon */
+
+            if (NavMesh.SamplePosition(abilityOrigin, out NavMeshHit closestNavPosition, 100, -1))
+            {
+                GameObject character = Instantiate(chosenCharacter, closestNavPosition.position, Quaternion.identity);
+
+                character.GetComponent<Rigidbody2D>().isKinematic = true;
+                character.GetComponent<Rigidbody2D>().simulated = false;
+                character.AddComponent<MOBA_WildMagicClone>();
+                character.GetComponent<SpriteRenderer>().color = new Color32(47, 255, 255, 137);
+                character.GetComponentInChildren<Light2D>().color = new Color32(143, 236, 255, 255);
+                if (character.TryGetComponent<NavMeshAgent>(out NavMeshAgent agent))
+                {
+                    agent.obstacleAvoidanceType = ObstacleAvoidanceType.NoObstacleAvoidance;
+                    agent.avoidancePriority = 99;
+                }
+
+                currentClone = character;
+            }
+            else 
+            {
+                Debug.Log("No closest nav position.");
             }
         }
-        else 
-        {
-            Debug.Log("No closest nav position.");
-        }
-
-
-
 
         GameObject GetSelectedCharacter() /* Change this to allow picking what you summon */
         {
             GameObject character;
-            character = GameAssets.i.MOBACharacter;
+            character = GameAssets.i.WASDCharacter;
 
             return character;
         }
 
-        IEnumerator UltimateAbilityCooldown()
+        IEnumerator UltimateSwapPositionCooldown()
         {
-            ultimateIsOnCooldown = true;
-            yield return new WaitForSeconds(ultimateCooldown);
-            ultimateIsOnCooldown = false;
+            ultimateSwapPositionIsOnCooldown = true;
+            yield return new WaitForSeconds(ultimateSwapPositionCooldown);
+            ultimateSwapPositionIsOnCooldown = false;
         }
+    }
+
+    public void StartRTimerCoroutine()
+    {
+        if (ultimateSwapPositionIsOnCooldown)
+        {
+            StopCoroutine(swapTimer);
+        }
+
+        StartCoroutine(UltimateAbilityCooldown());
+        StartCoroutine(playerController.CooldownUIUpdater(AbilityImagesDict["RTimer"], ultimateCooldown));
+    }
+
+    IEnumerator UltimateAbilityCooldown()
+    {
+        ultimateIsOnCooldown = true;
+        yield return new WaitForSeconds(ultimateCooldown);
+        ultimateIsOnCooldown = false;
     }
 
     IEnumerator HoldCastPositionForSeconds(float secondsToHold, Vector3 abilityOrigin, bool fizzling = false, string fizzledProjectile = "")

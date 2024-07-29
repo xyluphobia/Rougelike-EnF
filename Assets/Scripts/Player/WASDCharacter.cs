@@ -52,6 +52,7 @@ public class WASDCharacter : MonoBehaviour
         foreach (Image img in AbilityBarImageHolder)
         {
             AbilityImagesDict.Add(img.transform.name, img);
+            img.fillAmount = 0f;
         };
     }
 

@@ -75,7 +75,7 @@ public class PlayerController : MonoBehaviour
         gameObject.SendMessage("TakeControl", null, SendMessageOptions.DontRequireReceiver);
         
     }
-    private void setInactivePlayer()
+    public void setInactivePlayer()
     {
         activePlayer = false;
 
@@ -193,14 +193,21 @@ public class PlayerController : MonoBehaviour
 
     void Die() 
     {
-        foreach (var item in SceneManager.GetActiveScene().GetRootGameObjects())
+        if (gameObject.CompareTag("Player"))
         {
-            item.BroadcastMessage("OnPlayerDied", SendMessageOptions.DontRequireReceiver);
-        }
+            foreach (var item in SceneManager.GetActiveScene().GetRootGameObjects())
+            {
+                item.BroadcastMessage("OnPlayerDied", SendMessageOptions.DontRequireReceiver);
+            }
 
-        SoundManager.instance.RandomizeSfx(deathClips);
-        animator.SetBool("IsDead", true);
-        GameManager.instance.GameOver();
+            SoundManager.instance.RandomizeSfx(deathClips);
+            animator.SetBool("IsDead", true);
+            GameManager.instance.GameOver();
+        }
+        else
+        {
+            SendMessage("OnCloneDied");
+        }
     }
 
     /* Other */
