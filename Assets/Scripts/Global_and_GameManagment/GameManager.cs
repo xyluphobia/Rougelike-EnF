@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 using TMPro;
 using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
+using Unity.Mathematics;
 
 public class GameManager : MonoBehaviour
 {
@@ -39,8 +40,8 @@ public class GameManager : MonoBehaviour
     public InputActionAsset actions;
 
     /* ~~~~~~~~~~~ DEV ~~~~~~~~~~~ */
-    public bool ForceBossRoomNext = true;
-    private bool UseCurrentLevel = true;
+    public bool ForceBossRoomNext = false;
+    private bool UseCurrentLevel = false;
     /* ~~~~~~~~~~~ DEV ~~~~~~~~~~~ */
 
     void Awake()

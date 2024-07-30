@@ -11,7 +11,7 @@ public class Enemy : MonoBehaviour
     public int currentHealth;
     public bool invulnerable = false;
     [SerializeField] private bool hasHealthBar = false;
-    [SerializeField] private GameObject healthBar;
+    private GameObject healthBar;
     private HealthBar healthBarScript;
 
     [SerializeField] private AudioClip deathClip;
@@ -25,7 +25,10 @@ public class Enemy : MonoBehaviour
     {
         currentHealth = maxHealth;
         if (hasHealthBar)
+        {
+            healthBar = GameObject.FindGameObjectWithTag("BossHealthBar");
             healthBarScript = healthBar.GetComponent<HealthBar>();
+        }
     }
 
     public void TakeDamage(int damage)

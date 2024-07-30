@@ -70,3 +70,4 @@ MonoBehaviour:
   EnemyHolder: {fileID: 6893094882823764465, guid: 35de1c8f714cc71499529c2f16dba309, type: 3}
   PropHolder: {fileID: 7303939893907763012, guid: e1ebf586a4453d845bb361cda00a5a21, type: 3}
   ItemHolder: {fileID: 4387924496518650446, guid: fda8cea4f47167c49a92290e765304cf, type: 3}
+  rotatorBoss: {fileID: 2988081667011078456, guid: 9a410766a0e99c84c9b40dd3928b18e4, type: 3}

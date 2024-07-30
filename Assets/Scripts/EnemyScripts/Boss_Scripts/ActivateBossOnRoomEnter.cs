@@ -1,16 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ActivateBossOnRoomEnter : MonoBehaviour
 {
-    [SerializeField] private GameObject objectToEnableScriptsOn;
+    private GameObject objectToEnableScriptsOn;
     [SerializeField] private GameObject[] gatesToClose;
+
+    private void Start()
+    {
+        SpawnUnitsInBossLevel();
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        enableScripts();
         closeGate();
+        Invoke("enableScripts", 1f);
     }
 
     private void enableScripts()
@@ -29,5 +35,28 @@ public class ActivateBossOnRoomEnter : MonoBehaviour
             gate.GetComponent<Animator>().SetBool("closeGate", true);
             gate.GetComponent<BoxCollider2D>().enabled = true;
         }
+    }
+
+    private void SpawnUnitsInBossLevel()
+    {
+        Vector3 playerSpawnPoint = GameObject.FindGameObjectWithTag("PlayerSpawnPosition").transform.position;
+        if (GameManager.instance.currentPlayerCharacterString.Equals(GameAssets.i.WASDCharacter.name) || GameManager.instance.currentPlayerCharacterString.Equals(GameAssets.i.WASDCharacter.name + "(Clone)"))
+            playerSpawnPoint.y = -6.9f;
+
+        GameObject playerHolder = Instantiate(GameManager.instance.GetCurrentPlayer(), playerSpawnPoint, Quaternion.identity);
+        playerHolder.GetComponent<PlayerController>().setActivePlayer();
+
+
+        Vector3 bossSpawnPoint = GameObject.FindGameObjectWithTag("BossSpawnPosition").transform.position;
+        switch (SceneManager.GetActiveScene().name)
+        {
+            case "rotatorBossRoom":
+                objectToEnableScriptsOn = Instantiate(GameAssets.i.rotatorBoss, bossSpawnPoint, Quaternion.identity);
+                break;
+        }
+
+
+
+        GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraController>().enabled = true;
     }
 }

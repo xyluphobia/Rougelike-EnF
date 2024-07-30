@@ -27,6 +27,9 @@ TagManager:
   - LockedDoor
   - PortraitImage
   - Interactable
+  - PlayerSpawnPosition
+  - BossSpawnPosition
+  - BossHealthBar
   layers:
   - Default
   - TransparentFX

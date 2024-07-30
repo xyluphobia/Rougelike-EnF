@@ -17,6 +17,7 @@ public class DevelopmentKeybinds : MonoBehaviour
     {
         if (!GameManager.instance.ForceBossRoomNext)
         {
+            GameManager.instance.setPlayerForNextLevel(player.health, gameObject);
             GameManager.instance.ForceBossRoomNext = true;
             Debug.Log("Next floor is boss floor: On");
 

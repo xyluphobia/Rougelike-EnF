@@ -54,4 +54,7 @@ public class GameAssets : MonoBehaviour
     public GameObject EnemyHolder;
     public GameObject PropHolder;
     public GameObject ItemHolder;
+
+    [Header("Bosses")]
+    public GameObject rotatorBoss;
 }
