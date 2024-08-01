@@ -26,7 +26,7 @@ public class MOBACharacter : MonoBehaviour
     [SerializeField] private AudioClip icicleCastSfx;
     private bool abilityTwoIsOnCooldownRapid = false;
     [HideInInspector] public float abilityTwoCooldownRapid = 0.5f;
-    [HideInInspector] public float abilityTwoCooldownGeneral = 3f;
+    [HideInInspector] public float abilityTwoCooldownGeneral = 3.5f;
     private int icicleRapidShotsUsed = 0;
     private Coroutine activeUITimer = null;
     private Coroutine activeGeneralIcicleTimer = null;

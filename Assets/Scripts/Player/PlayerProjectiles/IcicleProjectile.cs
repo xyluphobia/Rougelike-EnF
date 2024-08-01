@@ -17,8 +17,19 @@ public class IcicleProjectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.transform.CompareTag("Enemy"))
+        if (collision.CompareTag("Enemy"))
         {
+            if (collision.gameObject.GetComponents<Collider2D>().Length > 1)
+            {
+                if (collision.gameObject.GetComponents<Collider2D>()[0].isActiveAndEnabled)
+                {
+                    GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+                    GetComponent<Collider2D>().enabled = false;
+                    DestroyAfterAnim();
+                    return;
+                }
+            }
+
             if (player.enemyFreezeCounters.ContainsKey(collision.gameObject))
             {
                 player.enemyFreezeCounters[collision.gameObject] += 1;
@@ -27,7 +38,6 @@ public class IcicleProjectile : MonoBehaviour
             {
                 player.enemyFreezeCounters.Add(collision.gameObject, 1);
             }
-
 
             if (collision.gameObject.GetComponent<EnemyAI>() != null)
             {
@@ -54,11 +64,18 @@ public class IcicleProjectile : MonoBehaviour
 
                     case 3:
                         enemyAi.speed = 0f;
+                        enemyAi.canMove = false;
                         animator.speed = 0f;
                         spriteRenderer.color = new Color32(0, 216, 238, 255);
                         enemy.TakeDamage(30);
+
+                        if (player.enemyFreezeCounters[collision.gameObject] >= 3)
+                            player.enemyFreezeCounters[collision.gameObject] = 0;
+
                         break;
                 }
+
+                enemyAi.SendMessage("OnIcicleHit");
             }
 
             GetComponent<Rigidbody2D>().velocity = Vector3.zero;

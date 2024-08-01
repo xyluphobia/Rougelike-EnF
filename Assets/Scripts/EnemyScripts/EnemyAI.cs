@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.TextCore.Text;
 
 public class EnemyAI : MonoBehaviour
 {
@@ -47,6 +48,31 @@ public class EnemyAI : MonoBehaviour
     {
         yield return new WaitForSeconds(time);
         this.enabled = true;
+    }
+
+    private Coroutine icicleCoroutine;
+    public void OnIcicleHit()
+    {
+        if (icicleCoroutine != null) 
+            StopCoroutine(icicleCoroutine);
+
+        icicleCoroutine = StartCoroutine(UnfreezeAfterTime());
+
+        IEnumerator UnfreezeAfterTime(float secondsFrozen = 3f)
+        {
+            yield return new WaitForSeconds(secondsFrozen);
+            speed = defaultSpeed;
+            animator.speed = 1f;
+            GetComponent<SpriteRenderer>().color = new Color32(255, 255, 255, 255);
+            canMove = true;
+            if (target.TryGetComponent<MOBACharacter>(out MOBACharacter mobaPlayer))
+            {
+                if (mobaPlayer.enemyFreezeCounters.ContainsKey(gameObject))
+                {
+                    mobaPlayer.enemyFreezeCounters[gameObject] = 0;
+                }
+            }
+        }
     }
 
     private void FixedUpdate()

@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 2430894662866492496}
   - component: {fileID: 8047223156178942911}
   - component: {fileID: 9158743690579953700}
+  - component: {fileID: 6820665027143669976}
   - component: {fileID: 2265160514164744440}
   - component: {fileID: 121745398682407763}
   - component: {fileID: -5973398576697948700}
@@ -279,7 +280,7 @@ CircleCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -299,6 +300,42 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.59
+--- !u!58 &6820665027143669976
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3109608706164547240}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 0.48
 --- !u!195 &2265160514164744440
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -338,7 +375,6 @@ MonoBehaviour:
   currentHealth: 0
   invulnerable: 0
   hasHealthBar: 0
-  healthBar: {fileID: 0}
   deathClip: {fileID: 8300000, guid: 268dec43e9e3c874291e1886e13df3c0, type: 3}
   hitClips:
   - {fileID: 8300000, guid: 57a7a1f3ef5acb942bdd4f6ffc50b04e, type: 3}

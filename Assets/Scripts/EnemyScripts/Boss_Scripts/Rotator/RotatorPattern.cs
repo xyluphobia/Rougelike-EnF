@@ -138,9 +138,17 @@ public class RotatorPattern : MonoBehaviour
             // Spin once damaging in proximity | This is skipped on the first rotation
             if (!firstCycle)
             {
+                if (!enemyAi.canMove)
+                    while (!enemyAi.canMove)
+                        yield return new WaitForSeconds(0.5f);
+
                 StartCoroutine(rotateOverTime(1, 0));
                 yield return new WaitForSeconds(1.5f);  // need to add damage in aoe
             }
+
+            if (!enemyAi.canMove)
+                while (!enemyAi.canMove)
+                    yield return new WaitForSeconds(0.5f);
 
             // Shoot 2 projectiles at once spawning on two different random positions (NSEW)
             List<int> nums = new List<int> { 1, 2, 3, 4 };
@@ -151,6 +159,10 @@ public class RotatorPattern : MonoBehaviour
 
             yield return new WaitForSeconds(1f);
             if (enemyScript.currentHealth < 200) break;
+
+            if (!enemyAi.canMove)
+                while (!enemyAi.canMove)
+                    yield return new WaitForSeconds(0.5f);
 
             bool numFound = false;
             if (nums.Contains(1))
@@ -187,14 +199,26 @@ public class RotatorPattern : MonoBehaviour
             }
             yield return new WaitForSeconds(1.5f);
 
+            if (!enemyAi.canMove)
+                while (!enemyAi.canMove)
+                    yield return new WaitForSeconds(0.5f);
+
             /* ~~ Attack 2 ~~ */
             // Spin once damaging in proximity
             StartCoroutine(rotateOverTime(1, 0));
             yield return new WaitForSeconds(1.5f);  // need to add damage in aoe
 
+            if (!enemyAi.canMove)
+                while (!enemyAi.canMove)
+                    yield return new WaitForSeconds(0.5f);
+
             // Shoot 3 projectiles spawning in a line which move toward the players location at the time of firing forming a triangle
             yield return new WaitForSeconds(1f);
             if (enemyScript.currentHealth < 200) break;
+
+            if (!enemyAi.canMove)
+                while (!enemyAi.canMove)
+                    yield return new WaitForSeconds(0.5f);
 
             Vector2 direction = GameObject.FindGameObjectWithTag("Player").transform.position - transform.position;
             switch (rangedShot.findDirection(direction).name)
@@ -230,10 +254,18 @@ public class RotatorPattern : MonoBehaviour
             yield return new WaitForSeconds(2f);
 
             /* ~~ Attack 3 ~~ */
+            if (!enemyAi.canMove)
+                while (!enemyAi.canMove)
+                    yield return new WaitForSeconds(0.5f);
+
             // Spin twice damaging in proximity
             StartCoroutine(rotateOverTime(2, 1));
             yield return new WaitForSeconds(3f);  // need to add damage in aoe
             if (enemyScript.currentHealth < 200) break;
+
+            if (!enemyAi.canMove)
+                while (!enemyAi.canMove)
+                    yield return new WaitForSeconds(0.5f);
 
             // Shoot 1 special projectile which rotates the players controls (previous control used to move 'Up' now moves you 'Right' etc) U>R, R>D, D>L, L>U
             Vector2 dir = enemyAi.movement;

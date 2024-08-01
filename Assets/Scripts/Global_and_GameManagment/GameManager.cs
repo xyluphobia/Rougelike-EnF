@@ -40,8 +40,8 @@ public class GameManager : MonoBehaviour
     public InputActionAsset actions;
 
     /* ~~~~~~~~~~~ DEV ~~~~~~~~~~~ */
-    public bool ForceBossRoomNext = false;
-    private bool UseCurrentLevel = false;
+    public bool ForceBossRoomNext = true;
+    private bool UseCurrentLevel = true;
     /* ~~~~~~~~~~~ DEV ~~~~~~~~~~~ */
 
     void Awake()
@@ -161,7 +161,7 @@ public class GameManager : MonoBehaviour
         else if (currentPlayerCharacterString.Equals(GameAssets.i.MOBACharacter.name) || currentPlayerCharacterString.Equals(GameAssets.i.MOBACharacter.name + "(Clone)"))
             return GameAssets.i.MOBACharacter;
         else
-            return GameAssets.i.defaultPlayer;
+            return GameAssets.i.MOBACharacter; //defaultPlayer
     }
 
     public void UpdateScore(int scoreToAdd)
