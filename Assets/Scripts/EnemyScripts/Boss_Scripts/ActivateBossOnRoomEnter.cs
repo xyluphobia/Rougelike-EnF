@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.SceneManagement;
 
 public class ActivateBossOnRoomEnter : MonoBehaviour
@@ -34,6 +35,7 @@ public class ActivateBossOnRoomEnter : MonoBehaviour
         {
             gate.GetComponent<Animator>().SetBool("closeGate", true);
             gate.GetComponent<BoxCollider2D>().enabled = true;
+            gate.GetComponent<NavMeshObstacle>().enabled = true;
         }
     }
 

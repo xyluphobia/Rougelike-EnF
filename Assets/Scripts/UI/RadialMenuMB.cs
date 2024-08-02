@@ -64,6 +64,9 @@ public class RadialMenuMB : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
+            if (Data.Elements[activeElement].SelectionAvailable == false)  // If selection is not turned on for the items scriptable object
+                return;
+
             var path = Path + "/" + Data.Elements[activeElement].Name;
             if (Data.Elements[activeElement].NextRing != null)
             {

@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: WASDCharacter
   Icon: {fileID: 2178568293442415380, guid: 9980ec7c83be1314bba0b338717a228d, type: 3}
-  SelectedCharacter: {fileID: 2215174607414617992, guid: 7d7ae7955cdbd264eb905f2384d88ccf, type: 3}
+  SelectionAvailable: 1
   NextRing: {fileID: 0}

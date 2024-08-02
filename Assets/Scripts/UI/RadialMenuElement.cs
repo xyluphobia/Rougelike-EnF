@@ -7,6 +7,6 @@ public class RadialMenuElement : ScriptableObject
 {
     public string Name;
     public Sprite Icon;
-    public GameObject SelectedCharacter;
+    public bool SelectionAvailable;
     public RadialMenuRing NextRing;
 }

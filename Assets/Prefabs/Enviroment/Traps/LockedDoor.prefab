@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 710046232843621666}
   - component: {fileID: 8552086512133876582}
   - component: {fileID: 4980295574213123402}
+  - component: {fileID: 9176598079269824118}
   m_Layer: 0
   m_Name: LockedDoor
   m_TagString: LockedDoor
@@ -207,3 +208,19 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!208 &9176598079269824118
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1675523694364926060}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.1}
+  m_MoveThreshold: 1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0

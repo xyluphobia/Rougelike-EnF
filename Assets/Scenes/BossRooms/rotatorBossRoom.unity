@@ -20215,16 +20215,8 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1508943035}
     m_Modifications:
-    - target: {fileID: 710046232843621666, guid: 47c9fee0d11e13245a00186c3ccf528e, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 0e5a527d019feed4e9a168b7bcdfdc96, type: 2}
     - target: {fileID: 1675523694364926060, guid: 47c9fee0d11e13245a00186c3ccf528e, type: 3}
       propertyPath: m_Name
-      value: LockedDoor
-      objectReference: {fileID: 0}
-    - target: {fileID: 1675523694364926060, guid: 47c9fee0d11e13245a00186c3ccf528e, type: 3}
-      propertyPath: m_TagString
       value: LockedDoor
       objectReference: {fileID: 0}
     - target: {fileID: 7499467176003812805, guid: 47c9fee0d11e13245a00186c3ccf528e, type: 3}

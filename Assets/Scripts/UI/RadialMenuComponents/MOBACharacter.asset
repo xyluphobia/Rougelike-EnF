@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: MOBACharacter
   Icon: {fileID: 1842542612, guid: 885cb4aa294c6bd4e98b42bd3aa7489f, type: 3}
-  SelectedCharacter: {fileID: 4109927645747079022, guid: cd3cb7e478e836241a1535f068e1fc8d, type: 3}
+  SelectionAvailable: 1
   NextRing: {fileID: 0}
