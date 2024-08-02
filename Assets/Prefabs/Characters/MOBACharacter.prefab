@@ -258,9 +258,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fizzledCastSfx: {fileID: 0}
   lightningCastSfx: {fileID: 0}
+  abilityOneCooldown: 1.5
   icicleCastSfx: {fileID: 0}
+  abilityTwoCooldownRapid: 0.5
+  abilityTwoCooldownGeneral: 3.5
   teleportStartSfx: {fileID: 8300000, guid: 0986220f9cff40f4c9ac7d8a722a6e61, type: 3}
   teleportEndSfx: {fileID: 8300000, guid: 97ccd237aac45db41802974c38237c47, type: 3}
+  abilityThreeCooldown: 5
+  characterSelectMenuPrefab: {fileID: -9121132779135879314, guid: b73e7df2693b5564487496dc3e791565, type: 3}
+  selectedCharacter: {fileID: 0}
+  ultimateSfx: {fileID: 0}
+  currentClone: {fileID: 0}
+  firedByAi: 0
 --- !u!195 &8729806848206798780
 NavMeshAgent:
   m_ObjectHideFlags: 0

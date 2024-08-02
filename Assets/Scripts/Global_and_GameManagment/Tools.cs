@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 public class Tools : MonoBehaviour
@@ -19,6 +20,18 @@ public class Tools : MonoBehaviour
     }
 
     /* General */
+    public void PauseGame()
+    {
+        GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInput>().enabled = false;
+        Time.timeScale = 0f;
+    }
+
+    public void UnPauseGame()
+    {
+        GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInput>().enabled = true;
+        Time.timeScale = 1f;
+    }
+
     public IEnumerator DestroyAfterTime(GameObject objectToDestroy, float timeUntilDestroyed)
     {
         yield return new WaitForSeconds(timeUntilDestroyed);

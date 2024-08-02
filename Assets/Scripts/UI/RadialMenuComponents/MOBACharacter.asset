@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56c75d59187376d49abbe01c16f9422e, type: 3}
+  m_Name: MOBACharacter
+  m_EditorClassIdentifier: 
+  Name: MOBACharacter
+  Icon: {fileID: 1842542612, guid: 885cb4aa294c6bd4e98b42bd3aa7489f, type: 3}
+  SelectedCharacter: {fileID: 4109927645747079022, guid: cd3cb7e478e836241a1535f068e1fc8d, type: 3}
+  NextRing: {fileID: 0}

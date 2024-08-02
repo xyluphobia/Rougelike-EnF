@@ -43,7 +43,7 @@ public class ActivateBossOnRoomEnter : MonoBehaviour
         if (GameManager.instance.currentPlayerCharacterString.Equals(GameAssets.i.WASDCharacter.name) || GameManager.instance.currentPlayerCharacterString.Equals(GameAssets.i.WASDCharacter.name + "(Clone)"))
             playerSpawnPoint.y = -6.9f;
 
-        GameObject playerHolder = Instantiate(GameManager.instance.GetCurrentPlayer(), playerSpawnPoint, Quaternion.identity);
+        GameObject playerHolder = Instantiate(GameManager.instance.GetPlayerObjectByName(), playerSpawnPoint, Quaternion.identity);
         playerHolder.GetComponent<PlayerController>().setActivePlayer();
 
 

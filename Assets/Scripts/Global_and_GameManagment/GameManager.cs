@@ -154,11 +154,14 @@ public class GameManager : MonoBehaviour
         playerHealth = health;
         currentPlayerCharacterString = playerCharacter.name;
     }
-    public GameObject GetCurrentPlayer()
+    public GameObject GetPlayerObjectByName(string stringToCheck = "")
     {
-        if (currentPlayerCharacterString.Equals(GameAssets.i.WASDCharacter.name) || currentPlayerCharacterString.Equals(GameAssets.i.WASDCharacter.name + "(Clone)"))
+        if (stringToCheck.Equals(""))
+            stringToCheck = currentPlayerCharacterString;
+
+        if (stringToCheck.Equals(GameAssets.i.WASDCharacter.name) || stringToCheck.Equals(GameAssets.i.WASDCharacter.name + "(Clone)"))
             return GameAssets.i.WASDCharacter;
-        else if (currentPlayerCharacterString.Equals(GameAssets.i.MOBACharacter.name) || currentPlayerCharacterString.Equals(GameAssets.i.MOBACharacter.name + "(Clone)"))
+        else if (stringToCheck.Equals(GameAssets.i.MOBACharacter.name) || stringToCheck.Equals(GameAssets.i.MOBACharacter.name + "(Clone)"))
             return GameAssets.i.MOBACharacter;
         else
             return GameAssets.i.MOBACharacter; //defaultPlayer

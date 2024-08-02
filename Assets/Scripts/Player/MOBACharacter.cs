@@ -37,9 +37,13 @@ public class MOBACharacter : MonoBehaviour
     private bool abilityThreeIsOnCooldown = false;
     [HideInInspector] public float abilityThreeCooldown = 5f;
 
+    public RadialMenuMB characterSelectMenuPrefab;
+    protected RadialMenuMB characterSelectMenuInstance;
+
+    [HideInInspector] public GameObject selectedCharacter;
     [SerializeField] private AudioClip ultimateSfx;
     private bool ultimateIsOnCooldown = false;
-    private float ultimateCooldown = 30f;
+    private float ultimateCooldown = 3f;
     private bool ultimateSwapPositionIsOnCooldown = false;
     private float ultimateSwapPositionCooldown = 5f;
     private Coroutine swapTimer;
@@ -349,49 +353,63 @@ public class MOBACharacter : MonoBehaviour
         }
         else if (!ultimateIsOnCooldown)
         {
-            ultimateIsOnCooldown = true;
-            Vector3 abilityOrigin;
-            if (firedByAi)
-            {
-                abilityOrigin = transform.position;
-            }
-            else
-            {
-                abilityOrigin = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            }
+            selectedCharacter = null;
+            StartCoroutine(RunMOBAUltimate());
 
-            GameObject chosenCharacter;
-            chosenCharacter = GetSelectedCharacter(); /* Change this to allow picking what you summon */
-
-            if (NavMesh.SamplePosition(abilityOrigin, out NavMeshHit closestNavPosition, 100, -1))
+            IEnumerator RunMOBAUltimate()
             {
-                GameObject character = Instantiate(chosenCharacter, closestNavPosition.position, Quaternion.identity);
-
-                character.GetComponent<Rigidbody2D>().isKinematic = true;
-                character.GetComponent<Rigidbody2D>().simulated = false;
-                character.AddComponent<MOBA_WildMagicClone>();
-                character.GetComponent<SpriteRenderer>().color = new Color32(47, 255, 255, 137);
-                character.GetComponentInChildren<Light2D>().color = new Color32(143, 236, 255, 255);
-                if (character.TryGetComponent<NavMeshAgent>(out NavMeshAgent agent))
+                ultimateIsOnCooldown = true;
+                Vector3 abilityOrigin;
+                if (firedByAi)
                 {
-                    agent.obstacleAvoidanceType = ObstacleAvoidanceType.NoObstacleAvoidance;
-                    agent.avoidancePriority = 99;
+                    abilityOrigin = transform.position;
+                }
+                else
+                {
+                    abilityOrigin = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 }
 
-                currentClone = character;
-            }
-            else 
-            {
-                Debug.Log("No closest nav position.");
+                /* Start ~ This code deals with the selection of the character to spawn, the while loop prevents progress until a choice is made. */
+                Tools.instance.PauseGame();
+                characterSelectMenuInstance = Instantiate(characterSelectMenuPrefab, GameObject.FindGameObjectWithTag("InGameUI").transform);
+                characterSelectMenuInstance.callback = MenuClick;
+
+                while (selectedCharacter == null)
+                {
+                    yield return null;
+                }
+
+                Tools.instance.UnPauseGame();
+                /* End */
+
+                if (NavMesh.SamplePosition(abilityOrigin, out NavMeshHit closestNavPosition, 100, -1))
+                {
+                    GameObject character = Instantiate(selectedCharacter, closestNavPosition.position, Quaternion.identity);
+
+                    character.GetComponent<Rigidbody2D>().isKinematic = true;
+                    character.GetComponent<Rigidbody2D>().simulated = false;
+                    character.AddComponent<MOBA_WildMagicClone>();
+                    character.GetComponent<SpriteRenderer>().color = new Color32(47, 255, 255, 137);
+                    character.GetComponentInChildren<Light2D>().color = new Color32(143, 236, 255, 255);
+                    if (character.TryGetComponent<NavMeshAgent>(out NavMeshAgent agent))
+                    {
+                        agent.obstacleAvoidanceType = ObstacleAvoidanceType.NoObstacleAvoidance;
+                        agent.avoidancePriority = 99;
+                    }
+
+                    currentClone = character;
+                }
+                else
+                {
+                    Debug.Log("No closest nav position.");
+                }
             }
         }
 
-        GameObject GetSelectedCharacter() /* Change this to allow picking what you summon */
+        void MenuClick(string path)
         {
-            GameObject character;
-            character = GameAssets.i.WASDCharacter;
-
-            return character;
+            var paths = path.Split('/');
+            selectedCharacter = GameManager.instance.GetPlayerObjectByName(paths[1]);
         }
 
         IEnumerator UltimateSwapPositionCooldown()

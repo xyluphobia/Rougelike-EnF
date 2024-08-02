@@ -30,6 +30,7 @@ TagManager:
   - PlayerSpawnPosition
   - BossSpawnPosition
   - BossHealthBar
+  - CharacterSelectWheel
   layers:
   - Default
   - TransparentFX

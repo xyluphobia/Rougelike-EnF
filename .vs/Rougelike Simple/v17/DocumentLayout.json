@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2ECE6269-9702-4E2D-F794-743E3122D8B9}|Assembly-CSharp.csproj|c:\\users\\matthew\\desktop\\rougelike simple\\assets\\scripts\\player\\moba_wildmagicclone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2ECE6269-9702-4E2D-F794-743E3122D8B9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\moba_wildmagicclone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2ECE6269-9702-4E2D-F794-743E3122D8B9}|Assembly-CSharp.csproj|C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\assets\\scripts\\player\\mobacharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2ECE6269-9702-4E2D-F794-743E3122D8B9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\mobacharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2ECE6269-9702-4E2D-F794-743E3122D8B9}|Assembly-CSharp.csproj|C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\assets\\scripts\\global_and_gamemanagment\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,19 +30,6 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Tools.cs",
-              "DocumentMoniker": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\Global_and_GameManagment\\Tools.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Global_and_GameManagment\\Tools.cs",
-              "ToolTip": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\Global_and_GameManagment\\Tools.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Global_and_GameManagment\\Tools.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD0AAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-27T09:28:08.922Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "GameAssets.cs",
               "DocumentMoniker": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\Global_and_GameManagment\\GameAssets.cs",
@@ -52,7 +39,8 @@
               "ViewState": "AQIAABwAAAAAAAAAAAAgwB4AAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-25T06:54:24.5Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -62,22 +50,36 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Global_and_GameManagment\\GameManager.cs",
               "ToolTip": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\Global_and_GameManagment\\GameManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Global_and_GameManagment\\GameManager.cs",
-              "ViewState": "AQIAAI4AAAAAAAAAAAAvwKMAAAA+AAAA",
+              "ViewState": "AQIAAJIAAAAAAAAAAAAnwJwAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-15T05:23:02.94Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Tools.cs",
+              "DocumentMoniker": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\Global_and_GameManagment\\Tools.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Global_and_GameManagment\\Tools.cs",
+              "ToolTip": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\Global_and_GameManagment\\Tools.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Global_and_GameManagment\\Tools.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwBwAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T09:28:08.922Z",
               "IsPinned": true
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MOBA_WildMagicClone.cs",
-              "DocumentMoniker": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\Player\\MOBA_WildMagicClone.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\MOBA_WildMagicClone.cs",
-              "ToolTip": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\Player\\MOBA_WildMagicClone.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\MOBA_WildMagicClone.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAkwEEAAAALAAAA",
+              "Title": "MOBACharacter.cs",
+              "DocumentMoniker": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\Player\\MOBACharacter.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\MOBACharacter.cs",
+              "ToolTip": "C:\\Users\\Matthew\\Desktop\\Rougelike Simple\\Assets\\Scripts\\Player\\MOBACharacter.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\MOBACharacter.cs",
+              "ViewState": "AQIAAGoBAAAAAAAAAAAAAJYBAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T08:08:40.46Z",
+              "WhenOpened": "2024-08-02T07:33:21.022Z",
               "EditorCaption": ""
             }
           ]
