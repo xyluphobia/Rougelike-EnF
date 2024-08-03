@@ -32,6 +32,28 @@ public class Tools : MonoBehaviour
         Time.timeScale = 1f;
     }
 
+    public GameObject FindClosestObjectByTag(Vector2 scanOrigin, float scanSize = 15f, string tag = "Enemy")
+    {
+        float closestDistance = Mathf.Infinity;
+        GameObject closestTarget = null;
+
+        RaycastHit2D[] nearbyEnemies = Physics2D.CircleCastAll(scanOrigin, scanSize, (Vector2)transform.position);
+        foreach (RaycastHit2D enemy in nearbyEnemies)
+        {
+            if (enemy.transform.CompareTag(tag))
+            {
+                float distance = Vector3.Distance(enemy.point, scanOrigin);
+                if (distance < closestDistance)
+                {
+                    closestDistance = distance;
+                    closestTarget = enemy.transform.gameObject;
+                }
+            }
+        }
+
+        return closestTarget;
+    }
+
     public IEnumerator DestroyAfterTime(GameObject objectToDestroy, float timeUntilDestroyed)
     {
         yield return new WaitForSeconds(timeUntilDestroyed);

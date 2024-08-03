@@ -70,6 +70,7 @@ public class Enemy : MonoBehaviour
 
     void Die() 
     {
+        gameObject.tag = "Untagged";
         transform.parent.BroadcastMessage("OnDeath");
         CameraShaker.Presets.ShortShake2D(0.009f, 0.009f, 30, 3);
 

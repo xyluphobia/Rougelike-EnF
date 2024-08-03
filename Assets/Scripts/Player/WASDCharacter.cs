@@ -106,35 +106,44 @@ public class WASDCharacter : MonoBehaviour
     }
 
     /* Abilities */
-    void Melee()
+    public void Melee(bool firedByAi = false)
     {
+        Vector2 directionFromCast;
+
+        if (firedByAi)
+        {
+            directionFromCast = (Tools.instance.FindClosestObjectByTag(transform.position).transform.position - midReference.transform.position).normalized;
+        }
+        else
+        {
+            Vector3 mousePositionWorld = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            mousePositionWorld.z = midReference.transform.position.z;
+
+            Vector3 mousePositionPlayer = mousePositionWorld - midReference.transform.position;
+            directionFromCast = mousePositionPlayer.normalized;
+        }
+
         SoundManager.instance.RandomizeSfx(meleeClips);
 
-        Vector3 mousePositionWorld = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        mousePositionWorld.z = midReference.transform.position.z;
-
-        Vector3 mousePositionPlayer = mousePositionWorld - midReference.transform.position;
-        mousePositionPlayer.Normalize();
-
-        if (mousePositionPlayer.x > 0.7)
+        if (directionFromCast.x > 0.7)
         {
             attackPoint = attackPointRight;
         }
-        else if (mousePositionPlayer.x < -0.7)
+        else if (directionFromCast.x < -0.7)
         {
             attackPoint = attackPointLeft;
         }
-        else if (mousePositionPlayer.y > 0.7)
+        else if (directionFromCast.y > 0.7)
         {
             attackPoint = attackPointUp;
         }
-        else if (mousePositionPlayer.y < -0.7)
+        else if (directionFromCast.y < -0.7)
         {
             attackPoint = attackPointDown;
         }
 
-        playerController.animator.SetFloat("attackH", mousePositionPlayer.x);
-        playerController.animator.SetFloat("attackV", mousePositionPlayer.y);
+        playerController.animator.SetFloat("attackH", directionFromCast.x);
+        playerController.animator.SetFloat("attackV", directionFromCast.y);
 
         playerController.animator.SetTrigger("Melee");
 
