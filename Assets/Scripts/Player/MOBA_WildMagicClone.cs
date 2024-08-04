@@ -37,6 +37,7 @@ public class MOBA_WildMagicClone : MonoBehaviour
 
         yield return new WaitForSeconds(timeLeft);
         GameObject playerCharacter = GameObject.FindGameObjectWithTag("Player");
+        gameObject.transform.localScale = Vector3.zero;
 
         if (playerCharacter.TryGetComponent<MOBACharacter>(out MOBACharacter script))
         {
@@ -50,11 +51,26 @@ public class MOBA_WildMagicClone : MonoBehaviour
             GameObject newPlayer = Instantiate(GameAssets.i.MOBACharacter, playerCharacter.transform.position, Quaternion.identity);
             newPlayer.GetComponent<PlayerController>().setActivePlayer();
 
-            Destroy(playerCharacter);
-        }
 
+            Destroy(playerCharacter);
+            playerCharacter = newPlayer;
+        }
+        playerCharacter.GetComponent<MOBACharacter>().disableMovement = true;
+        playerCharacter.GetComponent<MOBACharacter>().canCast = false;
+        playerCharacter.GetComponent<NavMeshAgent>().ResetPath();
+
+        StartCoroutine(SwapBackAnimation());
         StopCoroutine(activeAI);
-        Destroy(gameObject);
+
+        IEnumerator SwapBackAnimation()
+        {
+            playerCharacter.GetComponent<PlayerController>().animator.SetTrigger("SwapBackFromUlt");
+            //SoundManager.instance.PlaySound();   ~    Ult end sound effect here
+            yield return new WaitForSeconds(0.333f);
+            playerCharacter.GetComponent<MOBACharacter>().disableMovement = false;
+            playerCharacter.GetComponent<MOBACharacter>().canCast = true;
+            Destroy(gameObject);
+        }
     }
 
     public void OnCloneDied()

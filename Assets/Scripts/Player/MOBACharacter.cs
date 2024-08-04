@@ -15,8 +15,8 @@ public class MOBACharacter : MonoBehaviour
     private GameObject movementIndicatorArrow;
     private Image[] AbilityBarImageHolder;
     private Dictionary<string, Image> AbilityImagesDict = new();
-    private bool disableMovement = false;
-    private bool canCast = true;
+    [HideInInspector] public bool disableMovement = false;
+    [HideInInspector] public bool canCast = true;
     [SerializeField] private AudioClip fizzledCastSfx;
 
     [SerializeField] private AudioClip lightningCastSfx;
