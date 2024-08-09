@@ -34,14 +34,15 @@ public class GameManager : MonoBehaviour
 
     public int playerHealth = 100;
     public string currentPlayerCharacterString;
+    public GameObject playerReference;
 
     public float saveStopwatch = -1f;
 
     public InputActionAsset actions;
 
     /* ~~~~~~~~~~~ DEV ~~~~~~~~~~~ */
-    public bool ForceBossRoomNext = true;
-    private bool UseCurrentLevel = true;
+    public bool ForceBossRoomNext = false;
+    private bool UseCurrentLevel = false;
     /* ~~~~~~~~~~~ DEV ~~~~~~~~~~~ */
 
     void Awake()
@@ -153,6 +154,7 @@ public class GameManager : MonoBehaviour
     {
         playerHealth = health;
         currentPlayerCharacterString = playerCharacter.name;
+        playerReference = playerCharacter;
     }
     public GameObject GetPlayerObjectByName(string stringToCheck = "")
     {
@@ -164,7 +166,7 @@ public class GameManager : MonoBehaviour
         else if (stringToCheck.Equals(GameAssets.i.MOBACharacter.name) || stringToCheck.Equals(GameAssets.i.MOBACharacter.name + "(Clone)"))
             return GameAssets.i.MOBACharacter;
         else
-            return GameAssets.i.MOBACharacter; //defaultPlayer
+            return GameAssets.i.defaultPlayer;
     }
 
     public void UpdateScore(int scoreToAdd)

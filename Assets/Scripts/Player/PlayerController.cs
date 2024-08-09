@@ -9,6 +9,7 @@ using System;
 using UnityEngine.Rendering.Universal;
 using UnityEditor.SearchService;
 using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem.WebGL;
 
 public class PlayerController : MonoBehaviour
 {
@@ -66,7 +67,7 @@ public class PlayerController : MonoBehaviour
 
         gameObject.tag = "Player";
         playerInput.enabled = true;
-
+        GameManager.instance.playerReference = gameObject;
         GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraController>().SetCameraTarget(gameObject);
 
         playerPortrait = GameObject.FindGameObjectWithTag("PortraitImage").GetComponent<Image>();

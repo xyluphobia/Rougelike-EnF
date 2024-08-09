@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 6983459575280591658}
   - component: {fileID: 8720711730871888044}
   - component: {fileID: 7829138522598407795}
+  - component: {fileID: 850842751230402332}
   m_Layer: 9
   m_Name: Slime
   m_TagString: Enemy
@@ -197,7 +198,6 @@ MonoBehaviour:
   currentHealth: 0
   invulnerable: 0
   hasHealthBar: 0
-  healthBar: {fileID: 0}
   deathClip: {fileID: 8300000, guid: 34bea1e53b779094f93762f5003ad195, type: 3}
   hitClips:
   - {fileID: 8300000, guid: 562dad4bdb1684e4d97e790a76fa91b3, type: 3}
@@ -217,7 +217,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0.8
   defaultSpeed: 0
-  attackRadius: 0.1
+  attackRadius: 0.8
   checkRadius: 12
   shouldRotate: 1
   PlayerLayer:
@@ -243,3 +243,18 @@ MonoBehaviour:
   dealDamageClips:
   - {fileID: 8300000, guid: 0c8b09fe6132b97499ef9974cd456084, type: 3}
   - {fileID: 8300000, guid: 38ff86a606496284dbfabbfbf64999fe, type: 3}
+--- !u!114 &850842751230402332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7601951051367205320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b135898c3061b2146b5a938a8328aceb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  meleeDamage: 2
+  cooldown: 1
+  dealDamageClip: {fileID: 8300000, guid: 38ff86a606496284dbfabbfbf64999fe, type: 3}

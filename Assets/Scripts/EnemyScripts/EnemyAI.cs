@@ -39,9 +39,9 @@ public class EnemyAI : MonoBehaviour
     {
         lastFramePos = transform.position;
         StartCoroutine(EnableAiAfter(2.0f));
-        this.enabled = false;
         agent.updateRotation = false;
         agent.updateUpAxis = false;
+        this.enabled = false;
     }
 
     IEnumerator EnableAiAfter(float time)
@@ -107,8 +107,8 @@ public class EnemyAI : MonoBehaviour
             if (target.position.y < transform.position.y)
                 diffYPercent *= -1;
 
-            animator.SetFloat("attackH", diffXPercent);
-            animator.SetFloat("attackV", diffYPercent);
+            //animator.SetFloat("attackH", diffXPercent);
+            //animator.SetFloat("attackV", diffYPercent);
 
             animator.SetFloat("Horizontal", diffXPercent);
             animator.SetFloat("Vertical", diffYPercent);
@@ -117,6 +117,11 @@ public class EnemyAI : MonoBehaviour
             {
                 animator.SetFloat("lastHorizontal", diffXPercent);
                 animator.SetFloat("lastVertical", diffYPercent);
+            }
+
+            if (TryGetComponent(out MeleeAttack meleeScript))
+            {
+                meleeScript.attack();
             }
         }
         else

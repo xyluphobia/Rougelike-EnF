@@ -76,7 +76,7 @@ ScriptedImporter:
     layerImportMode: 1
     defaultPivotSpace: 0
     defaultPivotAlignment: 9
-    customPivotPosition: {x: 0.5, y: 0.4}
+    customPivotPosition: {x: 0.5, y: 0.65}
     spritePadding: 0
     generateModelPrefab: 1
     generateAnimationClips: 1
@@ -88,14 +88,14 @@ ScriptedImporter:
     layerImportMode: 1
     defaultPivotSpace: 0
     defaultPivotAlignment: 9
-    customPivotPosition: {x: 0.5, y: 0.4}
+    customPivotPosition: {x: 0.5, y: 0.65}
     spritePadding: 0
     generateModelPrefab: 1
     generateAnimationClips: 1
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638576586404871314
+  platformSettingsDirtyTick: 638588118486383973
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -121,7 +121,7 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: SlimeAttack-Forward_Frame_0
     originalName: 
-    pivot: {x: 0.5, y: -0.42}
+    pivot: {x: 0.5, y: 0.37999994}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -141,7 +141,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 101}
   - name: SlimeAttack-Forward_Frame_1
     originalName: 
-    pivot: {x: 0.5, y: 0.37142858}
+    pivot: {x: 0.5, y: 0.7523809}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -161,7 +161,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 72}
   - name: SlimeAttack-Forward_Frame_2
     originalName: 
-    pivot: {x: 0.5, y: 0.472}
+    pivot: {x: 0.5, y: 0.79199994}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -181,7 +181,7 @@ ScriptedImporter:
     uvTransform: {x: 40, y: 4}
   - name: SlimeAttack-Forward_Frame_3
     originalName: 
-    pivot: {x: 0.50000006, y: 0.49230772}
+    pivot: {x: 0.50000006, y: 0.8}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -201,7 +201,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 4}
   - name: SlimeAttack-Forward_Frame_4
     originalName: 
-    pivot: {x: 0.5, y: 0.49230772}
+    pivot: {x: 0.5, y: 0.8}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:

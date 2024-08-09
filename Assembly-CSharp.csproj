@@ -102,6 +102,7 @@
     <Compile Include="Assets\Scripts\menus\OptionsMenu.cs" />
     <Compile Include="Assets\Scripts\ProceduralLevelGeneration\PG_Sprites\TilesetData\EnvironmentTilesetData.cs" />
     <Compile Include="Assets\Scripts\Items\PotsAndAbility\UpgradeKeepAlive.cs" />
+    <Compile Include="Assets\Scripts\EnemyScripts\MeleeAttack.cs" />
     <Compile Include="Assets\Scripts\ProceduralLevelGeneration\GenerationAlgorithms\CorridorFirstGenerator.cs" />
     <Compile Include="Assets\Scripts\EnemyScripts\Projectiles\RangedShotStandardProjectile.cs" />
     <Compile Include="Assets\Scripts\ProceduralLevelGeneration\PG_Algorithms.cs" />
