@@ -43,7 +43,7 @@ public class MOBACharacter : MonoBehaviour
     [HideInInspector] public GameObject selectedCharacter;
     [SerializeField] private AudioClip ultimateSfx;
     private bool ultimateIsOnCooldown = false;
-    private float ultimateCooldown = 3f;
+    private float ultimateCooldown = 30f;
     private bool ultimateSwapPositionIsOnCooldown = false;
     private float ultimateSwapPositionCooldown = 5f;
     private Coroutine swapTimer;

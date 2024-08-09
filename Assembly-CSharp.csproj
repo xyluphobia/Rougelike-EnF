@@ -87,7 +87,6 @@
     <Compile Include="Assets\Scripts\EnemyScripts\Projectiles\RangedShotTrackingProjectile.cs" />
     <Compile Include="Assets\Scripts\menus\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\Player\MOBACharacter.cs" />
-    <Compile Include="Assets\Scripts\Traps\TriggerTrap.cs" />
     <Compile Include="Assets\Prefabs\NeedForLevelToWork\KeyBindings.cs" />
     <Compile Include="Assets\Scripts\Traps\IlluminateDoor.cs" />
     <Compile Include="Assets\Prefabs\Popups\DestroyTextInSeconds.cs" />
@@ -126,6 +125,7 @@
     <Compile Include="Assets\Scripts\Global_and_GameManagment\GameAssets.cs" />
     <Compile Include="Assets\Scripts\MovingObject.cs" />
     <Compile Include="Assets\Scripts\Items\PotsAndAbility\HealthPotion.cs" />
+    <Compile Include="Assets\Scripts\Traps\TriggerSpikeTrap.cs" />
     <Compile Include="Assets\Scripts\Global_and_GameManagment\Loader.cs" />
   </ItemGroup>
   <ItemGroup>
