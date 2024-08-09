@@ -14,6 +14,13 @@ public class GameManager : MonoBehaviour
     public CorridorFirstGenerator boardScript;
     public SimpleRandomWalkGenerator bossRoomScript;
     public bool isBossLevel = false;
+    public enum GameStatusEnum
+    {
+        Playing,
+        Paused,
+        Unpausable
+    }
+    public GameStatusEnum GameStatus;
 
     public float levelStartDelay = 1.4f;
     public int level = 0;
@@ -121,6 +128,7 @@ public class GameManager : MonoBehaviour
     IEnumerator HideLevelImage()
     {
         Time.timeScale = 1f;
+        GameStatus = GameStatusEnum.Unpausable;
         yield return new WaitForSeconds(levelStartDelay);
         levelImage.SetActive(false);
 
@@ -131,6 +139,7 @@ public class GameManager : MonoBehaviour
         else
             StopWatch.stopwatchActive = true;
         */
+        GameStatus = GameStatusEnum.Playing;
         StopWatch.stopwatchActive = true;
     }
 

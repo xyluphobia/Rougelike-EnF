@@ -19,6 +19,9 @@ public class PauseMenu : MonoBehaviour
 
     public void PauseGame()
     {
+        if (GameManager.instance.GameStatus == GameManager.GameStatusEnum.Unpausable) return;
+
+        GameManager.instance.GameStatus = GameManager.GameStatusEnum.Paused;
         PlayerInput playerInput = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInput>();
         playerInput.SwitchCurrentActionMap("PauseUI");
 
@@ -28,6 +31,7 @@ public class PauseMenu : MonoBehaviour
 
     public void ResumeGame()
     {
+        GameManager.instance.GameStatus = GameManager.GameStatusEnum.Playing;
         PlayerInput playerInput = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInput>();
         playerInput.SwitchCurrentActionMap("Gameplay");  // this first needs to detect which action map is required based on character then switch to it
         

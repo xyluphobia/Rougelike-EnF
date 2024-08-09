@@ -22,7 +22,6 @@ public class OptionsMenu : MonoBehaviour
     public static bool isInOptionsMenu = false;
 
     [SerializeField] private GameObject pauseMenuUI;
-    [SerializeField] private GameObject optionsMenuUI;
 
     void Start()
     {
@@ -49,8 +48,6 @@ public class OptionsMenu : MonoBehaviour
         masterVolumeSlider.value = PlayerPrefs.GetFloat(SoundManager.MASTER_KEY, 1f);
         musicVolumeSlider.value = PlayerPrefs.GetFloat(SoundManager.MUSIC_KEY, 1f);
         gameplayVolumeSlider.value = PlayerPrefs.GetFloat(SoundManager.SFX_GAMEPLAY_KEY, 1f);
-
-        optionsMenuUI.SetActive(false);
     }
 
     public void EnteredOptionsMenu()
