@@ -71,8 +71,6 @@ public class WASDCharacter : MonoBehaviour
     /* Inputs */
     private void OnMove(InputValue inputValue)
     {
-        if (playerController.disableInput) return;
-
         movement.x = inputValue.Get<Vector2>().x;
         movement.y = inputValue.Get<Vector2>().y;
 
