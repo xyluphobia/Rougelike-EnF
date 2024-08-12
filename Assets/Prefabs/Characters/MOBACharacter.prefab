@@ -256,8 +256,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60db674dd45488444bb5d641ccbcddd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fizzledCastSfx: {fileID: 0}
-  lightningCastSfx: {fileID: 0}
+  disableMovement: 0
+  canCast: 1
+  fizzledCastSfx: {fileID: 8300000, guid: 97304ab9036efff4485311e948467912, type: 3}
+  lightningCastSfx: {fileID: 8300000, guid: ce0fcdfb176e75e4f84ecced29640f10, type: 3}
   abilityOneCooldown: 1.5
   icicleCastSfx: {fileID: 0}
   abilityTwoCooldownRapid: 0.5

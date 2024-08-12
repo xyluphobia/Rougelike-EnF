@@ -141,7 +141,7 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -242,3 +242,8 @@ MonoBehaviour:
   spawnedByPlayer: 0
   lightningBoltHitEnemies: []
   target: {fileID: 0}
+  hitSfx:
+  - {fileID: 8300000, guid: 997fa2e07aaf94d48a39595c71f77035, type: 3}
+  - {fileID: 8300000, guid: 959a4d583e8043d49b8278c28a561ec6, type: 3}
+  - {fileID: 8300000, guid: 18aedb06ce9f7f541a2995cbf09061f4, type: 3}
+  - {fileID: 8300000, guid: c491a0828bca7f04c80b0e482257b771, type: 3}

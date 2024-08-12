@@ -14,6 +14,8 @@ public class LightningProjectile : MonoBehaviour
     [HideInInspector] public List<GameObject> lightningBoltHitEnemies = new();
     [HideInInspector] public Transform target = null;
 
+    [SerializeField] private AudioClip[] hitSfx;
+
     void Start()
     {
         GetComponent<Animator>().SetTrigger("Casted");
@@ -57,7 +59,7 @@ public class LightningProjectile : MonoBehaviour
         if (collision.CompareTag("Enemy"))
         {
             collision.gameObject.GetComponent<Enemy>().TakeDamage(10);
-            // play sound effect
+            SoundManager.instance.RandomizeSfx(hitSfx);
             // spawn any hit effects
 
             RaycastHit2D[] nearbyEnemies = Physics2D.CircleCastAll(transform.position, 3f, (Vector2)transform.position);
