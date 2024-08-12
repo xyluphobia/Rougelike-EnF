@@ -6,13 +6,9 @@ public class HealthPotion : PotionsAndAbilities
 {
     const float defaultHealPercentage = 25f;
 
-    void Start()
-    {
-        playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
-    }
-
     public void useHealthPotion(float healPercentage = defaultHealPercentage)
     {
+        playerController = GameManager.instance.playerReference.GetComponent<PlayerController>();
         PickupPotion();
 
         GameManager.instance.UpdateScore(25);

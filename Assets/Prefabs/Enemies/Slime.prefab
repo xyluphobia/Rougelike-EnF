@@ -239,7 +239,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bc809f40c7b41a4c882d4c7ba44aafa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 25
+  damage: 5
   dealDamageClips:
   - {fileID: 8300000, guid: 0c8b09fe6132b97499ef9974cd456084, type: 3}
   - {fileID: 8300000, guid: 38ff86a606496284dbfabbfbf64999fe, type: 3}
@@ -255,6 +255,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b135898c3061b2146b5a938a8328aceb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  meleeDamage: 2
+  meleeDamage: 20
   cooldown: 1
   dealDamageClip: {fileID: 8300000, guid: 38ff86a606496284dbfabbfbf64999fe, type: 3}

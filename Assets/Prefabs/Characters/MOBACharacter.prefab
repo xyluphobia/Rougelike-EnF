@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 2584652219490034182}
   - component: {fileID: 8192170111932000519}
   - component: {fileID: 8729806848206798780}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: MOBACharacter
   m_TagString: Interactable
   m_Icon: {fileID: 0}
@@ -309,7 +309,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8661160323512080793}
   - component: {fileID: 700454414737875359}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}

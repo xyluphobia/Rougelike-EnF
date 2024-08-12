@@ -10,6 +10,7 @@ using UnityEngine.Rendering.Universal;
 using UnityEditor.SearchService;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem.WebGL;
+using UnityEngine.AI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -64,8 +65,10 @@ public class PlayerController : MonoBehaviour
     public void setActivePlayer()
     {
         activePlayer = true;
+        health = GameManager.instance.playerHealth;
 
         gameObject.tag = "Player";
+        gameObject.layer = 6;
         playerInput.enabled = true;
         GameManager.instance.playerReference = gameObject;
         GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraController>().SetCameraTarget(gameObject);
@@ -74,18 +77,25 @@ public class PlayerController : MonoBehaviour
         playerPortrait.sprite = portraitToInput;
 
         gameObject.SendMessage("TakeControl", null, SendMessageOptions.DontRequireReceiver);
-        
+
+        GameObject[] currentEnemies = GameObject.FindGameObjectsWithTag("Enemy"); // It would be more efficent to add enemies to a currentEnemies list held in
+        foreach (GameObject enemy in currentEnemies)                              // gamemanager as they are spawned and remove them as they die
+        {
+            enemy.SendMessage("OnPlayerChanged", null, SendMessageOptions.DontRequireReceiver);
+        }
     }
     public void setInactivePlayer()
     {
         activePlayer = false;
+        GameManager.instance.playerHealth = health;
 
         gameObject.tag = "Interactable";
+        gameObject.layer = 7;
         playerInput.enabled = false;
 
         gameObject.SendMessage("GiveControl", null, SendMessageOptions.DontRequireReceiver);
     }
-    
+
     public void SetActiveAbilityBar(GameObject BarToSet)
     {
         if (GameAssets.i.AbilityBarActive != null)
@@ -125,7 +135,7 @@ public class PlayerController : MonoBehaviour
             {
                 GameObject interactableObject = item.transform.gameObject;
 
-                if (interactableObject.layer == 6)  // Layer 6 is the player layer.
+                if (interactableObject.layer == 7)  // Layer 7 is the interaction layer.
                 {
                     setInactivePlayer();
                     interactableObject.GetComponent<PlayerController>().setActivePlayer();
@@ -151,6 +161,10 @@ public class PlayerController : MonoBehaviour
             GameManager.instance.ShowText(GameAssets.i.scoreText, 500, gameObject);
 
             rb.velocity = Vector2.zero;
+            if (TryGetComponent(out NavMeshAgent agent))
+            {
+                agent.ResetPath();
+            }
             disableInput = true;
 
             GameManager.instance.setPlayerForNextLevel(health, gameObject);
@@ -222,15 +236,27 @@ public class PlayerController : MonoBehaviour
     {
         if (movementSpeed > defaultMovementSpeed)
             return;
-        
+
         movementSpeed = movementSpeed * buff;
-        animator.speed *= buff;
+        
+        if (TryGetComponent(out NavMeshAgent agent))
+        {
+            agent.speed = movementSpeed;
+        } 
+        else
+        {
+            animator.speed *= buff;
+        }
     }
 
     public void ResetBoost()
     {
         movementSpeed = defaultMovementSpeed;
         animator.speed = 1;
+        if (TryGetComponent(out NavMeshAgent agent))
+        {
+            agent.speed = movementSpeed;
+        }
     }
 
     public IEnumerator CooldownUIUpdater(Image TimerUI, float Cooldown, bool ImageFillSet = false)

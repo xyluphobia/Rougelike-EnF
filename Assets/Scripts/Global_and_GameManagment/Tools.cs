@@ -22,13 +22,13 @@ public class Tools : MonoBehaviour
     /* General */
     public void PauseGame()
     {
-        GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInput>().enabled = false;
+        GameManager.instance.playerReference.GetComponent<PlayerInput>().enabled = false;
         Time.timeScale = 0f;
     }
 
     public void UnPauseGame()
     {
-        GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInput>().enabled = true;
+        GameManager.instance.playerReference.GetComponent<PlayerInput>().enabled = true;
         Time.timeScale = 1f;
     }
 

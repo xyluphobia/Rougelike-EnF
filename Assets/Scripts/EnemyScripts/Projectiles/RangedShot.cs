@@ -74,12 +74,7 @@ public class RangedShot : MonoBehaviour
             passingWaitDuration = waitTimeToPass;
 
         if (passingWaitDuration != 0f)
-        {/*
-            animator.SetFloat("attackH", dir.x);
-            animator.SetFloat("attackV", dir.y);
-
-            animator.SetFloat("Horizontal", dir.x);
-            animator.SetFloat("Vertical", dir.y);*/
+        {
             SoundManager.instance.RandomizeSfx(projectileShotClips);
 
             if (isSpecialAttack)

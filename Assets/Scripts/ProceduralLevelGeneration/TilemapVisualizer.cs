@@ -50,6 +50,9 @@ public class TilemapVisualizer : MonoBehaviour
         propHolder = Instantiate(GameAssets.i.PropHolder).transform;
         itemHolder = Instantiate(GameAssets.i.ItemHolder).transform;
 
+        bool WASDToSwapSpawned = false;
+        bool MOBAToSwapSpawned = false;
+
         foreach (var position in floorPositions)
         {
             string neighborsBinaryValue = "";
@@ -73,6 +76,16 @@ public class TilemapVisualizer : MonoBehaviour
                 exitSpawned = true;
                 Instantiate(GameAssets.i.exit, (Vector3Int)position, Quaternion.identity);
                 usedPositions.Add(position);
+            }
+            else if (!WASDToSwapSpawned && iterations >= floorPositionsCount * 0.3f)
+            {
+                WASDToSwapSpawned = true;
+                Instantiate(GameAssets.i.WASDCharacter, (Vector3Int)position, Quaternion.identity);
+            }
+            else if (!MOBAToSwapSpawned && iterations >= floorPositionsCount * 0.7f)
+            {
+                MOBAToSwapSpawned = true;
+                Instantiate(GameAssets.i.MOBACharacter, (Vector3Int)position, Quaternion.identity);
             }
             else {
                 float randomValue = Random.value;

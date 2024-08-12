@@ -9,12 +9,12 @@ public class SpeedPotion : PotionsAndAbilities
     
     void Start()
     {
-        playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
         boostAsPercent = (100f + boostPercentage) / 100f;
     }
 
     public void useSpeedPotion() 
     {
+        playerController = GameManager.instance.playerReference.GetComponent<PlayerController>();
         PickupPotion();
         speedPotionEffect();
 

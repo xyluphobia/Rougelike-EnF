@@ -32,16 +32,22 @@ public class EnemyAI : MonoBehaviour
     void Awake()
     {
         animator = GetComponent<Animator>();
-        target = GameObject.FindGameObjectWithTag("Player").transform;
         agent = GetComponentInParent<NavMeshAgent>();
     }
     void Start()
     {
+        target = GameManager.instance.playerReference.transform;
+
         lastFramePos = transform.position;
         StartCoroutine(EnableAiAfter(2.0f));
         agent.updateRotation = false;
         agent.updateUpAxis = false;
         this.enabled = false;
+    }
+
+    public void OnPlayerChanged()
+    {
+        target = GameManager.instance.playerReference.transform;
     }
 
     IEnumerator EnableAiAfter(float time)

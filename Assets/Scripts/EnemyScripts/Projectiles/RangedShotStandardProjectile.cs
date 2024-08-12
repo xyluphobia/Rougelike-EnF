@@ -19,7 +19,7 @@ public class RangedShotStandardProjectile : MonoBehaviour
 
     void Start()
     {
-        target = GameObject.FindGameObjectWithTag("Player").transform;
+        target = GameManager.instance.playerReference.transform;
         rb = GetComponent<Rigidbody2D>();
         selfCollider = GetComponent<Collider2D>();
 
