@@ -36,6 +36,7 @@ public class MOBA_WildMagicClone : MonoBehaviour
             StopCoroutine(destroyRoutine);
 
         yield return new WaitForSeconds(timeLeft);
+        SoundManager.instance.PlaySound(GameAssets.i.ultimateCloneDespawnSfx);
         GameObject playerCharacter = GameObject.FindGameObjectWithTag("Player");
         gameObject.transform.localScale = Vector3.zero;
 

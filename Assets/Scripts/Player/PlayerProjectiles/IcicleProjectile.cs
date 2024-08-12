@@ -8,6 +8,7 @@ public class IcicleProjectile : MonoBehaviour
     private Vector2 direction;
     [HideInInspector] public float projectileSpeed = 5f;
     private MOBACharacter player;
+    [SerializeField] private AudioClip[] hitSfx;
     
     void Start()
     {
@@ -19,6 +20,8 @@ public class IcicleProjectile : MonoBehaviour
     {
         if (collision.CompareTag("Enemy"))
         {
+            SoundManager.instance.RandomizeSfx(hitSfx);
+
             if (collision.gameObject.GetComponents<Collider2D>().Length > 1)
             {
                 if (collision.gameObject.GetComponents<Collider2D>()[0].isActiveAndEnabled)
@@ -83,6 +86,7 @@ public class IcicleProjectile : MonoBehaviour
         }
         else if (collision.transform.CompareTag("Wall"))
         {
+            SoundManager.instance.RandomizeSfx(hitSfx);
             GetComponent<Rigidbody2D>().velocity = Vector3.zero;
             DestroyAfterAnim();
         }

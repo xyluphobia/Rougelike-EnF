@@ -41,7 +41,8 @@ public class MOBACharacter : MonoBehaviour
     protected RadialMenuMB characterSelectMenuInstance;
 
     [HideInInspector] public GameObject selectedCharacter;
-    [SerializeField] private AudioClip ultimateSfx;
+    [SerializeField] private AudioClip ultimateCastSfx;
+    [SerializeField] private AudioClip[] ultimateSwapPosSfx;
     private bool ultimateIsOnCooldown = false;
     private float ultimateCooldown = 30f;
     private bool ultimateSwapPositionIsOnCooldown = false;
@@ -176,6 +177,7 @@ public class MOBACharacter : MonoBehaviour
         {
             StartCoroutine(HoldCastPositionForSeconds(0.25f, closestEnemy.position));
             StartCoroutine(LightningAbilityCooldown());
+            SoundManager.instance.PlaySound(fizzledCastSfx);
             SoundManager.instance.PlaySound(lightningCastSfx);
 
             GameObject bolt = Instantiate(GameAssets.i.lightningBoltProjectile, transform.position, Quaternion.identity);
@@ -249,6 +251,7 @@ public class MOBACharacter : MonoBehaviour
             activeGeneralIcicleTimer = StartCoroutine(IcicleGeneralAbilityCooldown());
             StartCoroutine(HoldCastPositionForSeconds(0.25f, abilityOrigin));
 
+            SoundManager.instance.PlaySound(icicleCastSfx);
             GameObject icicle = Instantiate(GameAssets.i.icicleProjectile, transform.position, Quaternion.identity);
             if (icicleRapidShotsUsed != 2) /* First Two Shots ~ Slows 30% | 60% */
             {
@@ -347,7 +350,8 @@ public class MOBACharacter : MonoBehaviour
         {
             StartCoroutine(UltimateSwapPositionCooldown());
             swapTimer = StartCoroutine(playerController.CooldownUIUpdater(AbilityImagesDict["RTimer"], ultimateSwapPositionCooldown));
-            
+
+            SoundManager.instance.RandomizeSfx(ultimateSwapPosSfx);
             currentClone.GetComponent<MOBA_WildMagicClone>().SwapWithPlayer(transform.position);
             return;
         }
@@ -384,6 +388,7 @@ public class MOBACharacter : MonoBehaviour
 
                 if (NavMesh.SamplePosition(abilityOrigin, out NavMeshHit closestNavPosition, 100, -1))
                 {
+                    SoundManager.instance.PlaySound(ultimateCastSfx);
                     GameObject character = Instantiate(selectedCharacter, closestNavPosition.position, Quaternion.identity);
 
                     character.GetComponent<Rigidbody2D>().isKinematic = true;

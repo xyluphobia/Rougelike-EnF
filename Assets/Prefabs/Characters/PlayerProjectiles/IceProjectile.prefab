@@ -240,3 +240,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileSpeed: 5
+  hitSfx:
+  - {fileID: 8300000, guid: d47ccf77302239c4999c3514364ee7d7, type: 3}
+  - {fileID: 8300000, guid: 0b2972a773b4f014fae15edcff92e3ba, type: 3}
+  - {fileID: 8300000, guid: b8b09aa633c5deb4aa7e4e91511d448d, type: 3}
+  - {fileID: 8300000, guid: f4e0685e5240e6d4294b2d3dc3d292ac, type: 3}
+  - {fileID: 8300000, guid: 09a82e160bd2595458c49e3c80511961, type: 3}

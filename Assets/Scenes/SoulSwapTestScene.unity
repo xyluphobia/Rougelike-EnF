@@ -3909,10 +3909,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1732146665423712238, guid: cd3cb7e478e836241a1535f068e1fc8d, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2584652219490034182, guid: cd3cb7e478e836241a1535f068e1fc8d, type: 3}
       propertyPath: activePlayer
       value: 1
@@ -3965,10 +3961,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8192170111932000519, guid: cd3cb7e478e836241a1535f068e1fc8d, type: 3}
-      propertyPath: lightningCastSfx
-      value: 
-      objectReference: {fileID: 8300000, guid: ce0fcdfb176e75e4f84ecced29640f10, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4070,7 +4062,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5760760847156915241, guid: 7d7ae7955cdbd264eb905f2384d88ccf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.51
+      value: 3.9
       objectReference: {fileID: 0}
     - target: {fileID: 5760760847156915241, guid: 7d7ae7955cdbd264eb905f2384d88ccf, type: 3}
       propertyPath: m_LocalPosition.z
