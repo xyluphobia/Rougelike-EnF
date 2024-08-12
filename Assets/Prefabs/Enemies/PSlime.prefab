@@ -105,9 +105,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6983459575280591658, guid: 4fa78990e9e1d5949b0504203225d52d, type: 3}
+      propertyPath: maxHealth
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6983459575280591658, guid: 4fa78990e9e1d5949b0504203225d52d, type: 3}
+      propertyPath: currentHealth
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7601951051367205320, guid: 4fa78990e9e1d5949b0504203225d52d, type: 3}
       propertyPath: m_Name
       value: Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 8720711730871888044, guid: 4fa78990e9e1d5949b0504203225d52d, type: 3}
+      propertyPath: speed
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8720711730871888044, guid: 4fa78990e9e1d5949b0504203225d52d, type: 3}
+      propertyPath: shouldRotate
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1016669561142411242, guid: 4fa78990e9e1d5949b0504203225d52d, type: 3}

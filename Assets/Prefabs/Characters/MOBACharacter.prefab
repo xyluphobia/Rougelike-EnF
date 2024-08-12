@@ -236,8 +236,16 @@ MonoBehaviour:
   health: 0
   maxHealth: 100
   animator: {fileID: 0}
-  deathClips: []
-  takeDamageClips: []
+  deathClips:
+  - {fileID: 8300000, guid: e2f3aac09ec92a246bb67c8940071897, type: 3}
+  takeDamageClips:
+  - {fileID: 8300000, guid: 070b5541aab2d5d4bbc7ff30bc0bdc6f, type: 3}
+  - {fileID: 8300000, guid: 9a1b96774c357ab43b52f21367fd24e7, type: 3}
+  - {fileID: 8300000, guid: b07472958eb89dc41b5c11cf266c4535, type: 3}
+  - {fileID: 8300000, guid: a67ace1ebb09a3e4dae6574087af03d9, type: 3}
+  - {fileID: 8300000, guid: ac3c5463ad59ace44bfc9167613d3c70, type: 3}
+  - {fileID: 8300000, guid: d1dbce5588f85fe45ba11e41fa5d9ced, type: 3}
+  - {fileID: 8300000, guid: 435833be55b98f447826b68ffd364b28, type: 3}
   movementSpeed: 4
   restartLevelDelay: 1
   disableInput: 0
