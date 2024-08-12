@@ -22,7 +22,7 @@ public class PauseMenu : MonoBehaviour
         if (GameManager.instance.GameStatus == GameManager.GameStatusEnum.Unpausable) return;
 
         GameManager.instance.GameStatus = GameManager.GameStatusEnum.Paused;
-        PlayerInput playerInput = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInput>();
+        PlayerInput playerInput = GameManager.instance.playerReference.GetComponent<PlayerInput>();
         playerInput.SwitchCurrentActionMap("PauseUI");
 
         pauseMenuUI.SetActive(true);
@@ -32,9 +32,16 @@ public class PauseMenu : MonoBehaviour
     public void ResumeGame()
     {
         GameManager.instance.GameStatus = GameManager.GameStatusEnum.Playing;
-        PlayerInput playerInput = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInput>();
-        playerInput.SwitchCurrentActionMap("Gameplay");  // this first needs to detect which action map is required based on character then switch to it
-        
+        PlayerInput playerInput = GameManager.instance.playerReference.GetComponent<PlayerInput>();
+
+        string stringToCheck = GameManager.instance.currentPlayerCharacterString;
+        if (stringToCheck.Equals(GameAssets.i.WASDCharacter.name) || stringToCheck.Equals(GameAssets.i.WASDCharacter.name + "(Clone)"))
+            playerInput.SwitchCurrentActionMap("Gameplay");
+        else if (stringToCheck.Equals(GameAssets.i.MOBACharacter.name) || stringToCheck.Equals(GameAssets.i.MOBACharacter.name + "(Clone)"))
+            playerInput.SwitchCurrentActionMap("GameplayMOBA");
+        else
+            playerInput.SwitchCurrentActionMap("Gameplay");
+
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
     }

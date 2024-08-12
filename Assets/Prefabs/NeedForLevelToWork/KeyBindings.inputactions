@@ -404,6 +404,51 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Development_ForceBossLevel",
+                    "type": "Button",
+                    "id": "bc743e59-364f-4247-9eee-26279051b39d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Development_KillAllEnemies",
+                    "type": "Button",
+                    "id": "8b580622-5343-44ed-80b2-1a1cc60d51a8",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Development_FullHeal",
+                    "type": "Button",
+                    "id": "62e62198-6edf-4ce1-afa7-68989944333d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Development_RechargeDash",
+                    "type": "Button",
+                    "id": "0718e302-b84c-4f6a-be4e-5dcf56a985a2",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Development_Invincibility",
+                    "type": "Button",
+                    "id": "9a72168f-7c58-4403-b527-a5d2dde8e096",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -492,6 +537,61 @@
                     "processors": "",
                     "groups": "",
                     "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f021216e-2f92-4dd6-8af9-e513fe130e4c",
+                    "path": "<Keyboard>/f1",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Development_ForceBossLevel",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5dad064d-1fe8-4a26-980c-5f663d3d5106",
+                    "path": "<Keyboard>/f2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Development_KillAllEnemies",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "512fc50c-c111-4816-a39e-c450cbffc1b7",
+                    "path": "<Keyboard>/f3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Development_FullHeal",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "17c8986b-afa4-469f-ac64-1514b8f0f1fb",
+                    "path": "<Keyboard>/f4",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Development_RechargeDash",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "69310178-c5cc-4e78-b750-f5a9fa2e18dd",
+                    "path": "<Keyboard>/f5",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Development_Invincibility",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

@@ -19,14 +19,15 @@ public class CameraController : MonoBehaviour
     {
         SetCameraTarget();
         targetPoint.z = transform.position.z;
-        targetLastPosition = target.transform.position;
+        if (target)
+            targetLastPosition = target.transform.position;
     }
     public void SetCameraTarget(GameObject targetToSet = null)
     {
         if (targetToSet != null)
             target = targetToSet;
         else
-            target = GameObject.FindGameObjectWithTag("Player");
+            target = GameManager.instance.playerReference;
     }
 
     void FixedUpdate()

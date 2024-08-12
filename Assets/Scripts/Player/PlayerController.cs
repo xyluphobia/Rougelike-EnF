@@ -7,9 +7,7 @@ using TMPro;
 using CameraShake;
 using System;
 using UnityEngine.Rendering.Universal;
-using UnityEditor.SearchService;
 using UnityEngine.SceneManagement;
-using UnityEngine.InputSystem.WebGL;
 using UnityEngine.AI;
 
 public class PlayerController : MonoBehaviour
