@@ -15,7 +15,7 @@ C:/Users/Matthew/Desktop/Rougelike Simple
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-58344
+62403
 Successfully changed project path to: C:/Users/Matthew/Desktop/Rougelike Simple
 C:/Users/Matthew/Desktop/Rougelike Simple
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ C:/Users/Matthew/Desktop/Rougelike Simple
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [29020] Host "[IP] 192.168.1.50 [Port] 0 [Flags] 2 [Guid] 3253397039 [EditorId] 3253397039 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-ED5AA6K) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [9688] Host "[IP] 192.168.1.50 [Port] 0 [Flags] 2 [Guid] 684233514 [EditorId] 684233514 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-ED5AA6K) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [29020] Host "[IP] 192.168.1.50 [Port] 0 [Flags] 2 [Guid] 3253397039 [EditorId] 3253397039 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-ED5AA6K) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [9688] Host "[IP] 192.168.1.50 [Port] 0 [Flags] 2 [Guid] 684233514 [EditorId] 684233514 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-ED5AA6K) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 19 workers.
-Library Redirect Path: Library/Refreshing native plugins compatible for Editor in 2.81 ms, found 0 plugins.
+Library Redirect Path: Library/Refreshing native plugins compatible for Editor in 2.47 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2023.1.20f1 (35a524b12060)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2023.1.20f1/Editor/Data/Resources/UnitySubsystems
@@ -70,7 +70,7 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2023.1.20f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2023.1.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2023.1.20f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56736
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56328
 Begin MonoManager ReloadAssembly
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
@@ -84,41 +84,41 @@ C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.1.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001811 seconds.
-- Loaded All Assemblies, in  0.253 seconds
+Registered in 0.002008 seconds.
+- Loaded All Assemblies, in  0.278 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-- Finished resetting the current domain, in  0.217 seconds
-Domain Reload Profiling: 469ms
-	BeginReloadAssembly (87ms)
+- Finished resetting the current domain, in  0.224 seconds
+Domain Reload Profiling: 501ms
+	BeginReloadAssembly (93ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (23ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (34ms)
-	LoadAllAssembliesAndSetupDomain (100ms)
-		LoadAssemblies (86ms)
+	RebuildCommonClasses (26ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (39ms)
+	LoadAllAssembliesAndSetupDomain (112ms)
+		LoadAssemblies (91ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (97ms)
-			TypeCache.Refresh (96ms)
-				TypeCache.ScanAssembly (88ms)
+		AnalyzeDomain (108ms)
+			TypeCache.Refresh (107ms)
+				TypeCache.ScanAssembly (99ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (217ms)
+	FinalizeReload (224ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (185ms)
+		SetupLoadedEditorAssemblies (191ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (7ms)
 			SetLoadedEditorAssemblies (4ms)
 			BeforeProcessingInitializeOnLoad (6ms)
-			ProcessInitializeOnLoadAttributes (130ms)
-			ProcessInitializeOnLoadMethodAttributes (39ms)
+			ProcessInitializeOnLoadAttributes (135ms)
+			ProcessInitializeOnLoadMethodAttributes (38ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -139,405 +139,51 @@ C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-- Loaded All Assemblies, in  0.545 seconds
-Refreshing native plugins compatible for Editor in 0.91 ms, found 0 plugins.
+- Loaded All Assemblies, in  0.585 seconds
+Refreshing native plugins compatible for Editor in 0.98 ms, found 0 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.457 seconds
-Domain Reload Profiling: 1000ms
-	BeginReloadAssembly (192ms)
+- Finished resetting the current domain, in  0.479 seconds
+Domain Reload Profiling: 1062ms
+	BeginReloadAssembly (211ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (4ms)
+		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (19ms)
-	RebuildCommonClasses (22ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (25ms)
-	LoadAllAssembliesAndSetupDomain (296ms)
-		LoadAssemblies (199ms)
+		CreateAndSetChildDomain (20ms)
+	RebuildCommonClasses (23ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (314ms)
+		LoadAssemblies (215ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (160ms)
-			TypeCache.Refresh (139ms)
-				TypeCache.ScanAssembly (133ms)
-			ScanForSourceGeneratedMonoScriptInfo (13ms)
-			ResolveRequiredComponents (7ms)
-	FinalizeReload (458ms)
+		AnalyzeDomain (172ms)
+			TypeCache.Refresh (149ms)
+				TypeCache.ScanAssembly (143ms)
+			ScanForSourceGeneratedMonoScriptInfo (15ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (479ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (283ms)
+		SetupLoadedEditorAssemblies (301ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (5ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (81ms)
-			ProcessInitializeOnLoadAttributes (165ms)
-			ProcessInitializeOnLoadMethodAttributes (25ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (86ms)
+			ProcessInitializeOnLoadAttributes (177ms)
+			ProcessInitializeOnLoadMethodAttributes (27ms)
 			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (5ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
-Refreshing native plugins compatible for Editor in 0.75 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.74 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3628 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 61 unused Assets / (1.5 MB). Loaded Objects now: 4181.
-Memory consumption went from 193.1 MB to 191.7 MB.
-Total: 2.998900 ms (FindLiveObjects: 0.153500 ms CreateObjectMapping: 0.076900 ms MarkObjects: 2.605700 ms  DeleteObjects: 0.162100 ms)
+Memory consumption went from 193.2 MB to 191.7 MB.
+Total: 2.897800 ms (FindLiveObjects: 0.145600 ms CreateObjectMapping: 0.071800 ms MarkObjects: 2.518800 ms  DeleteObjects: 0.160900 ms)
 
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
-  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 10177.996508 seconds.
-  path: Assets/Sprites/UI/statBars2.png
-  artifactKey: Guid(d13efcb32ce8a74408aadd86a6e30de2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/UI/statBars2.png using Guid(d13efcb32ce8a74408aadd86a6e30de2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0569427e95daacbe1c45db89ff40a83e') in 0.045214 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 12.129967 seconds.
-  path: Assets/Sprites/UI/TextMesh Pro
-  artifactKey: Guid(f54d1bd14bd3ca042bd867b519fee8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/UI/TextMesh Pro using Guid(f54d1bd14bd3ca042bd867b519fee8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f98784b7b064c25fabddb72cdd6236cf') in 0.000554 seconds
-Number of updated asset objects reloaded before import = 9
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 58.579989 seconds.
-  path: Assets/Sprites/UI/statBars2.png
-  artifactKey: Guid(d13efcb32ce8a74408aadd86a6e30de2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/UI/statBars2.png using Guid(d13efcb32ce8a74408aadd86a6e30de2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d571b5da95b2a23f2e9a1285a3581fc') in 0.025660 seconds
-Number of updated asset objects reloaded before import = 9
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 19.767895 seconds.
-  path: Assets/Sprites/UI/statBars2.png
-  artifactKey: Guid(d13efcb32ce8a74408aadd86a6e30de2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/UI/statBars2.png using Guid(d13efcb32ce8a74408aadd86a6e30de2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3478cb0fe274a148648f231daeb89cb') in 0.015453 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 6.857344 seconds.
-  path: Assets/Sprites/UI/statBars2.png
-  artifactKey: Guid(d13efcb32ce8a74408aadd86a6e30de2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/UI/statBars2.png using Guid(d13efcb32ce8a74408aadd86a6e30de2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be1b96f7225ed1f669660d646293eddb') in 0.013808 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 119.145095 seconds.
-  path: Assets/Sprites/UI/statBars2.png
-  artifactKey: Guid(d13efcb32ce8a74408aadd86a6e30de2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/UI/statBars2.png using Guid(d13efcb32ce8a74408aadd86a6e30de2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbdcc26be0ab5e384fbc651190e60ec8') in 0.061573 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 13.170226 seconds.
-  path: Assets/Sprites/UI/statBars2.png
-  artifactKey: Guid(d13efcb32ce8a74408aadd86a6e30de2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/UI/statBars2.png using Guid(d13efcb32ce8a74408aadd86a6e30de2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a643bcc198b8209ab1703e59216f12e8') in 0.024173 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 21.663502 seconds.
-  path: Assets/Prefabs/Player/AfterImage.prefab
-  artifactKey: Guid(c774d41460f5101468f5a581ad732c13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player/AfterImage.prefab using Guid(c774d41460f5101468f5a581ad732c13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aaaa87c345c663b50dafeb3311f4c9ff') in 0.168687 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 82.118776 seconds.
-  path: Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab
-  artifactKey: Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab using Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Refreshing native plugins compatible for Editor in 0.92 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
- -> (artifact id: 'ea48733de04bb1a3b232a2b13852fc90') in 0.080001 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 736
-========================================================================
-Received Import Request.
-  Time since last request: 27.988988 seconds.
-  path: Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab
-  artifactKey: Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab using Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Refreshing native plugins compatible for Editor in 0.96 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
- -> (artifact id: '549d272f6187b808aebbf8a55d8ec65e') in 0.032247 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 736
-========================================================================
-Received Import Request.
-  Time since last request: 35.440702 seconds.
-  path: Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab
-  artifactKey: Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab using Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Refreshing native plugins compatible for Editor in 0.84 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
- -> (artifact id: '35cb083d612a41d66d13e75f227e283c') in 0.027810 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 736
-========================================================================
-Received Import Request.
-  Time since last request: 7.429991 seconds.
-  path: Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab
-  artifactKey: Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab using Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Refreshing native plugins compatible for Editor in 0.84 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
- -> (artifact id: 'f95b627efec93b4ea72b3370c0991d65') in 0.026752 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 736
-========================================================================
-Received Import Request.
-  Time since last request: 8.024945 seconds.
-  path: Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab
-  artifactKey: Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab using Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Refreshing native plugins compatible for Editor in 0.84 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
- -> (artifact id: 'eec5e66f0141c0bb9398f919ea8a98c6') in 0.029072 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 736
-========================================================================
-Received Import Request.
-  Time since last request: 7.220665 seconds.
-  path: Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab
-  artifactKey: Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab using Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Refreshing native plugins compatible for Editor in 0.84 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
- -> (artifact id: 'a3ccc4638ed9ff3629f618767a75d88d') in 0.026787 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 736
-========================================================================
-Received Import Request.
-  Time since last request: 11.054292 seconds.
-  path: Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab
-  artifactKey: Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab using Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Refreshing native plugins compatible for Editor in 0.90 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
- -> (artifact id: '08fcc692c63249989ffde7c37b030b45') in 0.027366 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 736
-========================================================================
-Received Import Request.
-  Time since last request: 13.514440 seconds.
-  path: Assets/Sprites/UI/Icons/SmallHeartIcon.png
-  artifactKey: Guid(3c9b85e253bf24a4ebc733c0b369649b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/UI/Icons/SmallHeartIcon.png using Guid(3c9b85e253bf24a4ebc733c0b369649b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31941451bbf5dd3bb03a5a7ceea4f578') in 0.011872 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 23.230937 seconds.
-  path: Assets/Sprites/UI/Icons/SmallHeartIconGreyOutline.png
-  artifactKey: Guid(45d22bb74a011214d97893495e68a581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/UI/Icons/SmallHeartIconGreyOutline.png using Guid(45d22bb74a011214d97893495e68a581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f24a97991a22fced17cb2dab30f7a56b') in 0.013659 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 6.690732 seconds.
-  path: Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab
-  artifactKey: Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab using Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Refreshing native plugins compatible for Editor in 0.85 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
- -> (artifact id: '6648611b5cfe3d6d942e806d9c42e684') in 0.026942 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 736
-========================================================================
-Received Import Request.
-  Time since last request: 19.075383 seconds.
-  path: Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab
-  artifactKey: Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab using Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Refreshing native plugins compatible for Editor in 0.82 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
- -> (artifact id: '49c2873049ac73d1fdef9c607a5cdc46') in 0.028218 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 736
-========================================================================
-Received Import Request.
-  Time since last request: 8.249469 seconds.
-  path: Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab
-  artifactKey: Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab using Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Refreshing native plugins compatible for Editor in 0.86 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
- -> (artifact id: 'fbe796438453dacb30c40a72085c9b4c') in 0.026860 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 736
-========================================================================
-Received Import Request.
-  Time since last request: 9.455217 seconds.
-  path: Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab
-  artifactKey: Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab using Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Refreshing native plugins compatible for Editor in 0.85 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
- -> (artifact id: '3e99d793667d3a46cca96fbc0f97aa41') in 0.026493 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 736
-========================================================================
-Received Import Request.
-  Time since last request: 24.046656 seconds.
-  path: Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab
-  artifactKey: Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab using Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Refreshing native plugins compatible for Editor in 0.96 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
- -> (artifact id: '914de2627706c38d18f88d136655a6dd') in 0.027554 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 737
-========================================================================
-Received Import Request.
-  Time since last request: 2.803783 seconds.
-  path: Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab
-  artifactKey: Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab using Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Refreshing native plugins compatible for Editor in 0.83 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
- -> (artifact id: '8935c2ebf1ffc4144be79f0eb2d977d9') in 0.028004 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 737
-========================================================================
-Received Import Request.
-  Time since last request: 4.820277 seconds.
-  path: Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab
-  artifactKey: Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab using Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Refreshing native plugins compatible for Editor in 0.84 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
- -> (artifact id: '7907dce02a9849f48348ad04da39cd3e') in 0.027546 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 737
-========================================================================
-Received Import Request.
-  Time since last request: 3.802762 seconds.
-  path: Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab
-  artifactKey: Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab using Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Refreshing native plugins compatible for Editor in 0.91 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
- -> (artifact id: '84c55cb77bcdfd5f8f37b6439dc14341') in 0.027033 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 737
-========================================================================
-Received Import Request.
-  Time since last request: 9.259511 seconds.
-  path: Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab
-  artifactKey: Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab using Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Refreshing native plugins compatible for Editor in 0.86 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
- -> (artifact id: '1f296a2f5a4d3c1cb2ed5ab758975d7c') in 0.026085 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 737
-========================================================================
-Received Import Request.
-  Time since last request: 7.236519 seconds.
-  path: Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab
-  artifactKey: Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab using Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Refreshing native plugins compatible for Editor in 0.88 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
- -> (artifact id: '70695f3524d3c78046d087b7ac824b4a') in 0.027939 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 737
-========================================================================
-Received Import Request.
-  Time since last request: 2.420235 seconds.
-  path: Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab
-  artifactKey: Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab using Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Refreshing native plugins compatible for Editor in 0.86 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
- -> (artifact id: 'd84b8b2298b3f783725926946758366d') in 0.028073 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 737
-========================================================================
-Received Import Request.
-  Time since last request: 7.446783 seconds.
-  path: Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab
-  artifactKey: Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab using Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Refreshing native plugins compatible for Editor in 0.84 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
- -> (artifact id: 'b6c8d2aef228e64bd5f221346cb87b0f') in 0.026437 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 737
-========================================================================
-Received Import Request.
-  Time since last request: 5.832490 seconds.
-  path: Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab
-  artifactKey: Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab using Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Refreshing native plugins compatible for Editor in 0.86 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
- -> (artifact id: 'cb6d7b4c64b8e04109046ea1fa6a97b1') in 0.026864 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 737
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-- Loaded All Assemblies, in  0.440 seconds
-Refreshing native plugins compatible for Editor in 0.91 ms, found 0 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.590 seconds
-Domain Reload Profiling: 1028ms
-	BeginReloadAssembly (133ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (9ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (31ms)
-	RebuildCommonClasses (21ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (16ms)
-	LoadAllAssembliesAndSetupDomain (261ms)
-		LoadAssemblies (184ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (137ms)
-			TypeCache.Refresh (130ms)
-				TypeCache.ScanAssembly (124ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (6ms)
-	FinalizeReload (590ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (271ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (4ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (77ms)
-			ProcessInitializeOnLoadAttributes (159ms)
-			ProcessInitializeOnLoadMethodAttributes (23ms)
-			AfterProcessingInitializeOnLoad (3ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (8ms)
-Refreshing native plugins compatible for Editor in 0.84 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3459 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 34 unused Assets / (1.5 MB). Loaded Objects now: 4247.
-Memory consumption went from 165.0 MB to 163.5 MB.
-Total: 2.852700 ms (FindLiveObjects: 0.150700 ms CreateObjectMapping: 0.075000 ms MarkObjects: 2.466700 ms  DeleteObjects: 0.159400 ms)
-
-Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
@@ -567,217 +213,49 @@ C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-- Loaded All Assemblies, in  0.427 seconds
-Refreshing native plugins compatible for Editor in 0.89 ms, found 0 plugins.
+- Loaded All Assemblies, in  0.456 seconds
+Refreshing native plugins compatible for Editor in 0.94 ms, found 0 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.563 seconds
-Domain Reload Profiling: 988ms
-	BeginReloadAssembly (122ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (26ms)
-	RebuildCommonClasses (23ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (16ms)
-	LoadAllAssembliesAndSetupDomain (257ms)
-		LoadAssemblies (180ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (138ms)
-			TypeCache.Refresh (131ms)
-				TypeCache.ScanAssembly (124ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (7ms)
-	FinalizeReload (563ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (266ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (4ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (77ms)
-			ProcessInitializeOnLoadAttributes (156ms)
-			ProcessInitializeOnLoadMethodAttributes (22ms)
-			AfterProcessingInitializeOnLoad (3ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (8ms)
-Refreshing native plugins compatible for Editor in 0.90 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3458 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 28 unused Assets / (1.5 MB). Loaded Objects now: 4249.
-Memory consumption went from 166.6 MB to 165.2 MB.
-Total: 2.651300 ms (FindLiveObjects: 0.144100 ms CreateObjectMapping: 0.078900 ms MarkObjects: 2.290000 ms  DeleteObjects: 0.137600 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
-  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-- Loaded All Assemblies, in  0.419 seconds
-Refreshing native plugins compatible for Editor in 0.82 ms, found 0 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.566 seconds
-Domain Reload Profiling: 983ms
-	BeginReloadAssembly (121ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (26ms)
-	RebuildCommonClasses (21ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (16ms)
-	LoadAllAssembliesAndSetupDomain (252ms)
-		LoadAssemblies (180ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (133ms)
-			TypeCache.Refresh (126ms)
-				TypeCache.ScanAssembly (120ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (6ms)
-	FinalizeReload (566ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (267ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (5ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (79ms)
-			ProcessInitializeOnLoadAttributes (155ms)
-			ProcessInitializeOnLoadMethodAttributes (22ms)
-			AfterProcessingInitializeOnLoad (3ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (8ms)
-Refreshing native plugins compatible for Editor in 1.00 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3458 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 28 unused Assets / (1.5 MB). Loaded Objects now: 4251.
-Memory consumption went from 168.5 MB to 167.1 MB.
-Total: 2.641200 ms (FindLiveObjects: 0.140800 ms CreateObjectMapping: 0.075800 ms MarkObjects: 2.283700 ms  DeleteObjects: 0.139700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
-  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 133.331412 seconds.
-  path: Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab
-  artifactKey: Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab using Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Refreshing native plugins compatible for Editor in 0.87 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
- -> (artifact id: '5462209986e5e5e87e1990c8d0d81aaa') in 0.112191 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 737
-========================================================================
-Received Import Request.
-  Time since last request: 4.160534 seconds.
-  path: Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab
-  artifactKey: Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab using Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Refreshing native plugins compatible for Editor in 0.84 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
- -> (artifact id: 'd79bb9b94f1c73f1da517585c4021f1e') in 0.028854 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 737
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-- Loaded All Assemblies, in  0.426 seconds
-Refreshing native plugins compatible for Editor in 0.95 ms, found 0 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.577 seconds
-Domain Reload Profiling: 1001ms
+- Finished resetting the current domain, in  0.605 seconds
+Domain Reload Profiling: 1058ms
 	BeginReloadAssembly (127ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (27ms)
-	RebuildCommonClasses (21ms)
+		CreateAndSetChildDomain (26ms)
+	RebuildCommonClasses (22ms)
 	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (16ms)
-	LoadAllAssembliesAndSetupDomain (253ms)
-		LoadAssemblies (185ms)
+	initialDomainReloadingComplete (17ms)
+	LoadAllAssembliesAndSetupDomain (279ms)
+		LoadAssemblies (196ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (132ms)
-			TypeCache.Refresh (126ms)
-				TypeCache.ScanAssembly (119ms)
+		AnalyzeDomain (149ms)
+			TypeCache.Refresh (140ms)
+				TypeCache.ScanAssembly (133ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (6ms)
-	FinalizeReload (577ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (605ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (265ms)
+		SetupLoadedEditorAssemblies (291ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (4ms)
 			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (76ms)
-			ProcessInitializeOnLoadAttributes (156ms)
-			ProcessInitializeOnLoadMethodAttributes (23ms)
+			BeforeProcessingInitializeOnLoad (86ms)
+			ProcessInitializeOnLoadAttributes (169ms)
+			ProcessInitializeOnLoadMethodAttributes (24ms)
 			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (8ms)
-Refreshing native plugins compatible for Editor in 0.81 ms, found 0 plugins.
+		AwakeInstancesAfterBackupRestoration (6ms)
+Refreshing native plugins compatible for Editor in 0.80 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3458 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 34 unused Assets / (1.5 MB). Loaded Objects now: 4253.
-Memory consumption went from 170.5 MB to 169.0 MB.
-Total: 2.762500 ms (FindLiveObjects: 0.141900 ms CreateObjectMapping: 0.072600 ms MarkObjects: 2.398500 ms  DeleteObjects: 0.148600 ms)
+Unloading 3459 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 28 unused Assets / (1.5 MB). Loaded Objects now: 4184.
+Memory consumption went from 164.8 MB to 163.4 MB.
+Total: 2.826000 ms (FindLiveObjects: 0.145700 ms CreateObjectMapping: 0.070600 ms MarkObjects: 2.453300 ms  DeleteObjects: 0.155600 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -794,3 +272,455 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
   custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 16590.474775 seconds.
+  path: Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab
+  artifactKey: Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab using Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Refreshing native plugins compatible for Editor in 0.86 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+ -> (artifact id: 'e259e6a4ded68b4c3db586b36038e093') in 0.119924 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 736
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+- Loaded All Assemblies, in  0.449 seconds
+Refreshing native plugins compatible for Editor in 0.86 ms, found 0 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.600 seconds
+Domain Reload Profiling: 1047ms
+	BeginReloadAssembly (130ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (28ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (17ms)
+	LoadAllAssembliesAndSetupDomain (269ms)
+		LoadAssemblies (191ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (145ms)
+			TypeCache.Refresh (137ms)
+				TypeCache.ScanAssembly (131ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (600ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (288ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (85ms)
+			ProcessInitializeOnLoadAttributes (168ms)
+			ProcessInitializeOnLoadMethodAttributes (24ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Refreshing native plugins compatible for Editor in 0.86 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3458 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 34 unused Assets / (1.5 MB). Loaded Objects now: 4187.
+Memory consumption went from 166.1 MB to 164.7 MB.
+Total: 2.832600 ms (FindLiveObjects: 0.158100 ms CreateObjectMapping: 0.079600 ms MarkObjects: 2.442600 ms  DeleteObjects: 0.151500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 9.885149 seconds.
+  path: Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab
+  artifactKey: Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab using Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Refreshing native plugins compatible for Editor in 0.86 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+ -> (artifact id: '86975ce250f48920d5dc1f8c5398cbc4') in 0.115444 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 736
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+- Loaded All Assemblies, in  0.455 seconds
+Refreshing native plugins compatible for Editor in 1.53 ms, found 0 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.627 seconds
+Domain Reload Profiling: 1079ms
+	BeginReloadAssembly (127ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (26ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (16ms)
+	LoadAllAssembliesAndSetupDomain (279ms)
+		LoadAssemblies (195ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (149ms)
+			TypeCache.Refresh (142ms)
+				TypeCache.ScanAssembly (134ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (627ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (301ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (95ms)
+			ProcessInitializeOnLoadAttributes (170ms)
+			ProcessInitializeOnLoadMethodAttributes (24ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Refreshing native plugins compatible for Editor in 1.06 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3458 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 34 unused Assets / (1.5 MB). Loaded Objects now: 4189.
+Memory consumption went from 168.1 MB to 166.6 MB.
+Total: 3.119900 ms (FindLiveObjects: 0.151600 ms CreateObjectMapping: 0.093900 ms MarkObjects: 2.720300 ms  DeleteObjects: 0.153400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 112.027957 seconds.
+  path: Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab
+  artifactKey: Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab using Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Refreshing native plugins compatible for Editor in 1.07 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+ -> (artifact id: 'a5e5dedf3e59cc6e7ded7283289f8341') in 0.116390 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 736
+========================================================================
+Received Import Request.
+  Time since last request: 3.864557 seconds.
+  path: Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab
+  artifactKey: Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab using Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Refreshing native plugins compatible for Editor in 1.12 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+ -> (artifact id: '1d99b770c8d7c233135d139e42da77d7') in 0.030208 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 736
+========================================================================
+Received Import Request.
+  Time since last request: 5.037031 seconds.
+  path: Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab
+  artifactKey: Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab using Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Refreshing native plugins compatible for Editor in 1.02 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+ -> (artifact id: '8d232743f3570cd2970c9bce6decddd8') in 0.029877 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 736
+========================================================================
+Received Import Request.
+  Time since last request: 11.352166 seconds.
+  path: Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab
+  artifactKey: Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab using Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Refreshing native plugins compatible for Editor in 1.13 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+ -> (artifact id: '8050a9a2a034392fc55634b14f37bced') in 0.032706 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 736
+========================================================================
+Received Import Request.
+  Time since last request: 5.801191 seconds.
+  path: Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab
+  artifactKey: Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab using Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Refreshing native plugins compatible for Editor in 1.52 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+ -> (artifact id: '7493b522d9666ef7bab3d1360f6255b9') in 0.031270 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 736
+========================================================================
+Received Import Request.
+  Time since last request: 4.196078 seconds.
+  path: Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab
+  artifactKey: Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab using Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Refreshing native plugins compatible for Editor in 0.89 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+ -> (artifact id: '00b70dcda31f68c964e00819c0ea5cc7') in 0.031224 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 736
+========================================================================
+Received Import Request.
+  Time since last request: 3.002363 seconds.
+  path: Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab
+  artifactKey: Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab using Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Refreshing native plugins compatible for Editor in 1.13 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+ -> (artifact id: '15debe441ec42cda9f051aada768b657') in 0.032029 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 736
+========================================================================
+Received Import Request.
+  Time since last request: 14.664453 seconds.
+  path: Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab
+  artifactKey: Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab using Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Refreshing native plugins compatible for Editor in 0.98 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+ -> (artifact id: '59b09c0614df20c8a32c14697159d39d') in 0.030830 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 736
+========================================================================
+Received Import Request.
+  Time since last request: 2.980558 seconds.
+  path: Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab
+  artifactKey: Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab using Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Refreshing native plugins compatible for Editor in 1.17 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+ -> (artifact id: '02c71a410c3a91bb48f299937e821711') in 0.030806 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 736
+========================================================================
+Received Import Request.
+  Time since last request: 9.292443 seconds.
+  path: Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab
+  artifactKey: Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab using Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Refreshing native plugins compatible for Editor in 1.07 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+ -> (artifact id: 'cb6bcc55e9af234bb07d2cd4b83304f6') in 0.030313 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 736
+========================================================================
+Received Import Request.
+  Time since last request: 1.801291 seconds.
+  path: Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab
+  artifactKey: Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab using Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Refreshing native plugins compatible for Editor in 1.02 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+ -> (artifact id: '7444ea2565e401fdd5aaea69fe6ad46b') in 0.030171 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 736
+========================================================================
+Received Import Request.
+  Time since last request: 2.598566 seconds.
+  path: Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab
+  artifactKey: Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab using Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Refreshing native plugins compatible for Editor in 0.86 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+ -> (artifact id: '10c00da7a06ddbb0b9d7f0731e263bd2') in 0.030062 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 736
+========================================================================
+Received Import Request.
+  Time since last request: 11.316711 seconds.
+  path: Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab
+  artifactKey: Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab using Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Refreshing native plugins compatible for Editor in 0.87 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+ -> (artifact id: '0646e0dd5a325bbe64415b1a78d9b864') in 0.029076 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 736
+========================================================================
+Received Import Request.
+  Time since last request: 13.704999 seconds.
+  path: Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab
+  artifactKey: Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab using Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Refreshing native plugins compatible for Editor in 0.85 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+ -> (artifact id: 'c24fe4dad84abd671eff7ac5139f85e6') in 0.035166 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 736
+========================================================================
+Received Import Request.
+  Time since last request: 8.658971 seconds.
+  path: Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab
+  artifactKey: Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab using Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Refreshing native plugins compatible for Editor in 1.03 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+ -> (artifact id: 'd6e77d230813d116fd926bd1d569b5b8') in 0.032580 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 736
+========================================================================
+Received Import Request.
+  Time since last request: 3.801051 seconds.
+  path: Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab
+  artifactKey: Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab using Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Refreshing native plugins compatible for Editor in 1.36 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+ -> (artifact id: '1610ac8e0a8277c02262d41d31c4b506') in 0.031582 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 736
+========================================================================
+Received Import Request.
+  Time since last request: 11.857925 seconds.
+  path: Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab
+  artifactKey: Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab using Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Refreshing native plugins compatible for Editor in 1.04 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+ -> (artifact id: '92ca76d9ffd774ae391dfa54285bf78b') in 0.029781 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 736
+========================================================================
+Received Import Request.
+  Time since last request: 8.869618 seconds.
+  path: Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab
+  artifactKey: Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab using Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Refreshing native plugins compatible for Editor in 0.98 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+ -> (artifact id: '6d046c9b2ac65d0656ff0bdcb59c9273') in 0.029090 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 736
+========================================================================
+Received Import Request.
+  Time since last request: 4.331858 seconds.
+  path: Assets/Sprites/UI/statBars2.png
+  artifactKey: Guid(d13efcb32ce8a74408aadd86a6e30de2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/UI/statBars2.png using Guid(d13efcb32ce8a74408aadd86a6e30de2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edb7d08a662c018b29c6ca8973233e86') in 0.054590 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 44.923928 seconds.
+  path: Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab
+  artifactKey: Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab using Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Refreshing native plugins compatible for Editor in 1.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+ -> (artifact id: '1efdaeb40ef6c1bb5c6a9624513607a9') in 0.031633 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 736
+========================================================================
+Received Import Request.
+  Time since last request: 9.923756 seconds.
+  path: Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab
+  artifactKey: Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab using Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Refreshing native plugins compatible for Editor in 1.11 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+ -> (artifact id: '252bddfe57290023c3ecf83062ea77b0') in 0.031460 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 736
+========================================================================
+Received Import Request.
+  Time since last request: 8.429326 seconds.
+  path: Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab
+  artifactKey: Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab using Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Refreshing native plugins compatible for Editor in 0.90 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+ -> (artifact id: 'ade6c88d96f3693eaddc3785e0449c4a') in 0.030845 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 736
+========================================================================
+Received Import Request.
+  Time since last request: 31.169865 seconds.
+  path: Assets/Sprites/UI/statBars2.png
+  artifactKey: Guid(d13efcb32ce8a74408aadd86a6e30de2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/UI/statBars2.png using Guid(d13efcb32ce8a74408aadd86a6e30de2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e372f737aed44bcf0350b616581a07e') in 0.025723 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 17.037357 seconds.
+  path: Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab
+  artifactKey: Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab using Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Refreshing native plugins compatible for Editor in 1.22 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+ -> (artifact id: '84d31308b832694810c6b0d7a64bef05') in 0.031227 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 736
+========================================================================
+Received Import Request.
+  Time since last request: 2.513262 seconds.
+  path: Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab
+  artifactKey: Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab using Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Refreshing native plugins compatible for Editor in 1.13 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+ -> (artifact id: '87b6658ec32ba030a7c0c42ac675b7a8') in 0.031609 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 736
+========================================================================
+Received Import Request.
+  Time since last request: 6.706045 seconds.
+  path: Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab
+  artifactKey: Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab using Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Refreshing native plugins compatible for Editor in 0.85 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+ -> (artifact id: '00de51e06d60ee41a47ca737eb8a46f0') in 0.031048 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 736
+========================================================================
+Received Import Request.
+  Time since last request: 4.216651 seconds.
+  path: Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab
+  artifactKey: Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab using Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Refreshing native plugins compatible for Editor in 0.89 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+ -> (artifact id: 'ad1c5655a81d1a965e27caefe550f955') in 0.030149 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 736
+========================================================================
+Received Import Request.
+  Time since last request: 0.955487 seconds.
+  path: Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab
+  artifactKey: Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/NeedForLevelToWork/InGameUI.prefab using Guid(1e840f6189273cc479fb584863c69c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Refreshing native plugins compatible for Editor in 0.98 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+ -> (artifact id: '32254c569e0e58db83af42751aab978b') in 0.028589 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 736
+========================================================================
+Received Import Request.
+  Time since last request: 33.806051 seconds.
+  path: Assets/Sprites/UI/statBars2.png
+  artifactKey: Guid(d13efcb32ce8a74408aadd86a6e30de2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/UI/statBars2.png using Guid(d13efcb32ce8a74408aadd86a6e30de2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fb2f5c44436068777c6255d092bac2b') in 0.030395 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
